@@ -1,0 +1,7359 @@
+fileFormatVersion: 2
+guid: 8f1f5e8956f998743b38c1c5e17a8865
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: screen_map_decos-1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 453
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623f9a86e4de5b04da6feecc29f681fe
+      internalID: 185469755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 455
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5644ca9f45c8db488e49dd763fddd9c
+      internalID: -1437119800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 455
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0e784ad04d75a4f884c94c3315f4e6
+      internalID: -1728153541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 453
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e7a2f89575536498c3000d15703ef9
+      internalID: -2122327452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 453
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4733731b3b2fd0347a9c4bade5adfbed
+      internalID: -1827177854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 452
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d547629704b684b89c6c678e304758
+      internalID: 200539413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_6
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 441
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c390ecfa2fa1b743b998b8a333ed064
+      internalID: -875486444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 444
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c985e1410f370f64fa2273433224a744
+      internalID: 1999291204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 460
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27075e9600b83042b154b53c90a560c
+      internalID: 1149068966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 460
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6027c093bafd1a140b25d061c66a9cfd
+      internalID: 1680052145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 460
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913048e42fa0304eb8b11d5aa32be51
+      internalID: 220511711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_11
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 460
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07485e8362154374a9c022e9752d9eb7
+      internalID: -1097033629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_12
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 460
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758ec33468fdf9548ac32f6f9d918651
+      internalID: 1311994484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_13
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 460
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf0b0601d829f24787ad26e5de14777
+      internalID: 2066323128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_14
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 460
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2ad45d8c81e6040824fd59cf4ecb0d
+      internalID: -42589596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_15
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 460
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877a047d085db2441879822aca89cb81
+      internalID: -29582135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_16
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 500
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f684a1aa2283c034aa1182857ca2838f
+      internalID: 601920188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_17
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 488
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff7e0240911382449fa350d39d7ee52
+      internalID: -1385035279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_20
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 476
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098b0e90a5330d84e93c2193958ce29b
+      internalID: 370303797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_21
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 464
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7737f690af7e82468ba92f6b4623353
+      internalID: -23700041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_22
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 392
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a70c474f2b2b04fa6d3054f23baebd
+      internalID: -42860223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_23
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 408
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e4c0b3373ebf24c997882fd5669dac
+      internalID: -248568202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_24
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 408
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8e16cf794d35747af5705fda2e35dd
+      internalID: -1557599590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_25
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 408
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36cc6a1d2b25f345bacfcd6c57a07ff
+      internalID: -1419675676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_26
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 434
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0782dda4a3323af4eabbd8d5efe86edd
+      internalID: -846953662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_27
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 408
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929e009b7ffa60149ae9f40a8bf9edac
+      internalID: -325191921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_28
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 408
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800f164e38d5a514288c578225e24c4e
+      internalID: -119086373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_29
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 435
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecd98b60bbefac41b7213cf21f52b26
+      internalID: -1406916801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_31
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 448
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13efb1c8403d9124280a4cd232458300
+      internalID: 1952905944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_32
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 448
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c5b73d79ab3da44a67246ad8514dc7
+      internalID: -2146652272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 394
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250fd528d9f6e574ba3c8050a5e5c0e7
+      internalID: -1693019462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_34
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 398
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222ff9182c4b6f446bed6da90cbf5dc2
+      internalID: 1723415574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_35
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 398
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ffcddfebbec674db83312051b82a09
+      internalID: -545695987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 394
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fc12e8d673f0248ac7a387e5b8806c
+      internalID: -569638150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_37
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 394
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e191269d54ad144f88c90322cf1e349
+      internalID: 979323558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_38
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 393
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27edd1cc6bc09f4aa55f28dc382c480
+      internalID: -1121830578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_39
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 376
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d3ecf2f47cde94ab10e03cfb573b46
+      internalID: -595168187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_40
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 436
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa326e4f8d2255478125e631c1eda4c
+      internalID: -1020607310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_41
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 436
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b90d5c4a5f4c9f458e91e7ad7414731
+      internalID: 1829631392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_42
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 371
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5d707ba9679c34d92af28834ebd79f
+      internalID: -999355235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_43
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 408
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dbc0a783b7715478639ac6942a95de
+      internalID: -660551830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_44
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 410
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26ef3c72cc17d940ae29671074ee27c
+      internalID: 835547568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_46
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 424
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31eb4d8f4d5a30d40ae43e6f4718fd2a
+      internalID: -107400497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_47
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 424
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b804dc8061103b64cb64d6f1ffe188c1
+      internalID: -1878723110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_48
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 412
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250469e04870c15438f59f618693296f
+      internalID: 971132089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_49
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 412
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0a3c7ad35215543b2caa162331ff93
+      internalID: 136665519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_50
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 349
+        width: 66
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cb584220dc2154eace57b50f179e9c
+      internalID: 1882139037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_51
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 341
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a62d5d296736469ffcc1cdc306186
+      internalID: 901407294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_52
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 341
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557ee0b92055b634695b86c811b124cf
+      internalID: -250102852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_53
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 335
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5296b0d51425f45bc6140849dc5ffc
+      internalID: -348330496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_54
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 335
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0b3d64c67d1c94f9f09a98c7b886c7
+      internalID: 1271746404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_55
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 334
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c243d6584d20424592347359023c59a
+      internalID: 1645418581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_56
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 324
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e349e3d357944d24cb5d1d45a4db62c2
+      internalID: -272121787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_57
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 355
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e447d1703225f154f95932b95fdbf501
+      internalID: -1570902653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_58
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 349
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c64ae0f692a2249bd9860cd664ce30
+      internalID: -122485747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_59
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 349
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908b967bd8ea4a04eb4da5add3031a08
+      internalID: -61273517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_60
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 349
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f160ac49632d527428f4c5872725c8b4
+      internalID: -1553891211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_61
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 349
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12892f5713917564e8b101a4d00f0214
+      internalID: -1808268169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_62
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 382
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66115163ff5c922418e82797a915e734
+      internalID: 1923732598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_63
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 355
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252d4255fc5b722448b1bdd3c3e30d8a
+      internalID: -776045091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_64
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 355
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e72948ba2a929d4280545442c053867
+      internalID: 934848936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_65
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 301
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533c717af4f1e384fb3cbe35a5be672d
+      internalID: 136344031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_66
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 309
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f110fecc0d0394cb2147fe36e88ef3
+      internalID: -688135112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_67
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 356
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1705ec70cd2fb74b92044019453bb9d
+      internalID: -465282911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_68
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 306
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d538cb38a9ce44e836d9d8ea60c8c0
+      internalID: -534484287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_69
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 302
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d868bef2c877f4eb3437fc2a28d92a
+      internalID: -1452166431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_70
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 296
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd93ef36573d1e64aa1baa5cba531586
+      internalID: 1560058837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_71
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 297
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c118c39f050482429b181bca5a59614
+      internalID: -452332472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_72
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 297
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82650c1daf20a54e9b8fb239e6fd7b8
+      internalID: -1599304885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_73
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 296
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90d9e7de0871ac47aeaf033085b6b3b
+      internalID: 453027203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_74
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 337
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0290b095472b34d93d2aa574784fad
+      internalID: -1660081736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_75
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 337
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e794593107ae5a4ebd7dc28a78eae25
+      internalID: 1355305155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_76
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 337
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f533a4b47799d4b89ea0f6065455cf
+      internalID: -1133133489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_77
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 337
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d439e0ac007212479a5104a64ff7ec1
+      internalID: 356433781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_78
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 337
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b171faf0365b20438920d3d9b3afc32
+      internalID: 10209679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_79
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 337
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b6bef3f3f109d408c611a3437775e2
+      internalID: -445058175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_80
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 337
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3d6eefebf6a834187f4af99e6660c2
+      internalID: 1098868543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_81
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 337
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c8498b37bf07a419658f91629d5cd4
+      internalID: -1454607858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_82
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 284
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2587f9f87d11a3e40be17af705f44268
+      internalID: -107717115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_83
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 284
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2518f5a12f3f724aadf48fdf657b74c
+      internalID: -761745082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_84
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 276
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034fc92a44c735247bf98feacad922ee
+      internalID: 988816347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_85
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 276
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c010525d43d25245bae5b6b4811d8b1
+      internalID: 788757908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_86
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 275
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852938b02a3c463478e8347b9ff74143
+      internalID: -878097432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_87
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 325
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bf17bc4d4c33d42b02fea4120035dd
+      internalID: -584898892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_88
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 325
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7622a5991b36923408cc50209f67a3e8
+      internalID: -1768645917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_89
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 325
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e2a47d231229a499cc4e5a7d9a2bfd
+      internalID: 1642749294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_90
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 325
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1b3533bf7187b41a3375a2580db101
+      internalID: -1497551245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_91
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 325
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcdef1e8e2aa9241a161a8ffd3f0dbd
+      internalID: -1919578918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_92
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 325
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d422db42b73de45ae37a904c459d91
+      internalID: -792369364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_93
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 325
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b1dd8a720206c45abccdb61c62032d
+      internalID: 1971292581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_94
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 325
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade697a795337004a8a0eb47e24ac833
+      internalID: -642231633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_95
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 257
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9073af643297748934931d2f17d054
+      internalID: 127861824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_96
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06d8b067e6c47048b18d286a3027ddb
+      internalID: -179056186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_97
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 313
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3ced03ce227844e9ec281b0874b12d
+      internalID: -1662987440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_98
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb855d21436a6db459670dc249ab37e5
+      internalID: -2035660931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_99
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b02afd7b92026249af1519213022c0b
+      internalID: -486767289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_100
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3430e6ba20c47ec43a79e25272069ea3
+      internalID: 1834191805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_101
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5bb10d98d37c24d84f43f07b7a0b15
+      internalID: 582131329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_102
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b6be53dda1dfc4ba340542aca5a710
+      internalID: 218711165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_103
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 313
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626c739c9cc80764da343086dfbcdbc8
+      internalID: -2107021021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_104
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 242
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2172af5bbee4f12479c61c98faa6a68e
+      internalID: -297577475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_105
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8231f562f0b98643b050f9ce1d31536
+      internalID: -1721067003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_106
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f8516b7b530f949bd617efd39f32ab
+      internalID: -11604521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_107
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2123193d2aec1cb42a629c258c0919c3
+      internalID: 1870116682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_108
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec233fe6ad9c7ef44861f9977811599d
+      internalID: 587912031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_109
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544c8282041c0ee46999b1ce2735cf96
+      internalID: 1863006061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_110
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e31bde73e81054e8036f352d591656
+      internalID: -1342768739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_111
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4b5b75d68e9c34380df94b98759575
+      internalID: 936836371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_112
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 301
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18576809ff7b564cadff1ae11f33ca8
+      internalID: -287425619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_113
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 256
+        width: 65
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c985220179a3f5c49b123f6076508e34
+      internalID: 518015017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_114
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 232
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4f93201232d2b498eaab29458c2649
+      internalID: 672881690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_115
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 243
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36397a76436e1b447b9fa3a108b975fe
+      internalID: 1058572320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_116
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 243
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e368f031d9eee4d817aefa36dae122
+      internalID: -95475580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_117
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4145810788fb344acc3e103d6b5f09
+      internalID: -964925459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_118
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f479f57aa56b9a4bb6bcbb6616948b1
+      internalID: 2061519112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_119
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 284
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61837aed1656d8a4d8c5853d54eebcec
+      internalID: -635749341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_120
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac27725e4fd86d4895cf2bdf6997fd9
+      internalID: 1656146172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_121
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 284
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99281670b0b6bb2458ba639755e438d5
+      internalID: 1717947138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_122
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c277c981e712146a95e1599df63814
+      internalID: -1981637335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_123
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e743e006e07539c4eaa00b9fd457f093
+      internalID: -1575930141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_124
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41ea2afa2917da46a2552177699b3fe
+      internalID: 1510843120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_125
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 284
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cc7dcea0e1d67429f93536a1c58ece
+      internalID: -538800258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_126
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e9085e254aad543821573e00770ec2
+      internalID: -1475402126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_127
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796b9389f7be8f84f81710efdc00de07
+      internalID: -437587454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_128
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe005501b6a08b46b1d0ad601b6a126
+      internalID: 1286478928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_129
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b136d85cbbcd9bc46803356bb2834a39
+      internalID: -1916443327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_130
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9feab73de6b014a90a36be16855ed4
+      internalID: -989424651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_131
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 284
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7970892cb758bb4cbf7deab8c4e6a22
+      internalID: 2144981115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_132
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 227
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3603a8031dc83d4bbd7dc8b1c52efa2
+      internalID: -793720417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_133
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 229
+        width: 62
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cafd6ab067acb4cb6a9398a2f19496
+      internalID: 1806517256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_134
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 272
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb99f54e3033f24ea7049a551086e01
+      internalID: 886508856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_135
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 272
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a2eda2ba28dd24bb9e521c9f74e566
+      internalID: 1882125417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_136
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 272
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb1697eafa2d434eb576612fa667c42
+      internalID: -1950124226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_137
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 272
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02463ef000f8f014394c7aca264dac7a
+      internalID: 1335111669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_138
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 273
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f57c1b606e61b4499c9e22512cbf0f7
+      internalID: -1321222689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_139
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66004e439f443549a56f3b0a44f4a30
+      internalID: -1622173694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_140
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 273
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6236f12c00ce45d45a2f57e8d4e029d1
+      internalID: -2075446310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_141
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e491a0fd3b6d844ba5dc21829b566e
+      internalID: 1456138393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_142
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f4406017716ae47be84b5f004db18b
+      internalID: -1630782718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_143
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db90446b5a4959143b0d229ee751fa96
+      internalID: -537476147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_144
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3e4590b88643a44aef93a26ab09cc4
+      internalID: 934088035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_145
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082aec60f0b74cd42a99279d560fb937
+      internalID: 642819848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_146
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 273
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f4bac695c1d3c458c7bbe8e8d4b564
+      internalID: -728517007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_147
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadcdc9c22f68ea42adb195fd4e5d5fb
+      internalID: 1000204068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_148
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 273
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174b711c0074e5e46a0d6c1938d6a58d
+      internalID: 530744880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_149
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 217
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ace461a325e0d945a288d56d6db5088
+      internalID: -806534259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_150
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 217
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339fad605c2d6b9438a47a90143c99c6
+      internalID: -470243372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_151
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 216
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916405ecaae09ab41a29e5f48a95c989
+      internalID: -1601586126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_152
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 260
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80aec1481ee3d34db64fb3957f0619b
+      internalID: 128841754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_153
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 260
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e306fc43647934b80a0acc37596700
+      internalID: 607381401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_154
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 261
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384d024e904997444a1f36f3873bbf1c
+      internalID: 2011713842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_155
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa3949660f30354ca170e78c9b5ad52
+      internalID: -39459035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_156
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3783663e0a1de38448c36bc3af8a11ee
+      internalID: 1768603449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_157
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53094a7e8821e54ba865eb9ab3faee7
+      internalID: 581554256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_158
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1d7a1ee9b8e504db607a04da8dfd98
+      internalID: 645898716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_159
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c07f1a9504f3040bbe9404f4b71f6d
+      internalID: -604441912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_160
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe1b1acd3b32d743b8fb5a265cc9a9f
+      internalID: 1210962194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_161
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922f149e6ddf3324e8d37ff17779f841
+      internalID: -1756350558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_162
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 257
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a30a2d2166e4cd4c88a0078106266c5
+      internalID: -1492699188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_163
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df6dcdce20c6104286f011ac6b077fa
+      internalID: -2090043267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_164
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 257
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a27ce78d83a903498588b62ab0d664d
+      internalID: -1209199904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_165
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7bc742eed4633428a415d2d143be1d
+      internalID: 1804278531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_166
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 257
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c75bcc2f3c1d5049b4c21ba44c11c01
+      internalID: -1193014736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_167
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6d40ff20021dc47be50624a08b2098
+      internalID: 148532427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_168
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 256
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fdb2d681248614e9c867f4657adb15
+      internalID: -1284713588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_169
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 257
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e91c15d25964e40a05169806267d20
+      internalID: -1023974816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_170
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 257
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85574eec3d6992a4fab6ca4847b299d3
+      internalID: -821900556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_171
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 191
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc8da1f20521f64788ed26407956ce6
+      internalID: 1469400059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_172
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 248
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfe7bbf66daa1e4a8b456942acee73e
+      internalID: -19109910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_173
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 248
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8539ffbde729d9949970433b11fdc60f
+      internalID: -632979078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_174
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 250
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a458b04a93d3e448d90c44090d3be3
+      internalID: 1843924949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_175
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 245
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040d11ea7a0cc5c4dbe3ff34071a23a5
+      internalID: -31320130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_176
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 246
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592a262a4e5648541a23f63412c93791
+      internalID: 939895089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_177
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 246
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002039f699ff5e7488d197a2a9d950b3
+      internalID: -489608845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_178
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 246
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306a23f46c23a204d856473c181d79ea
+      internalID: 247276513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_179
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 246
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8dcc920e0bdb349a48501ed61e0475
+      internalID: 776966828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_180
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344698254c45a2f4e92fd92abdb148c4
+      internalID: -2040552354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_181
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213716c11d4ea7b4a8b9fb4c009080f9
+      internalID: -27296527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_182
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3fea43a36631842aca7f1f7f2f5696
+      internalID: -788387886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_183
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a77fcd928f94be4d89f3033133e0de6
+      internalID: -1365783968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_184
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98ad521812ccd54ca48d7655919d1ce
+      internalID: 1983713240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_185
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d2ed79d6e7cd94c9983c1c903a05aa
+      internalID: -1128963409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_186
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531b74668a2b0bf418fabfab69fa82ce
+      internalID: 307014498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_187
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cc43a54e3ee504db0bf6de87a4403a
+      internalID: -40584127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_188
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 247
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a796c68d10a2ef4580b6af87d652a3c
+      internalID: 1240605278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_189
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 248
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a84db13230aa4a478fb206ea248f940
+      internalID: 78515674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_190
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 248
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99d7346a88e06c418ff7b3ff58064ef
+      internalID: 169506598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_191
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 207
+        width: 65
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56de76b21d06b3641a4dcc36d8ef2333
+      internalID: -252005680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_192
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 236
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4372703580aac344aa2188602472f22
+      internalID: -822984307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_193
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 236
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf68962a1140de4280816936f27d237
+      internalID: 1899003931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_194
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 239
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a782a8b3eb51afd49825799e0eea27f5
+      internalID: 2053425393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_195
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 231
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f5405cefb36b2459509ba6aa844b62
+      internalID: -1325712202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_196
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 189
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915dace277a154b49bd552db3bd79724
+      internalID: 1575954468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_197
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 184
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389a42a6a7790c84594dcecda562e3e3
+      internalID: -1807537178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_198
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 191
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6aad7f139e0a240b83cc18bf88ffa3
+      internalID: 1101466650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_199
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 224
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a184429c079656b4e8f8a2965bf312b5
+      internalID: -12398319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_200
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 224
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d43117c495740b4d8840ff9d82fe7f9
+      internalID: 1291772942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_201
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 228
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc5408a58dbb3c46aa6f69dc75262b6
+      internalID: 538484795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_202
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 229
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39d4db61f7503f478f1c8f67798c3c0
+      internalID: 827250391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_203
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 193
+        width: 62
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708cfa3cd98ec3e40a2183f4587c73ed
+      internalID: 2021721299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_204
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 163
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf19f6aa44e8704bbc7870d8b37997b
+      internalID: 1649812851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_205
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 219
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9118fcc2aaa42f143941dd41732a2999
+      internalID: 1571468231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_206
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 222
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2047c703147655d48a87e56cd3cfa544
+      internalID: -1789169418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_207
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 175
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51705f0e2636a6d4b825948dc17ba163
+      internalID: -257605712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_208
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 212
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397f2d031130bd946bd7670e6d3e697b
+      internalID: 1420662510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_209
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 212
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e6f2ebd05407c4a93879bdc428fcba
+      internalID: -892865492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_210
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 217
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0bd37874dc9db47a7599f9425aeec3
+      internalID: 1558294976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_211
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 158
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b64958f23da95742ab457d434eaa17f
+      internalID: 526443428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_212
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 158
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3c725b3ce39d747a05275f1ce984ec
+      internalID: -883616371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_213
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 144
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092f736ee9dbcc040b4eed83641edc56
+      internalID: -964341944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_214
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 206
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc90bb7095b35847bb34b4f6880f28f
+      internalID: -1178316968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_215
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 203
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76f33f6beb7f4147be1a562cb789852
+      internalID: -762248138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_216
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 207
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640659fba72fb1848970b11590f36ed5
+      internalID: 1161182917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_217
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 159
+        width: 65
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1dffaed7901c840ad2b1f5c25b8632
+      internalID: 341350852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_218
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 200
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec88e76895efe646ab41da1d591e025
+      internalID: -2029557228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_219
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 200
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb61b1f25f1c9bc4198c304c622590b9
+      internalID: 2062775682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_220
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 193
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9360c6d26cf6b429c5f71a04f59e47
+      internalID: 362511346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_221
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 198
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5518c781847b5c40a1de2abe87d13b3
+      internalID: -1127559823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_222
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 195
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e14a59d96390c4e9c9de7edded7e61
+      internalID: 216186237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_223
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 188
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b772d3e1d03b74e8dbafff8a663911
+      internalID: 1030372623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_224
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 188
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dc6e365c2cf724486d693c6cb81087
+      internalID: -1836170027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_225
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 184
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf343dba48577442b499c9831e94018
+      internalID: -1397228008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_226
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 183
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5dc6245e5cb6c4c9c8bb17c9d2d92e
+      internalID: -687124365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_227
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 162
+        width: 62
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9712a3349a7ae6041b0b93e14e3612b5
+      internalID: -599210707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_228
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 137
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b5424e2f73925499c6a784ff390d75
+      internalID: -1198317486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_229
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 125
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f0b62d2e94fe143bdec783fc886124
+      internalID: -1013919184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_230
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 125
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43a6b09b3737d4dbb235e98b99002b
+      internalID: 905911827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_231
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 138
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6a275ea16b44246996ebead130f99c
+      internalID: 984354873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_232
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 176
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a983534f0a150644db0f38cbf09112ae
+      internalID: -396263804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_233
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 176
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c1c2b7ec74c204b8c47d028851fa84
+      internalID: 507921911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_234
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 173
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb2c18f7d4242148a148339cc089a4e
+      internalID: 1566011366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_235
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 177
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307409a6fcb3f4d4d8aa0930f190093d
+      internalID: 1416367518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_236
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 141
+        width: 63
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad40eb72f9530f8478c7b4db3518c59b
+      internalID: -1676349179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_237
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 164
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e53303b2e9fa2d45b08279d923c5a5b
+      internalID: 1549892042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_238
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 164
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95112338da2e1e478b6d6c99b4ea763
+      internalID: -1270308715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_239
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 167
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc062bc60f0d4b4ab2c564c18cd5eda
+      internalID: 702947701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_240
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 162
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61678b3aec3a54499e8ff48d5923e99
+      internalID: -480752799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_241
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 112
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7682aa053ab6eaf4bb27a9e2427d73e1
+      internalID: 741766403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_242
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 133
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3344ebce9016c94ea2132d49878d4a8
+      internalID: 450620920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_243
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 94
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9055aee401d297438b063f5583f893c
+      internalID: -253347571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_245
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 152
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42d27f70406ce7409f5dae09fe42957
+      internalID: 8429435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_246
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 152
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679d826b73a26dd49adba95758c98fb9
+      internalID: -632595223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_247
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 151
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af5a04a0a4e2e64ea97c22bb911d147
+      internalID: -1258948086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_248
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 151
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937e41f72be33214287cff538e9fc991
+      internalID: 587530173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_249
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 99
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10795550f5fbf084d9d160300998afbf
+      internalID: -1970533413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_250
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 101
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa4125d2c7e4a84496bd99062948fb8
+      internalID: -1004531627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_251
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 140
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bc11eead3edc641b2a7760fa90ee0a
+      internalID: -443921663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_252
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 140
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9c7c67917f4f847b3e24ca112d575e
+      internalID: 562570805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_253
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 140
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019019a7e2e935f459996dd2ca158c1b
+      internalID: 794699515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_254
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 141
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3035b69a9cdfc774eacd8b9754848fcc
+      internalID: 754295453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_255
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 108
+        width: 63
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff3e40a4b5ec934f8d9aea9fe0428ab
+      internalID: -973760157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_256
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 72
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4751b39619071c34998e24e7b749424c
+      internalID: -1157926733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_257
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 83
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60340eb17cd543144909ba8a39945cd8
+      internalID: 1184517246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_258
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 85
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01162cd6004f80c42b64461b074e0f96
+      internalID: 769949130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_259
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 128
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea05a4291e2c5fc479c0cf2263dda37d
+      internalID: 287568922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_260
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 128
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdc62b877fac564dabe92f75307b0d1
+      internalID: 1758077585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_261
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 129
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ea590866e0c5245b4076b8e291921f
+      internalID: -426820587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_262
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 125
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26993e7ecc02d7848a5a034a5fe29b19
+      internalID: 1422244587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_263
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 104
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aef2f71e0157af45981c5b35fc9f808
+      internalID: -922992082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_264
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 59
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5369b94c503a8547b900a2661b30cbe
+      internalID: 998465627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_265
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 66
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce597191e73c0147bc92e97a82ef6cd
+      internalID: -477380817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_266
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 116
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8943ce1945f32e849acb04eacfddca15
+      internalID: 1227009325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_267
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 116
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dfbd9f4729b604a968603e9011606f
+      internalID: -909185043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_268
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 118
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b07144f23011a4099066873d4b3f0c
+      internalID: -379368394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_269
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e2de11921b06a4b916f5e98ff45e5c
+      internalID: -32820843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_270
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 104
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c68d1a67169774d95a6d417a37cdba
+      internalID: 495259851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_271
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 104
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f03410d7e3931546a2a5117aa3d5706
+      internalID: -633882312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_272
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 107
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09aa4d5b958e867488b9b1b59c43d199
+      internalID: -715632112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_273
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 99
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac72e9180172d341b57c0c80d03110a
+      internalID: 826884149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_274
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 55
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283db970ec76f4d4fb38f2aec20f6e99
+      internalID: -1683629293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_275
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 49
+        width: 62
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc997b0ead2e97044a43656cd353050b
+      internalID: -1884391920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_276
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 75
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1b27b2531e7cb41b9d5df789be1342
+      internalID: 2114838840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_278
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 92
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcfcb6ac96e1f646b294342528528d3
+      internalID: -1653814739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_279
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 92
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da34daffcc00e040901dfd7b84641b0
+      internalID: 556590100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_280
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 96
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bcb5e5f42c4034389883a77e2ed5d9
+      internalID: -1403249432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_281
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 89
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7bb17dd8c632c4e854b762599384d5
+      internalID: -580645711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_282
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 40
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746f850d194384e4c9406f15bc59e39b
+      internalID: -1887526195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_283
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 59
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376ab5371c464a94fbeddcfb6322cf49
+      internalID: 1527508763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_284
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 25
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3397183a263a74dab8caa1edb68a13
+      internalID: 440934083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_285
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 80
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb007177e377af4c8923dab2912ee3e
+      internalID: 767597269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_286
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 80
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d50907c0275658438dcfc28a85839bb
+      internalID: -1278848400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_287
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 85
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30865b5856211f74280d5a96ac317f9d
+      internalID: -1007267406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_288
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 31
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c77ebebf140f234b9f105c276155123
+      internalID: -924257789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_289
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 31
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c884f48001876c342bd2c5b9bbe1a235
+      internalID: -2099148819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_290
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 74
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b606e4b4b7116364fae8a6af7772f9d0
+      internalID: -1729602856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_291
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 73
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25ea89e730410b4aa86842cd0ba762a
+      internalID: 185541585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_292
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 15
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df496e06b0bc11438c0147c829b842d
+      internalID: -891609823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_293
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 68
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd4b0593f2dae24b91f7aa9999770e6
+      internalID: -161417828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_294
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 68
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccf3296648515b438b17835714eb0bc
+      internalID: -859406458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_295
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 63
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcda5402c61d8064cb3ad2e2694a1674
+      internalID: -425689393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_296
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d8671a68e35b4468f535676e507456
+      internalID: -1554630730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_297
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 63
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa181c303a66b5548819dcfae301930c
+      internalID: -1860001386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_298
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 7
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2c2d687366eab4c90bcb68b9aa8494
+      internalID: 1612359442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_299
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 56
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cdb77745ac2ff4fa62ee3263bfffd9
+      internalID: -1358883483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_300
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 56
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a38b1f1bb49dad488458ca64bb178b9
+      internalID: 699999644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_301
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 52
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c1419df480071419f8be5e56ecca0c
+      internalID: -962401759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_302
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 47
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5f5eed84611624c8baf6855eb7b289
+      internalID: -940724214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_303
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b686e17b6f1e48c4990e3a4f87755959
+      internalID: -1494081580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_304
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 58
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388d11fe03cd54e488c3caf17d6723a6
+      internalID: 1737936528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_306
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 7
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef2ccb316d91d847acdccc8fe1c86ee
+      internalID: 1601826551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_307
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 44
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a55285203a26df4297b8377d9caec20
+      internalID: -409528097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_308
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 44
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0312434576e1ca4aaeb7b1e45637b11
+      internalID: -1890332423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_309
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 35
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0948677604ac049b27c8c78e449866
+      internalID: -1796947041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_310
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 37
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33560d664c16f2f4eac380452108a1a7
+      internalID: -1054235305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_311
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 12
+        width: 62
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebc345a3e7a8ac4daf8cf31b9acf338
+      internalID: 2094496885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_312
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 60
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebd80ad0f52c534eb63ae30dd7f3728
+      internalID: 410707052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_313
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 32
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd19c3c3cb66ff46aabd1c6d86c30be
+      internalID: -382136520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_314
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 32
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3875dac0c0413cc4791729d6e084e5f8
+      internalID: -1591068714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_315
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 25
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c6b892c9f01b04587d34c37862c066
+      internalID: 2001656781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_316
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 6
+        width: 53
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03ee4abe01b2d447ace4caff7dbb720
+      internalID: 1817460745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_317
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 19
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5562be7191818a542a65a0a6f25ab09f
+      internalID: -876697043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_318
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 19
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d4b26a0c9a46e4f8be3ed30bcb53bf
+      internalID: 185428067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_319
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 20
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcba3b949ab5c848bab1b3a7a14afe3
+      internalID: 443974504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_320
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 20
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd18a11a4feee7a4bb27d3aadf3b088a
+      internalID: 63317177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_321
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 21
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65ca81436cd70e46b42a20e033a82f3
+      internalID: -231191343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_322
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 53
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99a9e6679ac7d04fb38057da242d2bb
+      internalID: 520321025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_323
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 7
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d095f6ac67a8d4091a06db9bf07f5c
+      internalID: -228697114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_324
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 7
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96632a995c6c1546a59e77cef0e07c3
+      internalID: -1787646800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_325
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 8
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604c1b409e86bce4cbd9f37441d1caf0
+      internalID: -1822115569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_326
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 8
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b0baf9c93f18e46be87d67d57b454b
+      internalID: -1161857152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_327
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 9
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc972dff54618c4da12c149e0eebe72
+      internalID: -1254158270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_328
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 11
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25e9d42441d28e47a7f26f8137ac409
+      internalID: -1722607102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_329
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb511deccee398845b0fd9352c80a958
+      internalID: -1259332884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_330
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72095d740d4d71b4690b7c2fed00f428
+      internalID: 284891963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_331
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bf271f62fe2404ca836e822439959c
+      internalID: -200818650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_332
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57ff04f46448ce4390c8c3a03d1518b
+      internalID: 694506696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_333
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 3
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280121f71b254c34fbb98b81ec89fe27
+      internalID: -763133410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_334
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 3
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2ca437a05675c469ef9f8003b6a944
+      internalID: 696912614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map_decos-1_335
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce5952e2a2285f4d9d3317bfc249082
+      internalID: 2133808552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      screen_map_decos-1_0: 185469755
+      screen_map_decos-1_1: -1437119800
+      screen_map_decos-1_10: 220511711
+      screen_map_decos-1_100: 1834191805
+      screen_map_decos-1_101: 582131329
+      screen_map_decos-1_102: 218711165
+      screen_map_decos-1_103: -2107021021
+      screen_map_decos-1_104: -297577475
+      screen_map_decos-1_105: -1721067003
+      screen_map_decos-1_106: -11604521
+      screen_map_decos-1_107: 1870116682
+      screen_map_decos-1_108: 587912031
+      screen_map_decos-1_109: 1863006061
+      screen_map_decos-1_11: -1097033629
+      screen_map_decos-1_110: -1342768739
+      screen_map_decos-1_111: 936836371
+      screen_map_decos-1_112: -287425619
+      screen_map_decos-1_113: 518015017
+      screen_map_decos-1_114: 672881690
+      screen_map_decos-1_115: 1058572320
+      screen_map_decos-1_116: -95475580
+      screen_map_decos-1_117: -964925459
+      screen_map_decos-1_118: 2061519112
+      screen_map_decos-1_119: -635749341
+      screen_map_decos-1_12: 1311994484
+      screen_map_decos-1_120: 1656146172
+      screen_map_decos-1_121: 1717947138
+      screen_map_decos-1_122: -1981637335
+      screen_map_decos-1_123: -1575930141
+      screen_map_decos-1_124: 1510843120
+      screen_map_decos-1_125: -538800258
+      screen_map_decos-1_126: -1475402126
+      screen_map_decos-1_127: -437587454
+      screen_map_decos-1_128: 1286478928
+      screen_map_decos-1_129: -1916443327
+      screen_map_decos-1_13: 2066323128
+      screen_map_decos-1_130: -989424651
+      screen_map_decos-1_131: 2144981115
+      screen_map_decos-1_132: -793720417
+      screen_map_decos-1_133: 1806517256
+      screen_map_decos-1_134: 886508856
+      screen_map_decos-1_135: 1882125417
+      screen_map_decos-1_136: -1950124226
+      screen_map_decos-1_137: 1335111669
+      screen_map_decos-1_138: -1321222689
+      screen_map_decos-1_139: -1622173694
+      screen_map_decos-1_14: -42589596
+      screen_map_decos-1_140: -2075446310
+      screen_map_decos-1_141: 1456138393
+      screen_map_decos-1_142: -1630782718
+      screen_map_decos-1_143: -537476147
+      screen_map_decos-1_144: 934088035
+      screen_map_decos-1_145: 642819848
+      screen_map_decos-1_146: -728517007
+      screen_map_decos-1_147: 1000204068
+      screen_map_decos-1_148: 530744880
+      screen_map_decos-1_149: -806534259
+      screen_map_decos-1_15: -29582135
+      screen_map_decos-1_150: -470243372
+      screen_map_decos-1_151: -1601586126
+      screen_map_decos-1_152: 128841754
+      screen_map_decos-1_153: 607381401
+      screen_map_decos-1_154: 2011713842
+      screen_map_decos-1_155: -39459035
+      screen_map_decos-1_156: 1768603449
+      screen_map_decos-1_157: 581554256
+      screen_map_decos-1_158: 645898716
+      screen_map_decos-1_159: -604441912
+      screen_map_decos-1_16: 601920188
+      screen_map_decos-1_160: 1210962194
+      screen_map_decos-1_161: -1756350558
+      screen_map_decos-1_162: -1492699188
+      screen_map_decos-1_163: -2090043267
+      screen_map_decos-1_164: -1209199904
+      screen_map_decos-1_165: 1804278531
+      screen_map_decos-1_166: -1193014736
+      screen_map_decos-1_167: 148532427
+      screen_map_decos-1_168: -1284713588
+      screen_map_decos-1_169: -1023974816
+      screen_map_decos-1_17: -1385035279
+      screen_map_decos-1_170: -821900556
+      screen_map_decos-1_171: 1469400059
+      screen_map_decos-1_172: -19109910
+      screen_map_decos-1_173: -632979078
+      screen_map_decos-1_174: 1843924949
+      screen_map_decos-1_175: -31320130
+      screen_map_decos-1_176: 939895089
+      screen_map_decos-1_177: -489608845
+      screen_map_decos-1_178: 247276513
+      screen_map_decos-1_179: 776966828
+      screen_map_decos-1_18: 1056507682
+      screen_map_decos-1_180: -2040552354
+      screen_map_decos-1_181: -27296527
+      screen_map_decos-1_182: -788387886
+      screen_map_decos-1_183: -1365783968
+      screen_map_decos-1_184: 1983713240
+      screen_map_decos-1_185: -1128963409
+      screen_map_decos-1_186: 307014498
+      screen_map_decos-1_187: -40584127
+      screen_map_decos-1_188: 1240605278
+      screen_map_decos-1_189: 78515674
+      screen_map_decos-1_19: 1526987733
+      screen_map_decos-1_190: 169506598
+      screen_map_decos-1_191: -252005680
+      screen_map_decos-1_192: -822984307
+      screen_map_decos-1_193: 1899003931
+      screen_map_decos-1_194: 2053425393
+      screen_map_decos-1_195: -1325712202
+      screen_map_decos-1_196: 1575954468
+      screen_map_decos-1_197: -1807537178
+      screen_map_decos-1_198: 1101466650
+      screen_map_decos-1_199: -12398319
+      screen_map_decos-1_2: -1728153541
+      screen_map_decos-1_20: 370303797
+      screen_map_decos-1_200: 1291772942
+      screen_map_decos-1_201: 538484795
+      screen_map_decos-1_202: 827250391
+      screen_map_decos-1_203: 2021721299
+      screen_map_decos-1_204: 1649812851
+      screen_map_decos-1_205: 1571468231
+      screen_map_decos-1_206: -1789169418
+      screen_map_decos-1_207: -257605712
+      screen_map_decos-1_208: 1420662510
+      screen_map_decos-1_209: -892865492
+      screen_map_decos-1_21: -23700041
+      screen_map_decos-1_210: 1558294976
+      screen_map_decos-1_211: 526443428
+      screen_map_decos-1_212: -883616371
+      screen_map_decos-1_213: -964341944
+      screen_map_decos-1_214: -1178316968
+      screen_map_decos-1_215: -762248138
+      screen_map_decos-1_216: 1161182917
+      screen_map_decos-1_217: 341350852
+      screen_map_decos-1_218: -2029557228
+      screen_map_decos-1_219: 2062775682
+      screen_map_decos-1_22: -42860223
+      screen_map_decos-1_220: 362511346
+      screen_map_decos-1_221: -1127559823
+      screen_map_decos-1_222: 216186237
+      screen_map_decos-1_223: 1030372623
+      screen_map_decos-1_224: -1836170027
+      screen_map_decos-1_225: -1397228008
+      screen_map_decos-1_226: -687124365
+      screen_map_decos-1_227: -599210707
+      screen_map_decos-1_228: -1198317486
+      screen_map_decos-1_229: -1013919184
+      screen_map_decos-1_23: -248568202
+      screen_map_decos-1_230: 905911827
+      screen_map_decos-1_231: 984354873
+      screen_map_decos-1_232: -396263804
+      screen_map_decos-1_233: 507921911
+      screen_map_decos-1_234: 1566011366
+      screen_map_decos-1_235: 1416367518
+      screen_map_decos-1_236: -1676349179
+      screen_map_decos-1_237: 1549892042
+      screen_map_decos-1_238: -1270308715
+      screen_map_decos-1_239: 702947701
+      screen_map_decos-1_24: -1557599590
+      screen_map_decos-1_240: -480752799
+      screen_map_decos-1_241: 741766403
+      screen_map_decos-1_242: 450620920
+      screen_map_decos-1_243: -253347571
+      screen_map_decos-1_244: -844936547
+      screen_map_decos-1_245: 8429435
+      screen_map_decos-1_246: -632595223
+      screen_map_decos-1_247: -1258948086
+      screen_map_decos-1_248: 587530173
+      screen_map_decos-1_249: -1970533413
+      screen_map_decos-1_25: -1419675676
+      screen_map_decos-1_250: -1004531627
+      screen_map_decos-1_251: -443921663
+      screen_map_decos-1_252: 562570805
+      screen_map_decos-1_253: 794699515
+      screen_map_decos-1_254: 754295453
+      screen_map_decos-1_255: -973760157
+      screen_map_decos-1_256: -1157926733
+      screen_map_decos-1_257: 1184517246
+      screen_map_decos-1_258: 769949130
+      screen_map_decos-1_259: 287568922
+      screen_map_decos-1_26: -846953662
+      screen_map_decos-1_260: 1758077585
+      screen_map_decos-1_261: -426820587
+      screen_map_decos-1_262: 1422244587
+      screen_map_decos-1_263: -922992082
+      screen_map_decos-1_264: 998465627
+      screen_map_decos-1_265: -477380817
+      screen_map_decos-1_266: 1227009325
+      screen_map_decos-1_267: -909185043
+      screen_map_decos-1_268: -379368394
+      screen_map_decos-1_269: -32820843
+      screen_map_decos-1_27: -325191921
+      screen_map_decos-1_270: 495259851
+      screen_map_decos-1_271: -633882312
+      screen_map_decos-1_272: -715632112
+      screen_map_decos-1_273: 826884149
+      screen_map_decos-1_274: -1683629293
+      screen_map_decos-1_275: -1884391920
+      screen_map_decos-1_276: 2114838840
+      screen_map_decos-1_277: 220894108
+      screen_map_decos-1_278: -1653814739
+      screen_map_decos-1_279: 556590100
+      screen_map_decos-1_28: -119086373
+      screen_map_decos-1_280: -1403249432
+      screen_map_decos-1_281: -580645711
+      screen_map_decos-1_282: -1887526195
+      screen_map_decos-1_283: 1527508763
+      screen_map_decos-1_284: 440934083
+      screen_map_decos-1_285: 767597269
+      screen_map_decos-1_286: -1278848400
+      screen_map_decos-1_287: -1007267406
+      screen_map_decos-1_288: -924257789
+      screen_map_decos-1_289: -2099148819
+      screen_map_decos-1_29: -1406916801
+      screen_map_decos-1_290: -1729602856
+      screen_map_decos-1_291: 185541585
+      screen_map_decos-1_292: -891609823
+      screen_map_decos-1_293: -161417828
+      screen_map_decos-1_294: -859406458
+      screen_map_decos-1_295: -425689393
+      screen_map_decos-1_296: -1554630730
+      screen_map_decos-1_297: -1860001386
+      screen_map_decos-1_298: 1612359442
+      screen_map_decos-1_299: -1358883483
+      screen_map_decos-1_3: -2122327452
+      screen_map_decos-1_30: -1247549618
+      screen_map_decos-1_300: 699999644
+      screen_map_decos-1_301: -962401759
+      screen_map_decos-1_302: -940724214
+      screen_map_decos-1_303: -1494081580
+      screen_map_decos-1_304: 1737936528
+      screen_map_decos-1_305: -916461539
+      screen_map_decos-1_306: 1601826551
+      screen_map_decos-1_307: -409528097
+      screen_map_decos-1_308: -1890332423
+      screen_map_decos-1_309: -1796947041
+      screen_map_decos-1_31: 1952905944
+      screen_map_decos-1_310: -1054235305
+      screen_map_decos-1_311: 2094496885
+      screen_map_decos-1_312: 410707052
+      screen_map_decos-1_313: -382136520
+      screen_map_decos-1_314: -1591068714
+      screen_map_decos-1_315: 2001656781
+      screen_map_decos-1_316: 1817460745
+      screen_map_decos-1_317: -876697043
+      screen_map_decos-1_318: 185428067
+      screen_map_decos-1_319: 443974504
+      screen_map_decos-1_32: -2146652272
+      screen_map_decos-1_320: 63317177
+      screen_map_decos-1_321: -231191343
+      screen_map_decos-1_322: 520321025
+      screen_map_decos-1_323: -228697114
+      screen_map_decos-1_324: -1787646800
+      screen_map_decos-1_325: -1822115569
+      screen_map_decos-1_326: -1161857152
+      screen_map_decos-1_327: -1254158270
+      screen_map_decos-1_328: -1722607102
+      screen_map_decos-1_329: -1259332884
+      screen_map_decos-1_33: -1693019462
+      screen_map_decos-1_330: 284891963
+      screen_map_decos-1_331: -200818650
+      screen_map_decos-1_332: 694506696
+      screen_map_decos-1_333: -763133410
+      screen_map_decos-1_334: 696912614
+      screen_map_decos-1_335: 2133808552
+      screen_map_decos-1_34: 1723415574
+      screen_map_decos-1_35: -545695987
+      screen_map_decos-1_36: -569638150
+      screen_map_decos-1_37: 979323558
+      screen_map_decos-1_38: -1121830578
+      screen_map_decos-1_39: -595168187
+      screen_map_decos-1_4: -1827177854
+      screen_map_decos-1_40: -1020607310
+      screen_map_decos-1_41: 1829631392
+      screen_map_decos-1_42: -999355235
+      screen_map_decos-1_43: -660551830
+      screen_map_decos-1_44: 835547568
+      screen_map_decos-1_45: 1551793636
+      screen_map_decos-1_46: -107400497
+      screen_map_decos-1_47: -1878723110
+      screen_map_decos-1_48: 971132089
+      screen_map_decos-1_49: 136665519
+      screen_map_decos-1_5: 200539413
+      screen_map_decos-1_50: 1882139037
+      screen_map_decos-1_51: 901407294
+      screen_map_decos-1_52: -250102852
+      screen_map_decos-1_53: -348330496
+      screen_map_decos-1_54: 1271746404
+      screen_map_decos-1_55: 1645418581
+      screen_map_decos-1_56: -272121787
+      screen_map_decos-1_57: -1570902653
+      screen_map_decos-1_58: -122485747
+      screen_map_decos-1_59: -61273517
+      screen_map_decos-1_6: -875486444
+      screen_map_decos-1_60: -1553891211
+      screen_map_decos-1_61: -1808268169
+      screen_map_decos-1_62: 1923732598
+      screen_map_decos-1_63: -776045091
+      screen_map_decos-1_64: 934848936
+      screen_map_decos-1_65: 136344031
+      screen_map_decos-1_66: -688135112
+      screen_map_decos-1_67: -465282911
+      screen_map_decos-1_68: -534484287
+      screen_map_decos-1_69: -1452166431
+      screen_map_decos-1_7: 1999291204
+      screen_map_decos-1_70: 1560058837
+      screen_map_decos-1_71: -452332472
+      screen_map_decos-1_72: -1599304885
+      screen_map_decos-1_73: 453027203
+      screen_map_decos-1_74: -1660081736
+      screen_map_decos-1_75: 1355305155
+      screen_map_decos-1_76: -1133133489
+      screen_map_decos-1_77: 356433781
+      screen_map_decos-1_78: 10209679
+      screen_map_decos-1_79: -445058175
+      screen_map_decos-1_8: 1149068966
+      screen_map_decos-1_80: 1098868543
+      screen_map_decos-1_81: -1454607858
+      screen_map_decos-1_82: -107717115
+      screen_map_decos-1_83: -761745082
+      screen_map_decos-1_84: 988816347
+      screen_map_decos-1_85: 788757908
+      screen_map_decos-1_86: -878097432
+      screen_map_decos-1_87: -584898892
+      screen_map_decos-1_88: -1768645917
+      screen_map_decos-1_89: 1642749294
+      screen_map_decos-1_9: 1680052145
+      screen_map_decos-1_90: -1497551245
+      screen_map_decos-1_91: -1919578918
+      screen_map_decos-1_92: -792369364
+      screen_map_decos-1_93: 1971292581
+      screen_map_decos-1_94: -642231633
+      screen_map_decos-1_95: 127861824
+      screen_map_decos-1_96: -179056186
+      screen_map_decos-1_97: -1662987440
+      screen_map_decos-1_98: -2035660931
+      screen_map_decos-1_99: -486767289
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

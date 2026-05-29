@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a062da0c5a38d25479d5ee443ef789c7, type: 3}
+  m_Name: ArtilleryTowerLv1
+  m_EditorClassIdentifier: 
+  castleName: Artillery
+  description: "Tr\u1EE5 b\u1EAFn bom"
+  maxHealth: 100
+  startGold: 125
+  icon: {fileID: 0}
+  visualPrefab: {fileID: 0}
+  upgradeCost: 220
+  nextLevel: {fileID: 11400000}
+  damage: 21
+  attackSpeed: 1.5
+  attackRange: 3
+  arrowArcHeight: 1
+  heroPositionList:
+  - {x: -0.058, y: 0.584, z: 0}
+  - {x: -0.021, y: 0.406, z: 0}
+  animationTower: tower_artillery_lvl1_layer4_
+  frameTowerStartIdle: 1
+  frameTowerEndIdle: 1
+  frameTowerStartAttack: 12
+  frameTowerEndAttack: 16
+  animationHero: 
+  frameHeroStartIdleUp: 0
+  frameHeroEndIdleUp: 0
+  frameHeroStartIdleDown: 0
+  frameHeroEndIdleDown: 0
+  frameHeroStartAttackUp: 0
+  frameHeroEndAttackUp: 0
+  frameHeroStartAttackDown: 0
+  frameHeroEndAttackDown: 0
+  heroBombAnim:
+  - nameAnimation: tower_artillery_lvl1_layer2_
+    startFrame: 1
+    endFrame: 1
+  - nameAnimation: tower_artillery_lvl1_layer2_
+    startFrame: 1
+    endFrame: 4
+  - nameAnimation: tower_artillery_lvl1_layer3_
+    startFrame: 1
+    endFrame: 1
+  - nameAnimation: tower_artillery_lvl1_layer3_
+    startFrame: 2
+    endFrame: 12
+  positionSmoke: {x: 0.043, y: 1.141, z: 0}
+  smokeAnim:
+    nameAnimation: tower_artillery_lvl1_layer5_
+    startFrame: 1
+    endFrame: 24

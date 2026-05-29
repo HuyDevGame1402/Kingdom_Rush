@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6232ca68a59a2549a0247198624f127, type: 3}
+  m_Name: go_enemies_grass_lv2
+  m_EditorClassIdentifier: 
+  unitName: go_enemies_grass
+  unitType: 3
+  description: "Qu\xE1i c\u01A1 b\u1EA3n lv2\n"
+  maxHealth: 35
+  moveSpeed: 0.25
+  armor: 0
+  magicResistance: 0
+  minDamage: 2
+  maxDamage: 4
+  attackRange: 0.5
+  attackCooldown: 1.5
+  animations:
+    animPrefix: orc_
+    frameRate: 0.04
+    idle:
+      startFrame: 67
+      endFrame: 67
+      hasEvent: 0
+      eventFrame: -1
+    run:
+      startFrame: 1
+      endFrame: 22
+      hasEvent: 0
+      eventFrame: -1
+    runDown:
+      startFrame: 45
+      endFrame: 66
+      hasEvent: 0
+      eventFrame: -1
+    runUp:
+      startFrame: 23
+      endFrame: 44
+      hasEvent: 0
+      eventFrame: -1
+    attack:
+      startFrame: 67
+      endFrame: 77
+      hasEvent: 0
+      eventFrame: -1
+    death:
+      startFrame: 101
+      endFrame: 115
+      hasEvent: 0
+      eventFrame: -1
+    skill:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a062da0c5a38d25479d5ee443ef789c7, type: 3}
+  m_Name: MageTowerLv1
+  m_EditorClassIdentifier: 
+  castleName: Mage
+  description: "Tr\u1EE5 b\u1EAFn \u0111\u1EA1n ph\xE1p s\u01B0"
+  maxHealth: 100
+  startGold: 100
+  icon: {fileID: 737183986, guid: a7d9fe02439edd846a450f2783746382, type: 3}
+  visualPrefab: {fileID: 0}
+  upgradeCost: 160
+  nextLevel: {fileID: 11400000}
+  damage: 15
+  attackSpeed: 2
+  attackRange: 2.5
+  arrowArcHeight: 1.5
+  heroPositionList:
+  - {x: 0.029, y: 0.863, z: 0}
+  animationTower: mage_lvl1_
+  frameTowerStartIdle: 1
+  frameTowerEndIdle: 1
+  frameTowerStartAttack: 2
+  frameTowerEndAttack: 12
+  animationHero: mage_shooter_
+  frameHeroStartIdleUp: 16
+  frameHeroEndIdleUp: 16
+  frameHeroStartIdleDown: 1
+  frameHeroEndIdleDown: 1
+  frameHeroStartAttackUp: 17
+  frameHeroEndAttackUp: 31
+  frameHeroStartAttackDown: 2
+  frameHeroEndAttackDown: 15

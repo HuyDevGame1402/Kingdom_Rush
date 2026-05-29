@@ -1,0 +1,1528 @@
+fileFormatVersion: 2
+guid: fd78073f9ba750246814d050e765fa10
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: screen_slots-1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1402
+        width: 1386
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100fa04f8c9288a48a7a726c4a614bd6
+      internalID: -2139673423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_1
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1493
+        width: 593
+        height: 549
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1905a1f62068b7044a2dafb549a83b95
+      internalID: 1651929887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_2
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1949
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea24033d1931b346922ba7f5bb8122b
+      internalID: 92223612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_3
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1946
+        width: 23
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2e38c2e83e7dc4eaa85aa224d1ce91
+      internalID: 1934755303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_4
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1899
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced2ad2862889974988a642f681c722a
+      internalID: -1962032679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_5
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1847
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c4ffd4c74cab246b0009c42a1f202d
+      internalID: -161220355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_6
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1795
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4b38ea52858ab4994400330ff92515
+      internalID: -1366795495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_7
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1750
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3cd7f12c73c634983669b31ee3f942
+      internalID: -2088346575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_16
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 1419
+        width: 316
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d628ce82340944947acac54dff0198a0
+      internalID: 816336222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_17
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1419
+        width: 316
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771c99b2ba1c30c4ea734940ce91ef4b
+      internalID: 1481631322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 803
+        width: 900
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83635e63d2692d34a9b6d650c2c5cc22
+      internalID: -2093000765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_20
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1035
+        width: 527
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47607533081fdd3448a5dc168b54f3ce
+      internalID: 1264712168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_21
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1235
+        width: 445
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55dc6e6b37a78d94fb66e7a30eab96a2
+      internalID: -1379697759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_26
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1179
+        width: 264
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2447069736a4884f926f3b046f60a0c
+      internalID: -2135199954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_27
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1131
+        width: 188
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06c8499b3d22ac42913cd096bc2b6d9
+      internalID: -841079607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_31
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1123
+        width: 264
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a3d1fbaf4324e4483f9b91586b1582
+      internalID: 1347828442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_32
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1039
+        width: 149
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b645c6e6b8badf4c93484531643c929
+      internalID: 2056270179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_34
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1035
+        width: 75
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217ed240cdab0dd439c6800df590491a
+      internalID: -1709210218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_35
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1048
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee895f200f81a4478b84d889663a364
+      internalID: -1271685338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_36
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1048
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beb9e7fc5e3e894cb587ad0cf720d56
+      internalID: -365784115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_45
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 863
+        width: 185
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91340f7f87286d4cacb392f2cb6379d
+      internalID: 81042643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_46
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 863
+        width: 186
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9056efae50bd240b3a0a51e82a339c
+      internalID: 1713962409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_47
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 863
+        width: 186
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46a5667fe132094693691c4303247e8
+      internalID: -363874034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_48
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 863
+        width: 186
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7febd09f3fe8cfc47a18bf4ba32e2f8f
+      internalID: -818063991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_52
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 683
+        width: 186
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40589aed84f253746861390eea884317
+      internalID: 1838299116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_58
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 767
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef3bdc619bb91742ad85a1300f0c105
+      internalID: -2000792832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_59
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 760
+        width: 93
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bc43ee6e3c96f41940e696adca007a
+      internalID: 1894127418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_61
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 798
+        width: 71
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d3290d477caee449124daee9a55878
+      internalID: 1449649380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_62
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 787
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd5fd34225d87e49bfe592570637a93
+      internalID: 863353987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_63
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 789
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f9301b9b9e5924293236357ee1af9c
+      internalID: 1309716939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_66
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 323
+        width: 835
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cbe026ab77e3f4483ec47ec7c17e1f
+      internalID: 1352088606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_67
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 740
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7f715671c23124f9da69cb2e0fd7ef
+      internalID: 1429159064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_68
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 734
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24908170f58b349488a62878925aa011
+      internalID: -211279844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_69
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 711
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92be1cffd8e6e74eb5535e4af72f4d1
+      internalID: -1262159872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_70
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 715
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e93d89327b3a241b69f20871e87af7
+      internalID: 1674280519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_71
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 771
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9f9609f5ed16d4db3da929533d74e6
+      internalID: -1234570820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_72
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 679
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef5ca7040c091d4d881d12442d53ef8
+      internalID: -36924473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_74
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 705
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7324caaddd811c4b82a4c25673721dc
+      internalID: 1106647883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_78
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 622
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4af5b2a03b3e54a91d87fed11029f0
+      internalID: 1242496188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_79
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 511
+        width: 186
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbf6d9e302791340a80114428fd50c1
+      internalID: 2048832078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_86
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 542
+        width: 87
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dbac78c15d085448bd9e0d2274fa92
+      internalID: -596899898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_87
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 565
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859d7843784109249a28aacd5362f03a
+      internalID: 205773351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_88
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 503
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19ad3c6adf60354892675856eddfe85
+      internalID: -1210496632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_89
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 339
+        width: 186
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c005b3d01c053644da79deff60bd2727
+      internalID: -159378046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_91
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 478
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91429b5270eb574f9bb1740e5ff6bcd
+      internalID: -1855588096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_92
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 441
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a669a509da4124c4694bdbbddd6a5bcd
+      internalID: 1323212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_97
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 415
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be74e1d152b1f34fa42e5b75ea10d58
+      internalID: -154754305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_101
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 278
+        width: 145
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8730354d2c50a3c40bfac1fa4e7b76ce
+      internalID: 256968670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_102
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 204
+        width: 107
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec388ac5dce9443b83440791d2b310
+      internalID: -1629200858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_103
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 354
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70d923f1c93d5f4ab1183cb95be6812
+      internalID: -18332811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_106
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 167
+        width: 186
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334553e2712e3fa4da9203df4d9be1ac
+      internalID: 871213469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_108
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 165
+        width: 498
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771ecba94db1b3346a618c70ad466aaa
+      internalID: -39241173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_109
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 260
+        width: 305
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4093f5408faae419c6a651aef0a19c
+      internalID: 1736742529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_110
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 261
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edcf612dc899d24695906d5f8c2293b
+      internalID: -1144406920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_113
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 142
+        width: 295
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5685f0bface3d8b4386b811afbf5629f
+      internalID: 1827388355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_114
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 164
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 24, z: 23, w: 24}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1265fea402b2414d8f68979c427d9ed
+      internalID: 1212951714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_117
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7
+        width: 498
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1c681b1929b3448ac980935beaec6c
+      internalID: -1541288154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_118
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 34
+        width: 289
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247a701c4f35ca84997b69116947a99d
+      internalID: -168661483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_119
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 42
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ccb6771e2bddf4d97d88a8c5e3b568
+      internalID: 807234362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_123
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 35
+        width: 117
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987876f08eb93384cad7732ce18180d5
+      internalID: 68334671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_slots-1_127
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 82
+        width: 38
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9f143881f44946b9df52c6de201cc
+      internalID: 401712802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      screen_slots-1_0: -2139673423
+      screen_slots-1_1: 1651929887
+      screen_slots-1_10: -802678220
+      screen_slots-1_100: -736448675
+      screen_slots-1_101: 256968670
+      screen_slots-1_102: -1629200858
+      screen_slots-1_103: -18332811
+      screen_slots-1_104: 137370840
+      screen_slots-1_105: 498308476
+      screen_slots-1_106: 871213469
+      screen_slots-1_107: -380681137
+      screen_slots-1_108: -39241173
+      screen_slots-1_109: 1736742529
+      screen_slots-1_11: 1291901506
+      screen_slots-1_110: -1144406920
+      screen_slots-1_111: -1574051219
+      screen_slots-1_112: 1380476297
+      screen_slots-1_113: 1827388355
+      screen_slots-1_114: 1212951714
+      screen_slots-1_115: -1602475733
+      screen_slots-1_116: -669688018
+      screen_slots-1_117: -1541288154
+      screen_slots-1_118: -168661483
+      screen_slots-1_119: 807234362
+      screen_slots-1_12: -765097832
+      screen_slots-1_120: 133514913
+      screen_slots-1_121: 1860200522
+      screen_slots-1_122: -2036932256
+      screen_slots-1_123: 68334671
+      screen_slots-1_124: -370210306
+      screen_slots-1_125: -1259436190
+      screen_slots-1_126: 827066583
+      screen_slots-1_127: 401712802
+      screen_slots-1_128: -1796432303
+      screen_slots-1_129: 624919260
+      screen_slots-1_13: -818950798
+      screen_slots-1_130: 1435629344
+      screen_slots-1_131: 469646606
+      screen_slots-1_132: 745213126
+      screen_slots-1_14: -1774151515
+      screen_slots-1_15: 2023846898
+      screen_slots-1_16: 816336222
+      screen_slots-1_17: 1481631322
+      screen_slots-1_18: 1053705137
+      screen_slots-1_19: -2093000765
+      screen_slots-1_2: 92223612
+      screen_slots-1_20: 1264712168
+      screen_slots-1_21: -1379697759
+      screen_slots-1_22: 1084748133
+      screen_slots-1_23: 1383031467
+      screen_slots-1_24: 934894853
+      screen_slots-1_25: -1593608559
+      screen_slots-1_26: -2135199954
+      screen_slots-1_27: -841079607
+      screen_slots-1_28: -280999660
+      screen_slots-1_29: 1546129304
+      screen_slots-1_3: 1934755303
+      screen_slots-1_30: -1325487236
+      screen_slots-1_31: 1347828442
+      screen_slots-1_32: 2056270179
+      screen_slots-1_33: 248781877
+      screen_slots-1_34: -1709210218
+      screen_slots-1_35: -1271685338
+      screen_slots-1_36: -365784115
+      screen_slots-1_37: -930602959
+      screen_slots-1_38: 1373687940
+      screen_slots-1_39: -965433397
+      screen_slots-1_4: -1962032679
+      screen_slots-1_40: 1407545202
+      screen_slots-1_41: 758329282
+      screen_slots-1_42: -2098271762
+      screen_slots-1_43: 413705339
+      screen_slots-1_44: -1637007854
+      screen_slots-1_45: 81042643
+      screen_slots-1_46: 1713962409
+      screen_slots-1_47: -363874034
+      screen_slots-1_48: -818063991
+      screen_slots-1_49: 1838878579
+      screen_slots-1_5: -161220355
+      screen_slots-1_50: 976435010
+      screen_slots-1_51: 1646316177
+      screen_slots-1_52: 1838299116
+      screen_slots-1_53: -1450212335
+      screen_slots-1_54: -727413185
+      screen_slots-1_55: 2125309871
+      screen_slots-1_56: -433850796
+      screen_slots-1_57: -760630490
+      screen_slots-1_58: -2000792832
+      screen_slots-1_59: 1894127418
+      screen_slots-1_6: -1366795495
+      screen_slots-1_60: -1791456564
+      screen_slots-1_61: 1449649380
+      screen_slots-1_62: 863353987
+      screen_slots-1_63: 1309716939
+      screen_slots-1_64: 1197126159
+      screen_slots-1_65: 1648556274
+      screen_slots-1_66: 1352088606
+      screen_slots-1_67: 1429159064
+      screen_slots-1_68: -211279844
+      screen_slots-1_69: -1262159872
+      screen_slots-1_7: -2088346575
+      screen_slots-1_70: 1674280519
+      screen_slots-1_71: -1234570820
+      screen_slots-1_72: -36924473
+      screen_slots-1_73: 710649716
+      screen_slots-1_74: 1106647883
+      screen_slots-1_75: -123364125
+      screen_slots-1_76: 370451648
+      screen_slots-1_77: 740166444
+      screen_slots-1_78: 1242496188
+      screen_slots-1_79: 2048832078
+      screen_slots-1_8: 1796233904
+      screen_slots-1_80: 1254403102
+      screen_slots-1_81: 1736699880
+      screen_slots-1_82: 1181084371
+      screen_slots-1_83: 1408736588
+      screen_slots-1_84: -155159181
+      screen_slots-1_85: -1881882327
+      screen_slots-1_86: -596899898
+      screen_slots-1_87: 205773351
+      screen_slots-1_88: -1210496632
+      screen_slots-1_89: -159378046
+      screen_slots-1_9: -858366547
+      screen_slots-1_90: 814136432
+      screen_slots-1_91: -1855588096
+      screen_slots-1_92: 1323212
+      screen_slots-1_93: -916880548
+      screen_slots-1_94: 1374700600
+      screen_slots-1_95: 1357967901
+      screen_slots-1_96: 648617770
+      screen_slots-1_97: -154754305
+      screen_slots-1_98: -283722782
+      screen_slots-1_99: -852353590
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,6071 @@
+fileFormatVersion: 2
+guid: 0982bbde7d3022941804a4a1a665caea
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: screen_map-2_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1534
+        width: 294
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f61e0dc44ac304c98303533db43bc6
+      internalID: -182152791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1927
+        width: 167
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7193623a07fbe478e3bc2f5c0a1b7d
+      internalID: -1972743075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1936
+        width: 160
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f593f81e0a1ba459841159bf53e5fe
+      internalID: -1603949369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_3
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1934
+        width: 155
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db17bc8230b2f6a489e3abe84c4a235f
+      internalID: -253008762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_4
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1929
+        width: 147
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892fc75f7b19637449dcf217d0ec5611
+      internalID: -908561050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1956
+        width: 145
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6a57bd9b345884cbf69d187d6b2965
+      internalID: -1121072335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_6
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1939
+        width: 139
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dba6ad2c4d96849b76a036f5f1ba2c
+      internalID: -177406873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_7
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1940
+        width: 139
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79019c5fa149f545a421298a98f4e67
+      internalID: -417210513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_8
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1947
+        width: 127
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89308a9ef9e7c74d854f304b98e4d0f
+      internalID: -1661816929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_9
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1970
+        width: 126
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac50e6d203cb0849844cb1602537501
+      internalID: -728020169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_10
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1972
+        width: 126
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bca6231dcdbc9459fd92972b67b0ef
+      internalID: -1218112156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_11
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1929
+        width: 125
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75325f328d9c2a548b609b5dff5613a8
+      internalID: 897856924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_12
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1934
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1711f2940b6d78643b5ced1c828337b3
+      internalID: -894990982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_13
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1927
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dd5aa595164e14da577b15a975cc8a
+      internalID: -116181893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_14
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1928
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69a9529d17f3c447b33f23617ee3cb2
+      internalID: -1926767005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_15
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1928
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c910e7ea51a167d43bea21c2fbf4e165
+      internalID: 1272549153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_16
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1757
+        width: 164
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c46e1db4036c784892921b16e419ae4
+      internalID: -1387209809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_17
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1761
+        width: 164
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24df7bad888be9b40b8ed662c2cf31a3
+      internalID: 1308470398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_18
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1797
+        width: 156
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc59c09f981f324e95ef0e8258da21b
+      internalID: -136180614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_19
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1789
+        width: 151
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9c75b8ddbb66e49acf5b01207d272b
+      internalID: -1970780216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_20
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1793
+        width: 145
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d9921e4ac5b7441abbd4e1d6353f08
+      internalID: -684607652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_21
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1774
+        width: 141
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9332c8504bce244b474b049def0051
+      internalID: -235041671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_22
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1800
+        width: 129
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2effca750abdb464bb11290946680538
+      internalID: 348324209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_23
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1800
+        width: 129
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51b8c9718c5c2347b8a4a0fefe76093
+      internalID: -760946937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_24
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1800
+        width: 129
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d2f43d1db517f459ddd112133a9a7c
+      internalID: -1064666846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_25
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1777
+        width: 115
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dacc63c6c555ad4ea37229554846aa5
+      internalID: 2069706936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_26
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1777
+        width: 115
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fa67cef4e790745b4d537cf663c403
+      internalID: 1095987924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_27
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 1779
+        width: 112
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df413bb420374d2459c1518274a35ffe
+      internalID: 1502574661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_28
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1496
+        width: 122
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1930fd10f2a8c4eb282c97a5d527d4
+      internalID: -558831570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_29
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1610
+        width: 110
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5ddcfac04198c4f8130a8e9a8e28ff
+      internalID: 1550880176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_30
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1610
+        width: 110
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1830313f67f9554e9d93e6b93819126
+      internalID: 1873901282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_31
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1610
+        width: 109
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332b47a6690fc2d4ea06072bbd557254
+      internalID: 1992245276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_32
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1610
+        width: 109
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8faee81612067844aedc3cdd7586391
+      internalID: -1233338736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_33
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1612
+        width: 108
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fa71260985cdd498f3b95e69ddb52d
+      internalID: 265045860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_34
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1611
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6eda42fbeb9549419f1b798f05aa6cd
+      internalID: 209846368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_35
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1612
+        width: 107
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80909a7ec1e0d6f47af23f5be5b755e0
+      internalID: 1399035833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_36
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1611
+        width: 106
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fefeeefc3a35f6428e156e28189b2ad
+      internalID: -803575817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_37
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1615
+        width: 105
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49dd78e41b1d524eb55381b7cacf180
+      internalID: -374098905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_38
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 1616
+        width: 105
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8899983d646f16f4880186e4bd3803df
+      internalID: -280039395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_39
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1694
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c30e394dc66b0439300d445d61f509
+      internalID: -208736130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_40
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1692
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5a7b32047d0ce45a961edac94956e0
+      internalID: 35643720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_41
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1695
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf191a7a467dcf84d94015237e43292f
+      internalID: -1258788746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_42
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1693
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24010328cbcdec5498bad2a8566c7dfc
+      internalID: 1757807390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_43
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1621
+        width: 98
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f1f3e1b69de1a418cbe7c627e00460
+      internalID: -1027959998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_44
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1622
+        width: 98
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a516dcb02d4222d459c5bc902141908d
+      internalID: -62876349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_45
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1691
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b3ccd4057d6b4419223cf0dcb4e7a7
+      internalID: -2047245070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_46
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1629
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e121560d8bcca4a81abb2486c25e51
+      internalID: -407315814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_47
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1628
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eb3ad974383e14dbf883095ac6bb2f
+      internalID: -1767032590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_48
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1610
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13c02483b3ebca45b61d64f4d115e40
+      internalID: -1730801670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_49
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1644
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed240d48d9225d47a218ca1738c20bb
+      internalID: 574212819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_50
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1426
+        width: 203
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb68dd32314e7f499e8b457b02f315e
+      internalID: -892504966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_51
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1440
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8daac3f440d1449b547433fa09ff68
+      internalID: 2018565488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_52
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1444
+        width: 107
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221df440aecddb94e970982964ca3af4
+      internalID: -45467024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_53
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1507
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ac5213fe5d94a4383ac7efe771bd54
+      internalID: -2138467757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_54
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1514
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c957b2e0dddb37d4aae8e066a2f65cc6
+      internalID: -2011645503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_55
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1514
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03ec602795fd8e41aa1339b9cbe935c
+      internalID: -2072046830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_56
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909d35fc68f614d488cdbd2092583a24
+      internalID: -2096545286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_57
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc4f9c9f2880c14d98720a7d9bfb42b
+      internalID: -1791901572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_58
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c65eda38e43a248896ad4a62311580
+      internalID: 255825220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_59
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4866311b86264074bb21b955ee344c68
+      internalID: -1467367739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_60
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668fabf60bfc93c44825f1e2881dcf9f
+      internalID: -1753309166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_61
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04eb51585062874f9e0aa859a13943d
+      internalID: 1344983273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_62
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376edfbfcdc68f84880808c0c2240b95
+      internalID: -854219785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_63
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc368c4af378c14faabdd1ccf4795ff
+      internalID: -340048424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_64
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc412b686bb713449d6e421c58a6c60
+      internalID: 239454902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_65
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aeb114b234db5946a34c2251e4c38c2
+      internalID: -1105477828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_66
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fd146d4f5dd2d439e19522894ddfcf
+      internalID: 1117893850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_67
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1518
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb2105498540df4e895cbc7b5877f7c
+      internalID: 1465966311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_68
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 1508
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3a0a4679887184bb98d3212a23810f
+      internalID: -669235241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_69
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1223
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adb84b00c69a624cb896b16ab6e5b09
+      internalID: -1808970346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_70
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1298
+        width: 91
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2650a3b33c37fe141b715964b39c199f
+      internalID: 1383518719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_71
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1235
+        width: 122
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fc900187e400c478650a58544c71b1
+      internalID: -509854161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_72
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1296
+        width: 105
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baf258451195d64baed894f265b2be4
+      internalID: -1238218991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_73
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1356
+        width: 95
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898d7e604cc5146499f6a0b67e018786
+      internalID: 1177822902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_74
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83133d3255443445b2caf7b242640cd
+      internalID: -646228827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_75
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15a316d88e3f1f41815f899d9f7e1b5
+      internalID: -2024895013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_76
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e21b111319b7746aeb427ea33a492b
+      internalID: 733757242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_77
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10a22032fc966148b2bdee2b9fbb6cb
+      internalID: 734367287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_78
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13eaecad450f4414eb4e81a6acb9324f
+      internalID: -1576189979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_79
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc69eb4e254c8744b64bffc3cd174d9
+      internalID: -834044119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_80
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ac48779e38dca41b69db6157b6f512
+      internalID: 954058781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_81
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bee2f43ff58904591b090164680126
+      internalID: -143820591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_82
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9a7b6234de7cb459b00198079794d0
+      internalID: -1603674081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_83
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7494a5995c3abde4ea30dc6739ae077c
+      internalID: -1153274789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_84
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f368e76d3b49d64fbca296f108f774b
+      internalID: 192802906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_85
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5189430c5d470e2449c491ed39109cf0
+      internalID: -937020941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_86
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a3003401f472c439cc52f9d5eb0b64
+      internalID: -247169217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_87
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1415
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ef774c55e5577448b993f39ed886b5
+      internalID: 138956189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_88
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1415
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef631d8fc9b8f94a8252cb7c6f89a9f
+      internalID: 1367957632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_89
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1205
+        width: 95
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d24fcb66148af04c81dcf7401375302
+      internalID: -1021805756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_90
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa63986f35f980e488ae945e8c08faf5
+      internalID: -255239175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_91
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce15c15491b34c243b0274371e8b90aa
+      internalID: -555312501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_92
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06525a34d089c3a4bb7638f531a1eb96
+      internalID: -1598981479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_93
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e2a9fb9c0e671418769fa2df4c31f5
+      internalID: 1582719029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_94
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e916a88d1aa75aa468a872af4e51d85d
+      internalID: 1160750141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_95
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a2a7941600ebb46bb5e88fa817b53a
+      internalID: -1501937737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_96
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb298cc2a82819144b4655894aa823f4
+      internalID: -934349511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_97
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3337cc8823aafc4ca4b76edf59958c4
+      internalID: -1396281720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_98
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1201c664be87877429bedef03c86adec
+      internalID: -2957777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_99
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff3a40d99360f24ea828ba1f46aa1d4
+      internalID: -1788233503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_100
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd58458cf75072f428ec8f31f2749bcc
+      internalID: -1906468011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_101
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d382f6ffd4f6bc04dbb3dec91b1cabce
+      internalID: 1879885844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_102
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354557d0bc0e2c74cb04396a78bdd194
+      internalID: 77980599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_103
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1323
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13148371a017645419c55d36a7af433c
+      internalID: 1015000232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_104
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1323
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a972016b6d45c40b4d50ee98aaa397
+      internalID: -1697630030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_105
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1224
+        width: 78
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451a8407bb313c14fb829933d742718a
+      internalID: 1480870689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_106
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1147
+        width: 104
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a7bddddd82db14882b778fb66289e1
+      internalID: 1972924521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_107
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1231
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f495bbc959b6a11458b5f0314becefbb
+      internalID: -1334245397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_108
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1231
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7311a0abe1c69b4bada50937fd52fb4
+      internalID: -84468063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_109
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1238
+        width: 88
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35042e18c802dea4495e1e55d331534b
+      internalID: -1098899118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_110
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1231
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e673ce9d7a9089543b0dc0a601cca601
+      internalID: 1422909414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_111
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1231
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cfb8e9d26e46a4b962f98a3f3782c2
+      internalID: -26411442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_112
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1231
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66c1f11fbb03024191502460e9ad9a6
+      internalID: -1987569762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_113
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1231
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1265cd0cbae18414f9b7e143f53b1898
+      internalID: -1931255358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_114
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1241
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abc2156374572b42b40b22baa654194
+      internalID: 445873905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_115
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 1246
+        width: 76
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9ca1a890c87484dbb1778ad930a028
+      internalID: -1641108931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_116
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ef620fc6a585d44b59c761aebc93f6
+      internalID: 627006321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_117
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32237ef2fbd4e448b4b9cfe336c391f
+      internalID: -1204957333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_118
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ca02462aef1104eb965ebcb56e69a9
+      internalID: -897622790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_119
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27924c6c92c9a4646b6cd03c62f337dd
+      internalID: -287676837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_120
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e91f0196b59df40928c4bb41e667fe
+      internalID: -1428243417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_121
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d751c140f324c409b3990cc22036d2
+      internalID: 625263480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_122
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1250
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64ec76b8adf00c4c9f64608acfdd12c
+      internalID: 1142105489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_123
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1162
+        width: 195
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c57f186bbbf154e8cdec58c7408ef3
+      internalID: -938950323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_124
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1127
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4e8b498b052714eb162f5b4ea55809
+      internalID: -1713273420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_125
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 974
+        width: 122
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cff15c917ddae46ac18f5c1f2230eb
+      internalID: 330847723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_126
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1054
+        width: 93
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e519846986b0483408dc7a08cf0c15e3
+      internalID: -833172318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_127
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1139
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646acabb39a2d924c80a9ca37419d902
+      internalID: 1708986422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_128
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1068
+        width: 87
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45d67af9ba40bc4c994f0984f6f9b91
+      internalID: 1313461608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_129
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1138
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aa3671f51bcbe42ad64885741575c1
+      internalID: -254095042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_130
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3ac1baf89368243adcc9344408e59e
+      internalID: -1289968631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_131
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05d38bc0e1d7144e806ad67950fd7c9
+      internalID: -1880735031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_132
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed74316b3824e048815689614f9039d
+      internalID: -429356769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_133
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db52b6f12136b7d498c93c29c72d319f
+      internalID: -2129168462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_134
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1084f42ad60cce841abd71c066b75ac0
+      internalID: 1738793259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_135
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb00b3ddea24fe04d8a0aa4b47f0556e
+      internalID: 1905639844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_136
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0057d6343ec9dd4a8643f46fd335c03
+      internalID: 397371784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_137
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eca5d4bc4709114abf7034ce42bd487
+      internalID: -905422088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_138
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f498ade0f0a97140be00b23518561ab
+      internalID: -437960048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_139
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e7fe9764698de49938dded81653f8b
+      internalID: -566686185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_140
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83938acfcac8b947999c799e8a24b43
+      internalID: 205050542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_141
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315c9e4c709c88d4d86d33b29f4cbeed
+      internalID: 1522831456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_142
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ea79fe43935fa41a74842f719ff79b
+      internalID: 35998101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_143
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6915df0e3ccb5574e8131992d44a8f34
+      internalID: 406891398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_144
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1129
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c124205624ed84da69882136d1ce9a
+      internalID: -775666487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_145
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1107
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1182c39223dac384f81eb22886f6a886
+      internalID: -966643756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_146
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 997
+        width: 103
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c459ed4f96075994b9375486a6ff1d67
+      internalID: -1316250296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_147
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1047
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567aceb0cc219f04495653125b367445
+      internalID: -1909140020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_148
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1041
+        width: 70
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b508abd5e9085044bb98032ce047af13
+      internalID: 1243006512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_149
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1027
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08946a4a3915c904d80e91e9a0bf0099
+      internalID: -1549849160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_150
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1027
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1a7c4571fa2a348b6e6c8a85f4bb1b
+      internalID: 1273858667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_151
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1029
+        width: 68
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe3d25181f691547bd54679784fc6ef
+      internalID: -1227880780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_152
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1031
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cddd1e76e7321d499973f15edc55172
+      internalID: -1889260477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_153
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1055
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e077a63ed6cf5594594f5adb7b1a0596
+      internalID: 562872117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_154
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1027
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363c7292842f4574cb7e2610d0aecf93
+      internalID: -280474050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_155
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 1057
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6ce9914f0a43d4785d5e4f7f2588c2
+      internalID: -870451708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_156
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1064
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d7f6a4ac9beeb4eb0a31c2d563cfc4
+      internalID: -346848655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_157
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1062
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6038c311bd8f1d2428e4f43b8bcbce51
+      internalID: -2092233649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_158
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1065
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759b7af3c0c9e0e46ae950fa186fcb0e
+      internalID: 1262248184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_159
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1066
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8f3806217d2d44fa00a45f0eb8c3c7
+      internalID: -1404044554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_160
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1068
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d4a7a6344069045ac8258ecdbf6bf4
+      internalID: 1391005371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_161
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1073
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cd47bf3ac10a440a740e46f4ca221f
+      internalID: -378060947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_162
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1052
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14079a5d1efc9fc49961248e2a6db718
+      internalID: 925640259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_163
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 1072
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af5fe88bffff6d40a1fc32514bc2a67
+      internalID: 1893325223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_164
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1014
+        width: 192
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c676051c9c736b44a14d46ee0af74ca
+      internalID: -49071240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_165
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1014
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dcf97283c421c4ca3fc72f31e2f857
+      internalID: -1787253536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_166
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 1086
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573e013605533a24c80811c06702b345
+      internalID: -647355941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_168
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1027
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99840142fd916e24b82f4bfe9e44250d
+      internalID: 1512007404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_169
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 903
+        width: 93
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b84de077f6a5c4183fe9abd1b5580f
+      internalID: -1061139600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_170
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 955
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bad0ba2f1f50e4284e8dca2cb012fd
+      internalID: 478711151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_171
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 933
+        width: 87
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006304faa6b78214ba26e985acbd42fd
+      internalID: 586582399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_172
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 938
+        width: 69
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7b2f77919125c4bb82907444fda017
+      internalID: 706549251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_173
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 925
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d57a9008b28c2c43827be4eadc9c60f
+      internalID: 1766514842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_175
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 920
+        width: 67
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66e48c9386f19540a77bd61d21ad4ea
+      internalID: -1063384806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_176
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 831
+        width: 188
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fa54578f6c6d0479a114d40a138e7c
+      internalID: -201282084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_177
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 910
+        width: 100
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6666cb69f6e477439d57089c9b20836
+      internalID: -807487946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_179
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 713
+        width: 121
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462cee0232a9fd94796b1d87c27df546
+      internalID: 610442240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_180
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 846
+        width: 102
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2a2d9784a965e449092751bec8475b
+      internalID: -208759839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_181
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 863
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a817d3b01219d1042a0b8464f8afe652
+      internalID: -604390994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_183
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 810
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992a192b6bb838f47a89cf6c70e6ca70
+      internalID: -2136406089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_184
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 823
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a321583e8efba974da59ff22d71788ac
+      internalID: 945129742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_185
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 898
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318732719aa36f24a8ff1b6619b8411d
+      internalID: -653075507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_186
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 849
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fb29f461b732346a696ea5b96cc50f
+      internalID: 407660814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_187
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 847
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96687343a42bb88429f0166298add84c
+      internalID: 1279790596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_188
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 776
+        width: 91
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91a943e83f9c244dbe44653a0414878
+      internalID: 1595385530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_189
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 798
+        width: 86
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2bc7e2edc635d44a137ee2f65e4f8b
+      internalID: 2108729147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_191
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 666
+        width: 58
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e953a305030bcf04da5dbe1779544c6a
+      internalID: 232895712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_193
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 648
+        width: 188
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a4ed803cd2e064ab7e5181a00cb13f
+      internalID: -1524201093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_194
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 770
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84db2acba1571b142adfe9864adf9e73
+      internalID: -1299928788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_195
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 768
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04ba308e0a32e54eb7bb0c66e9d5a92
+      internalID: 1267204081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_196
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 695
+        width: 99
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243670413dfd9304384dc813227bf97e
+      internalID: -859191204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_197
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 771
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8084943d9ae0bf245b7d8f1086ede006
+      internalID: 77503728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_198
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 701
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e8a44395a94844d87edcaf6c92853e
+      internalID: -294402903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_200
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 782
+        width: 47
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a72384c2157904ab84f35a3e731d2a
+      internalID: -146310831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_201
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 721
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46773fc0a4618c943bc47ac0e4b8bc76
+      internalID: 340235583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_202
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 771
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edc24c7506aa7648bc1f8dfb12415f8
+      internalID: 1596653396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_203
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 665
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ede8737870c4f45b28c79545a65954
+      internalID: -356341593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_204
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 626
+        width: 90
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8dd8d51dbc11342aa6cc40ad5627b5
+      internalID: 1039058274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_205
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 679
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fd31cd3a0d5264386cd818fbcb2451
+      internalID: -1567740755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_206
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 650
+        width: 68
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06448949d69e3384d84c3e9f6d5b1bd6
+      internalID: 1639475970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_209
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 452
+        width: 121
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f61c544e9b7f1d479d06fed13ecceb2
+      internalID: 1621379580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_212
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 619
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e92e6abbd1237e4b8afaaa5242c4de0
+      internalID: 280310875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_213
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 644
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91728e19f36babd4eb3b79f04204d121
+      internalID: -1904030792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_214
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 568
+        width: 186
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d023ff5bf06c4f04b93ff4aade3cd3a8
+      internalID: 1859207580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_215
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 585
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80dbdb0f5bca9249aa255af6097e2cb
+      internalID: -347570448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_216
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 583
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c646d560e800f6e479c4515024046a9d
+      internalID: -1979709189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_217
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 545
+        width: 99
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b93d89bbfd31f4281c2cce1aca936f
+      internalID: 826381984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_218
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 587
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c411a3577f3e3746b9c30b63dfceb02
+      internalID: 1050547186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_219
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 606
+        width: 86
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa939b0f39373b4c9ab668470df37f9
+      internalID: -515604261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_220
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 539
+        width: 68
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d63c9d1cae84e249a9bf8bcb18bc1b8
+      internalID: 416324090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_222
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 476
+        width: 89
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e0dcc2d59f4ae4cb9f13df0cb85799
+      internalID: 788598955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_223
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 517
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdce1d58b14a70747b6c40f50147c459
+      internalID: 866931587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_224
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 518
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1419b2da5dd5749ab5fa70c0c11902
+      internalID: -119146779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_226
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 434
+        width: 176
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d3903b881fa42478f21df3542efa27
+      internalID: -119694300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_227
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 503
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fc68f8e5151d4428d46df56f7ebe6d
+      internalID: -1319503101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_228
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 501
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36a058d6eba78c41a1de474dc489296
+      internalID: -992886915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_229
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 442
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85a8f885f1784f40b48acaefb4e9854
+      internalID: -435051739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_230
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 495
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56323b482db263647bc6360620debf75
+      internalID: -272468894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_231
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 533
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcbdd997e8a3d7438305ce2c4617da0
+      internalID: 973543871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_232
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 460
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff2706be6ee63644a74554fc1521b70
+      internalID: 1207247348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_233
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 430
+        width: 68
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e861917f7c8cce4e9b13972e4a33514
+      internalID: -915666634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_234
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 415
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5defc408880fc0445aa81b429b84f2e0
+      internalID: 1378962201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_236
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 436
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f877aaa67d6ec4a99827f50d3cea52
+      internalID: 285306440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_237
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 434
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8590c6aefd154847930ae87a2811600
+      internalID: 1142213027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_238
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 403
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabec36584c690d4c9d25d120cb64cc0
+      internalID: 2030221271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_239
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 392
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17665212148fe4a42bb45e6bd896c2b0
+      internalID: 484672107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_241
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 302
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f0ce6a1b178b449a50cf30fc531058
+      internalID: 639147407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_242
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 369
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c50e39d9b5017b45afab982a738c26a
+      internalID: 881914493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_243
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 367
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98822ebbe8c398148ba3db702c3e0b43
+      internalID: 1012811673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_244
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 191
+        width: 121
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483b75019ab277740b29c4993fae9d73
+      internalID: -583002682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_245
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 308
+        width: 97
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d18752e6b70f7648a75315c0832adee
+      internalID: -751288818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_246
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 384
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276f5459d1341694c855197cbd6906aa
+      internalID: 1473485792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_247
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 311
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064b904c8d4cc8b4abeccd6cb502621f
+      internalID: -156093535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_248
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 387
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4b99f9df29bd34e9061a00b73824a8
+      internalID: 1505653702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_249
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 324
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f2e3a4c5e8b0a428be49538df6dd23
+      internalID: -884892126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_250
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 313
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc166088cba3c540a4b028ccff650cf
+      internalID: 379297643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_251
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 314
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9712a31da4afe9d4ab77009c950b444a
+      internalID: 1089103260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_253
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 303
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309aff6461d7b83489027947642ada83
+      internalID: 803869543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_254
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 302
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cd657bbd0e08242a5561eddbf23a01
+      internalID: 1510298586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_255
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 292
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8395c8bd88d44478e2c7837efc3179
+      internalID: -1442136258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_256
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 219
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483d2f0b1baa8c84bb1e4780f0a2de70
+      internalID: 1147681853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_257
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 241
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264fee71f2cb5c345892dfa2be8a5171
+      internalID: 310742063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_258
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 222
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c09773dab9387489587edef2fff67a
+      internalID: -270004342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_259
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 211
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0036cae5da248845ad05b450372c42b
+      internalID: -906487579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_260
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 271
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a725c6358979d0408573ac772acfd6c
+      internalID: -776868555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_261
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 197
+        width: 171
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84e2362a4403d642a7fc54306cd4c54
+      internalID: 1967854508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_262
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 237
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50c15a4234a28b469dd521660e383c2
+      internalID: -923579581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_263
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 236
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af0c54259ac78a4aaf122fc70d91671
+      internalID: 807131708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_264
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 175
+        width: 97
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bf273fc17f43647b5ea30899fb8315
+      internalID: 529124053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_265
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 200
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210b9095626b27e4dbd36cb2d07f41eb
+      internalID: 116020192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_267
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 73
+        width: 167
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c35c8e4178690d4f9626a04c764dc75
+      internalID: 1728249631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_268
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 79
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2dada248a71d640bc37e43dda292a3
+      internalID: 1190674904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_269
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 43
+        width: 111
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20954431e85ad374f97816e14cf4b9c2
+      internalID: -385060581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_270
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 42
+        width: 97
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9d7a9d66b549d46955b9c31d3cb5ee
+      internalID: -786812485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_271
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 108
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79004c0ef726e8842979e4596214e73b
+      internalID: 1655105016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_272
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 127
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08def35d9b2293f4eaa3457b368a9014
+      internalID: -554110548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_273
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 168
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cbfcaedc4cf7f489aef75d4e2bf00b
+      internalID: -1707003870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_274
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 120
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfe609ad903cdd4a80bee6704de0a98
+      internalID: -365649785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_275
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 109
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c4eaba983a4a14088488d30e44ec92
+      internalID: -545772528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_276
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 153
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb413622115f3514089fda4240240e49
+      internalID: 1285018657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_277
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 35
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8841b985929826a4c9689136fdcdc357
+      internalID: 477757634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_278
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 104
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de26ae85822c1449b7d19ae6ac59d2f
+      internalID: -1057266770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_279
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 18
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9e688f4605e4d4fb9b15d6138cf25f
+      internalID: 219949740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_280
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 46
+        width: 67
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153ba8b24b6c1d64c8cd13ecd1c9c964
+      internalID: -1078080552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_281
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bab39c33c5c464484e4ef4df0a8112
+      internalID: -153791106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_282
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 16
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c4b3a18e68fe64ca63de3009594855
+      internalID: -1558363077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_283
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 14
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896dca8fc4168e941b5722c5301892f6
+      internalID: 537154642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_284
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 16
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761c3440f3297fd428af6fc2f7d9c814
+      internalID: -1339955519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_285
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 32
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566c9d38c73e12b41820aba80234fbad
+      internalID: -1874687752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: screen_map-2_286
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 7
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d273070dd52fe574db4e8e432a95bdef
+      internalID: 527797959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      screen_map-2_0: -182152791
+      screen_map-2_1: -1972743075
+      screen_map-2_10: -1218112156
+      screen_map-2_100: -1906468011
+      screen_map-2_101: 1879885844
+      screen_map-2_102: 77980599
+      screen_map-2_103: 1015000232
+      screen_map-2_104: -1697630030
+      screen_map-2_105: 1480870689
+      screen_map-2_106: 1972924521
+      screen_map-2_107: -1334245397
+      screen_map-2_108: -84468063
+      screen_map-2_109: -1098899118
+      screen_map-2_11: 897856924
+      screen_map-2_110: 1422909414
+      screen_map-2_111: -26411442
+      screen_map-2_112: -1987569762
+      screen_map-2_113: -1931255358
+      screen_map-2_114: 445873905
+      screen_map-2_115: -1641108931
+      screen_map-2_116: 627006321
+      screen_map-2_117: -1204957333
+      screen_map-2_118: -897622790
+      screen_map-2_119: -287676837
+      screen_map-2_12: -894990982
+      screen_map-2_120: -1428243417
+      screen_map-2_121: 625263480
+      screen_map-2_122: 1142105489
+      screen_map-2_123: -938950323
+      screen_map-2_124: -1713273420
+      screen_map-2_125: 330847723
+      screen_map-2_126: -833172318
+      screen_map-2_127: 1708986422
+      screen_map-2_128: 1313461608
+      screen_map-2_129: -254095042
+      screen_map-2_13: -116181893
+      screen_map-2_130: -1289968631
+      screen_map-2_131: -1880735031
+      screen_map-2_132: -429356769
+      screen_map-2_133: -2129168462
+      screen_map-2_134: 1738793259
+      screen_map-2_135: 1905639844
+      screen_map-2_136: 397371784
+      screen_map-2_137: -905422088
+      screen_map-2_138: -437960048
+      screen_map-2_139: -566686185
+      screen_map-2_14: -1926767005
+      screen_map-2_140: 205050542
+      screen_map-2_141: 1522831456
+      screen_map-2_142: 35998101
+      screen_map-2_143: 406891398
+      screen_map-2_144: -775666487
+      screen_map-2_145: -966643756
+      screen_map-2_146: -1316250296
+      screen_map-2_147: -1909140020
+      screen_map-2_148: 1243006512
+      screen_map-2_149: -1549849160
+      screen_map-2_15: 1272549153
+      screen_map-2_150: 1273858667
+      screen_map-2_151: -1227880780
+      screen_map-2_152: -1889260477
+      screen_map-2_153: 562872117
+      screen_map-2_154: -280474050
+      screen_map-2_155: -870451708
+      screen_map-2_156: -346848655
+      screen_map-2_157: -2092233649
+      screen_map-2_158: 1262248184
+      screen_map-2_159: -1404044554
+      screen_map-2_16: -1387209809
+      screen_map-2_160: 1391005371
+      screen_map-2_161: -378060947
+      screen_map-2_162: 925640259
+      screen_map-2_163: 1893325223
+      screen_map-2_164: -49071240
+      screen_map-2_165: -1787253536
+      screen_map-2_166: -647355941
+      screen_map-2_167: -1578693137
+      screen_map-2_168: 1512007404
+      screen_map-2_169: -1061139600
+      screen_map-2_17: 1308470398
+      screen_map-2_170: 478711151
+      screen_map-2_171: 586582399
+      screen_map-2_172: 706549251
+      screen_map-2_173: 1766514842
+      screen_map-2_174: 1626046587
+      screen_map-2_175: -1063384806
+      screen_map-2_176: -201282084
+      screen_map-2_177: -807487946
+      screen_map-2_178: 1228640114
+      screen_map-2_179: 610442240
+      screen_map-2_18: -136180614
+      screen_map-2_180: -208759839
+      screen_map-2_181: -604390994
+      screen_map-2_182: 1855386282
+      screen_map-2_183: -2136406089
+      screen_map-2_184: 945129742
+      screen_map-2_185: -653075507
+      screen_map-2_186: 407660814
+      screen_map-2_187: 1279790596
+      screen_map-2_188: 1595385530
+      screen_map-2_189: 2108729147
+      screen_map-2_19: -1970780216
+      screen_map-2_190: -1613938126
+      screen_map-2_191: 232895712
+      screen_map-2_192: -1241782386
+      screen_map-2_193: -1524201093
+      screen_map-2_194: -1299928788
+      screen_map-2_195: 1267204081
+      screen_map-2_196: -859191204
+      screen_map-2_197: 77503728
+      screen_map-2_198: -294402903
+      screen_map-2_199: -499899818
+      screen_map-2_2: -1603949369
+      screen_map-2_20: -684607652
+      screen_map-2_200: -146310831
+      screen_map-2_201: 340235583
+      screen_map-2_202: 1596653396
+      screen_map-2_203: -356341593
+      screen_map-2_204: 1039058274
+      screen_map-2_205: -1567740755
+      screen_map-2_206: 1639475970
+      screen_map-2_207: -496024391
+      screen_map-2_208: -988936195
+      screen_map-2_209: 1621379580
+      screen_map-2_21: -235041671
+      screen_map-2_210: 1344653663
+      screen_map-2_211: 195639838
+      screen_map-2_212: 280310875
+      screen_map-2_213: -1904030792
+      screen_map-2_214: 1859207580
+      screen_map-2_215: -347570448
+      screen_map-2_216: -1979709189
+      screen_map-2_217: 826381984
+      screen_map-2_218: 1050547186
+      screen_map-2_219: -515604261
+      screen_map-2_22: 348324209
+      screen_map-2_220: 416324090
+      screen_map-2_221: -932372239
+      screen_map-2_222: 788598955
+      screen_map-2_223: 866931587
+      screen_map-2_224: -119146779
+      screen_map-2_225: 981537366
+      screen_map-2_226: -119694300
+      screen_map-2_227: -1319503101
+      screen_map-2_228: -992886915
+      screen_map-2_229: -435051739
+      screen_map-2_23: -760946937
+      screen_map-2_230: -272468894
+      screen_map-2_231: 973543871
+      screen_map-2_232: 1207247348
+      screen_map-2_233: -915666634
+      screen_map-2_234: 1378962201
+      screen_map-2_235: -543328960
+      screen_map-2_236: 285306440
+      screen_map-2_237: 1142213027
+      screen_map-2_238: 2030221271
+      screen_map-2_239: 484672107
+      screen_map-2_24: -1064666846
+      screen_map-2_240: -23902670
+      screen_map-2_241: 639147407
+      screen_map-2_242: 881914493
+      screen_map-2_243: 1012811673
+      screen_map-2_244: -583002682
+      screen_map-2_245: -751288818
+      screen_map-2_246: 1473485792
+      screen_map-2_247: -156093535
+      screen_map-2_248: 1505653702
+      screen_map-2_249: -884892126
+      screen_map-2_25: 2069706936
+      screen_map-2_250: 379297643
+      screen_map-2_251: 1089103260
+      screen_map-2_252: 318598414
+      screen_map-2_253: 803869543
+      screen_map-2_254: 1510298586
+      screen_map-2_255: -1442136258
+      screen_map-2_256: 1147681853
+      screen_map-2_257: 310742063
+      screen_map-2_258: -270004342
+      screen_map-2_259: -906487579
+      screen_map-2_26: 1095987924
+      screen_map-2_260: -776868555
+      screen_map-2_261: 1967854508
+      screen_map-2_262: -923579581
+      screen_map-2_263: 807131708
+      screen_map-2_264: 529124053
+      screen_map-2_265: 116020192
+      screen_map-2_266: 644476720
+      screen_map-2_267: 1728249631
+      screen_map-2_268: 1190674904
+      screen_map-2_269: -385060581
+      screen_map-2_27: 1502574661
+      screen_map-2_270: -786812485
+      screen_map-2_271: 1655105016
+      screen_map-2_272: -554110548
+      screen_map-2_273: -1707003870
+      screen_map-2_274: -365649785
+      screen_map-2_275: -545772528
+      screen_map-2_276: 1285018657
+      screen_map-2_277: 477757634
+      screen_map-2_278: -1057266770
+      screen_map-2_279: 219949740
+      screen_map-2_28: -558831570
+      screen_map-2_280: -1078080552
+      screen_map-2_281: -153791106
+      screen_map-2_282: -1558363077
+      screen_map-2_283: 537154642
+      screen_map-2_284: -1339955519
+      screen_map-2_285: -1874687752
+      screen_map-2_286: 527797959
+      screen_map-2_29: 1550880176
+      screen_map-2_3: -253008762
+      screen_map-2_30: 1873901282
+      screen_map-2_31: 1992245276
+      screen_map-2_32: -1233338736
+      screen_map-2_33: 265045860
+      screen_map-2_34: 209846368
+      screen_map-2_35: 1399035833
+      screen_map-2_36: -803575817
+      screen_map-2_37: -374098905
+      screen_map-2_38: -280039395
+      screen_map-2_39: -208736130
+      screen_map-2_4: -908561050
+      screen_map-2_40: 35643720
+      screen_map-2_41: -1258788746
+      screen_map-2_42: 1757807390
+      screen_map-2_43: -1027959998
+      screen_map-2_44: -62876349
+      screen_map-2_45: -2047245070
+      screen_map-2_46: -407315814
+      screen_map-2_47: -1767032590
+      screen_map-2_48: -1730801670
+      screen_map-2_49: 574212819
+      screen_map-2_5: -1121072335
+      screen_map-2_50: -892504966
+      screen_map-2_51: 2018565488
+      screen_map-2_52: -45467024
+      screen_map-2_53: -2138467757
+      screen_map-2_54: -2011645503
+      screen_map-2_55: -2072046830
+      screen_map-2_56: -2096545286
+      screen_map-2_57: -1791901572
+      screen_map-2_58: 255825220
+      screen_map-2_59: -1467367739
+      screen_map-2_6: -177406873
+      screen_map-2_60: -1753309166
+      screen_map-2_61: 1344983273
+      screen_map-2_62: -854219785
+      screen_map-2_63: -340048424
+      screen_map-2_64: 239454902
+      screen_map-2_65: -1105477828
+      screen_map-2_66: 1117893850
+      screen_map-2_67: 1465966311
+      screen_map-2_68: -669235241
+      screen_map-2_69: -1808970346
+      screen_map-2_7: -417210513
+      screen_map-2_70: 1383518719
+      screen_map-2_71: -509854161
+      screen_map-2_72: -1238218991
+      screen_map-2_73: 1177822902
+      screen_map-2_74: -646228827
+      screen_map-2_75: -2024895013
+      screen_map-2_76: 733757242
+      screen_map-2_77: 734367287
+      screen_map-2_78: -1576189979
+      screen_map-2_79: -834044119
+      screen_map-2_8: -1661816929
+      screen_map-2_80: 954058781
+      screen_map-2_81: -143820591
+      screen_map-2_82: -1603674081
+      screen_map-2_83: -1153274789
+      screen_map-2_84: 192802906
+      screen_map-2_85: -937020941
+      screen_map-2_86: -247169217
+      screen_map-2_87: 138956189
+      screen_map-2_88: 1367957632
+      screen_map-2_89: -1021805756
+      screen_map-2_9: -728020169
+      screen_map-2_90: -255239175
+      screen_map-2_91: -555312501
+      screen_map-2_92: -1598981479
+      screen_map-2_93: 1582719029
+      screen_map-2_94: 1160750141
+      screen_map-2_95: -1501937737
+      screen_map-2_96: -934349511
+      screen_map-2_97: -1396281720
+      screen_map-2_98: -2957777
+      screen_map-2_99: -1788233503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

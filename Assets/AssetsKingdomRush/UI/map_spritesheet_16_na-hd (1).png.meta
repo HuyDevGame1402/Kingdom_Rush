@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 9bb28f3d622262647b59d91bc88e6101
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: map_spritesheet_16_na-hd (1)_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 382
+        width: 1136
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5158038eccfecd74b85cf8514b42e0fb
+      internalID: 830775230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_spritesheet_16_na-hd (1)_34
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 646
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a90295314f106245af649fa70b0cd62
+      internalID: -320820061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_spritesheet_16_na-hd (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 318
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09b5beed7472d748aaad1aefde06afc
+      internalID: -1486041843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      map_spritesheet_16_na-hd (1)_0: -1486041843
+      map_spritesheet_16_na-hd (1)_1: 2029970518
+      map_spritesheet_16_na-hd (1)_10: -2034637454
+      map_spritesheet_16_na-hd (1)_11: -133410864
+      map_spritesheet_16_na-hd (1)_12: 1806008680
+      map_spritesheet_16_na-hd (1)_13: 352028777
+      map_spritesheet_16_na-hd (1)_14: -595355427
+      map_spritesheet_16_na-hd (1)_15: 830775230
+      map_spritesheet_16_na-hd (1)_16: -980339107
+      map_spritesheet_16_na-hd (1)_17: -1089842340
+      map_spritesheet_16_na-hd (1)_18: -1143841542
+      map_spritesheet_16_na-hd (1)_19: -474721172
+      map_spritesheet_16_na-hd (1)_2: 983036960
+      map_spritesheet_16_na-hd (1)_20: 1268262479
+      map_spritesheet_16_na-hd (1)_21: -1431345024
+      map_spritesheet_16_na-hd (1)_22: -455366466
+      map_spritesheet_16_na-hd (1)_23: -1743257996
+      map_spritesheet_16_na-hd (1)_24: 1919425051
+      map_spritesheet_16_na-hd (1)_25: 958016894
+      map_spritesheet_16_na-hd (1)_26: -1337547526
+      map_spritesheet_16_na-hd (1)_27: -1134942592
+      map_spritesheet_16_na-hd (1)_28: 1082236917
+      map_spritesheet_16_na-hd (1)_29: 1822650378
+      map_spritesheet_16_na-hd (1)_3: -559942771
+      map_spritesheet_16_na-hd (1)_30: -1822927493
+      map_spritesheet_16_na-hd (1)_31: 545311968
+      map_spritesheet_16_na-hd (1)_32: 2011404726
+      map_spritesheet_16_na-hd (1)_33: -419871121
+      map_spritesheet_16_na-hd (1)_34: -320820061
+      map_spritesheet_16_na-hd (1)_35: 1260509263
+      map_spritesheet_16_na-hd (1)_36: 452343140
+      map_spritesheet_16_na-hd (1)_37: 980407054
+      map_spritesheet_16_na-hd (1)_38: -730981789
+      map_spritesheet_16_na-hd (1)_39: -443259280
+      map_spritesheet_16_na-hd (1)_4: -1433540589
+      map_spritesheet_16_na-hd (1)_40: -645863493
+      map_spritesheet_16_na-hd (1)_41: 1453243067
+      map_spritesheet_16_na-hd (1)_42: 636947734
+      map_spritesheet_16_na-hd (1)_43: 1904773590
+      map_spritesheet_16_na-hd (1)_44: 356760017
+      map_spritesheet_16_na-hd (1)_45: -1083588834
+      map_spritesheet_16_na-hd (1)_46: -209921607
+      map_spritesheet_16_na-hd (1)_47: 448408847
+      map_spritesheet_16_na-hd (1)_48: 2090251525
+      map_spritesheet_16_na-hd (1)_49: -1093736067
+      map_spritesheet_16_na-hd (1)_5: 66302504
+      map_spritesheet_16_na-hd (1)_50: 1413770565
+      map_spritesheet_16_na-hd (1)_51: -1709058992
+      map_spritesheet_16_na-hd (1)_52: 1382994243
+      map_spritesheet_16_na-hd (1)_53: 2100976639
+      map_spritesheet_16_na-hd (1)_54: 396816537
+      map_spritesheet_16_na-hd (1)_55: -339911132
+      map_spritesheet_16_na-hd (1)_56: 351324133
+      map_spritesheet_16_na-hd (1)_57: 1840650120
+      map_spritesheet_16_na-hd (1)_58: -155687492
+      map_spritesheet_16_na-hd (1)_59: 673235204
+      map_spritesheet_16_na-hd (1)_6: -701772959
+      map_spritesheet_16_na-hd (1)_60: -716421433
+      map_spritesheet_16_na-hd (1)_61: 1464011396
+      map_spritesheet_16_na-hd (1)_62: 1884693162
+      map_spritesheet_16_na-hd (1)_63: -109754026
+      map_spritesheet_16_na-hd (1)_64: 479977042
+      map_spritesheet_16_na-hd (1)_65: 1209179789
+      map_spritesheet_16_na-hd (1)_66: -502801916
+      map_spritesheet_16_na-hd (1)_67: -1059934381
+      map_spritesheet_16_na-hd (1)_68: -2108683661
+      map_spritesheet_16_na-hd (1)_69: -28720787
+      map_spritesheet_16_na-hd (1)_7: -2097020824
+      map_spritesheet_16_na-hd (1)_70: -464050141
+      map_spritesheet_16_na-hd (1)_71: -2081410658
+      map_spritesheet_16_na-hd (1)_72: 803807789
+      map_spritesheet_16_na-hd (1)_73: 156293916
+      map_spritesheet_16_na-hd (1)_74: -683246906
+      map_spritesheet_16_na-hd (1)_75: -738892380
+      map_spritesheet_16_na-hd (1)_76: 436185649
+      map_spritesheet_16_na-hd (1)_77: -518445465
+      map_spritesheet_16_na-hd (1)_78: 1604202935
+      map_spritesheet_16_na-hd (1)_79: 1791749569
+      map_spritesheet_16_na-hd (1)_8: 2073677749
+      map_spritesheet_16_na-hd (1)_80: 2073835472
+      map_spritesheet_16_na-hd (1)_81: -1914697440
+      map_spritesheet_16_na-hd (1)_82: -121038498
+      map_spritesheet_16_na-hd (1)_83: -2067245993
+      map_spritesheet_16_na-hd (1)_84: 1325128419
+      map_spritesheet_16_na-hd (1)_85: -2118438539
+      map_spritesheet_16_na-hd (1)_86: -1075491541
+      map_spritesheet_16_na-hd (1)_87: -282237681
+      map_spritesheet_16_na-hd (1)_9: 1707896937
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

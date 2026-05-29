@@ -1,0 +1,92 @@
+# ==========================================
+# FILE GITIGNORE CHUẨN CHO DỰ ÁN UNITY (2026)
+# ==========================================
+
+# --- Unity Folders & Files ---
+.utmp/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.log
+
+# --- OS Specific (Windows / Mac) ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- IDEs & Code Editors (VS, VS Code, Rider) ---
+.vs/
+.idea/
+.vscode/
+/*.sln
+/*.csproj
+/*.unityproj
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/*.pdb
+/*.mdb
+/*.opendb
+/*.VC.db
+/*.slnx
+*.DotSettings.user
+ExportedObj/
+.consulo/
+
+# --- Unity3D Generated Meta Files ---
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# --- Crash & Sysinfo ---
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+
+# --- Build Outputs ---
+*.apk
+*.aab
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# --- Plugins & Tools Specific ---
+# Rider
+/[Aa]ssets/Plugins/Editor/JetBrains*
+# Gradle
+.gradle/
+# Blender cache
+*.blend1
+*.blend1.meta
+
+# --- Addressables & StreamingAssets ---
+/ServerData/
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# --- Visual Scripting & Tests ---
+/[Aa]ssets/Unity.VisualScripting.Generated/
+/[Aa]ssets/Unity.VisualScripting.Generated.meta
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+/[Aa]ssets/[Ss]ceneDependencyCache*
+
+# --- Photon Fusion 2 / Network Packages (Nếu có) ---
+# Thường các file DLL tự sinh hoặc cache của Fusion sẽ nằm trong Library, 
+# nhưng nếu bạn có build network riêng, hãy cẩn thận với thư mục build target.
