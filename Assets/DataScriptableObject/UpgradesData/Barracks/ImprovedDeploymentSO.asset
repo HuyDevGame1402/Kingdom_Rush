@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47a78f5d53cf004f88e5673405f97b7, type: 3}
+  m_Name: ImprovedDeploymentSO
+  m_EditorClassIdentifier: 
+  upgradeID: 8
+  upgradeName: Improved Deployment
+  description: Improves rally point range (by 20%) and reduces soldier training time.
+  upgradeIcon: {fileID: -1791901572, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: -555312501, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 2
+  pointRange: 20
+  timeReduced: 3

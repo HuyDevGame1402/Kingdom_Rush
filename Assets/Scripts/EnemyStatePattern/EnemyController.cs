@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class EnemyController : MonoBehaviour
 {
+    public event Action OnEnemyDestroyed;
     [Header("Data Configuration")]
     public UnitDataSO unitData; // Kéo file ScriptableObject của bạn vào đây
 
@@ -102,8 +104,8 @@ public class EnemyController : MonoBehaviour
         if (EnemySpriteAnimator.Instance == null) return;
 
         // 1. Xử lý lật mặt Sprite trái / phải
-        if (moveDir.x > 0.1f) transform.localScale = new Vector3(1, 1, 1);
-        else if (moveDir.x < -0.1f) transform.localScale = new Vector3(-1, 1, 1);
+        if (moveDir.x > 0.1f) transform.localScale = unitData.localScaleRight;
+        else if (moveDir.x < -0.1f) transform.localScale = unitData.localScaleLeft;
 
         // 2. Phân tích hướng đi và lấy nguyên cụm Config Object từ ScriptableObject
         string currentDirection = "";
@@ -165,8 +167,16 @@ public class EnemyController : MonoBehaviour
 
     private void ReachedEndOfTheLine()
     {
+        OnEnemyDestroyed?.Invoke();
         Debug.Log($"🏰 [{name}] Đã lọt vào nhà chính! Trừ máu của người chơi.");
         isDead = true;
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+    }
+    public void SetupWayPoints(Transform road)
+    {
+        for(int i = 0; i < road.childCount; i++)
+        {
+            waypoints.Add(road.GetChild(i));
+        }
     }
 }

@@ -27,6 +27,7 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
                 PlayIdleUp(tower);
                 break;
         }
+        Debug.LogWarning("Run animation Hero");
     }
     public void Attack(Transform enemyTarget, TowerStateMachine tower)
     {

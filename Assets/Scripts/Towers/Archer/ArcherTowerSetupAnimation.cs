@@ -6,7 +6,7 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
 {
     // Thay vì kéo trực tiếp Script Archer, ta kéo các GameObject chứa script Hero vào đây
     [SerializeField] private List<GameObject> heroGameObjects = new List<GameObject>();
-    [SerializeField] private float _timeInitTower = 1.5f;
+    private float _timeInitTower = 0.5f;
     [SerializeField] private TowerStateMachine tower;
     [SerializeField] private GameObject spawnAttack;
     [SerializeField] private bool isSpawnAttack;

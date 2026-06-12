@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a5c9e750ad98f4c8535d8de483a532, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  levelId: 1
+  levelName: SOUTHPORT
+  levelType: 0
+  description: 'GREETINGS, NOBLE WARRIOR! AS A GENERAL OF HIS MAJESTY''S FORCES,
+    KING DENAS REQUIRES YOUR SERVICES.
+
+
+
+    THE INHABITANTS OF THE CITY OF SOUTHPORT
+    HAVE REPORTED ATTACKS BY HIGHWAYMEN AND OTHER OUTLAWS. YOU ARE TO TAKE A BATTALION
+    TO SOUTHPORT AND BOLSTER THE TOWN''S DEFENSES.
+
+
+
+    GOOD LUCK, GENERAL!'
+  startingGold: 265
+  strategicPointsCount: 8
+  sheepCount: 8
+  startingLives: 20
+  waves:
+  - waveIndex: 1
+    enemyGroups:
+    - enemyName: Goblin
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 3
+      spawnDelay: 0.7
+      groupDelay: 0
+    goldIncome: 9
+    waveDelay: 5
+  - waveIndex: 2
+    enemyGroups:
+    - enemyName: Goblin
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 6
+      spawnDelay: 1
+      groupDelay: 0
+    goldIncome: 18
+    waveDelay: 6
+  - waveIndex: 3
+    enemyGroups:
+    - enemyName: Goblin
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 9
+      spawnDelay: 1
+      groupDelay: 0
+    goldIncome: 27
+    waveDelay: 6.5
+  - waveIndex: 4
+    enemyGroups:
+    - enemyName: Goblin
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 4
+      spawnDelay: 1
+      groupDelay: 1.5
+    - enemyName: Orc
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 1
+      spawnDelay: 1.5
+      groupDelay: 0
+    goldIncome: 21
+    waveDelay: 8
+  - waveIndex: 5
+    enemyGroups:
+    - enemyName: Orc
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 3
+      spawnDelay: 2
+      groupDelay: 0
+    goldIncome: 27
+    waveDelay: 8
+  - waveIndex: 6
+    enemyGroups:
+    - enemyName: Goblin
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 10
+      spawnDelay: 1
+      groupDelay: 3
+    - enemyName: Orc
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 4
+      spawnDelay: 2
+      groupDelay: 0
+    goldIncome: 66
+    waveDelay: 9
+  - waveIndex: 7
+    enemyGroups:
+    - enemyName: Goblin
+      enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      count: 16
+      spawnDelay: 1
+      groupDelay: 0
+    goldIncome: 48
+    waveDelay: 0
+  spriteIcon: {fileID: -7924455868910974521, guid: acdee527e6eeb1341b8a858affa0f4e7, type: 3}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9c853a195252340a158ebe7361c46c, type: 3}
+  m_Name: HeartBox
+  m_EditorClassIdentifier: 
+  itemId: 1
+  itemName: HeartBox
+  description: "\rMAGICAL HEARTS TRAPPED IN A BOX.\r\n\r\nBREAK GLASS ON AN EMERGENCY
+    TO GAIN 5 EXTRA LIVES."
+  gemCost: 350
+  itemIcon: {fileID: 1040902479, guid: 1442dad86a989834491d206dd1dbb78b, type: 3}
+  lives: 5

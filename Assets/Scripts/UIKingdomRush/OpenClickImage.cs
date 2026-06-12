@@ -5,12 +5,12 @@ using UnityEngine.EventSystems;
 
 public class OpenClickImage : MonoBehaviour, IPointerClickHandler
 {
-    public IUIView uIView;
+    public UIView uIView;
     public GameObject settingGameObject;
 
     private void Start()
     {
-        uIView = settingGameObject.GetComponent<IUIView>();
+        uIView = settingGameObject.GetComponent<UIView>();
     }
     public void OnPointerClick(PointerEventData eventData)
     {

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5be7f1aab6e7346bb4a42402668617, type: 3}
+  m_Name: SpellReachSO
+  m_EditorClassIdentifier: 
+  upgradeID: 11
+  upgradeName: Spell Reach
+  description: Increases wizard's attack range (by 10%).
+  upgradeIcon: {fileID: -1105477828, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: -1788233503, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 1
+  attackRange: 10

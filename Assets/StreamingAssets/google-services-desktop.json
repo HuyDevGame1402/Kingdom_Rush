@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "604433995768",
+    "project_id": "kingdomrush-75727",
+    "storage_bucket": "kingdomrush-75727.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604433995768:android:a194616e7eb3459ea2e80d",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.GameRpg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJczWp6NLJ7vlEA-mztc2MnBXByeO0iEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

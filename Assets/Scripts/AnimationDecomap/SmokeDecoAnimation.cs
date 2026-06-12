@@ -16,9 +16,12 @@ public class SmokeDecoAnimation : MonoBehaviour
     private void OnDisable()
     {
         for (int i = 0; i < smokeGameObject.Count; i++)
-        {
-            smokeGameObject[i].SetActive(false);
-            MapDecoAnimationManager.Instance.StopAnimation(smokeGameObject[i]);
+        { 
+            if(smokeGameObject[i] != null)
+            {
+                smokeGameObject[i].SetActive(false);
+                MapDecoAnimationManager.Instance.StopAnimation(smokeGameObject[i]);
+            }
         }
     }
 }

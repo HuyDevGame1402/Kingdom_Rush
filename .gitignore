@@ -90,3 +90,9 @@ InitTestScene*.unity*
 # --- Photon Fusion 2 / Network Packages (Nếu có) ---
 # Thường các file DLL tự sinh hoặc cache của Fusion sẽ nằm trong Library, 
 # nhưng nếu bạn có build network riêng, hãy cẩn thận với thư mục build target.
+
+Assets/Firebase/Plugins/x86_64/*.bundle
+/[Aa]ssets/Firebase/
+*.bundle
+*.so
+*.a

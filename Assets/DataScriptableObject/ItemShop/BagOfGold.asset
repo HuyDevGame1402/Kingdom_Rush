@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b801a4ed308c8b643bec58f30180d1fd, type: 3}
+  m_Name: BagOfGold
+  m_EditorClassIdentifier: 
+  itemId: 5
+  itemName: 'GOLD BAG  '
+  description: "\rLEAVE NOTHING TO CHANCE, BRING EXTRA GOLD TO THE BATTLEFIELD!\r\n\r\nEACH
+    BAG IS WORTH 500 GOLD PIECES."
+  gemCost: 850
+  itemIcon: {fileID: -950776340, guid: 1442dad86a989834491d206dd1dbb78b, type: 3}
+  goldAddGame: 500

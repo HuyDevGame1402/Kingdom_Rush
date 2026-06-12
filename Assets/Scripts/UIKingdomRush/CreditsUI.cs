@@ -2,13 +2,9 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class CreditsUI : MonoBehaviour, IUIView
+public class CreditsUI : UIView
 {
     public GameObject creditsUI;
-    public bool isOpen { get; set; }
-
-    public string nameEventOpen => "CREDITSUIOPEN";
-    public string nameEventClose => "CREDITSUICLOSE";
 
     private float timeDelay = 1.5f;
 
@@ -24,7 +20,7 @@ public class CreditsUI : MonoBehaviour, IUIView
         EventManager.Unregister(nameEventClose, () => CloseUI(null));
     }
 
-    public void OpenUI(Action onComplete = null)
+    protected override void OpenUI(Action onComplete = null)
     {
         LoadGameUI.Instance.DoorClose();
         isOpen = true;
@@ -39,7 +35,7 @@ public class CreditsUI : MonoBehaviour, IUIView
         LoadGameUI.Instance.DoorOpen();
     }
 
-    public void CloseUI(Action onComplete = null)
+    protected override void CloseUI(Action onComplete = null)
     {
         LoadGameUI.Instance.DoorClose();
         isOpen = false;

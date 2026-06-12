@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6404b9243b54045be00c227653ae75, type: 3}
+  m_Name: Artillery_Lv1
+  m_EditorClassIdentifier: 
+  towerID: 3
+  towerName: Dwarven Bombard
+  towerDescription: Bombards ground enemies dealing area damage.
+  towerIcon: {fileID: -1874604821, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  towerIconGray: {fileID: 971995754, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  priceTower: 125
+  iconAttack: {fileID: 2130132984, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  minAttack: 8
+  maxAttack: 15
+  offsetPositionSpawnTower: {x: -0.1, y: -0.35, z: 0}
+  towerPrefab: {fileID: 5284188405547762922, guid: e8ff67d29f6835e428a5d106aba4ea99, type: 3}
+  iconAttackRate: {fileID: -1695097776, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  attackRate: very slow

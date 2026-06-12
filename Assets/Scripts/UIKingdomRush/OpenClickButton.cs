@@ -7,11 +7,11 @@ public class OpenClickButton : MonoBehaviour
 {
     public Button buttonOpen;
     public GameObject uiObject;
-    public IUIView uiView;
+    public UIView uiView;
     private void Start()
     {
         buttonOpen = GetComponent<Button>();
-        uiView = uiObject.GetComponent<IUIView>();
+        uiView = uiObject.GetComponent<UIView>();
         buttonOpen.onClick.AddListener(OnOpenUI);
     }
 

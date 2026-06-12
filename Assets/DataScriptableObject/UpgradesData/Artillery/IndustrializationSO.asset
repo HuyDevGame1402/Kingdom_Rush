@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77800a56541ff347a247eae27c2aea2, type: 3}
+  m_Name: IndustrializationSO
+  m_EditorClassIdentifier: 
+  upgradeID: 19
+  upgradeName: Industrialization
+  description: Artillery special abilities costs are reduced by 25%.
+  upgradeIcon: {fileID: -646228827, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: 478711151, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 3
+  priceReduceSkill: 25

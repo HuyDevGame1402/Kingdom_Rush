@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df907c1d6e177c4b9c2e52daacaa1ec, type: 3}
+  m_Name: BomTNT
+  m_EditorClassIdentifier: 
+  itemId: 3
+  itemName: DYNAMITE
+  description: "\rBlast your enemies to pieces with these specially designed gnome
+    explosives.\r\n\r\nConstruction guaranteed"
+  gemCost: 50
+  itemIcon: {fileID: -1353577186, guid: 1442dad86a989834491d206dd1dbb78b, type: 3}
+  singleBombDuration: 5

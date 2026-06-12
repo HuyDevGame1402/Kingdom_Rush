@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b26cb45cb2377040a3aa714c0a26359, type: 3}
+  m_Name: EmpoweredMagicSO
+  m_EditorClassIdentifier: 
+  upgradeID: 14
+  upgradeName: Empowered Magic
+  description: Increases wizard's attack damage (by 15%).
+  upgradeIcon: {fileID: 1473485792, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: 77980599, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 2
+  attackBuff: 15

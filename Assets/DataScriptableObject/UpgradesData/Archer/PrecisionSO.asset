@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489703a5e191ed342aef4b360ce48062, type: 3}
+  m_Name: PrecisionSO
+  m_EditorClassIdentifier: 
+  upgradeID: 5
+  upgradeName: 'Precision '
+  description: Marksmen attacks have a chance of dealing double damage. (10%)
+  upgradeIcon: {fileID: 239454902, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: -2957777, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 3
+  doubleDamage: 10

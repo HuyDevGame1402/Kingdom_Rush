@@ -1,14 +1,10 @@
 using UnityEngine;
 using System;
 
-public class StartUI : MonoBehaviour, IUIView
+public class StartUI : UIView
 {
     [SerializeField] private Animator animator;
 
-    public bool isOpen { get; set; }
-
-    public string nameEventOpen => "STARTUIOPEN";
-    public string nameEventClose => "STARTUICLOSE";
 
     private void Start()
     {
@@ -22,7 +18,7 @@ public class StartUI : MonoBehaviour, IUIView
         EventManager.Unregister(nameEventClose, () => CloseUI(null));
     }
 
-    public void OpenUI(Action onComplete = null)
+    protected override void OpenUI(Action onComplete = null)
     {
         isOpen = true;
         gameObject.SetActive(true);
@@ -35,7 +31,7 @@ public class StartUI : MonoBehaviour, IUIView
         onComplete?.Invoke();
     }
 
-    public void CloseUI(Action onComplete = null)
+    protected override void CloseUI(Action onComplete = null)
     {
         isOpen = false;
 

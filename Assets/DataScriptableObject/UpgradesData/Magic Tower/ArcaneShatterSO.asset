@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d4137e7e3cf994eb8237ac477fe342, type: 3}
+  m_Name: ArcaneShatterSO
+  m_EditorClassIdentifier: 
+  upgradeID: 12
+  upgradeName: Arcane Shatter
+  description: Magic attacks destroy a potion of enemy physical armor on every hit.
+  upgradeIcon: {fileID: 1117893850, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: -1906468011, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 1
+  ammorReduce: 3

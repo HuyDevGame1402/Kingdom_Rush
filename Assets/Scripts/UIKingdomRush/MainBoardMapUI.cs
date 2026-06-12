@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class MainBoardMapUI : MonoBehaviour, IUIView
+public class MainBoardMapUI : UIView
 {
     public List<GameObject> gameObjects = new List<GameObject>();
     public SmokeDecoAnimation smokeDecoAnimation;
-    public bool isOpen { get; set; }
-
-    public string nameEventOpen => "MAINBOARDMAPUIOPEN";
-    public string nameEventClose => "MAINBOARDMAPUICLOSE";
     public CloseButton closeButton;
+
+    public AudioClip musicMainMenu;
+    public AudioClip musicMap;
 
     private void Start()
     {
@@ -25,12 +24,13 @@ public class MainBoardMapUI : MonoBehaviour, IUIView
         EventManager.Unregister(nameEventClose, () => CloseUI(null));
     }
 
-    public void OpenUI(Action onComplete = null)
+    protected override void OpenUI(Action onComplete = null)
     {
         closeButton.OnCloseUI();
         LoadGameUI.Instance.DoorClose();
         isOpen = true;
         StartCoroutine(WaitTimeForLoadCredits(true));
+        MusicManager.Instance.PlayeMusicGame(musicMap);
         onComplete?.Invoke();
     }
 
@@ -43,11 +43,12 @@ public class MainBoardMapUI : MonoBehaviour, IUIView
         LoadGameUI.Instance.DoorOpen();
     }
 
-    public void CloseUI(Action onComplete = null)
+    protected override void CloseUI(Action onComplete = null)
     {
         LoadGameUI.Instance.DoorClose();
         isOpen = false;
         StartCoroutine(WaitTimeForLoadCredits(false));
+        MusicManager.Instance.PlayeMusicGame(musicMainMenu);
         onComplete?.Invoke();
     }
     private void ActiveObjects(bool isActive)

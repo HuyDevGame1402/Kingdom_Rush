@@ -30,7 +30,7 @@ public class TestLayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = moveInput * speed; // Cập nhật vận tốc cho Rigidbody2D
+        rb.linearVelocity = moveInput * speed; // Cập nhật vận tốc cho Rigidbody2D
     }
 
 

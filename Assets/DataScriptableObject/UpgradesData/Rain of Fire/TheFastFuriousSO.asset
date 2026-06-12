@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8546460589b0dc04e8d94b5bb7846eb5, type: 3}
+  m_Name: TheFastFuriousSO
+  m_EditorClassIdentifier: 
+  upgradeID: 23
+  upgradeName: The Fast & Furious
+  description: Increases meteor damage (to 90-120), explosion radius by 25% and reduces
+    cooldown by 10 seconds (from 80 seconds).
+  upgradeIcon: {fileID: -1153274789, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: -554110548, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 3
+  radiusAttack: 25
+  minDamage: 90
+  maxDamage: 120
+  timeColdDown: 10

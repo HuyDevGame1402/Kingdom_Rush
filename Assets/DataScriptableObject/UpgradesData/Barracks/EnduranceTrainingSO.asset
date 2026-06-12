@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131f21439b6646f44bdbd0a534b61603, type: 3}
+  m_Name: EnduranceTrainingSO
+  m_EditorClassIdentifier: 
+  upgradeID: 9
+  upgradeName: Endurance Training
+  description: Barracks train soldiers with even more health. (+10% health, stacks
+    additively for 20% total)
+  upgradeIcon: {fileID: 255825220, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  upgradeIconBrown: {fileID: -1598981479, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  starsRequired: 2
+  healthBuff: 10

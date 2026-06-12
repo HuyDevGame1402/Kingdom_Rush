@@ -34,6 +34,9 @@ public class UnitDataSO : ScriptableObject
     [Header("Animation Settings")]
     public UnitAnimationConfig animations;
 
+    public Vector3 localScaleLeft;
+    public Vector3 localScaleRight;
+
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()
     {

@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8602801ceeda6f34db525a3e05ca9f01, type: 3}
+  m_Name: Alleria
+  m_EditorClassIdentifier: 
+  heroID: 2
+  heroName: Alleria
+  description: SILENT AS THE NIGHT, LIGHT AS A FEATHER AND DEADLY BEAUTIFUL TOO MANY
+    HAVE FALLEN BY HER CHARMING GAZE AND MANY MORE BY HER FATAL BOW.
+  heroIcon: {fileID: -897622790, guid: 0982bbde7d3022941804a4a1a665caea, type: 3}
+  heroIconInGame: {fileID: 21300000, guid: db99d8632908b694ab54a66706f574f3, type: 3}
+  heroUISelect: {fileID: 21300000, guid: b430bb23c9ab9bd49ac1b38491482705, type: 3}
+  imageButtonLock: {fileID: 1845097589, guid: 08d2767514ebcfa4ea6d6f830d108c3b, type: 3}
+  heroPrefab: {fileID: 0}
+  health: 4
+  attackMelee: 3
+  attackRanged: 5
+  speed: 7
+  priceHeroNumber: 0
+  priceHeroText: 
+  moveSpeed: 3
+  attackCooldown: 0.6
+  respawnTime: 15
+  healthRegenRate: 21
+  levelStats:
+  - level: 1
+    maxHealth: 300
+    minDamageMelee: 2
+    maxDamageMelee: 4
+    minDamageRanged: 7
+    maxDamageRanged: 12
+    armor: 0
+  - level: 2
+    maxHealth: 324
+    minDamageMelee: 4
+    maxDamageMelee: 6
+    minDamageRanged: 8
+    maxDamageRanged: 14
+    armor: 0
+  - level: 3
+    maxHealth: 348
+    minDamageMelee: 6
+    maxDamageMelee: 8
+    minDamageRanged: 9
+    maxDamageRanged: 15
+    armor: 0
+  - level: 4
+    maxHealth: 372
+    minDamageMelee: 7
+    maxDamageMelee: 11
+    minDamageRanged: 10
+    maxDamageRanged: 17
+    armor: 0
+  - level: 5
+    maxHealth: 396
+    minDamageMelee: 9
+    maxDamageMelee: 13
+    minDamageRanged: 11
+    maxDamageRanged: 18
+    armor: 0
+  - level: 6
+    maxHealth: 420
+    minDamageMelee: 10
+    maxDamageMelee: 16
+    minDamageRanged: 12
+    maxDamageRanged: 20
+    armor: 0
+  - level: 7
+    maxHealth: 444
+    minDamageMelee: 12
+    maxDamageMelee: 18
+    minDamageRanged: 13
+    maxDamageRanged: 21
+    armor: 0
+  - level: 8
+    maxHealth: 468
+    minDamageMelee: 14
+    maxDamageMelee: 20
+    minDamageRanged: 14
+    maxDamageRanged: 23
+    armor: 0
+  - level: 9
+    maxHealth: 492
+    minDamageMelee: 15
+    maxDamageMelee: 23
+    minDamageRanged: 14
+    maxDamageRanged: 24
+    armor: 0
+  - level: 10
+    maxHealth: 516
+    minDamageMelee: 17
+    maxDamageMelee: 25
+    minDamageRanged: 15
+    maxDamageRanged: 26
+    armor: 0
+  skills: []

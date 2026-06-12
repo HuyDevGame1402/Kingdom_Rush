@@ -6,11 +6,11 @@ public class CloseButton : MonoBehaviour
 {
     public Button buttonClose;
     public GameObject uiObject;
-    public IUIView uiView;
+    public UIView uiView;
     private void Start()
     {
         buttonClose = GetComponent<Button>();
-        uiView = uiObject.GetComponent<IUIView>();
+        uiView = uiObject.GetComponent<UIView>();
         buttonClose.onClick.AddListener(OnCloseUI);
     }
 

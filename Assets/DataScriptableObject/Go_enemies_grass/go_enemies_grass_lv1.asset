@@ -16,7 +16,7 @@ MonoBehaviour:
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv1"
   maxHealth: 15
-  moveSpeed: 0.3
+  moveSpeed: 1
   armor: 0
   magicResistance: 0
   minDamage: 1
@@ -31,33 +31,42 @@ MonoBehaviour:
       endFrame: 67
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     run:
       startFrame: 1
       endFrame: 22
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     runDown:
       startFrame: 45
       endFrame: 66
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     runUp:
       startFrame: 23
       endFrame: 44
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     attack:
       startFrame: 67
       endFrame: 82
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     death:
       startFrame: 106
       endFrame: 120
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     skill:
       startFrame: 1
       endFrame: 1
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
+  localScaleLeft: {x: -1.5, y: 1.5, z: 1}
+  localScaleRight: {x: 1.5, y: 1.5, z: 1}
