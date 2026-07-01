@@ -20,7 +20,8 @@ public class EnemyDeathState : IEnemyState
                 enemy.gameObject, id, prefix, deathConfig, frameRate,
                 onComplete: () => {
                     Debug.Log($"💀 [{enemy.name}] Đã diễn xong hoạt ảnh chết. Xóa GameObject.");
-                    Object.Destroy(enemy.gameObject);
+                    //Object.Destroy(enemy.gameObject);
+                    enemy.gameObject.SetActive(false);
                 }
             );
         }

@@ -663,7 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: {x: 1, y: 0}
   _controller: {fileID: 919447040639492033}
-  attackSpawn: {fileID: 7550609023287949172, guid: 946a4a7da75db454ca1b76fa0abd3840, type: 3}
+  attackSpawn: {fileID: 8877589741357496520, guid: 3682501939df79841a119b7a4dbc8774, type: 3}
   firePoint: {fileID: 4216121673755404634}
 --- !u!1 &8914837380965182301
 GameObject:

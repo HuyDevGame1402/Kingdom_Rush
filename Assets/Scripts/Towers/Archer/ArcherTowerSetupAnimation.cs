@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
 
     private List<IHeroAnimation> heroList = new List<IHeroAnimation>();
     public int indexHeroAttack = 0;
+    public Transform enemyTest;
 
     private void Awake()
     {
@@ -61,8 +63,8 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
             heroGameObjects[i].transform.localPosition = _dataTower.heroPositionList[i];
         }
     }
-
-    public void Attack(Transform enemyTarget, TowerStateMachine tower)
+    public void Attack(Transform enemyTarget, TowerStateMachine tower, 
+        System.Action onComplete = null, int damage = 1)
     {
         TowerAttackAnimation(
             tower.GetDataTower().animationTower,
@@ -71,10 +73,11 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
             tower.GetDataTower().frameTowerStartIdle,
             tower.GetDataTower().frameTowerEndIdle
         );
-        if(smokeOb != null)
+
+        if (smokeOb != null)
         {
             smokeOb.SetActive(true);
-            SpriteSheetAnimator.Instance.PlayAnimation(smokeOb,tower.GetDataTower().smokeAnim.nameAnimation,
+            SpriteSheetAnimator.Instance.PlayAnimation(smokeOb, tower.GetDataTower().smokeAnim.nameAnimation,
                 tower.GetDataTower().smokeAnim.startFrame,
                 tower.GetDataTower().smokeAnim.endFrame,
                 frameRate: -1,
@@ -87,27 +90,40 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
                 }
             );
         }
+
         if (isSpawnAttack)
         {
-            SpawnAttack(enemyTarget);
+            SpawnAttack(enemyTarget, damage);
+            // Nếu đây là trụ bắn thẳng (như trụ bom tự spawn đạn không qua hero), 
+            // thì gọi onComplete luôn sau khi spawn đạn
+            onComplete?.Invoke();
         }
+
         if (heroList.Count > 0)
         {
-            if(indexHeroAttack == -1)
+            if (indexHeroAttack == -1)
             {
-                for(int i = 0; i < heroList.Count; i++)
+                for (int i = 0; i < heroList.Count; i++)
                 {
-                    heroList[i].Attack(enemyTarget, tower);
+                    // Truyền onComplete vào từng hero
+                    heroList[i].Attack(enemyTarget, tower, onComplete);
                 }
                 return;
             }
-            // Gọi Attack qua Interface, hệ thống tự biết Archer hay Bomb để chạy code tương ứng
-            heroList[indexHeroAttack].Attack(enemyTarget, tower);
+
+            // Truyền onComplete vào hero được chỉ định tấn công lượt này
+            heroList[indexHeroAttack].Attack(enemyTarget, tower, onComplete);
+
             indexHeroAttack++;
             if (indexHeroAttack >= heroList.Count)
             {
                 indexHeroAttack = 0;
             }
+        }
+        else if (!isSpawnAttack)
+        {
+            // Phòng hờ nếu trụ không có hero cũng không tự spawn đạn để tránh treo State
+            onComplete?.Invoke();
         }
     }
 
@@ -126,9 +142,9 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
         SetupHeroPosition(_dataTower);
         IdleHeros();
     }
-    private void SpawnAttack(Transform enemyTarget)
+    private void SpawnAttack(Transform enemyTarget, int damage = 1)
     {
-        GameObject projectileGO = Object.Instantiate(spawnAttack, firePoint.transform.position, Quaternion.identity);
+        GameObject projectileGO = Instantiate(spawnAttack, firePoint.transform.position, Quaternion.identity);
 
         // 2. Tìm lớp cha chung
         BaseProjectile projectileScript = projectileGO.GetComponent<BaseProjectile>();
@@ -139,7 +155,8 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
             if (projectileScript is BombProjectile bomb)
             {
                 // Nếu linh hồn của nó là Mũi tên -> Bắn kiểu Parabol có ArcHeight
-                bomb.LaunchWithArc(enemyTarget, tower.GetDataTower().attackSpeed, tower.GetDataTower().arrowArcHeight);
+                bomb.LaunchWithArc(enemyTarget, tower.GetDataTower().attackSpeed, 
+                    tower.GetDataTower().arrowArcHeight, damage);
             }
         }
     }

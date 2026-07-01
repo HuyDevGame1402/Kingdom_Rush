@@ -21,10 +21,19 @@ public class TriggerAttackTowerKingdomRush : MonoBehaviour
     {
         if (collision.CompareTag("EnemyKingdomRush"))
         {
-            if (towerStateMachine.CurrentTarget != null && towerStateMachine.CurrentTarget == collision.transform)
-                towerStateMachine.SetTargetEnemy(null);
             if (targets.Contains(collision.transform) == true)
                 targets.Remove(collision.transform);
+            if (towerStateMachine.CurrentTarget != null && towerStateMachine.CurrentTarget == collision.transform)
+            {
+                if(targets.Count > 0)
+                {
+                    towerStateMachine.SetTargetEnemy(targets[0]);
+                }
+                else
+                {
+                    towerStateMachine.SetTargetEnemy(null);
+                }
+            }    
         }
     }
 }

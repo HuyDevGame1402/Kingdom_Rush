@@ -15,7 +15,7 @@ MonoBehaviour:
   unitName: go_enemies_grass
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv1"
-  maxHealth: 15
+  maxHealth: 20
   moveSpeed: 1
   armor: 0
   magicResistance: 0

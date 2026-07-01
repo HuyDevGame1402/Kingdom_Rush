@@ -30,6 +30,10 @@ public class EnemyController : MonoBehaviour
 
     // Thêm một biến ẩn ở trên cùng của class EnemyController để ghi nhớ hướng đi hiện tại
     private string lastPlayedAnimDirection = "";
+    public bool IsMoving => currentState == MoveState;
+    public Transform centerEnemy;
+
+    [SerializeField] private Health enemyHealth; 
 
     void Start()
     {
@@ -44,6 +48,10 @@ public class EnemyController : MonoBehaviour
 
         // Bắt đầu bằng trạng thái di chuyển
         TransitionToState(MoveState);
+        centerEnemy = transform.GetComponent<EnemyDataScript>().centerEnemy;
+        enemyHealth = transform.GetComponent<Health>();
+
+        enemyHealth.InitHealth((int)unitData.maxHealth);
     }
 
     void Update()
@@ -142,6 +150,7 @@ public class EnemyController : MonoBehaviour
         float frameRate = unitData.animations.frameRate;
 
         EnemySpriteAnimator.Instance.PlayAnimationByRange(gameObject, id, prefix, selectedRange, frameRate);
+    
     }
 
     // --- CHECK ĐIỀU KIỆN TẤN CÔNG ---
@@ -157,11 +166,13 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (isDead) return;
-        currentHealth -= amount;
-
-        if (currentHealth <= 0)
+        if(enemyHealth != null)
         {
-            TransitionToState(DeathState);
+            enemyHealth.ApplyDamage((int)amount);
+            if (enemyHealth.IsDead())
+            {
+                TransitionToState(DeathState);
+            }
         }
     }
 
@@ -178,5 +189,48 @@ public class EnemyController : MonoBehaviour
         {
             waypoints.Add(road.GetChild(i));
         }
+    }
+
+    public Vector3 GetFuturePosition(float seconds)
+    {
+        if (isDead)
+            return centerEnemy != null ? centerEnemy.position : transform.position;
+
+        if (waypoints == null || waypoints.Count == 0)
+            return centerEnemy != null ? centerEnemy.position : transform.position;
+
+        Vector3 centerOffset = centerEnemy != null
+            ? centerEnemy.position - transform.position
+            : Vector3.zero;
+
+        float remainDistance = unitData.moveSpeed * seconds;
+
+        Vector3 currentPos = transform.position;
+        int wpIndex = currentWaypointIndex;
+
+        while (remainDistance > 0f)
+        {
+            if (wpIndex >= waypoints.Count)
+                return currentPos + centerOffset;
+
+            Vector3 nextPoint = waypoints[wpIndex].position;
+
+            float distance = Vector3.Distance(currentPos, nextPoint);
+
+            if (distance > remainDistance)
+            {
+                Vector3 futurePos =
+                    currentPos +
+                    (nextPoint - currentPos).normalized * remainDistance;
+
+                return futurePos + centerOffset;
+            }
+
+            remainDistance -= distance;
+            currentPos = nextPoint;
+            wpIndex++;
+        }
+
+        return currentPos + centerOffset;
     }
 }

@@ -20,10 +20,11 @@ MonoBehaviour:
   visualPrefab: {fileID: 0}
   upgradeCost: 110
   nextLevel: {fileID: 11400000, guid: a4abcf198f1733c45885769fb86549d7, type: 2}
-  damage: 6
-  attackSpeed: 2
-  attackRange: 0.8
-  arrowArcHeight: 1.5
+  minDamage: 4
+  maxDamage: 6
+  attackSpeed: 3.5
+  attackRate: 0.8
+  arrowArcHeight: 2
   heroPositionList:
   - {x: -0.112, y: 0.712, z: 0}
   - {x: 0.201, y: 0.708, z: 0}
@@ -32,19 +33,6 @@ MonoBehaviour:
   frameTowerEndIdle: 1
   frameTowerStartAttack: 1
   frameTowerEndAttack: 1
-  dataTowerAnimation:
-  - name: 
-    frameStart: 0
-    frameEnd: 0
-  - name: 
-    frameStart: 0
-    frameEnd: 0
-  - name: 
-    frameStart: 0
-    frameEnd: 0
-  - name: 
-    frameStart: 0
-    frameEnd: 0
   animationHero: tower_archer_lvl1_shooter_
   frameHeroStartIdleUp: 2
   frameHeroEndIdleUp: 2
@@ -54,3 +42,9 @@ MonoBehaviour:
   frameHeroEndAttackUp: 18
   frameHeroStartAttackDown: 3
   frameHeroEndAttackDown: 10
+  heroBombAnim: []
+  positionSmoke: {x: 0, y: 0, z: 0}
+  smokeAnim:
+    nameAnimation: 
+    startFrame: 1
+    endFrame: 1

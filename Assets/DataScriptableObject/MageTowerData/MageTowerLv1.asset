@@ -20,9 +20,10 @@ MonoBehaviour:
   visualPrefab: {fileID: 0}
   upgradeCost: 160
   nextLevel: {fileID: 11400000}
-  damage: 15
-  attackSpeed: 2
-  attackRange: 2.5
+  minDamage: 9
+  maxDamage: 17
+  attackSpeed: 4
+  attackRate: 1.5
   arrowArcHeight: 1.5
   heroPositionList:
   - {x: 0.029, y: 0.863, z: 0}
@@ -40,3 +41,9 @@ MonoBehaviour:
   frameHeroEndAttackUp: 31
   frameHeroStartAttackDown: 2
   frameHeroEndAttackDown: 15
+  heroBombAnim: []
+  positionSmoke: {x: 0, y: 0, z: 0}
+  smokeAnim:
+    nameAnimation: 
+    startFrame: 1
+    endFrame: 1

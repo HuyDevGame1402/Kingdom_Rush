@@ -2957,6 +2957,8 @@ MonoBehaviour:
   target: {fileID: 0}
   currentHealth: 0
   isDead: 0
+  centerEnemy: {fileID: 0}
+  enemyHealth: {fileID: 0}
 --- !u!4 &432777792
 Transform:
   m_ObjectHideFlags: 0
@@ -3648,7 +3650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &527119004
 Transform:
   m_ObjectHideFlags: 0
@@ -13136,7 +13138,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920997470549353124, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2920997470549353124, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: 'waypoints.Array.data[0]'

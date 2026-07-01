@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 
+
 public abstract class BaseProjectile : MonoBehaviour
 {
+    // ─── Trạng thái bay ────────────────────────────────────────────────────────
     protected Transform targetEnemy;
     protected Vector3 startPosition;
     protected float speed;
-    protected bool isFlying = false;
+    public bool isFlying = false;
+    public int damage;
+    public bool continueIfTargetDies = true;
 
-    public bool isParabol = true;
-
-    // Hàm khởi tạo chung mà Tháp nào cũng gọi được
-    public virtual void Launch(Transform enemy, float projectileSpeed)
+    public virtual void Launch(Transform enemy, float projectileSpeed,
+        int damage = 1)
     {
         if (enemy == null)
         {
@@ -23,38 +25,41 @@ public abstract class BaseProjectile : MonoBehaviour
         speed = projectileSpeed;
         isFlying = true;
         gameObject.SetActive(true);
+        this.damage = damage;
+        OnLaunched();
     }
 
-    protected virtual void Update()
-    {
-        if (!isFlying) return;
+    protected virtual void OnLaunched() { }
 
-        if (targetEnemy == null)
-        {
-            OnTargetLost();
-            return;
-        }
-
-        MoveLogic();
-    }
-
-    // Mỗi loại đạn sẽ tự viết cách bay của riêng mình ở đây (Tính đa hình)
     protected abstract void MoveLogic();
 
-    // Logic khi quái chết giữa đường
     protected virtual void OnTargetLost()
     {
         isFlying = false;
         gameObject.SetActive(false);
     }
 
-    // Logic chung khi trúng mục tiêu
     protected virtual void OnHitTarget()
     {
         isFlying = false;
-        Debug.Log($"<color=yellow>[Projectile]</color> Đã bắn trúng: {targetEnemy.name}");
-        // Xử lý trừ máu quái tại đây...
+        Debug.Log($"<color=yellow>[Projectile]</color> Trúng: {targetEnemy?.name}");
+        // TODO: gọi DealDamage(), SpawnHitFX(), v.v.
+        gameObject.SetActive(false);
+    }
 
-        gameObject.SetActive(false); // Ẩn đi để tối ưu Object Pooling
+    protected virtual void Update()
+    {
+        if (!isFlying) return;
+
+        if(continueIfTargetDies == false)
+        {
+            if (targetEnemy == null || !targetEnemy.gameObject.activeInHierarchy)
+            {
+                OnTargetLost();
+                return;
+            }
+        }
+
+        MoveLogic();
     }
 }

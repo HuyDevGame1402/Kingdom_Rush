@@ -2,29 +2,45 @@
 
 public class TowerAttackState : ITowerState
 {
+    private bool isAttackAnimationFinished;
+
     public void EnterState(TowerStateMachine tower)
     {
-        // Thực hiện hành vi bắn đạn
+        isAttackAnimationFinished = false;
         ExecuteAttack(tower);
     }
 
     public void UpdateState(TowerStateMachine tower)
     {
-        // Sau khi bắn xong 1 viên, chuyển ngay sang trạng thái Đợi hồi chiêu nạp đạn
-        tower.TransitionToState(tower.CooldownState);
+        // CHỈ chuyển sang Cooldown khi hoạt ảnh bắn đã hoàn thành xong xuôi
+        if (isAttackAnimationFinished)
+        {
+            tower.TransitionToState(tower.CooldownState);
+        }
     }
 
     public void ExitState(TowerStateMachine tower)
     {
-        // Kết thúc lượt bắn
+        // Reset lại biến trạng thái khi thoát
+        isAttackAnimationFinished = false;
     }
 
     private void ExecuteAttack(TowerStateMachine tower)
     {
-        if (tower.CurrentTarget == null) return;
-        tower.archerTowerAnimation.Attack(tower.CurrentTarget.
-            GetComponent<EnemyDataScript>().centerEnemy,
-            tower);
-        Debug.Log($"[Tower] Đã bắn vào quái: {tower.CurrentTarget.name}");
+        if (tower.CurrentTarget == null)
+        {
+            isAttackAnimationFinished = true; // Không có quái thì hoàn thành luôn
+            return;
+        }
+
+        // Truyền một callback vào để báo hiệu khi nào Animation chạy xong hoàn toàn
+        tower.archerTowerAnimation.Attack(
+            tower.CurrentTarget.GetComponent<EnemyDataScript>().centerEnemy,
+            tower,
+            () => { isAttackAnimationFinished = true; }, // Hành động chạy khi xong animation
+            DamageStatic.GetDamageBase(tower.GetDataTower().minDamage, tower.GetDataTower().maxDamage)
+        );
+
+        Debug.Log($"[Tower] Đã bắt đầu hoạt ảnh bắn vào quái: {tower.CurrentTarget.name}");
     }
 }

@@ -30,9 +30,10 @@ public class CastleData : ScriptableObject
     public CastleData nextLevel;
 
     [Header("Damage")]
-    public int damage;
+    public int minDamage;
+    public int maxDamage;
     public float attackSpeed;
-    public float attackRange;
+    public float attackRate;
     public float arrowArcHeight = 1.5f;
 
     [Header("Position Hero")]

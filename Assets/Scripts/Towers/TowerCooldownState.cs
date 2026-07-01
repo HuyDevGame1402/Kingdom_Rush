@@ -7,7 +7,7 @@ public class TowerCooldownState : ITowerState
     public void EnterState(TowerStateMachine tower)
     {
         // Đặt đồng hồ đếm ngược bằng thời gian hồi của Trụ
-        cooldownTimer = tower.GetDataTower().attackRange;
+        cooldownTimer = tower.GetDataTower().attackRate;
     }
 
     public void UpdateState(TowerStateMachine tower)

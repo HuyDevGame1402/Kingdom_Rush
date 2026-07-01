@@ -20,9 +20,10 @@ MonoBehaviour:
   visualPrefab: {fileID: 0}
   upgradeCost: 220
   nextLevel: {fileID: 11400000}
-  damage: 21
-  attackSpeed: 1.5
-  attackRange: 3
+  minDamage: 8
+  maxDamage: 15
+  attackSpeed: 3.5
+  attackRate: 3
   arrowArcHeight: 1
   heroPositionList:
   - {x: -0.058, y: 0.584, z: 0}

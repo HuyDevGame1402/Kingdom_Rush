@@ -9,9 +9,9 @@ public class MageBoltProjectile : BaseProjectile
     [SerializeField] private int startHitFrame = 3;
     [SerializeField] private int endHitFrame = 10;
 
-    public override void Launch(Transform enemy, float projectileSpeed)
+    public override void Launch(Transform enemy, float projectileSpeed, int damage = 1)
     {
-        base.Launch(enemy, projectileSpeed);
+        base.Launch(enemy, projectileSpeed, damage);
 
         // Vừa bay ra là lập tức lặp lại (Loop) hoạt ảnh đạn bay (Frame 1 -> 2)
         SpriteSheetAnimator.Instance.PlayAnimation(gameObject, animName, startFlyFrame, endFlyFrame);
@@ -37,7 +37,10 @@ public class MageBoltProjectile : BaseProjectile
     protected override void OnHitTarget()
     {
         isFlying = false; // Dừng di chuyển
-
+        if (targetEnemy.parent.TryGetComponent(out EnemyController enemyCtr))
+        {
+            enemyCtr.TakeDamage(damage);
+        }
         // Diễn hoạt ảnh nổ và chỉ định rõ ràng callback onComplete
         SpriteSheetAnimator.Instance.PlayAnimation(
             target: gameObject,

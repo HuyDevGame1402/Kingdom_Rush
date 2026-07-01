@@ -27,9 +27,9 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
                 PlayIdleUp(tower);
                 break;
         }
-        Debug.LogWarning("Run animation Hero");
     }
-    public void Attack(Transform enemyTarget, TowerStateMachine tower)
+
+    public void Attack(Transform enemyTarget, TowerStateMachine tower, System.Action onComplete = null)
     {
         dir = (enemyTarget.position - transform.position).normalized;
         DirectionUtility.GetDirection(
@@ -40,17 +40,20 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
 
         UpdateFacing(faceLeft);
 
+        Debug.Log($"[LOG TẤN CÔNG] Bắt đầu gọi hàm Attack. Hướng bắn: {vertical}. Mục tiêu: {(enemyTarget != null ? enemyTarget.name : "NULL")}");
+
         switch (vertical)
         {
             case VerticalAnimation.Down:
-                PlayAttackDown(enemyTarget, tower);
+                PlayAttackDown(enemyTarget, tower, onComplete);
                 break;
 
             case VerticalAnimation.Up:
-                PlayAttackUp(enemyTarget, tower);
+                PlayAttackUp(enemyTarget, tower, onComplete);
                 break;
         }
     }
+
     private void PlayIdleDown(TowerStateMachine tower)
     {
         SpriteSheetAnimator.Instance.PlayAnimation(
@@ -71,39 +74,58 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
         );
     }
 
-    private void PlayAttackDown(Transform enemyTarget, TowerStateMachine tower)
+    private void PlayAttackDown(Transform enemyTarget, TowerStateMachine tower, System.Action onComplete)
     {
+        int startFrame = tower.GetDataTower().frameHeroStartAttackDown;
+        int endFrame = tower.GetDataTower().frameHeroEndAttackDown;
+
+        Debug.Log($"[LOG DOWN] Cấu hình Anim Down: Chạy từ {startFrame} đến {endFrame}. Sinh đạn ở CUỐI hoạt ảnh.");
+
+        
         SpriteSheetAnimator.Instance.PlayAnimation(
             gameObject,
             tower.GetDataTower().animationHero,
-            tower.GetDataTower().frameHeroStartAttackDown,
-            tower.GetDataTower().frameHeroEndAttackDown,
-            tower.GetDataTower().frameHeroEndAttackDown - 5,
-            () => {
-                if (enemyTarget != null) SpawnAttack(enemyTarget, tower);
-            },
-            - 1, () =>
+            startFrame,
+            endFrame,
+            -1,
+            null,
+            -1,
+            () =>
             {
+                Debug.Log($"[LOG EVENT] Hoạt ảnh kết thúc! Gọi SpawnAttack ngay lập tức.");
+                if (enemyTarget != null) SpawnAttack(enemyTarget, tower);
+
+                Debug.Log("[LOG CALLBACK] Quay về Idle và báo Hồi chiêu.");
                 Idle(dir, tower);
+                onComplete?.Invoke();
             }
         );
     }
 
-    private void PlayAttackUp(Transform enemyTarget, TowerStateMachine tower)
+    private void PlayAttackUp(Transform enemyTarget, TowerStateMachine tower, System.Action onComplete)
     {
+        int startFrame = tower.GetDataTower().frameHeroStartAttackUp;
+        int endFrame = tower.GetDataTower().frameHeroEndAttackUp;
+
+        Debug.Log($"[LOG UP] Cấu hình Anim Up: Chạy từ {startFrame} đến {endFrame}. Sinh đạn ở CUỐI hoạt ảnh.");
+
         SpriteSheetAnimator.Instance.PlayAnimation(
             gameObject,
             tower.GetDataTower().animationHero,
-            tower.GetDataTower().frameHeroStartAttackUp,
-            tower.GetDataTower().frameHeroEndAttackUp,
-            tower.GetDataTower().frameHeroEndAttackDown - 5,
-            () => {
-                if (enemyTarget != null) SpawnAttack(enemyTarget, tower);
-            },
-            -1, () =>
+            startFrame,
+            endFrame,
+            -1,
+            null,
+            -1,
+            () =>
             {
-                SpawnAttack(enemyTarget, tower);
+                // 🌟 SINH ĐẠN NGAY TẠI ĐÂY - Nơi chắc chắn code sẽ chạy tới
+                Debug.Log($"[LOG EVENT] Hoạt ảnh kết thúc! Gọi SpawnAttack ngay lập tức.");
+                if (enemyTarget != null) SpawnAttack(enemyTarget, tower);
+
+                Debug.Log("[LOG CALLBACK] Quay về Idle và báo Hồi chiêu.");
                 Idle(dir, tower);
+                onComplete?.Invoke();
             }
         );
     }
@@ -112,29 +134,41 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
     {
         Vector3 scale = transform.localScale;
         float absX = Mathf.Abs(scale.x);
-        scale.x = faceLeft ? -absX : absX; // ✅ Luôn dựa trên giá trị tuyệt đối
+        scale.x = faceLeft ? -absX : absX;
         transform.localScale = scale;
     }
+
     private void SpawnAttack(Transform enemyTarget, TowerStateMachine tower)
     {
-        // 1. Sinh ra Projectile bất kỳ (Arrow hoặc MageBolt đều được)
-        GameObject projectileGO = Object.Instantiate(attackSpawn, firePoint.position, Quaternion.identity);
+        if (attackSpawn == null)
+        {
+            Debug.LogError("[LOG LỖI NẶNG] Biến 'attackSpawn' (Prefab đạn) đang bị trống (None) trong Inspector của HeroArcher! Hãy kéo thả viên đạn vào.");
+            return;
+        }
+        if (firePoint == null)
+        {
+            Debug.LogError("[LOG LỖI NẶNG] Biến 'firePoint' (Vị trí bắn) đang bị trống (None) trong Inspector của HeroArcher! Hãy kéo một Transform vào.");
+            return;
+        }
 
-        // 2. Tìm lớp cha chung
+        Debug.Log($"[LOG SPAWN] Đang khởi tạo viên đạn từ vị trí: {firePoint.position}");
+        GameObject projectileGO = Instantiate(attackSpawn, firePoint.position, Quaternion.identity);
+
         BaseProjectile projectileScript = projectileGO.GetComponent<BaseProjectile>();
-
         if (projectileScript != null)
         {
             // 3. Dùng kĩ thuật ép kiểu để phân biệt cách truyền tham số một cách tự động
             if (projectileScript is ArrowKingdomRush arrow)
             {
                 // Nếu linh hồn của nó là Mũi tên -> Bắn kiểu Parabol có ArcHeight
-                arrow.LaunchWithArc(enemyTarget, tower.GetDataTower().attackSpeed, tower.GetDataTower().arrowArcHeight);
+                arrow.LaunchWithArc(enemyTarget, tower.GetDataTower().attackSpeed, tower.GetDataTower().arrowArcHeight
+                    , DamageStatic.GetDamageBase(tower.GetDataTower().minDamage, tower.GetDataTower().maxDamage));
             }
             else
             {
                 // Nếu là Đạn pháp sư (MageBolt) hoặc các loại đạn thẳng sau này -> Chỉ cần truyền tốc độ thẳng
-                projectileScript.Launch(enemyTarget, tower.GetDataTower().attackSpeed);
+                projectileScript.Launch(enemyTarget, tower.GetDataTower().attackSpeed,
+                    DamageStatic.GetDamageBase(tower.GetDataTower().minDamage, tower.GetDataTower().maxDamage));
             }
         }
     }
