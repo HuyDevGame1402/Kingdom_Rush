@@ -86,6 +86,12 @@ public class SelectTowerManager : MonoBehaviour
         {
             towerCreate = Instantiate(arg2.towerPrefab, towerParent);
             towerCreate.transform.position = groundSelected.position + arg2.offsetPositionSpawnTower;
+            
+            if(towerCreate.TryGetComponent(out BarrackSpawnHero barrackSpawnHero))
+            {
+                barrackSpawnHero.SetTargetSpawn(groundSelected.GetChild(2));
+            }
+            
             Hide();
             groundSelected = null;
             return;

@@ -39,15 +39,6 @@ public class BaseUnitStateMachine : MonoBehaviour
         CurrentState?.Update();
     }
 
-    // Hàm dùng để chuyển đổi giữa các trạng thái
-    //public void TransitionToState(UnitBaseState newState)
-    //{
-    //    if (CurrentState == newState) return;
-
-    //    CurrentState?.Exit();
-    //    CurrentState = newState;
-    //    CurrentState?.Enter();
-    //}
     public void TransitionToState(UnitBaseState newState)
     {
         if (CurrentState == newState) return;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System;
 
 public class BarracksAnimation : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class BarracksAnimation : MonoBehaviour
     [SerializeField] private GameObject doorSprite;
     [SerializeField] private Animator doorAnimator;
     [SerializeField] private float spawnCharacterTime = 1.5f;
+    public event Action OnSpawnHeroEvent;
+    [SerializeField] private float timeOpenDoor = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -51,11 +54,17 @@ public class BarracksAnimation : MonoBehaviour
         doorSprite.GetComponent<SpriteRenderer>().enabled = true;
         IdleDoor();
         OpenDoor();
+        StartCoroutine(CoroutineAwaitOpenDoor());
         StartCoroutine(CoroutineTimeSpawnCharacter());   
     }
     private IEnumerator CoroutineTimeSpawnCharacter()
     {
         yield return new WaitForSeconds(spawnCharacterTime);
         CloseDoor();
+    }
+    private IEnumerator CoroutineAwaitOpenDoor()
+    {
+       yield return new WaitForSeconds(timeOpenDoor);
+        OnSpawnHeroEvent?.Invoke();
     }
 }

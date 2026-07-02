@@ -26,8 +26,8 @@ public class UnitDataSO : ScriptableObject
     public float magicResistance = 0f;
 
     [Header("Combat Stats")]
-    public float minDamage = 2f;
-    public float maxDamage = 4f;
+    public float minDamage;
+    public float maxDamage;
     public float attackRange = 0.5f;
     public float attackCooldown = 1.5f;
 
@@ -36,6 +36,8 @@ public class UnitDataSO : ScriptableObject
 
     public Vector3 localScaleLeft;
     public Vector3 localScaleRight;
+
+    public float heroScale;
 
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()

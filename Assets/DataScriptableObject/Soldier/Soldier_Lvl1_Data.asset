@@ -16,37 +16,58 @@ MonoBehaviour:
   unitType: 0
   description: "L\xEDnh canh"
   maxHealth: 50
-  moveSpeed: 0.3
+  moveSpeed: 0.8
   armor: 0
   magicResistance: 0
-  minDamage: 2
-  maxDamage: 4
+  minDamage: 1
+  maxDamage: 3
   attackRange: 0.5
   attackCooldown: 1.5
   animations:
     animPrefix: soldier_lvl1_
+    frameRate: 0
     idle:
       startFrame: 1
       endFrame: 1
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     run:
       startFrame: 2
       endFrame: 6
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
+    runDown:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    runUp:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
     attack:
       startFrame: 7
       endFrame: 16
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     death:
       startFrame: 17
       endFrame: 23
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     skill:
       startFrame: 1
       endFrame: 1
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
+  localScaleLeft: {x: 0, y: 0, z: 0}
+  localScaleRight: {x: 0, y: 0, z: 0}
+  heroScale: 1.5
