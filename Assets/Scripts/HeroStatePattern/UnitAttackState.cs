@@ -23,15 +23,15 @@ public class UnitAttackState : UnitBaseState
             eventFrame: config.eventFrame,
             onEventTrigger: () => {
                 // Gây sát thương lên mục tiêu ngay tại event frame (ví dụ frame 11)
-                if (unit.currentTarget != null)
-                {
-                    float damage = unit.unitData.GetRandomDamage();
-                    Debug.Log($"{unit.gameObject.name} chém {unit.currentTarget.name} mất {damage} HP");
-                    // unit.currentTarget.GetComponent<BaseUnitStateMachine>().TakeDamage(damage);
-                }
             },
             frameRate: -1f,
             onComplete: () => {
+                if (unit.currentTarget != null)
+                {
+                    unit.currentTarget.GetComponent<EnemyController>().TakeDamage(
+                        DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage));
+
+                }
                 isAttacking = false; // Hoàn thành chuỗi đánh
             }
         );
@@ -43,9 +43,9 @@ public class UnitAttackState : UnitBaseState
         if (isAttacking) return;
 
         // Đánh xong rồi thì đánh giá lại: còn tầm đánh không? Đủ cooldown chưa?
-        if (unit.IsTargetInAttackRange())
+        if (unit.IsTargetInAttackRange() && unit.IsAlignedWithTarget())
         {
-            if (unit.CanAttack())
+            if (unit.CanAttack() && unit.currentTarget.GetComponent<EnemyController>().isDead == false)
                 Enter(); // Tiếp tục làm một hit đánh mới
             else
                 unit.TransitionToState(unit.IdleState); // Chờ hồi chiêu

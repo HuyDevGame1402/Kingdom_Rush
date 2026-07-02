@@ -37,60 +37,97 @@ public class UnitRunState : UnitBaseState
 
     public override void Update()
     {
-        // Kiểm tra xem mục tiêu có còn tồn tại không
         if (unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf)
         {
-            Debug.Log($"<color=cyan>[RunState]</color> {unit.gameObject.name} phát hiện currentTarget bằng NULL. Quay về Idle.");
             unit.TransitionToState(unit.IdleState);
             return;
         }
 
-        // Cập nhật vị trí liên tục của Enemy nếu là mục tiêu tấn công (vì Enemy có thể di chuyển)
         if (unit.IsTargetEnemy())
         {
             actualTargetPosition = unit.currentTarget.position;
         }
 
-        Vector2 línhPos2D = unit.transform.position;
-        float distance = Vector2.Distance(línhPos2D, actualTargetPosition);
+        Vector2 currentPos = unit.transform.position;
 
-        // --- KIỂM TRA ĐIỀU KIỆN DỪNG LẠI ---
+        float distance = Vector2.Distance(currentPos, actualTargetPosition);
+
+        //--------------------------------------------------
+        // ĐỊCH
+        //--------------------------------------------------
         if (unit.IsTargetEnemy())
         {
-            if (distance <= unit.unitData.attackRange)
+            bool inAttackRange = distance <= unit.unitData.attackRange;
+
+            // Đã tới tầm đánh
+            if (inAttackRange)
             {
-                unit.TransitionToState(unit.IdleState); // Hoặc chuyển thẳng sang AttackState tùy logic của bạn
+                // Sử dụng chung hàm IsAlignedWithTarget() thay vì check cứng > 0.1f
+                if (!unit.IsAlignedWithTarget())
+                {
+                    // Nếu chưa thẳng hàng theo tolerance (ví dụ 0.01f), tiếp tục đi chỉnh Y
+                    Vector2 alignPos = new Vector2(
+                        unit.transform.position.x,
+                        unit.currentTarget.position.y);
+
+                    Vector2 dir = (alignPos - currentPos).normalized;
+
+                    unit.transform.position +=
+                        (Vector3)(dir * unit.unitData.moveSpeed * Time.deltaTime);
+
+                    if (dir.x != 0)
+                    {
+                        float scaleX = (dir.x > 0 ? 1 : -1) * unit.unitData.heroScale;
+                        unit.spriteObject.transform.localScale = new Vector3(scaleX, unit.unitData.heroScale, 1);
+                    }
+
+                    return;
+                }
+
+                // Đã ngang hàng -> CHỈ chuyển sang Attack nếu đã HỒI COOLDOWN
+                if (unit.CanAttack())
+                {
+                    unit.TransitionToState(unit.AttackState);
+                }
+                else
+                {
+                    // Nếu chưa hồi chiêu thì về Idle đứng đợi, tránh lặp State gây lỗi tốc đánh
+                    unit.TransitionToState(unit.IdleState);
+                }
                 return;
             }
         }
+        //--------------------------------------------------
+        // POINT
+        //--------------------------------------------------
         else
         {
-            // Đến điểm Point chỉ định (Vì có offset nên có thể dùng sai số nhỏ 0.1f -> 0.2f)
             if (distance <= 0.15f)
             {
-                Debug.Log($"<color=green>[RunState]</color> {unit.gameObject.name} ĐÃ ĐẾN ĐIỂM OFFSET (Khoảng cách tới điểm thực tế: {distance}). Tiến hành xóa target.");
                 unit.currentTarget = null;
                 unit.TransitionToState(unit.IdleState);
                 return;
             }
         }
 
-        // --- DI CHUYỂN ---
-        Vector3 direction = ((Vector3)actualTargetPosition - unit.transform.position).normalized;
-        unit.transform.position += direction * unit.unitData.moveSpeed * Time.deltaTime;
+        //--------------------------------------------------
+        // MOVE
+        //--------------------------------------------------
+        Vector3 direction =
+            ((Vector3)actualTargetPosition - unit.transform.position).normalized;
 
-        // --- LẬT MẶT (FLIP) VÀ SỬA LỖI GIỮ NGUYÊN SCALE ---
+        unit.transform.position +=
+            direction * unit.unitData.moveSpeed * Time.deltaTime;
+
         if (direction.x != 0)
         {
-            // Cách 1: Sử dụng cấu hình heroScale từ ScriptableObject của bạn (Hãy chắc chắn trong UnitDataSO đang để heroScale = 2)
-            float targetScaleX = (direction.x > 0 ? 1 : -1) * unit.unitData.heroScale;
-            unit.spriteObject.transform.localScale = new Vector3(targetScaleX, unit.unitData.heroScale, 1);
+            float scaleX =
+                (direction.x > 0 ? 1 : -1) * unit.unitData.heroScale;
 
-            /* // Cách 2: Nếu không muốn phụ thuộc ScriptableObject, ép cứng giữ nguyên kích thước trục Y hiện tại (đang là 2)
-            float currentAbsoluteScaleY = Mathf.Abs(unit.spriteObject.transform.localScale.y); 
-            float targetScaleX = (direction.x > 0 ? 1 : -1) * currentAbsoluteScaleY;
-            unit.spriteObject.transform.localScale = new Vector3(targetScaleX, currentAbsoluteScaleY, 1);
-            */
+            unit.spriteObject.transform.localScale =
+                new Vector3(scaleX,
+                            unit.unitData.heroScale,
+                            1);
         }
     }
 

@@ -21,7 +21,7 @@ MonoBehaviour:
   magicResistance: 0
   minDamage: 1
   maxDamage: 3
-  attackRange: 0.5
+  attackRange: 0.25
   attackCooldown: 1.5
   animations:
     animPrefix: soldier_lvl1_
@@ -70,4 +70,6 @@ MonoBehaviour:
       animationConfigOffset: []
   localScaleLeft: {x: 0, y: 0, z: 0}
   localScaleRight: {x: 0, y: 0, z: 0}
-  heroScale: 1.5
+  heroScale: 1.8
+  timeToResurrect: 5
+  maxAttacker: 2

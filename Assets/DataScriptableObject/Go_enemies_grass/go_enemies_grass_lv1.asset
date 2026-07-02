@@ -20,8 +20,8 @@ MonoBehaviour:
   armor: 0
   magicResistance: 0
   minDamage: 1
-  maxDamage: 3
-  attackRange: 0.5
+  maxDamage: 4
+  attackRange: 0.25
   attackCooldown: 1.5
   animations:
     animPrefix: goblin_
@@ -70,3 +70,6 @@ MonoBehaviour:
       animationConfigOffset: []
   localScaleLeft: {x: -1.5, y: 1.5, z: 1}
   localScaleRight: {x: 1.5, y: 1.5, z: 1}
+  heroScale: 0
+  timeToResurrect: 0
+  maxAttacker: 1

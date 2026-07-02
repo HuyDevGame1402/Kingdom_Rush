@@ -2,20 +2,24 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    private int health;
-    private int maxHealth;
+    protected int health;
+    protected int maxHealth;
 
     public void InitHealth(int maxHealth)
     {
         this.maxHealth = maxHealth;
         this.health = maxHealth;
     }
-    public void ApplyDamage(int damage)
+    public virtual void ApplyDamage(int damage)
     {
         health -= damage;
     }
     public bool IsDead()
     {
         return health <= 0;
+    }
+    public void ResetHealth()
+    {
+        health = maxHealth;
     }
 }

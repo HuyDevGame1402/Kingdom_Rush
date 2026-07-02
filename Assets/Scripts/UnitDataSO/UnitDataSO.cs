@@ -38,6 +38,9 @@ public class UnitDataSO : ScriptableObject
     public Vector3 localScaleRight;
 
     public float heroScale;
+    public float timeToResurrect;
+
+    public int maxAttacker = 1;
 
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5411950640141830230}
   - component: {fileID: 1994494581715147745}
   - component: {fileID: 623637933509492466}
+  - component: {fileID: 8035308968275934100}
+  - component: {fileID: 3012525775329880863}
   m_Layer: 0
   m_Name: EnemyGoblinLv1
   m_TagString: EnemyKingdomRush
@@ -50,12 +52,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitData: {fileID: 11400000, guid: bb8f60f985af15a4695539cb4aea984c, type: 2}
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   target: {fileID: 0}
+  targetList: []
   currentHealth: 0
   isDead: 0
   centerEnemy: {fileID: 0}
   enemyHealth: {fileID: 623637933509492466}
+  attackerCount: 0
 --- !u!212 &1378991697074639915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -145,8 +166,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.1424036}
-  m_Radius: 0.10786279
+  m_Offset: {x: 0, y: 0.1}
+  m_Radius: 0.7
 --- !u!114 &1994494581715147745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +196,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd60f9270b3fe240882e522de106a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8035308968275934100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122370129681020088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f5c7bf96701ed4b9ccb91b9e3632e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyController: {fileID: 2920997470549353124}
+--- !u!114 &3012525775329880863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122370129681020088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10000
+  multiplier: 100
 --- !u!1 &2778689919189572829
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,12 @@ public class UnitIdleState : UnitBaseState
     {
         var config = unit.unitData.animations.idle;
         SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
+    
+        if(unit.currentTarget != null && unit.IsTargetEnemy() && unit.currentTarget.GetComponent<EnemyController>().isDead)
+        {
+            unit.ResetTarget();
+        }
+    
     }
 
     public override void Update()
@@ -29,8 +35,15 @@ public class UnitIdleState : UnitBaseState
             // --- LOGIC CHIẾN ĐẤU VỚI ENEMY ---
             if (distance <= unit.unitData.attackRange)
             {
-                if (unit.CanAttack())
-                    unit.TransitionToState(unit.AttackState);
+                if (unit.IsAlignedWithTarget())
+                {
+                    if (unit.CanAttack())
+                        unit.TransitionToState(unit.AttackState);
+                }
+                else
+                {
+                    unit.TransitionToState(unit.RunState);
+                }
             }
             else
             {

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
-public class BaseUnitStateMachine : MonoBehaviour
+public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 {
     [Header("Data Configuration")]
     public UnitDataSO unitData;
@@ -8,6 +9,7 @@ public class BaseUnitStateMachine : MonoBehaviour
 
     [Header("Combat Targets (Dành cho AI)")]
     public Transform currentTarget;
+    public List<Transform> targetList = new List<Transform>();
     [HideInInspector] public float lastAttackTime;
 
     // Quản lý các States
@@ -18,6 +20,12 @@ public class BaseUnitStateMachine : MonoBehaviour
     public UnitAttackState AttackState { get; private set; }
     public UnitDeathState DeathState { get; private set; }
 
+    public HealthHero healthHero;
+
+    private Transform parent;
+
+    public int attackerCount;
+
     protected virtual void Awake()
     {
         // Khởi tạo các trạng thái có sẵn
@@ -25,6 +33,30 @@ public class BaseUnitStateMachine : MonoBehaviour
         RunState = new UnitRunState(this);
         AttackState = new UnitAttackState(this);
         DeathState = new UnitDeathState(this);
+        healthHero = GetComponent<HealthHero>();
+        healthHero.InitHealth((int)unitData.maxHealth);
+        healthHero.OnDead += HealthHero_OnDead;
+    }
+
+    private void HealthHero_OnDead()
+    {
+        RemoveAttackerTarget();
+        currentTarget = null;
+        TransitionToState(DeathState);
+        targetList.Clear();
+        attackerCount = 0;
+        if (parent != null && parent.TryGetComponent(out BarrackSpawnHero barrackSpawnHero))
+        {
+            barrackSpawnHero.ResurrectionHero(transform, unitData.timeToResurrect);
+        }
+    }
+
+    private void RemoveAttackerTarget()
+    {
+        if(currentTarget != null && currentTarget.TryGetComponent(out EnemyController enemyController))
+        {
+            enemyController.RemoveAttacker();
+        }
     }
 
     protected virtual void Start()
@@ -71,5 +103,59 @@ public class BaseUnitStateMachine : MonoBehaviour
 
         // Kiểm tra xem mục tiêu có đúng Tag kẻ địch hay không
         return currentTarget.CompareTag("EnemyKingdomRush");
+    }
+    public bool IsAlignedWithTarget(float tolerance = 0.05f)
+    {
+        if (currentTarget == null)
+            return false;
+
+        return Mathf.Abs(transform.position.y - currentTarget.position.y) <= tolerance;
+    }
+
+    public void ResetTarget()
+    {
+        if (targetList.Contains(currentTarget))
+        {
+            targetList.Remove(currentTarget);
+        }
+        currentTarget = null;
+        if(targetList.Count > 0)
+        {
+            for(int i = 0; i < targetList.Count; i++)
+            {
+                if (targetList[i].TryGetComponent(out EnemyController enemyController))
+                {
+                    if (enemyController.CheckAttackerCount())
+                    {
+                        currentTarget = targetList[i];
+                        return;
+                    }
+                }
+            }
+        }
+    }
+    public void SetParent(Transform parent)
+    {
+        this.parent = parent;
+    }
+
+    public void Resurrection(Transform pointSpawn, Transform targetSpawn)
+    {
+        transform.position = pointSpawn.position;
+        currentTarget = targetSpawn;
+        healthHero.ResetHealth();
+        TransitionToState(RunState);
+    }
+    public bool CheckAttackerCount()
+    {
+        return attackerCount < unitData.maxAttacker;
+    }
+    public void RemoveAttacker()
+    {
+        attackerCount -= 1;
+        if(attackerCount < 0)
+        {
+            attackerCount = 0;
+        }
     }
 }

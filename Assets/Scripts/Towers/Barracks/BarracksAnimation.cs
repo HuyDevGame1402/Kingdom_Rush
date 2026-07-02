@@ -13,7 +13,8 @@ public class BarracksAnimation : MonoBehaviour
     [SerializeField] private Animator doorAnimator;
     [SerializeField] private float spawnCharacterTime = 1.5f;
     public event Action OnSpawnHeroEvent;
-    [SerializeField] private float timeOpenDoor = 0.1f;
+    [SerializeField] private float timeOpenDoor = 0.25f;
+    public bool isDoorOpen = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,16 +31,19 @@ public class BarracksAnimation : MonoBehaviour
     public void IdleDoor()
     {
         doorAnimator.SetTrigger("Idle");
+        isDoorOpen = false;
     }
 
     public void OpenDoor()
     {
         doorAnimator.SetTrigger("Open");
+        isDoorOpen = true;
     }
 
     public void CloseDoor()
     {
         doorAnimator.SetTrigger("Close");
+        isDoorOpen = false;
     }
 
     private IEnumerator CoroutineCreateTower()
@@ -64,7 +68,11 @@ public class BarracksAnimation : MonoBehaviour
     }
     private IEnumerator CoroutineAwaitOpenDoor()
     {
-       yield return new WaitForSeconds(timeOpenDoor);
+        yield return new WaitForSeconds(timeOpenDoor);
         OnSpawnHeroEvent?.Invoke();
+    }
+    public float GetTimeOpenDoor()
+    {
+        return timeOpenDoor;
     }
 }

@@ -13,8 +13,8 @@ public class EnemyAttackState : IEnemyState
 
     public void UpdateState(EnemyController enemy)
     {
-        // Nếu mục tiêu bỗng nhiên biến mất hoặc chạy ra khỏi tầm, tiếp tục di chuyển đi tiếp
-        if (enemy.target == null || !enemy.IsTargetInAttackRange())
+        // Nếu mục tiêu bỗng nhiên biến mất, mất tầm đánh HOẶC bị lệch trục Y quá 0.05f -> quay lại MoveState để đuổi tiếp
+        if (enemy.target == null || !enemy.IsTargetInAttackRange() || !enemy.IsAlignedWithTarget(0.15f))
         {
             enemy.TransitionToState(enemy.MoveState);
             return;
@@ -53,29 +53,20 @@ public class EnemyAttackState : IEnemyState
                     EnemySpriteAnimator.Instance.PlayAnimationByRange(
                         enemy.gameObject, id, prefix, idleConfig, frameRate
                     );
+
+                    if(enemy.target.TryGetComponent(out HealthHero healthHero))
+                    {
+                        healthHero.ApplyDamage(DamageStatic.GetDamageBase((int)enemy.unitData.minDamage,
+                            (int)enemy.unitData.maxDamage));
+
+                        if (healthHero.IsDead())
+                        {
+                            enemy.ResetTarget();
+                        }
+                    }
                 }
             }
         );
-
-        // 3. XỬ LÝ EVENT GÂY SÁT THƯƠNG CHUẨN FRAME (Thay thế cho hàm tạo độ trễ ước lượng cũ)
-        //float damageAmount = enemy.unitData.GetRandomDamage();
-
-        //// Nếu bạn có cài đặt trúng đòn ở frame cụ thể trên Inspector (Ví dụ: eventFrame = 69)
-        //if (attackConfig.hasEvent && attackConfig.eventFrame >= attackConfig.startFrame)
-        //{
-        //    // Tính toán xem từ lúc bấm nút đánh đến frame trúng đòn mất bao nhiêu giây
-        //    int framesToWait = attackConfig.eventFrame - attackConfig.startFrame;
-        //    float delayTimeToDamage = framesToWait * frameRate;
-
-        //    // Chạy một hàm Coroutine phụ trợ ngay trên Enemy để chờ đến đúng giây đó rồi trừ máu
-        //    enemy.StartCoroutine(DelayDealDamage(delayTimeToDamage, enemy, damageAmount));
-        //}
-        //else
-        //{
-        //    // Nếu không cài đặt eventFrame, mặc định gây sát thương ngay lập tức hoặc chia đôi chuỗi như cũ
-        //    float fallbackDelay = ((attackConfig.endFrame - attackConfig.startFrame) * 0.5f) * frameRate;
-        //    enemy.StartCoroutine(DelayDealDamage(fallbackDelay, enemy, damageAmount));
-        //}
     }
 
     // Hàm Coroutine phụ trợ giúp trì hoãn việc trừ máu sao cho khớp với visual ảnh đang vung vũ khí

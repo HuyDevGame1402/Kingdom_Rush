@@ -11,6 +11,7 @@ TagManager:
   - WarriorEnemy
   - TowersEnemy
   - EnemyKingdomRush
+  - Soldier
   layers:
   - Default
   - TransparentFX

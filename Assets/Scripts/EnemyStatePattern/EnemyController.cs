@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     [Header("Combat Target")]
     [Tooltip("Mục tiêu tấn công (Ví dụ: Lính lác hoặc Tướng của người chơi chặn đường)")]
     public Transform target;
+    public List<Transform> targetList = new List<Transform>();
 
     // Các thuộc tính Runtime (Lấy từ SO sang để có thể bị trừ máu, thay đổi tốc độ khi chơi)
     [HideInInspector] public float currentHealth;
@@ -33,8 +34,9 @@ public class EnemyController : MonoBehaviour
     public bool IsMoving => currentState == MoveState;
     public Transform centerEnemy;
 
-    [SerializeField] private Health enemyHealth; 
+    [SerializeField] private Health enemyHealth;
 
+    public int attackerCount;
     void Start()
     {
         if (unitData == null)
@@ -163,15 +165,21 @@ public class EnemyController : MonoBehaviour
     }
 
     // --- HÀM NHẬN SÁT THƯƠNG ĐỂ KIỂM TRA TRẠNG THÁI CHẾT ---
-    public void TakeDamage(float amount)
+    public void TakeDamage(int amount)
     {
         if (isDead) return;
         if(enemyHealth != null)
         {
-            enemyHealth.ApplyDamage((int)amount);
+            enemyHealth.ApplyDamage(amount);
             if (enemyHealth.IsDead())
             {
+                if (target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
+                {
+                    heroStateMachine.RemoveAttacker();
+                }
+                attackerCount = 0; // Reset số lượng attacker khi chết
                 TransitionToState(DeathState);
+                targetList.Clear(); // Xóa danh sách mục tiêu khi chết
             }
         }
     }
@@ -232,5 +240,47 @@ public class EnemyController : MonoBehaviour
         }
 
         return currentPos + centerOffset;
+    }
+    // Thêm hàm này vào trong class EnemyController
+    public bool IsAlignedWithTarget(float tolerance = 0.05f)
+    {
+        if (target == null) return false;
+        return Mathf.Abs(transform.position.y - target.position.y) <= tolerance;
+    }
+    public void ResetTarget()
+    {
+        if (targetList.Contains(target))
+        {
+            targetList.Remove(target);
+        }
+        if (target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
+        {
+            heroStateMachine.RemoveAttacker();
+        }
+        target = null;
+        if (targetList.Count > 0)
+        {
+            for(int i = 0; i < targetList.Count; i++)
+            {
+                if (targetList[i].TryGetComponent(out BaseUnitStateMachine heroStateMachineList)
+                    && heroStateMachineList.CheckAttackerCount())
+                {
+                    target = targetList[i];
+                    return;
+                }
+            }
+        }
+    }
+    public bool CheckAttackerCount()
+    {
+        return attackerCount < unitData.maxAttacker;
+    }
+    public void RemoveAttacker()
+    {
+        attackerCount -= 1;
+        if (attackerCount < 0)
+        {
+            attackerCount = 0;
+        }
     }
 }
