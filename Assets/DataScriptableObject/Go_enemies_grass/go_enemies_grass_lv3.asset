@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6232ca68a59a2549a0247198624f127, type: 3}
+  m_Name: go_enemies_grass_lv3
+  m_EditorClassIdentifier: 
+  unitName: go_enemies_grass
+  unitType: 3
+  description: "Qu\xE1i c\u01A1 b\u1EA3n lv3\n"
+  maxHealth: 800
+  moveSpeed: 0.3
+  armor: 0
+  magicResistance: 0
+  minDamage: 40
+  maxDamage: 60
+  attackRange: 0.25
+  attackCooldown: 1.5
+  animations:
+    animPrefix: ogre_
+    frameRate: 0.04
+    idle:
+      startFrame: 105
+      endFrame: 105
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    run:
+      startFrame: 1
+      endFrame: 26
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    runDown:
+      startFrame: 53
+      endFrame: 78
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset:
+      - frameOffset: 63
+        offsetY: 0.1
+      - frameOffset: 64
+        offsetY: 0.1
+      - frameOffset: 65
+        offsetY: 0.1
+      - frameOffset: 66
+        offsetY: 0.1
+      - frameOffset: 67
+        offsetY: 0.1
+      - frameOffset: 68
+        offsetY: 0.1
+      - frameOffset: 69
+        offsetY: 0.1
+      - frameOffset: 70
+        offsetY: 0.1
+      - frameOffset: 71
+        offsetY: 0.1
+      - frameOffset: 72
+        offsetY: 0.1
+    runUp:
+      startFrame: 27
+      endFrame: 52
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset:
+      - frameOffset: 33
+        offsetY: 0.1
+      - frameOffset: 34
+        offsetY: 0.1
+      - frameOffset: 35
+        offsetY: 0.1
+      - frameOffset: 36
+        offsetY: 0.1
+      - frameOffset: 37
+        offsetY: 0.1
+      - frameOffset: 38
+        offsetY: 0.1
+      - frameOffset: 39
+        offsetY: 0.1
+      - frameOffset: 40
+        offsetY: 0.1
+      - frameOffset: 41
+        offsetY: 0.1
+      - frameOffset: 42
+        offsetY: 0.1
+    attack:
+      startFrame: 79
+      endFrame: 104
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    death:
+      startFrame: 130
+      endFrame: 145
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset:
+      - frameOffset: 138
+        offsetY: 0.15
+      - frameOffset: 139
+        offsetY: 0.15
+      - frameOffset: 140
+        offsetY: 0.18
+      - frameOffset: 141
+        offsetY: 0.15
+      - frameOffset: 142
+        offsetY: 0.15
+      - frameOffset: 143
+        offsetY: 0.15
+      - frameOffset: 144
+        offsetY: 0.15
+      - frameOffset: 145
+        offsetY: 0.15
+    skill:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+  localScaleLeft: {x: -1.5, y: 1.5, z: 0}
+  localScaleRight: {x: 1.5, y: 1.5, z: 0}
+  heroScale: 0
+  timeToResurrect: 0
+  maxAttacker: 1

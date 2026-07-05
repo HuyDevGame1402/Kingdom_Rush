@@ -281,7 +281,8 @@ public class EnemySpriteAnimator : MonoBehaviour
     }
     // Thêm hàm interface này vào file EnemySpriteAnimator.cs để truyền số trực tiếp
     // --- INTERFACE CHẠY THEO RANGE DATA (HỖ TRỢ OFFSET TỪNG FRAME) ---
-    public void PlayAnimationByRange(GameObject target, string enemyId, string animPrefix, AnimationFrameRange rangeConfig, float frameRate = -1, Action onComplete = null)
+    public void PlayAnimationByRange(GameObject target, string enemyId, string animPrefix, 
+        AnimationFrameRange rangeConfig, float frameRate = -1, Action onComplete = null)
     {
         if (target == null || rangeConfig == null) return;
         SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();

@@ -26,6 +26,12 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     public int attackerCount;
 
+    public TextSO textSO;
+
+    public bool isDead;
+
+    private Transform checkTarget;
+
     protected virtual void Awake()
     {
         // Khởi tạo các trạng thái có sẵn
@@ -40,6 +46,7 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     private void HealthHero_OnDead()
     {
+        isDead = true;
         RemoveAttackerTarget();
         currentTarget = null;
         TransitionToState(DeathState);
@@ -67,6 +74,8 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     protected virtual void Update()
     {
+        // TỰ ĐỘNG DỌN RÁC: Xóa các enemy đã chết hoặc bị ẩn khỏi list liên tục
+        CleanDeadTargets();
         // Cập nhật logic của trạng thái hiện tại liên tục
         CurrentState?.Update();
     }
@@ -114,24 +123,21 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     public void ResetTarget()
     {
-        if (targetList.Contains(currentTarget))
-        {
-            targetList.Remove(currentTarget);
-        }
         currentTarget = null;
         if(targetList.Count > 0)
         {
-            for(int i = 0; i < targetList.Count; i++)
+            for (int i = 0; i < targetList.Count; i++)
             {
                 if (targetList[i].TryGetComponent(out EnemyController enemyController))
                 {
-                    if (enemyController.CheckAttackerCount())
+                    if (enemyController.CheckAttackerCount() && enemyController.isDead == false)
                     {
                         currentTarget = targetList[i];
                         return;
                     }
                 }
             }
+            currentTarget = targetList[Random.Range(0, targetList.Count)];
         }
     }
     public void SetParent(Transform parent)
@@ -156,6 +162,32 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         if(attackerCount < 0)
         {
             attackerCount = 0;
+        }
+    }
+    private void CleanDeadTargets()
+    {
+        // Duyệt ngược list từ dưới lên để xóa không bị lỗi Index
+        for (int i = targetList.Count - 1; i >= 0; i--)
+        {
+            checkTarget = targetList[i];
+
+            // Nếu transform bị null, bị ẩn, hoặc có EnemyController đã chết
+            if (checkTarget == null || !checkTarget.gameObject.activeInHierarchy ||
+               (checkTarget.TryGetComponent(out EnemyController enemy) && enemy.isDead))
+            {
+                if (checkTarget == currentTarget)
+                {
+                    currentTarget = null;
+                }
+                Debug.LogWarning("Đã xóa mục tiêu không hợp lệ khỏi danh sách: " + checkTarget.name);
+                targetList.RemoveAt(i);
+            }
+        }
+
+        // Nếu mất currentTarget nhưng trong list vẫn còn quái sống khác thì chọn lại luôn
+        if (currentTarget == null && targetList.Count > 0)
+        {
+            ResetTarget();
         }
     }
 }

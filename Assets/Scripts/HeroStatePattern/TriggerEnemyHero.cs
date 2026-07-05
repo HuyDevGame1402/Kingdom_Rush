@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TriggerEnemyHero : MonoBehaviour
 {
@@ -19,9 +19,9 @@ public class TriggerEnemyHero : MonoBehaviour
             && heroStateMachine.healthHero.IsDead()==false)
         {
             if(collision.transform.TryGetComponent(out EnemyController enemyCtr)
-                && enemyCtr.CheckAttackerCount() && heroStateMachine.IsTargetEnemy() == false)
+                /*&& enemyCtr.CheckAttackerCount()*/ && heroStateMachine.IsTargetEnemy() == false)
             {
-                enemyCtr.attackerCount += 1;
+                //enemyCtr.attackerCount += 1;
                 heroStateMachine.currentTarget = collision.gameObject.transform;
             }
 
@@ -33,17 +33,17 @@ public class TriggerEnemyHero : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.transform == heroStateMachine.currentTarget)
+        if (collision.collider.CompareTag(ENEMYTAG) && heroStateMachine.targetList.Contains(collision.transform))
         {
-            heroStateMachine.ResetTarget();
+            if (collision.transform == heroStateMachine.currentTarget)
+            {
+                heroStateMachine.ResetTarget();
+            }
             heroStateMachine.targetList.Remove(collision.transform);
         }
         else
         {
-            if (collision.collider.CompareTag(ENEMYTAG) && heroStateMachine.targetList.Contains(collision.transform))
-            {
-                heroStateMachine.targetList.Remove(collision.transform);
-            }
+            Debug.LogError("Lỗi");
         }
     }
 }

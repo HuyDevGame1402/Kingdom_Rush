@@ -39,10 +39,11 @@ public class BombProjectile : BaseProjectile
 
     public event Action OnHitEvent;
 
+
+
     public void LaunchWithArc(Transform enemy, float bombSpeed, float extraArcHeight
         , int damage = 1)
     {
-        this.damage = damage;
         hasLanded = false;
         elapsedTime = 0f;
         currentSpin = 0f;
@@ -67,7 +68,7 @@ public class BombProjectile : BaseProjectile
             fixedTargetPos = transform.position;
         }
 
-        base.Launch(enemy, bombSpeed);
+        base.Launch(enemy, bombSpeed, damage);
 
         //--------------------------------------------------
         // Ballistic calculation
@@ -184,14 +185,19 @@ public class BombProjectile : BaseProjectile
                 {
                     explosionObj.SetActive(false);
                     //StartCoroutine(CoroutineDisableGameObject());
-                    gameObject.SetActive(false);
                 });
         }
         else
         {
-            gameObject.SetActive(false);
+            HideGameObject();
         }
     }
+
+    public void HideGameObject()
+    {
+        gameObject.SetActive(false);
+    }
+
     private IEnumerator CoroutineDisableGameObject()
     {
         yield return new WaitForSeconds(1f);

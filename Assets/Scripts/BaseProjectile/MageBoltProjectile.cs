@@ -39,7 +39,7 @@ public class MageBoltProjectile : BaseProjectile
         isFlying = false; // Dừng di chuyển
         if (targetEnemy.parent.TryGetComponent(out EnemyController enemyCtr))
         {
-            enemyCtr.TakeDamage(damage);
+            enemyCtr.TakeDamage(damage, textSO);
         }
         // Diễn hoạt ảnh nổ và chỉ định rõ ràng callback onComplete
         SpriteSheetAnimator.Instance.PlayAnimation(

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System;
+using System.Collections;
 
 public class EnemyController : MonoBehaviour
 {
@@ -35,8 +36,18 @@ public class EnemyController : MonoBehaviour
     public Transform centerEnemy;
 
     [SerializeField] private Health enemyHealth;
+    [SerializeField] private Transform healthInGroundSprite;
+    [SerializeField] private SpriteRenderer spriteRender;
+    
+
+    public float offsetSpawnTextY = 0.5f;
 
     public int attackerCount;
+
+    public CircleCollider2D colliderTriggerHitDamage;
+
+    private Transform checkTarget;
+
     void Start()
     {
         if (unitData == null)
@@ -54,11 +65,15 @@ public class EnemyController : MonoBehaviour
         enemyHealth = transform.GetComponent<Health>();
 
         enemyHealth.InitHealth((int)unitData.maxHealth);
+        spriteRender = transform.GetComponent<SpriteRenderer>();
+        colliderTriggerHitDamage = transform.GetComponent<CircleCollider2D>();
     }
 
     void Update()
     {
         if (isDead) return;
+
+        CleanDeadTargets();
 
         // Thực thi logic của trạng thái hiện tại mỗi frame
         if (currentState != null)
@@ -165,7 +180,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // --- HÀM NHẬN SÁT THƯƠNG ĐỂ KIỂM TRA TRẠNG THÁI CHẾT ---
-    public void TakeDamage(int amount)
+    public void TakeDamage(int amount, TextSO textSO)
     {
         if (isDead) return;
         if(enemyHealth != null)
@@ -173,7 +188,10 @@ public class EnemyController : MonoBehaviour
             enemyHealth.ApplyDamage(amount);
             if (enemyHealth.IsDead())
             {
-                if (target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
+                colliderTriggerHitDamage.enabled = false;
+                TextSpawnManager.Instance.SpawnText(transform.position + Vector3.up * offsetSpawnTextY, 
+                    textSO.sprites[UnityEngine.Random.Range(0, textSO.sprites.Count)]);
+                if (target != null && target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
                 {
                     heroStateMachine.RemoveAttacker();
                 }
@@ -216,6 +234,11 @@ public class EnemyController : MonoBehaviour
         Vector3 currentPos = transform.position;
         int wpIndex = currentWaypointIndex;
 
+        if(currentState == AttackState)
+        {
+            return currentPos + centerOffset;
+        }
+
         while (remainDistance > 0f)
         {
             if (wpIndex >= waypoints.Count)
@@ -253,7 +276,7 @@ public class EnemyController : MonoBehaviour
         {
             targetList.Remove(target);
         }
-        if (target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
+        if (target != null && target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
         {
             heroStateMachine.RemoveAttacker();
         }
@@ -282,5 +305,91 @@ public class EnemyController : MonoBehaviour
         {
             attackerCount = 0;
         }
+    }
+
+    public void ShowHealthInGround()
+    {
+        StartCoroutine(CoroutineHealthinGround());
+    }
+
+    private IEnumerator CoroutineHealthinGround()
+    {
+        healthInGroundSprite.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        spriteRender.enabled = false;
+        yield return new WaitForSeconds(1f);
+        spriteRender.enabled = true;
+        healthInGroundSprite.gameObject.SetActive(false);
+        transform.gameObject.SetActive(false);
+    }
+    private void CleanDeadTargets()
+    {
+        for (int i = targetList.Count - 1; i >= 0; i--)
+        {
+            checkTarget = targetList[i];
+
+            if (checkTarget == null || !checkTarget.gameObject.activeInHierarchy ||
+               (checkTarget.TryGetComponent(out BaseUnitStateMachine hero) && hero.isDead))
+            {
+                if (checkTarget == target)
+                {
+                    target = null;
+                }
+                targetList.RemoveAt(i);
+            }
+        }
+        if (target == null && targetList.Count > 0)
+        {
+            ResetTarget();
+        }
+    }
+    // --- TÍNH TOÁN LẠI WAYPOINT GẦN NHẤT KHI RỜI TRẬN ĐẤU ---
+    public void RecalculateNextWaypoint()
+    {
+        if (waypoints == null || waypoints.Count == 0 || currentWaypointIndex >= waypoints.Count)
+            return;
+
+        int bestIndex = currentWaypointIndex;
+        float minDistance = float.MaxValue;
+
+        // Để an toàn cho các map có đường vòng vèo (nút cổ chai), ta nên quét từ 
+        // các waypoint xung quanh vị trí cũ (ví dụ: lùi lại 1 điểm cho chắc chắn)
+        int startIndex = Mathf.Max(0, currentWaypointIndex - 1);
+
+        for (int i = startIndex; i < waypoints.Count - 1; i++)
+        {
+            Vector3 wStart = waypoints[i].position;
+            Vector3 wEnd = waypoints[i + 1].position;
+
+            // Tìm điểm gần nhất trên đoạn thẳng từ wStart đến wEnd so với vị trí của Enemy
+            Vector3 closestPoint = ClosestPointOnLineSegment(transform.position, wStart, wEnd);
+            float dist = Vector3.Distance(transform.position, closestPoint);
+
+            if (dist < minDistance)
+            {
+                minDistance = dist;
+                bestIndex = i + 1; // Điểm đến tiếp theo chính là điểm cuối của đoạn đường này
+            }
+        }
+
+        currentWaypointIndex = bestIndex;
+    }
+
+    // Hàm phụ trợ tìm điểm gần nhất trên một đoạn thẳng (Line Segment)
+    private Vector3 ClosestPointOnLineSegment(Vector3 point, Vector3 start, Vector3 end)
+    {
+        Vector3 direction = end - start;
+        float lengthSq = direction.sqrMagnitude;
+        if (lengthSq == 0f) return start;
+
+        // Chiếu vị trí Enemy lên đường thẳng tạo bởi 2 waypoint
+        float t = Vector3.Dot(point - start, direction) / lengthSq;
+        t = Mathf.Clamp01(t); // Giới hạn chỉ nằm trong đoạn thẳng nối giữa 2 điểm
+
+        return start + t * direction;
+    }
+    public void ResetAnimDirection()
+    {
+        lastPlayedAnimDirection = "";
     }
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class EnemyAnimatorTest : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class EnemyAnimatorTest : MonoBehaviour
     [Header("Manual Pivot Configuration")]
     [Tooltip("Bấm dấu (+) để thêm cấu hình Pivot Offset cho từng frame cụ thể.")]
     public List<FramePivotDebug> manualPivotOffsets = new List<FramePivotDebug>();
+
+    public UnitDataSO test;
 
     void Start()
     {
@@ -58,6 +61,37 @@ public class EnemyAnimatorTest : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             ShowSingleFrame(currentFrameIndex);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("Test Animation: Idle");
+            TestAnimationEnemy(test.animations.idle);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Debug.Log("Test Animation: Run");
+            TestAnimationEnemy(test.animations.run);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Debug.Log("Test Animation: Run Down");
+            TestAnimationEnemy(test.animations.runDown);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("Test Animation: Run Up");
+            TestAnimationEnemy(test.animations.runUp);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Debug.Log("Test Animation: Attack");
+            TestAnimationEnemy(test.animations.attack);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            Debug.Log("Test Animation: Death");
+            TestAnimationEnemy(test.animations.death);
         }
     }
 
@@ -99,5 +133,27 @@ public class EnemyAnimatorTest : MonoBehaviour
             }
         }
         return 0f;
+    }
+
+    public void TestAnimationEnemy(AnimationFrameRange animationRange)
+    {
+        if (EnemySpriteAnimator.Instance == null || test == null || test.animations == null)
+        {
+            Debug.LogError("Thiếu Instance Animator hoặc dữ liệu cấu hình 'test'!");
+            return;
+        }
+
+        EnemySpriteAnimator.Instance.PlayAnimationByRange(
+            gameObject,
+            test.unitName,
+            test.animations.animPrefix,
+            animationRange,
+            test.animations.frameRate,
+            onComplete: () =>
+            {
+                // Xử lý sau khi animation chạy xong (nếu cần)
+                Debug.Log($"Đã chạy xong animation!");
+            }
+        );
     }
 }

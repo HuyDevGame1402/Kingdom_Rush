@@ -21,7 +21,8 @@ public class EnemyDeathState : IEnemyState
                 onComplete: () => {
                     Debug.Log($"💀 [{enemy.name}] Đã diễn xong hoạt ảnh chết. Xóa GameObject.");
                     //Object.Destroy(enemy.gameObject);
-                    enemy.gameObject.SetActive(false);
+                    //enemy.gameObject.SetActive(false);
+                    enemy.ShowHealthInGround();
                 }
             );
         }

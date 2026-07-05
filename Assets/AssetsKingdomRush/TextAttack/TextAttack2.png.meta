@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: 7d94993e4b04f914eb991bd2860c5b10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2257246649522524862
+    second: TextAttack2_0
+  - first:
+      213: 5735824713246589990
+    second: TextAttack2_1
+  - first:
+      213: 7678234036368584454
+    second: TextAttack2_2
+  - first:
+      213: 9072726774944638112
+    second: TextAttack2_3
+  - first:
+      213: -3508723787017080785
+    second: TextAttack2_4
+  - first:
+      213: 5987287936103441795
+    second: TextAttack2_5
+  - first:
+      213: 6951528819651954738
+    second: TextAttack2_6
+  - first:
+      213: 5338386255774363674
+    second: TextAttack2_7
+  - first:
+      213: 7389909672138465881
+    second: TextAttack2_8
+  - first:
+      213: -7078367937350013645
+    second: TextAttack2_9
+  - first:
+      213: 8120902758319387849
+    second: TextAttack2_10
+  - first:
+      213: 7609137634133442604
+    second: TextAttack2_11
+  - first:
+      213: -6431628459894658111
+    second: TextAttack2_12
+  - first:
+      213: 5071290431386434642
+    second: TextAttack2_13
+  - first:
+      213: 1198846503782731851
+    second: TextAttack2_14
+  - first:
+      213: 1568733305023242223
+    second: TextAttack2_15
+  - first:
+      213: 2558628339873357707
+    second: TextAttack2_16
+  - first:
+      213: -6632022730636648425
+    second: TextAttack2_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TextAttack2_0
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 959
+        width: 57
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24de4c4b126aca0e0800000000000000
+      internalID: -2257246649522524862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_1
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 912
+        width: 55
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62448fedf2eb99f40800000000000000
+      internalID: 5735824713246589990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_2
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 882
+        width: 63
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f2010dc219e8a60800000000000000
+      internalID: 7678234036368584454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_3
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 882
+        width: 53
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a420c4beecc8ed70800000000000000
+      internalID: 9072726774944638112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_4
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 803
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2032e34e428e4fc0800000000000000
+      internalID: -3508723787017080785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_5
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 762
+        width: 69
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3856d67e7ae171350800000000000000
+      internalID: 5987287936103441795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_6
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 752
+        width: 66
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238ce3571aac87060800000000000000
+      internalID: 6951528819651954738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_7
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 778
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1032410402c51a40800000000000000
+      internalID: 5338386255774363674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_8
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 780
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952690281bb3e8660800000000000000
+      internalID: 7389909672138465881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_9
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 780
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33decb02dd594cd90800000000000000
+      internalID: -7078367937350013645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_10
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 780
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4fd15480e33b070800000000000000
+      internalID: 8120902758319387849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_11
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 726
+        width: 66
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2084910d56199960800000000000000
+      internalID: 7609137634133442604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_12
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 655
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbafa0fdf34eb6a0800000000000000
+      internalID: -6431628459894658111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 366
+        width: 65
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c30ab47c7d06640800000000000000
+      internalID: 5071290431386434642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 343
+        width: 65
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40503e1b8823a010800000000000000
+      internalID: 1198846503782731851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_15
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 218
+        width: 60
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef1c3121a245c510800000000000000
+      internalID: 1568733305023242223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TextAttack2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 74
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f166e3be2128320800000000000000
+      internalID: 2558628339873357707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bd6b70c0c08188644816c9804a2c527f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TextAttack2_0: -2257246649522524862
+      TextAttack2_1: 5735824713246589990
+      TextAttack2_10: 8120902758319387849
+      TextAttack2_11: 7609137634133442604
+      TextAttack2_12: -6431628459894658111
+      TextAttack2_13: 5071290431386434642
+      TextAttack2_14: 1198846503782731851
+      TextAttack2_15: 1568733305023242223
+      TextAttack2_16: 2558628339873357707
+      TextAttack2_2: 7678234036368584454
+      TextAttack2_3: 9072726774944638112
+      TextAttack2_4: -3508723787017080785
+      TextAttack2_5: 5987287936103441795
+      TextAttack2_6: 6951528819651954738
+      TextAttack2_7: 5338386255774363674
+      TextAttack2_8: 7389909672138465881
+      TextAttack2_9: -7078367937350013645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

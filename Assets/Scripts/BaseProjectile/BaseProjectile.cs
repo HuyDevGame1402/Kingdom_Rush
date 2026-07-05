@@ -11,6 +11,8 @@ public abstract class BaseProjectile : MonoBehaviour
     public int damage;
     public bool continueIfTargetDies = true;
 
+    public TextSO textSO;
+
     public virtual void Launch(Transform enemy, float projectileSpeed,
         int damage = 1)
     {

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 623637933509492466}
   - component: {fileID: 3012525775329880863}
   m_Layer: 0
-  m_Name: EnemyGoblinLv1
+  m_Name: EnemyOrcLv1
   m_TagString: EnemyKingdomRush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50923474f093c04c915e9c7a1a384f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitData: {fileID: 11400000, guid: bb8f60f985af15a4695539cb4aea984c, type: 2}
+  unitData: {fileID: 11400000, guid: 4cfb3765dd8f491468564f764afa1ee3, type: 2}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -81,6 +81,7 @@ MonoBehaviour:
   spriteRender: {fileID: 1378991697074639915}
   offsetSpawnTextY: 0.25
   attackerCount: 0
+  colliderTriggerHitDamage: {fileID: 0}
 --- !u!212 &1378991697074639915
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -165,7 +165,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 16000
   m_Sprite: {fileID: 413513038, guid: 3ca315b1c7ef7b144b4f3bb27c4c86f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   isFlying: 0
   damage: 0
   continueIfTargetDies: 1
+  textSO: {fileID: 11400000, guid: c0735014cfc199a4bb9379b0313c76d5, type: 2}
   arcHeight: 3
   arrowSpeed: 80
   rotSpeed: 3200

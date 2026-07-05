@@ -9,7 +9,9 @@ public class TriggerAttackBomb : MonoBehaviour
     [SerializeField] private List<Transform> enemyList = new List<Transform>();
 
     private float timeDes = 0.25f;
+    private float timeDisGroundExpands = 3f;
     [SerializeField] private Collider2D collider2D;
+    [SerializeField] private Transform groundExpands;
 
     private void Awake()
     {
@@ -31,7 +33,7 @@ public class TriggerAttackBomb : MonoBehaviour
             {
                 Debug.LogWarning("Take Damage Enemy");
                 enemyCtrl.TakeDamage(transform.parent.GetComponent<BaseProjectile>()
-                    .damage);
+                    .damage, transform.parent.GetComponent<BaseProjectile>().textSO);
                 enemyList.Add(collision.transform);
             }
         }
@@ -43,9 +45,17 @@ public class TriggerAttackBomb : MonoBehaviour
         DisableCollider();
     }
 
+    private IEnumerator CoroutineDisableGroundExpands()
+    {
+        yield return new WaitForSeconds(timeDisGroundExpands);
+        groundExpands.gameObject.SetActive(false);
+        transform.parent.GetComponent<BombProjectile>().HideGameObject();
+    }
+
     public void EnableCollider()
     {
         collider2D.enabled = true;
+        groundExpands.gameObject.SetActive(true);
         //Debug.LogWarning("Enable Collider 2D Bomb Attack");
         StartCoroutine(CoroutineDisableCollider());   
     }
@@ -53,5 +63,6 @@ public class TriggerAttackBomb : MonoBehaviour
     {
         enemyList.Clear();
         collider2D.enabled = false;
+        StartCoroutine(CoroutineDisableGroundExpands());
     }
 }

@@ -38,26 +38,13 @@ public class TriggerEnemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //if(collision.transform == enemyController.target)
-        //{
-        //    enemyController.ResetTarget();
-        //}
-        //else
-        //{
-        //    if (collision.CompareTag(SOLIDERTAG))
-        //    {
-        //        if (enemyController.targetList.Contains(collision.transform) == true)
-        //        {
-        //            enemyController.targetList.Remove(collision.transform);
-        //        }
-        //    }
-        //}
-        if (collision.CompareTag(SOLIDERTAG))
+        if (collision.CompareTag(SOLIDERTAG) && enemyController.targetList.Contains(collision.transform))
         {
-            if (enemyController.targetList.Contains(collision.transform) == true)
+            if (collision.transform == enemyController.target)
             {
-                enemyController.targetList.Remove(collision.transform);
+                enemyController.ResetTarget();
             }
+            enemyController.targetList.Remove(collision.transform);
         }
     }
 }

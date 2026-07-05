@@ -16,12 +16,12 @@ MonoBehaviour:
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv2\n"
   maxHealth: 35
-  moveSpeed: 0.25
+  moveSpeed: 0.5
   armor: 0
   magicResistance: 0
   minDamage: 2
   maxDamage: 4
-  attackRange: 0.5
+  attackRange: 0.25
   attackCooldown: 1.5
   animations:
     animPrefix: orc_
@@ -31,33 +31,45 @@ MonoBehaviour:
       endFrame: 67
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     run:
       startFrame: 1
       endFrame: 22
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     runDown:
       startFrame: 45
       endFrame: 66
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     runUp:
       startFrame: 23
       endFrame: 44
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     attack:
       startFrame: 67
       endFrame: 77
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     death:
       startFrame: 101
       endFrame: 115
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
     skill:
       startFrame: 1
       endFrame: 1
       hasEvent: 0
       eventFrame: -1
+      animationConfigOffset: []
+  localScaleLeft: {x: -1.5, y: 1.5, z: 0}
+  localScaleRight: {x: 1.5, y: 1.5, z: 0}
+  heroScale: 0
+  timeToResurrect: 0
+  maxAttacker: 1

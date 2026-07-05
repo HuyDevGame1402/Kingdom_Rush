@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 066885f9b07b4204fbdda43c150f78d8
+guid: 547c1537cb39c6946a67b7df0000b861
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1684052425631382534
+    second: TextAttack1_0
+  - first:
+      213: 1272077108521279090
+    second: TextAttack1_1
+  - first:
+      213: 591634098744208773
+    second: TextAttack1_2
+  - first:
+      213: 4231974180098500631
+    second: TextAttack1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,155 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: go_decals-1_0
+      name: TextAttack1_0
       rect:
         serializedVersion: 2
-        x: 117
-        y: 589
-        width: 97
-        height: 48
+        x: 1249
+        y: 915
+        width: 88
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec5230661061db041828ba21f82f621d
-      internalID: 697958669
+      spriteID: d8d5e2d075d73484e88e5aba29135f75
+      internalID: 446012890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: go_decals-1_1
+      name: TextAttack1_1
       rect:
         serializedVersion: 2
         x: 4
-        y: 557
-        width: 106
-        height: 55
+        y: 825
+        width: 43
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73debf652380fb4d8a1a47f1cb05fed
-      internalID: 818223762
+      spriteID: a859898c8845c7d43a38888abd69ed70
+      internalID: 1499306358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: go_decals-1_2
+      name: TextAttack1_2
       rect:
         serializedVersion: 2
-        x: 4
-        y: 449
-        width: 103
-        height: 51
+        x: 0
+        y: 801
+        width: 46
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d1139d03d4a4d04d9cf0c664f26c8b4
-      internalID: -1191883446
+      spriteID: e0fd452028f1a2d4a9a0d44bc5aa66be
+      internalID: 993941370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: go_decals-1_3
+      name: TextAttack1_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 147
-        width: 103
-        height: 56
+        x: 1106
+        y: 0
+        width: 81
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c47cc1c499cb9d6449075dd37fb9d9e8
-      internalID: 345524710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: go_decals-1_4
-      rect:
-        serializedVersion: 2
-        x: 517
-        y: 800
-        width: 103
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da871fa644ca2e341a86661399cbf3f2
-      internalID: 268429937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: go_decals-1_5
-      rect:
-        serializedVersion: 2
-        x: 821
-        y: 753
-        width: 52
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcb08ddea7b741648b0d69e1fe3b1389
-      internalID: 243127148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: go_decals-1_6
-      rect:
-        serializedVersion: 2
-        x: 877
-        y: 743
-        width: 30
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ab54855bce5f484c95baa6f67c913be
-      internalID: 1740784475
+      spriteID: 2e3b8cf7e83a7a7498b3fca822bfb95f
+      internalID: -1508995669
       vertices: []
       indices: 
       edges: []
@@ -267,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a1b7172ac592f16479ca82e9a0074145
     internalID: 0
     vertices: []
     indices: 
@@ -277,13 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      go_decals-1_0: 697958669
-      go_decals-1_1: 818223762
-      go_decals-1_2: -1191883446
-      go_decals-1_3: 345524710
-      go_decals-1_4: 268429937
-      go_decals-1_5: 243127148
-      go_decals-1_6: 1740784475
+      TextAttack1_0: 446012890
+      TextAttack1_1: 1499306358
+      TextAttack1_2: 993941370
+      TextAttack1_3: -1508995669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

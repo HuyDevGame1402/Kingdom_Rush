@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 // Định nghĩa loại đơn vị để dễ phân loại xử lý logic trong Code nếu cần
 public enum UnitType

@@ -50,7 +50,7 @@ public class ArrowKingdomRush : BaseProjectile
             && enemyCtr.isDead == false)
         {
             Debug.LogWarning("Attack Enemy: " + damage);
-            enemyCtr.TakeDamage(damage);
+            enemyCtr.TakeDamage(damage, textSO);
             base.OnHitTarget();
         }
         else

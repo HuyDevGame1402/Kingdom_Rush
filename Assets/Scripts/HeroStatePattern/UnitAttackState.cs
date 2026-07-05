@@ -29,7 +29,8 @@ public class UnitAttackState : UnitBaseState
                 if (unit.currentTarget != null)
                 {
                     unit.currentTarget.GetComponent<EnemyController>().TakeDamage(
-                        DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage));
+                        DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)
+                        , unit.textSO);
 
                 }
                 isAttacking = false; // Hoàn thành chuỗi đánh
@@ -37,15 +38,42 @@ public class UnitAttackState : UnitBaseState
         );
     }
 
+    //public override void Update()
+    //{
+    //    // Đang vung kiếm đánh thì không được làm việc khác
+    //    if (isAttacking) return;
+
+    //    // Đánh xong rồi thì đánh giá lại: còn tầm đánh không? Đủ cooldown chưa?
+    //    if (unit.IsTargetInAttackRange() && unit.IsAlignedWithTarget())
+    //    {
+    //        if (unit.CanAttack() && unit.currentTarget.GetComponent<EnemyController>().isDead == false)
+    //            Enter(); // Tiếp tục làm một hit đánh mới
+    //        else
+    //            unit.TransitionToState(unit.IdleState); // Chờ hồi chiêu
+    //    }
+    //    else
+    //    {
+    //        unit.TransitionToState(unit.IdleState);
+    //    }
+    //}
     public override void Update()
     {
         // Đang vung kiếm đánh thì không được làm việc khác
         if (isAttacking) return;
 
+        // PHÒNG THỦ: Nếu mục tiêu đột ngột biến mất hoặc chết, quay về Idle ngay
+        if (unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf ||
+            unit.currentTarget.GetComponent<EnemyController>().isDead)
+        {
+            unit.ResetTarget(); // Tìm mục tiêu mới từ list
+            unit.TransitionToState(unit.IdleState);
+            return;
+        }
+
         // Đánh xong rồi thì đánh giá lại: còn tầm đánh không? Đủ cooldown chưa?
         if (unit.IsTargetInAttackRange() && unit.IsAlignedWithTarget())
         {
-            if (unit.CanAttack() && unit.currentTarget.GetComponent<EnemyController>().isDead == false)
+            if (unit.CanAttack())
                 Enter(); // Tiếp tục làm một hit đánh mới
             else
                 unit.TransitionToState(unit.IdleState); // Chờ hồi chiêu

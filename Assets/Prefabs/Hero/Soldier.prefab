@@ -112,6 +112,7 @@ MonoBehaviour:
   lastAttackTime: 0
   healthHero: {fileID: 8784699126538838626}
   attackerCount: 0
+  textSO: {fileID: 11400000, guid: 7fa842dd57873d44ca321d47a8fb4002, type: 2}
 --- !u!58 &9121840668447667614
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +148,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!114 &3732638338556361974
 MonoBehaviour:
   m_ObjectHideFlags: 0

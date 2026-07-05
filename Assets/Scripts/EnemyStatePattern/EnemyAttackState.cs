@@ -14,7 +14,7 @@ public class EnemyAttackState : IEnemyState
     public void UpdateState(EnemyController enemy)
     {
         // Nếu mục tiêu bỗng nhiên biến mất, mất tầm đánh HOẶC bị lệch trục Y quá 0.05f -> quay lại MoveState để đuổi tiếp
-        if (enemy.target == null || !enemy.IsTargetInAttackRange() || !enemy.IsAlignedWithTarget(0.15f))
+        if (enemy.target == null || !enemy.IsTargetInAttackRange() || !enemy.IsAlignedWithTarget(0.1f))
         {
             enemy.TransitionToState(enemy.MoveState);
             return;
