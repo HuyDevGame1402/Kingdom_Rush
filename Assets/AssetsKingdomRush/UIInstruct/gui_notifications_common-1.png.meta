@@ -1,0 +1,1924 @@
+fileFormatVersion: 2
+guid: afb66996f240eeb4aaeee3c28d34fca9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4265934294892425266
+    second: gui_notifications_common-1_0
+  - first:
+      213: 1820036785574914865
+    second: gui_notifications_common-1_1
+  - first:
+      213: -3275719790580510747
+    second: gui_notifications_common-1_2
+  - first:
+      213: 272429457763010643
+    second: gui_notifications_common-1_3
+  - first:
+      213: -1595797744334129850
+    second: gui_notifications_common-1_4
+  - first:
+      213: -46218228325329618
+    second: gui_notifications_common-1_5
+  - first:
+      213: 2381430487589444122
+    second: gui_notifications_common-1_6
+  - first:
+      213: 1016312834829186902
+    second: gui_notifications_common-1_7
+  - first:
+      213: 4838970888687395255
+    second: gui_notifications_common-1_8
+  - first:
+      213: -5652064429543936456
+    second: gui_notifications_common-1_9
+  - first:
+      213: -4170985729077800349
+    second: gui_notifications_common-1_10
+  - first:
+      213: 956390188861595986
+    second: gui_notifications_common-1_11
+  - first:
+      213: -160767117833790685
+    second: gui_notifications_common-1_12
+  - first:
+      213: -5155920123919566429
+    second: gui_notifications_common-1_13
+  - first:
+      213: 3582518671846263594
+    second: gui_notifications_common-1_14
+  - first:
+      213: 7908409992587647481
+    second: gui_notifications_common-1_15
+  - first:
+      213: -1334349304370318873
+    second: gui_notifications_common-1_16
+  - first:
+      213: 972926740688032131
+    second: gui_notifications_common-1_17
+  - first:
+      213: 5283497493250474082
+    second: gui_notifications_common-1_18
+  - first:
+      213: 6872078084991110911
+    second: gui_notifications_common-1_19
+  - first:
+      213: -2971803785696394104
+    second: gui_notifications_common-1_20
+  - first:
+      213: 3971210525288634382
+    second: gui_notifications_common-1_21
+  - first:
+      213: 8691277817872540072
+    second: gui_notifications_common-1_22
+  - first:
+      213: 7102075931735018474
+    second: gui_notifications_common-1_23
+  - first:
+      213: -4399556524839725993
+    second: gui_notifications_common-1_24
+  - first:
+      213: 9012708377031208953
+    second: gui_notifications_common-1_25
+  - first:
+      213: -5705948255412113314
+    second: gui_notifications_common-1_26
+  - first:
+      213: 3948354798989945750
+    second: gui_notifications_common-1_27
+  - first:
+      213: 2325803646249670804
+    second: gui_notifications_common-1_28
+  - first:
+      213: -6789163021650143216
+    second: gui_notifications_common-1_29
+  - first:
+      213: -1722142112820877440
+    second: gui_notifications_common-1_30
+  - first:
+      213: -7428321701727218233
+    second: gui_notifications_common-1_31
+  - first:
+      213: -7207647428662200944
+    second: gui_notifications_common-1_32
+  - first:
+      213: 1524755981209072054
+    second: gui_notifications_common-1_33
+  - first:
+      213: 5382521120002594419
+    second: gui_notifications_common-1_34
+  - first:
+      213: 8138026675253474903
+    second: gui_notifications_common-1_35
+  - first:
+      213: 1523999747512112230
+    second: gui_notifications_common-1_36
+  - first:
+      213: -6210548817998779000
+    second: gui_notifications_common-1_37
+  - first:
+      213: -3473479257068840580
+    second: gui_notifications_common-1_38
+  - first:
+      213: -5068240774154782398
+    second: gui_notifications_common-1_39
+  - first:
+      213: -5081611457082315017
+    second: gui_notifications_common-1_40
+  - first:
+      213: 3019268496691443543
+    second: gui_notifications_common-1_41
+  - first:
+      213: 7200320121577563051
+    second: gui_notifications_common-1_42
+  - first:
+      213: 3730276518937484039
+    second: gui_notifications_common-1_43
+  - first:
+      213: 8465624919221523583
+    second: gui_notifications_common-1_44
+  - first:
+      213: 7824664763697197578
+    second: gui_notifications_common-1_45
+  - first:
+      213: -3043328150360752408
+    second: gui_notifications_common-1_46
+  - first:
+      213: 8872430666602113827
+    second: gui_notifications_common-1_47
+  - first:
+      213: 91247605929625025
+    second: gui_notifications_common-1_48
+  - first:
+      213: -931198882437206715
+    second: gui_notifications_common-1_49
+  - first:
+      213: 3788418645236068982
+    second: gui_notifications_common-1_50
+  - first:
+      213: -4363018519602751179
+    second: gui_notifications_common-1_51
+  - first:
+      213: -8904674396844106307
+    second: gui_notifications_common-1_52
+  - first:
+      213: -1980312040955910843
+    second: gui_notifications_common-1_53
+  - first:
+      213: -7032424802312622738
+    second: gui_notifications_common-1_54
+  - first:
+      213: 152009468445438960
+    second: gui_notifications_common-1_55
+  - first:
+      213: -3697747610991251740
+    second: gui_notifications_common-1_56
+  - first:
+      213: -1189857594623484933
+    second: gui_notifications_common-1_57
+  - first:
+      213: 3886736346670906576
+    second: gui_notifications_common-1_58
+  - first:
+      213: -5785665332704226804
+    second: gui_notifications_common-1_59
+  - first:
+      213: 1033229775741725670
+    second: gui_notifications_common-1_60
+  - first:
+      213: 8881789859331661562
+    second: gui_notifications_common-1_61
+  - first:
+      213: -8644040892666164413
+    second: gui_notifications_common-1_62
+  - first:
+      213: 1341640508723574744
+    second: gui_notifications_common-1_63
+  - first:
+      213: 5199515542044925966
+    second: gui_notifications_common-1_64
+  - first:
+      213: -5758207229283683526
+    second: gui_notifications_common-1_65
+  - first:
+      213: 7813695175008304474
+    second: gui_notifications_common-1_66
+  - first:
+      213: -6004462470499908860
+    second: gui_notifications_common-1_67
+  - first:
+      213: -8920030043038577688
+    second: gui_notifications_common-1_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gui_notifications_common-1_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 873
+        width: 470
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfc7c55c5b5cc4c0800000000000000
+      internalID: -4265934294892425266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 873
+        width: 417
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b265240d1124910800000000000000
+      internalID: 1820036785574914865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_2
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 933
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef4bbab43e4a82d0800000000000000
+      internalID: -3275719790580510747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 723
+        width: 417
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3580150062dd7c300800000000000000
+      internalID: 272429457763010643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 723
+        width: 417
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645389b08669ad9e0800000000000000
+      internalID: -1595797744334129850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_5
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 783
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25558624cccb5ff0800000000000000
+      internalID: -46218228325329618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 618
+        width: 302
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1add0e396a8c0120800000000000000
+      internalID: 2381430487589444122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_7
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657f9ac732baa1e00800000000000000
+      internalID: 1016312834829186902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_8
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b12ba2a26a772340800000000000000
+      internalID: 4838970888687395255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_9
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ea965e855df81b0800000000000000
+      internalID: -5652064429543936456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_10
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3621817049ead16c0800000000000000
+      internalID: -4170985729077800349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_11
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251a3c14fc7c54d00800000000000000
+      internalID: 956390188861595986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_12
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b14f97827d4cdf0800000000000000
+      internalID: -160767117833790685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_13
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a97c7be6fd7278b0800000000000000
+      internalID: -5155920123919566429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_14
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bc99440c9a7b130800000000000000
+      internalID: 3582518671846263594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_15
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9165adcf050cd60800000000000000
+      internalID: 7908409992587647481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_16
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1b7ba90607b7de0800000000000000
+      internalID: -1334349304370318873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_17
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381503347b7808d00800000000000000
+      internalID: 972926740688032131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_18
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2608cd81af0c25940800000000000000
+      internalID: 5283497493250474082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_19
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 633
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe44a4cb968e5f50800000000000000
+      internalID: 6872078084991110911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_20
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 543
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884c763c33802c6d0800000000000000
+      internalID: -2971803785696394104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 513
+        width: 302
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e081f10bee29c1730800000000000000
+      internalID: 3971210525288634382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 405
+        width: 238
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a16682802f9d9870800000000000000
+      internalID: 8691277817872540072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebcae67e64af8260800000000000000
+      internalID: 7102075931735018474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_24
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7541da786a2a1f2c0800000000000000
+      internalID: -4399556524839725993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_25
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffe12d7482931d70800000000000000
+      internalID: 9012708377031208953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_26
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50b6690b4660d0b0800000000000000
+      internalID: -5705948255412113314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_27
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b210935cf5bc630800000000000000
+      internalID: 3948354798989945750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_28
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4981508f71ae64020800000000000000
+      internalID: 2325803646249670804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_29
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 453
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018535cc33c08c1a0800000000000000
+      internalID: -6789163021650143216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 315
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08722986fd8b918e0800000000000000
+      internalID: -1722142112820877440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 315
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5593be4cc49e890800000000000000
+      internalID: -7428321701727218233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_32
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095f454f9da49fb90800000000000000
+      internalID: -7207647428662200944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_33
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 273
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b17e158c75092510800000000000000
+      internalID: 1524755981209072054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_34
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376dac9d07e82ba40800000000000000
+      internalID: 5382521120002594419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_35
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 273
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756f22fd42410f070800000000000000
+      internalID: 8138026675253474903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_36
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6649e3422b5562510800000000000000
+      internalID: 1523999747512112230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_37
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 273
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88de5f241c2bfc9a0800000000000000
+      internalID: -6210548817998779000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_38
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7959bbd409bbcfc0800000000000000
+      internalID: -3473479257068840580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_39
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 273
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2497a5c5eddf9a9b0800000000000000
+      internalID: -5068240774154782398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_40
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fead06ad4d7a79b0800000000000000
+      internalID: -5081611457082315017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_41
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 273
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75732d273b896e920800000000000000
+      internalID: 3019268496691443543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba36abb600dace360800000000000000
+      internalID: 7200320121577563051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_43
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 273
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bdf39eaba94c330800000000000000
+      internalID: 3730276518937484039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_44
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 363
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74d4efd201fb7570800000000000000
+      internalID: 8465624919221523583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_45
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 277
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02ffae452bc69c60800000000000000
+      internalID: 7824664763697197578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_46
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 225
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eefcc6eb2de3c5d0800000000000000
+      internalID: -3043328150360752408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_47
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 135
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32be911eea4312b70800000000000000
+      internalID: 8872430666602113827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_48
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 225
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c54a02d63d244100800000000000000
+      internalID: 91247605929625025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_49
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 135
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54de615dc87b313f0800000000000000
+      internalID: -931198882437206715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_50
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 183
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67233c99faa239430800000000000000
+      internalID: 3788418645236068982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_51
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 183
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53990aec5c17373c0800000000000000
+      internalID: -4363018519602751179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_52
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 183
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd5797a0dd3c6480800000000000000
+      internalID: -8904674396844106307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_53
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 183
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545e46ed0b48484e0800000000000000
+      internalID: -1980312040955910843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_54
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 187
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d6284d6eec76e90800000000000000
+      internalID: -7032424802312622738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_55
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 187
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3bf216ecb0c1200800000000000000
+      internalID: 152009468445438960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_56
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 187
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee21d9a326feacc0800000000000000
+      internalID: -3697747610991251740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_57
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 45
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb9a2362d6cc7fe0800000000000000
+      internalID: -1189857594623484933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_58
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 45
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc3bee4d1670f530800000000000000
+      internalID: 3886736346670906576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_59
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 93
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c025fde980035bfa0800000000000000
+      internalID: -5785665332704226804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_60
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 91
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb217ab105c65e00800000000000000
+      internalID: 1033229775741725670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_61
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 93
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe512fb1d4724b70800000000000000
+      internalID: 8881789859331661562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_62
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 93
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bcea03b923a0880800000000000000
+      internalID: -8644040892666164413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_63
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 101
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d73eb23fe67e9210800000000000000
+      internalID: 1341640508723574744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_64
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 15
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00e5b756d3682840800000000000000
+      internalID: 5199515542044925966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_65
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 3
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33b573880db610b0800000000000000
+      internalID: -5758207229283683526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_66
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 3
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5dbd89ec52df6c60800000000000000
+      internalID: 7813695175008304474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_67
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 3
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40340b2323ddbaca0800000000000000
+      internalID: -6004462470499908860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_notifications_common-1_68
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 3
+        width: 103
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb8fdaafefa53480800000000000000
+      internalID: -8920030043038577688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f363466612da7a146932d49d7fd13c37
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gui_notifications_common-1_0: -4265934294892425266
+      gui_notifications_common-1_1: 1820036785574914865
+      gui_notifications_common-1_10: -4170985729077800349
+      gui_notifications_common-1_11: 956390188861595986
+      gui_notifications_common-1_12: -160767117833790685
+      gui_notifications_common-1_13: -5155920123919566429
+      gui_notifications_common-1_14: 3582518671846263594
+      gui_notifications_common-1_15: 7908409992587647481
+      gui_notifications_common-1_16: -1334349304370318873
+      gui_notifications_common-1_17: 972926740688032131
+      gui_notifications_common-1_18: 5283497493250474082
+      gui_notifications_common-1_19: 6872078084991110911
+      gui_notifications_common-1_2: -3275719790580510747
+      gui_notifications_common-1_20: -2971803785696394104
+      gui_notifications_common-1_21: 3971210525288634382
+      gui_notifications_common-1_22: 8691277817872540072
+      gui_notifications_common-1_23: 7102075931735018474
+      gui_notifications_common-1_24: -4399556524839725993
+      gui_notifications_common-1_25: 9012708377031208953
+      gui_notifications_common-1_26: -5705948255412113314
+      gui_notifications_common-1_27: 3948354798989945750
+      gui_notifications_common-1_28: 2325803646249670804
+      gui_notifications_common-1_29: -6789163021650143216
+      gui_notifications_common-1_3: 272429457763010643
+      gui_notifications_common-1_30: -1722142112820877440
+      gui_notifications_common-1_31: -7428321701727218233
+      gui_notifications_common-1_32: -7207647428662200944
+      gui_notifications_common-1_33: 1524755981209072054
+      gui_notifications_common-1_34: 5382521120002594419
+      gui_notifications_common-1_35: 8138026675253474903
+      gui_notifications_common-1_36: 1523999747512112230
+      gui_notifications_common-1_37: -6210548817998779000
+      gui_notifications_common-1_38: -3473479257068840580
+      gui_notifications_common-1_39: -5068240774154782398
+      gui_notifications_common-1_4: -1595797744334129850
+      gui_notifications_common-1_40: -5081611457082315017
+      gui_notifications_common-1_41: 3019268496691443543
+      gui_notifications_common-1_42: 7200320121577563051
+      gui_notifications_common-1_43: 3730276518937484039
+      gui_notifications_common-1_44: 8465624919221523583
+      gui_notifications_common-1_45: 7824664763697197578
+      gui_notifications_common-1_46: -3043328150360752408
+      gui_notifications_common-1_47: 8872430666602113827
+      gui_notifications_common-1_48: 91247605929625025
+      gui_notifications_common-1_49: -931198882437206715
+      gui_notifications_common-1_5: -46218228325329618
+      gui_notifications_common-1_50: 3788418645236068982
+      gui_notifications_common-1_51: -4363018519602751179
+      gui_notifications_common-1_52: -8904674396844106307
+      gui_notifications_common-1_53: -1980312040955910843
+      gui_notifications_common-1_54: -7032424802312622738
+      gui_notifications_common-1_55: 152009468445438960
+      gui_notifications_common-1_56: -3697747610991251740
+      gui_notifications_common-1_57: -1189857594623484933
+      gui_notifications_common-1_58: 3886736346670906576
+      gui_notifications_common-1_59: -5785665332704226804
+      gui_notifications_common-1_6: 2381430487589444122
+      gui_notifications_common-1_60: 1033229775741725670
+      gui_notifications_common-1_61: 8881789859331661562
+      gui_notifications_common-1_62: -8644040892666164413
+      gui_notifications_common-1_63: 1341640508723574744
+      gui_notifications_common-1_64: 5199515542044925966
+      gui_notifications_common-1_65: -5758207229283683526
+      gui_notifications_common-1_66: 7813695175008304474
+      gui_notifications_common-1_67: -6004462470499908860
+      gui_notifications_common-1_68: -8920030043038577688
+      gui_notifications_common-1_7: 1016312834829186902
+      gui_notifications_common-1_8: 4838970888687395255
+      gui_notifications_common-1_9: -5652064429543936456
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

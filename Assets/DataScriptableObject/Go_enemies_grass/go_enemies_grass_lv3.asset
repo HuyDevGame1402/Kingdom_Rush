@@ -129,3 +129,4 @@ MonoBehaviour:
   heroScale: 0
   timeToResurrect: 0
   maxAttacker: 1
+  bounty: 50

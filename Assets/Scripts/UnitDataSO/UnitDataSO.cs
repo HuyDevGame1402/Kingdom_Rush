@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 
 // Định nghĩa loại đơn vị để dễ phân loại xử lý logic trong Code nếu cần
 public enum UnitType
@@ -42,6 +41,8 @@ public class UnitDataSO : ScriptableObject
     public float timeToResurrect;
 
     public int maxAttacker = 1;
+
+    public int bounty;
 
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()
