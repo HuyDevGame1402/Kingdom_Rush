@@ -22,10 +22,13 @@ public class TowerStateMachine : MonoBehaviour
     public bool isCreateTower = false;
     public ArcherTowerSetupAnimation archerTowerAnimation;
 
+    [SerializeField] private TowerSoundBasic towerSoundBasic;
+
     private void Start()
     {
         // Khi game bắt đầu, đưa Trụ vào trạng thái đứng yên đợi quái
         TransitionToState(IdleState);
+        //towerSoundBasic.PlayAudioTowerReady();
     }
 
     private void Update()

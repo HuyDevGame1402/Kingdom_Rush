@@ -10,5 +10,9 @@ public class BuildPlot : MonoBehaviour
     private void OnMouseDown()
     {
         OnClickBuildTower?.Invoke(transform,isOccupied);
+        if(SoundInGameManager.Instance != null)
+        {
+            SoundInGameManager.Instance.PlaySoundOpenTowerMenu();
+        }
     }
 }

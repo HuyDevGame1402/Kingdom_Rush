@@ -12,6 +12,7 @@ public class BarrackSpawnHero : MonoBehaviour
     private GameObject heroSpawn;
 
     public List<GameObject> heroSpawnList = new List<GameObject>();
+    [SerializeField] private TowerSoundBrackTower towerSoundBasic;
 
     private void Start()
     {
@@ -31,6 +32,7 @@ public class BarrackSpawnHero : MonoBehaviour
             heroSpawn.GetComponent<BaseUnitStateMachine>().SetParent(transform);
             heroSpawnList.Add(heroSpawn);
         }
+        towerSoundBasic.PlayAudioTowerReady();
     }
 
     public void ResurrectionHero(Transform hero, float time)
@@ -47,6 +49,7 @@ public class BarrackSpawnHero : MonoBehaviour
         }
         else
         {
+            towerSoundBasic.PlayAudioDoorOpen();
             barracksAnimation.OpenDoor();
             SpawnHeroResurrection(hero);
         }

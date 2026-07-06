@@ -52,6 +52,11 @@ public class ArrowKingdomRush : BaseProjectile
             Debug.LogWarning("Attack Enemy: " + damage);
             enemyCtr.TakeDamage(damage, textSO);
             base.OnHitTarget();
+            // Sound
+            if(SoundGameAttackManager.Instance != null)
+            {
+                SoundGameAttackManager.Instance.PlayAudioArrowHit();
+            }
         }
         else
         {

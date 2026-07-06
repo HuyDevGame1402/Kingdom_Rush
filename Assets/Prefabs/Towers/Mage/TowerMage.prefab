@@ -109,6 +109,7 @@ MonoBehaviour:
   smokeOb: {fileID: 0}
   firePoint: {fileID: 0}
   indexHeroAttack: 0
+  enemyTest: {fileID: 0}
 --- !u!1 &1827490327846508625
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0778f19dd1b91b4baf978b27ce0bf4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerSoundBasic: {fileID: 7262696515556208075}
   timerInitTower: 1.5
   timerMaxInitTower: 1.5
 --- !u!114 &7048532199615893601
@@ -473,6 +475,8 @@ GameObject:
   - component: {fileID: 919447040639492033}
   - component: {fileID: 1608306738516026324}
   - component: {fileID: 542361845401971679}
+  - component: {fileID: 7262696515556208075}
+  - component: {fileID: 75887020820399674}
   m_Layer: 0
   m_Name: TowerMage
   m_TagString: Untagged
@@ -516,6 +520,7 @@ MonoBehaviour:
   _archerDataTower: {fileID: 11400000, guid: aeaf7bded64991441a9076f384bd6451, type: 2}
   isCreateTower: 0
   archerTowerAnimation: {fileID: 6890173220830931042}
+  towerSoundBasic: {fileID: 7262696515556208075}
 --- !u!50 &1608306738516026324
 Rigidbody2D:
   serializedVersion: 5
@@ -560,6 +565,120 @@ MonoBehaviour:
   - {fileID: 8721171912605228889}
   loadingTower: {fileID: 7151636422210586953}
   localScaleTower: {x: 1.5, y: 1.5, z: 0}
+--- !u!114 &7262696515556208075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641931297319653033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe9d31aafe8680448f911ff5eca3b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioTowerReadys:
+  - {fileID: 8300000, guid: 81af1ad67e1ce9947a297ec3a0caf3c0, type: 3}
+  - {fileID: 8300000, guid: 33b2256331d6c094ab65ece460220760, type: 3}
+  - {fileID: 8300000, guid: 2833a7771ada0da4a9d1b02ace244eee, type: 3}
+  audioTowerBuild: {fileID: 8300000, guid: 9ffa890c3b177a641b951b0e49f15a76, type: 3}
+--- !u!82 &75887020820399674
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641931297319653033}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8721171912605228889
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +690,7 @@ GameObject:
   - component: {fileID: 8846551493438926580}
   - component: {fileID: 1368396229304682511}
   - component: {fileID: 556398772515315953}
+  - component: {fileID: 6966941364403463084}
   m_Layer: 0
   m_Name: Hero_1
   m_TagString: Untagged
@@ -665,6 +785,18 @@ MonoBehaviour:
   _controller: {fileID: 919447040639492033}
   attackSpawn: {fileID: 8877589741357496520, guid: 3682501939df79841a119b7a4dbc8774, type: 3}
   firePoint: {fileID: 4216121673755404634}
+--- !u!114 &6966941364403463084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8721171912605228889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebaaec4a6640b447a82526dc498fcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8914837380965182301
 GameObject:
   m_ObjectHideFlags: 0

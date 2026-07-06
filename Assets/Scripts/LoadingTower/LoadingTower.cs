@@ -3,7 +3,7 @@ using System;
 
 public class LoadingTower : MonoBehaviour
 {
-
+    [SerializeField] private TowerSoundBasic towerSoundBasic;
     [SerializeField] private float timerInitTower = 1.5f;
     [SerializeField] private float timerMaxInitTower = 1.5f;
     public event EventHandler OnCompletedInitTower;
@@ -12,6 +12,7 @@ public class LoadingTower : MonoBehaviour
     private void OnEnable()
     {
         timerInitTower = timerMaxInitTower;
+        towerSoundBasic.PlayAudioTowerBuild();
     }
     private void Update()
     {
@@ -21,6 +22,7 @@ public class LoadingTower : MonoBehaviour
             OnInitTower?.Invoke((timerMaxInitTower - timerInitTower) / timerMaxInitTower);
             if (timerInitTower <= 0f)
             {
+                towerSoundBasic.PlayAudioTowerReady();
                 OnCompletedInitTower?.Invoke(this, EventArgs.Empty);
                 timerInitTower = 0f;
                 gameObject.SetActive(false);

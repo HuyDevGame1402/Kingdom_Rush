@@ -7,6 +7,13 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
     [SerializeField] private GameObject attackSpawn;
     [SerializeField] private Transform firePoint;
 
+    [SerializeField] private ISoundHero soundHero;
+
+    private void Awake()
+    {
+        soundHero = GetComponent<ISoundHero>();
+    }
+
     public void Idle(Vector2 dir, TowerStateMachine tower)
     {
         DirectionUtility.GetDirection(
@@ -52,6 +59,9 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
                 PlayAttackUp(enemyTarget, tower, onComplete);
                 break;
         }
+
+        // Sound
+        soundHero.PlaySoundHeroAttack();
     }
 
     private void PlayIdleDown(TowerStateMachine tower)

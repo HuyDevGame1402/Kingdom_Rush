@@ -186,6 +186,12 @@ public class BombProjectile : BaseProjectile
                     explosionObj.SetActive(false);
                     //StartCoroutine(CoroutineDisableGameObject());
                 });
+
+            // Sound
+            if(SoundGameAttackManager.Instance != null)
+            {
+                SoundGameAttackManager.Instance.PlayAudioBomb();
+            }
         }
         else
         {

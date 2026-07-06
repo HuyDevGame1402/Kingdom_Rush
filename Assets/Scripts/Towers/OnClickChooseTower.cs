@@ -10,6 +10,10 @@ public class OnClickChooseTower : MonoBehaviour
     {
         OnClickChooseTowerEvent?.Invoke(transform, towerSO, isSelected);
         //isSlected = !isSlected;
+        if(isSelected == true && SoundInGameManager.Instance != null)
+        {
+            SoundInGameManager.Instance.PlayMouseOverTowerIcon();
+        }
     }
     public void SetTowerSO(BaseTowerSO towerSo)
     {

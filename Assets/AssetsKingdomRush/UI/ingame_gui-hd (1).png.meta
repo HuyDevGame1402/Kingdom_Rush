@@ -113,10 +113,10 @@ TextureImporter:
       name: ingame_gui-hd (1)_0
       rect:
         serializedVersion: 2
-        x: 550
-        y: 549
-        width: 162
-        height: 106
+        x: 328
+        y: 542
+        width: 137
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,6 +127,72 @@ TextureImporter:
       bones: []
       spriteID: 054d0f4fc65f3a54c959b3a9d264a718
       internalID: 2051575997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ingame_gui-hd (1)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 169
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c09fbd4dd48d3439b5e820231d1f48
+      internalID: 768277214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ingame_gui-hd (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c84ef70d77d87418e0875927ec8f64
+      internalID: -330325198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ingame_gui-hd (1)_3
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 549
+        width: 156
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2349ec192bbccb94fb3f9cef95e7b4f9
+      internalID: -748371742
       vertices: []
       indices: 
       edges: []
@@ -146,6 +212,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       ingame_gui-hd (1)_0: 2051575997
+      ingame_gui-hd (1)_1: 768277214
+      ingame_gui-hd (1)_2: -330325198
+      ingame_gui-hd (1)_3: -748371742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
