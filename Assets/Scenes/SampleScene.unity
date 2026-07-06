@@ -1856,6 +1856,8 @@ MonoBehaviour:
   selectGroundTower: {fileID: 8300000, guid: 3b6c35ff54691164695aa453ad0d1cda, type: 3}
   mouseOverTowerIcon: {fileID: 8300000, guid: c7da3703a32b52b448cf650cd566abf4, type: 3}
   tickWood: {fileID: 8300000, guid: b2277ffb4048e35478b589834d7c021a, type: 3}
+  clickNextInstruction: {fileID: 8300000, guid: 2566c23a118c6a44e986b3c6e9040956, type: 3}
+  levelUp: {fileID: 8300000, guid: bf4e57d7e19bdeb4190cdfb7f9f36add, type: 3}
 --- !u!1 &186363540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4128,7 +4130,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 417274848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1888404789}
+        m_TargetAssemblyTypeName: InstructionUIGame, Assembly-CSharp
+        m_MethodName: OnClickNextInstruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &417274848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6315,7 +6329,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 533907753}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1888404789}
+        m_TargetAssemblyTypeName: InstructionUIGame, Assembly-CSharp
+        m_MethodName: OnClickNextInstruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &533907753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9999,7 +10025,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 890788436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1888404789}
+        m_TargetAssemblyTypeName: InstructionUIGame, Assembly-CSharp
+        m_MethodName: OnClickSkipInstruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &890788436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12791,7 +12829,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1198361274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1888404789}
+        m_TargetAssemblyTypeName: InstructionUIGame, Assembly-CSharp
+        m_MethodName: OnClickSkipInstruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1198361274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21192,6 +21242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1888404788}
+  - component: {fileID: 1888404789}
   m_Layer: 5
   m_Name: UIInstruct
   m_TagString: Untagged
@@ -21221,6 +21272,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1888404789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888404787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec46fa8328f41c1489601abd1e772a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructionsList:
+  - {fileID: 1753282921}
+  - {fileID: 1645669377}
+  - {fileID: 424151135}
 --- !u!1 &1893137610
 GameObject:
   m_ObjectHideFlags: 0
@@ -22882,7 +22949,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073562476}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1888404789}
+        m_TargetAssemblyTypeName: InstructionUIGame, Assembly-CSharp
+        m_MethodName: OnClickSkipInstruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2073562476
 MonoBehaviour:
   m_ObjectHideFlags: 0

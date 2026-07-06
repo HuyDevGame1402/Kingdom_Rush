@@ -6,6 +6,8 @@ public class SoundInGameManager : MonoBehaviour
     [SerializeField] private AudioClip selectGroundTower;
     [SerializeField] private AudioClip mouseOverTowerIcon;
     [SerializeField] private AudioClip tickWood;
+    [SerializeField] private AudioClip clickNextInstruction;
+    [SerializeField] private AudioClip levelUp;
 
     private AudioSource audioSource;
 
@@ -33,6 +35,18 @@ public class SoundInGameManager : MonoBehaviour
         if (CheckSoundEnabled() == false) return;
         audioSource.Stop();
         audioSource.PlayOneShot(tickWood);
+    }
+    public void PlayClickNextInstruction()
+    {
+        if (CheckSoundEnabled() == false) return;
+        audioSource.Stop();
+        audioSource.PlayOneShot(clickNextInstruction);
+    }
+    public void PlayLevelUp()
+    {
+        if (CheckSoundEnabled() == false) return;
+        audioSource.Stop();
+        audioSource.PlayOneShot(levelUp);
     }
     private bool CheckSoundEnabled()
     {
