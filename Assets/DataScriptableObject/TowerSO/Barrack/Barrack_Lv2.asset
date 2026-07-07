@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3159079d272bb4f8eedf95ae829490, type: 3}
+  m_Name: Barrack_Lv2
+  m_EditorClassIdentifier: 
+  towerID: 8
+  towerName: Militia Barracks
+  towerDescription: Trains militia, tough soldiers that block and damage your enemies.
+  towerIcon: {fileID: 1194111683, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  towerIconGray: {fileID: -1409468544, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  priceTower: 110
+  iconAttack: {fileID: 2130132984, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  minAttack: 3
+  maxAttack: 4
+  offsetPositionSpawnTower: {x: 0, y: -0.271, z: 0}
+  towerPrefab: {fileID: 1687071291506375736, guid: 092e22bfd79d4bb45893f8549fdbded5, type: 3}
+  iconHealth: {fileID: -1376859796, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  health: 50
+  iconArmor: {fileID: 712742897, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  armor: none

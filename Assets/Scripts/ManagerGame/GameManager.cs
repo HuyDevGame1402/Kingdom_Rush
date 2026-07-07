@@ -10,4 +10,9 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
+
+    public bool CheckTowerLevelUp(BaseTowerSO baseTowerSO)
+    {
+        return levelData.allowedBaseTowers.Contains(baseTowerSO); 
+    }
 }

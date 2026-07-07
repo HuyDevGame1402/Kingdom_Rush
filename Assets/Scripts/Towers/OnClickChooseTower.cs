@@ -5,7 +5,7 @@ public class OnClickChooseTower : MonoBehaviour
 {
     [SerializeField] private BaseTowerSO towerSO;
     public event Action<Transform, BaseTowerSO, bool> OnClickChooseTowerEvent;
-    private bool isSelected;
+    [SerializeField] private bool isSelected;
     private void OnMouseDown()
     {
         OnClickChooseTowerEvent?.Invoke(transform, towerSO, isSelected);

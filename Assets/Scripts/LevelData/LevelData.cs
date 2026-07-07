@@ -53,6 +53,11 @@ public class LevelData : ScriptableObject
     public int sheepCount = 8;             // Số lượng cừu trang trí trên map (X8)
     public int startingLives = 20;         // Số mạng ban đầu (thường là 20)
 
+    [Header("--- Tower Restrictions ---")]
+    [Tooltip("Danh sách các loại trụ được phép xây dựng trong map này")]
+    public List<CastleData> allowedTowers; // TowerData là ScriptableObject quản lý thông tin từng trụ
+    public List<BaseTowerSO> allowedBaseTowers;
+
     [Header("--- Wave Composition ---")]
     public List<WaveData> waves;
 

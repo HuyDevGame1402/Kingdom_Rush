@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a062da0c5a38d25479d5ee443ef789c7, type: 3}
+  m_Name: BarrackTowerLv1
+  m_EditorClassIdentifier: 
+  castleName: Barrack Lv1
+  description: "Tr\u1EE5 l\xEDnh hero"
+  maxHealth: 0
+  startGold: 70
+  icon: {fileID: 0}
+  visualPrefab: {fileID: 0}
+  upgradeCost: 0
+  nextLevel: {fileID: 0}
+  minDamage: 0
+  maxDamage: 0
+  attackSpeed: 0
+  attackRate: 0
+  arrowArcHeight: 1.5
+  heroPositionList: []
+  animationTower: 
+  frameTowerStartIdle: 0
+  frameTowerEndIdle: 0
+  frameTowerStartAttack: 0
+  frameTowerEndAttack: 0
+  animationHero: 
+  frameHeroStartIdleUp: 0
+  frameHeroEndIdleUp: 0
+  frameHeroStartIdleDown: 0
+  frameHeroEndIdleDown: 0
+  frameHeroStartAttackUp: 0
+  frameHeroEndAttackUp: 0
+  frameHeroStartAttackDown: 0
+  frameHeroEndAttackDown: 0
+  heroBombAnim: []
+  positionSmoke: {x: 0, y: 0, z: 0}
+  smokeAnim:
+    nameAnimation: 
+    startFrame: 1
+    endFrame: 1

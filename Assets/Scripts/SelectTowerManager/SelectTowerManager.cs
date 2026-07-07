@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
+using static UnityEngine.Rendering.GPUSort;
+using UnityEngine.PlayerLoop;
 
 public class SelectTowerManager : MonoBehaviour
 {
@@ -8,17 +11,19 @@ public class SelectTowerManager : MonoBehaviour
     [SerializeField] private Transform backgroundSprite;
     [SerializeField] private Transform selectTowerBase;
     [SerializeField] private Transform updateTower;
+    [SerializeField] private TextMeshPro priceUpdateTower;
     [SerializeField] private Transform lockUpdateTower;
     [SerializeField] private Transform updateTowerLevelMax;
     [SerializeField] private bool isSelected;
     private bool isShow;
-    private Transform groundSelected;
+    [SerializeField] private Transform groundSelected;
     [SerializeField] private float offsetY;
 
     [SerializeField] private Sprite tickSelectTower;
     [SerializeField] private Sprite tickSelectTowerGray;
     [SerializeField] private List<OnClickChooseTower> onClickChooseTowers = new List<OnClickChooseTower>();
-    private Transform transformSelectedTower;
+    [SerializeField] private Transform transformSelectedTower;
+    private Transform towerSelected;
     private BaseTowerSO baseTowerSelected;
     [SerializeField] private Transform mainDescriptionTower;
 
@@ -102,9 +107,10 @@ public class SelectTowerManager : MonoBehaviour
             {
                 barrackSpawnHero.SetTargetSpawn(groundSelected.GetChild(2));
             }
-            
+            towerCreate.GetComponent<TowerLevelUp>().groundTower = groundSelected;
+            groundSelected.GetComponent<BuildPlot>().DisableCapsualCollider();
             // Remove Bountry
-            if(GoldManager.Instance != null)
+            if (GoldManager.Instance != null)
             {
                 GoldManager.Instance.RemoveGold(arg2.priceTower);
             }
@@ -135,6 +141,10 @@ public class SelectTowerManager : MonoBehaviour
 
     private void SelectTowerManager_OnClickBuildTower(Transform arg1, bool arg2)
     {
+        backgroundSprite.gameObject.SetActive(false);
+        selectTowerBase.gameObject.SetActive(false);
+        updateTower.gameObject.SetActive(false);
+        lockUpdateTower.gameObject.SetActive(false);
         if (groundSelected == arg1)
         {
             Hide();
@@ -156,6 +166,33 @@ public class SelectTowerManager : MonoBehaviour
         backgroundSprite.gameObject.SetActive(isActive);
         selectTowerBase.gameObject.SetActive(isActive);
     }
+
+    public void ActiveViewUpdateTower(Transform tower ,int priceUpdate, float offsetY)
+    {
+        Hide();
+        backgroundSprite.gameObject.SetActive(true);
+        updateTower.gameObject.SetActive(true);
+        priceUpdateTower.text = priceUpdate.ToString();
+        towerSelected = tower;
+        transform.position = tower.transform.position + new Vector3(0, offsetY, 0);
+        groundSelected = null;
+    }
+
+    public void ActiveViewLockTower(Transform tower, float offsetY)
+    {
+        Hide();
+        backgroundSprite.gameObject.SetActive(true);
+        lockUpdateTower.gameObject.SetActive(true);
+        towerSelected = tower;
+        transform.position = tower.transform.position + new Vector3(0, offsetY, 0);
+        groundSelected = null;
+    }
+
+    public void DisableViewTower()
+    {
+        Hide();
+    }
+
     private void Hide()
     {
         backgroundSprite.gameObject.SetActive(false);
@@ -175,6 +212,11 @@ public class SelectTowerManager : MonoBehaviour
             transformSelectedTower.GetComponent<OnClickChooseTower>().SetIsSelected(false);
             transformSelectedTower.GetComponent<SpriteRenderer>().sprite = baseTowerSelected.towerIcon;
         }
+        if(towerSelected != null)
+        {
+            towerSelected.GetComponent<OnClickChooseTowerInGame>().SetIsSelected(false);
+        }
+        towerSelected = null;
         transformSelectedTower = null;
         baseTowerSelected = null;
     }

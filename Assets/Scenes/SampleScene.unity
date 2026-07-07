@@ -2562,6 +2562,7 @@ MonoBehaviour:
   backgroundSprite: {fileID: 1957185233}
   selectTowerBase: {fileID: 1818478088}
   updateTower: {fileID: 1041480436}
+  priceUpdateTower: {fileID: 109284805}
   lockUpdateTower: {fileID: 58603191}
   updateTowerLevelMax: {fileID: 0}
   isSelected: 0

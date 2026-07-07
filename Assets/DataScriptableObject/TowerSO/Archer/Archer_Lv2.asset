@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6404b9243b54045be00c227653ae75, type: 3}
+  m_Name: Archer_Lv2
+  m_EditorClassIdentifier: 
+  towerID: 5
+  towerName: Archer Tower
+  towerDescription: Archers ready to strike at your enemies from a distance.
+  towerIcon: {fileID: -689765616, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  towerIconGray: {fileID: -1339529062, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  priceTower: 110
+  iconAttack: {fileID: 2130132984, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  minAttack: 7
+  maxAttack: 11
+  offsetPositionSpawnTower: {x: 0, y: -0.25, z: 0}
+  towerPrefab: {fileID: 8332110810862216084, guid: 899f12d2c2c16ca428b8613cdf234107, type: 3}
+  iconAttackRate: {fileID: -1695097776, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  attackRate: average

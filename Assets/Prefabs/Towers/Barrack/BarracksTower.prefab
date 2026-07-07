@@ -14,9 +14,13 @@ GameObject:
   - component: {fileID: 2201144656639204306}
   - component: {fileID: 5966116225990778956}
   - component: {fileID: 3341795790903572181}
+  - component: {fileID: 95468063597698005}
+  - component: {fileID: 5712402635358878640}
+  - component: {fileID: 4527023993060788630}
+  - component: {fileID: 2540380237313937471}
   m_Layer: 0
   m_Name: BarracksTower
-  m_TagString: Untagged
+  m_TagString: Towers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,6 +213,82 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e10b2d5aed1c7094dbe5729c8ed24871, type: 3}
   audioTowerBuild: {fileID: 8300000, guid: 9ffa890c3b177a641b951b0e49f15a76, type: 3}
   audioDoorOpen: {fileID: 8300000, guid: 2cb051767cd4c7f42874f616bda68677, type: 3}
+--- !u!114 &95468063597698005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687071291506375736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8776b2304f948243ab9c8cbcca4ff08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrackDataSO: {fileID: 11400000, guid: 052f652d1dfa6bf4db51a0064075d803, type: 2}
+--- !u!58 &5712402635358878640
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687071291506375736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0022525787, y: 0.4510277}
+  m_Radius: 0.43045855
+--- !u!114 &4527023993060788630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687071291506375736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4b90c8a161fb9468317fd984337773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseTowerSO: {fileID: 11400000, guid: e6b3a9bad86e65342ad2173135b718aa, type: 2}
+  groundTower: {fileID: 0}
+--- !u!114 &2540380237313937471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687071291506375736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98174d629f68b53428410452e608da07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetY: 0.75
 --- !u!1 &2147060429946936535
 GameObject:
   m_ObjectHideFlags: 0

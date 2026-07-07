@@ -33,6 +33,17 @@ MonoBehaviour:
   strategicPointsCount: 8
   sheepCount: 8
   startingLives: 20
+  allowedTowers:
+  - {fileID: 11400000, guid: fae4ec91ff2513041be7809093a3531a, type: 2}
+  - {fileID: 11400000, guid: 747af8d3beb969e49bf2a9105cd0997a, type: 2}
+  - {fileID: 11400000, guid: aeaf7bded64991441a9076f384bd6451, type: 2}
+  - {fileID: 11400000, guid: 052f652d1dfa6bf4db51a0064075d803, type: 2}
+  allowedBaseTowers:
+  - {fileID: 11400000, guid: 5f6b4693b0f7f3241a4ba1467e7de870, type: 2}
+  - {fileID: 11400000, guid: 78a7bd62f75e39c4ab8a17761c08949c, type: 2}
+  - {fileID: 11400000, guid: c228105d65692d34b9b0449fab5dd46f, type: 2}
+  - {fileID: 11400000, guid: 19af43824ccf3c74f8266f94b61bfc7d, type: 2}
+  - {fileID: 11400000, guid: ced14b186535836448c7b8ff7951c24d, type: 2}
   waves:
   - waveIndex: 1
     enemyGroups:

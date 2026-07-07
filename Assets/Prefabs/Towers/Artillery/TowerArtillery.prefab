@@ -497,9 +497,12 @@ GameObject:
   - component: {fileID: 3606505214953652718}
   - component: {fileID: 6285548924284940393}
   - component: {fileID: 4428660287390673033}
+  - component: {fileID: 2279498923673592603}
+  - component: {fileID: 21557846916376010}
+  - component: {fileID: 8787620472655820413}
   m_Layer: 0
   m_Name: TowerArtillery
-  m_TagString: Untagged
+  m_TagString: Towers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,6 +709,69 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &2279498923673592603
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284188405547762922}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.026844144, y: 0.4214549}
+  m_Radius: 0.47744167
+--- !u!114 &21557846916376010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284188405547762922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4b90c8a161fb9468317fd984337773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseTowerSO: {fileID: 11400000, guid: 9e10622584eab9e41ac679982fbc8770, type: 2}
+  groundTower: {fileID: 0}
+--- !u!114 &8787620472655820413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284188405547762922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98174d629f68b53428410452e608da07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetY: 0.75
 --- !u!1 &6685727788019965033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1114,7 @@ Transform:
   m_GameObject: {fileID: 7881208346851595242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.455, y: 0.0187, z: 0}
+  m_LocalPosition: {x: -0.48, y: 0.0187, z: 0}
   m_LocalScale: {x: 1.7301089, y: 1.4343197, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1135,7 +1201,7 @@ Transform:
   m_GameObject: {fileID: 8866125388434758211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0366, y: 0.0033, z: 0}
+  m_LocalPosition: {x: 0.011600144, y: 0.0033, z: 0}
   m_LocalScale: {x: 1.7909164, y: 1.5118252, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
