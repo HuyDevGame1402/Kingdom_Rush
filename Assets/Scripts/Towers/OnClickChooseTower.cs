@@ -19,6 +19,10 @@ public class OnClickChooseTower : MonoBehaviour
     {
         this.towerSO = towerSo;
     }
+    public BaseTowerSO GetTowerSO()
+    {
+        return this.towerSO;
+    }
     public void SetIsSelected(bool isSelected)
     {
         this.isSelected = isSelected;

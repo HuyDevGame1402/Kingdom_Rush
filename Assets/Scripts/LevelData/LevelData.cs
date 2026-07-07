@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,6 +47,8 @@ public class LevelData : ScriptableObject
 
     [Header("--- Set-Up (Initial Stats) ---")]
     public int startingGold = 265;
+    public int live;
+    public int wave;
     public int strategicPointsCount = 8;    // Số lượng vị trí xây tháp (X8)
     public int sheepCount = 8;             // Số lượng cừu trang trí trên map (X8)
     public int startingLives = 20;         // Số mạng ban đầu (thường là 20)

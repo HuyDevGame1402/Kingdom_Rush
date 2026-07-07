@@ -1,0 +1,1047 @@
+fileFormatVersion: 2
+guid: da5db828ebf06b84885586db57c151e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1956544533295138270
+    second: go_stages_grass-1_0
+  - first:
+      213: 7875459096879154656
+    second: go_stages_grass-1_1
+  - first:
+      213: 5060134757661355675
+    second: go_stages_grass-1_2
+  - first:
+      213: 544734903468440133
+    second: go_stages_grass-1_3
+  - first:
+      213: -7396720354728761677
+    second: go_stages_grass-1_4
+  - first:
+      213: -2206129631992052520
+    second: go_stages_grass-1_5
+  - first:
+      213: -35056083656779548
+    second: go_stages_grass-1_6
+  - first:
+      213: -208396766216549317
+    second: go_stages_grass-1_7
+  - first:
+      213: -6950988177281799072
+    second: go_stages_grass-1_8
+  - first:
+      213: -2678097068467523954
+    second: go_stages_grass-1_9
+  - first:
+      213: -8024111977295025910
+    second: go_stages_grass-1_10
+  - first:
+      213: -459910952145067901
+    second: go_stages_grass-1_11
+  - first:
+      213: 6111646606462742711
+    second: go_stages_grass-1_12
+  - first:
+      213: 6615184004864161469
+    second: go_stages_grass-1_13
+  - first:
+      213: 8356800142487062365
+    second: go_stages_grass-1_14
+  - first:
+      213: 6183791566725161813
+    second: go_stages_grass-1_15
+  - first:
+      213: 2987977355672627814
+    second: go_stages_grass-1_16
+  - first:
+      213: 2771441822156379455
+    second: go_stages_grass-1_17
+  - first:
+      213: -4908630062165578028
+    second: go_stages_grass-1_18
+  - first:
+      213: -5156111998483823834
+    second: go_stages_grass-1_19
+  - first:
+      213: 5628975331210954907
+    second: go_stages_grass-1_20
+  - first:
+      213: 3197590702671151472
+    second: go_stages_grass-1_21
+  - first:
+      213: 1965414078276259043
+    second: go_stages_grass-1_22
+  - first:
+      213: 2364233576059925725
+    second: go_stages_grass-1_23
+  - first:
+      213: 7884230886788088635
+    second: go_stages_grass-1_24
+  - first:
+      213: 8020726106441431505
+    second: go_stages_grass-1_25
+  - first:
+      213: 3900878423127641869
+    second: go_stages_grass-1_26
+  - first:
+      213: -2822164491672279560
+    second: go_stages_grass-1_27
+  - first:
+      213: -8515157708274332967
+    second: go_stages_grass-1_28
+  - first:
+      213: -991410534434893510
+    second: go_stages_grass-1_29
+  - first:
+      213: 5269826656700879869
+    second: go_stages_grass-1_30
+  - first:
+      213: 7429545162148300853
+    second: go_stages_grass-1_31
+  - first:
+      213: 466872266055176810
+    second: go_stages_grass-1_32
+  - first:
+      213: -5976284374394203558
+    second: go_stages_grass-1_33
+  - first:
+      213: 4790047900528371189
+    second: go_stages_grass-1_34
+  - first:
+      213: 6368680811719515409
+    second: go_stages_grass-1_35
+  - first:
+      213: 5851332533378973415
+    second: go_stages_grass-1_36
+  - first:
+      213: 5377983509836918631
+    second: go_stages_grass-1_37
+  - first:
+      213: 1112889010276052373
+    second: go_stages_grass-1_38
+  - first:
+      213: -3492231883727288965
+    second: go_stages_grass-1_39
+  - first:
+      213: -9145533075211357396
+    second: go_stages_grass-1_40
+  - first:
+      213: -3226168047424622801
+    second: go_stages_grass-1_41
+  - first:
+      213: -6157728212548632940
+    second: go_stages_grass-1_42
+  - first:
+      213: 610389477240965719
+    second: go_stages_grass-1_43
+  - first:
+      213: 7720015652584886324
+    second: go_stages_grass-1_44
+  - first:
+      213: -152491229740759273
+    second: go_stages_grass-1_45
+  - first:
+      213: 6226066782997572339
+    second: go_stages_grass-1_46
+  - first:
+      213: -800109913687887906
+    second: go_stages_grass-1_47
+  - first:
+      213: -2165664909673449407
+    second: go_stages_grass-1_48
+  - first:
+      213: -8837920388505475288
+    second: go_stages_grass-1_49
+  - first:
+      213: -1441178641255269989
+    second: go_stages_grass-1_50
+  - first:
+      213: -5582680399359612778
+    second: go_stages_grass-1_51
+  - first:
+      213: 5006419404997969357
+    second: go_stages_grass-1_52
+  - first:
+      213: 6097908474711298887
+    second: go_stages_grass-1_53
+  - first:
+      213: 3400961305072883329
+    second: go_stages_grass-1_54
+  - first:
+      213: -8189329383295913612
+    second: go_stages_grass-1_55
+  - first:
+      213: 8588868205785595627
+    second: go_stages_grass-1_56
+  - first:
+      213: -3622603204328609989
+    second: go_stages_grass-1_57
+  - first:
+      213: 2559100134577075447
+    second: go_stages_grass-1_58
+  - first:
+      213: 4646530840924093467
+    second: go_stages_grass-1_59
+  - first:
+      213: -651921801120777459
+    second: go_stages_grass-1_60
+  - first:
+      213: 5483362964305602928
+    second: go_stages_grass-1_61
+  - first:
+      213: -2956572658106756082
+    second: go_stages_grass-1_62
+  - first:
+      213: -1032599943302740607
+    second: go_stages_grass-1_63
+  - first:
+      213: 5883833711397791533
+    second: go_stages_grass-1_64
+  - first:
+      213: 7134636326770967512
+    second: go_stages_grass-1_65
+  - first:
+      213: 4250639918522696757
+    second: go_stages_grass-1_66
+  - first:
+      213: -6788207542298867864
+    second: go_stages_grass-1_67
+  - first:
+      213: 3283055047728621800
+    second: go_stages_grass-1_68
+  - first:
+      213: 5206036229947431843
+    second: go_stages_grass-1_69
+  - first:
+      213: -2177110221506953484
+    second: go_stages_grass-1_70
+  - first:
+      213: 7513024168983075814
+    second: go_stages_grass-1_71
+  - first:
+      213: -1367869233095567186
+    second: go_stages_grass-1_72
+  - first:
+      213: -4156941322941967016
+    second: go_stages_grass-1_73
+  - first:
+      213: -5182012522167547971
+    second: go_stages_grass-1_74
+  - first:
+      213: -504681608233382897
+    second: go_stages_grass-1_75
+  - first:
+      213: -484521338193133185
+    second: go_stages_grass-1_76
+  - first:
+      213: 4650830963740030055
+    second: go_stages_grass-1_77
+  - first:
+      213: 9212219787779963477
+    second: go_stages_grass-1_78
+  - first:
+      213: 7155124140271379161
+    second: go_stages_grass-1_79
+  - first:
+      213: 2967055944992185024
+    second: go_stages_grass-1_80
+  - first:
+      213: 3441564052860756915
+    second: go_stages_grass-1_81
+  - first:
+      213: -8571403113372677975
+    second: go_stages_grass-1_82
+  - first:
+      213: -8019914013252055318
+    second: go_stages_grass-1_83
+  - first:
+      213: -7606401341451136314
+    second: go_stages_grass-1_84
+  - first:
+      213: 2105270283424349591
+    second: go_stages_grass-1_85
+  - first:
+      213: -3624790669219327223
+    second: go_stages_grass-1_86
+  - first:
+      213: 7170739693551398866
+    second: go_stages_grass-1_87
+  - first:
+      213: 2585408857649689489
+    second: go_stages_grass-1_88
+  - first:
+      213: 5779366356979343875
+    second: go_stages_grass-1_89
+  - first:
+      213: -7641406522630190962
+    second: go_stages_grass-1_90
+  - first:
+      213: 8708492499390083461
+    second: go_stages_grass-1_91
+  - first:
+      213: 5557953852625984916
+    second: go_stages_grass-1_92
+  - first:
+      213: 8061091966296552819
+    second: go_stages_grass-1_93
+  - first:
+      213: -4913697220790727545
+    second: go_stages_grass-1_94
+  - first:
+      213: -7329616297557175216
+    second: go_stages_grass-1_95
+  - first:
+      213: -5691834808957249200
+    second: go_stages_grass-1_96
+  - first:
+      213: -4114937946676568531
+    second: go_stages_grass-1_97
+  - first:
+      213: -2289174040579364451
+    second: go_stages_grass-1_98
+  - first:
+      213: -3503819370322216665
+    second: go_stages_grass-1_99
+  - first:
+      213: -1058158863625568850
+    second: go_stages_grass-1_100
+  - first:
+      213: 7398186370117620957
+    second: go_stages_grass-1_101
+  - first:
+      213: 5688376146134178899
+    second: go_stages_grass-1_102
+  - first:
+      213: 6735621616810699287
+    second: go_stages_grass-1_103
+  - first:
+      213: -5993862532054659380
+    second: go_stages_grass-1_104
+  - first:
+      213: -2656827843282874290
+    second: go_stages_grass-1_105
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: go_stages_grass-1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 413
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed50a4603ea072b10800000000000000
+      internalID: 1956544533295138270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 413
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5c99892504b4d60800000000000000
+      internalID: 7875459096879154656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 413
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e230a90c5393640800000000000000
+      internalID: 5060134757661355675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 413
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a3ef132894f8700800000000000000
+      internalID: 544734903468440133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 315
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df35a8c6c6f222940800000000000000
+      internalID: 5269826656700879869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 325
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538429826fb0b1760800000000000000
+      internalID: 7429545162148300853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_32
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 325
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6253b53ad9aa7600800000000000000
+      internalID: 466872266055176810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_33
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 325
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5214837609ff0da0800000000000000
+      internalID: -5976284374394203558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_34
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 325
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f56910df2ba97240800000000000000
+      internalID: 4790047900528371189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_35
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 325
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d536e9479126850800000000000000
+      internalID: 6368680811719515409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_36
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 237
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee7dbaffeb143150800000000000000
+      internalID: 5851332533378973415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_46
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 217
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3faed6480ce676650800000000000000
+      internalID: 6226066782997572339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_58
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 258
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4fe128300c38320800000000000000
+      internalID: 2559100134577075447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_59
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 258
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c7d237e2bcb7040800000000000000
+      internalID: 4646530840924093467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_60
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 259
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bfcde6398e3f6f0800000000000000
+      internalID: -651921801120777459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_61
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 260
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079e7fd5091d81c40800000000000000
+      internalID: 5483362964305602928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_62
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 260
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e041ae005d428f6d0800000000000000
+      internalID: -2956572658106756082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_63
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 263
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1850a5092d77ba1f0800000000000000
+      internalID: -1032599943302740607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_64
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 263
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27655d269397a150800000000000000
+      internalID: 5883833711397791533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_65
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 264
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d308c230f1530360800000000000000
+      internalID: 7134636326770967512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_71
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 149
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb192d0daf934860800000000000000
+      internalID: 7513024168983075814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_73
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 119
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855d6e524e39f46c0800000000000000
+      internalID: -4156941322941967016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_81
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 61
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3e48a9544e2cf20800000000000000
+      internalID: 3441564052860756915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_84
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 21
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c210c7c742a07690800000000000000
+      internalID: -7606401341451136314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_104
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccecb50b8c581dca0800000000000000
+      internalID: -5993862532054659380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_stages_grass-1_105
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40d1cb272d012bd0800000000000000
+      internalID: -2656827843282874290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: be71f8e27571fdc4a9f39bef418d8d5f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      go_stages_grass-1_0: 1956544533295138270
+      go_stages_grass-1_1: 7875459096879154656
+      go_stages_grass-1_104: -5993862532054659380
+      go_stages_grass-1_105: -2656827843282874290
+      go_stages_grass-1_2: 5060134757661355675
+      go_stages_grass-1_27: -2822164491672279560
+      go_stages_grass-1_3: 544734903468440133
+      go_stages_grass-1_30: 5269826656700879869
+      go_stages_grass-1_31: 7429545162148300853
+      go_stages_grass-1_32: 466872266055176810
+      go_stages_grass-1_33: -5976284374394203558
+      go_stages_grass-1_34: 4790047900528371189
+      go_stages_grass-1_35: 6368680811719515409
+      go_stages_grass-1_36: 5851332533378973415
+      go_stages_grass-1_46: 6226066782997572339
+      go_stages_grass-1_58: 2559100134577075447
+      go_stages_grass-1_59: 4646530840924093467
+      go_stages_grass-1_60: -651921801120777459
+      go_stages_grass-1_61: 5483362964305602928
+      go_stages_grass-1_62: -2956572658106756082
+      go_stages_grass-1_63: -1032599943302740607
+      go_stages_grass-1_64: 5883833711397791533
+      go_stages_grass-1_65: 7134636326770967512
+      go_stages_grass-1_71: 7513024168983075814
+      go_stages_grass-1_73: -4156941322941967016
+      go_stages_grass-1_81: 3441564052860756915
+      go_stages_grass-1_84: -7606401341451136314
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

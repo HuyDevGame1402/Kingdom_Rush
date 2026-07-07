@@ -150,32 +150,6 @@ public class EnemySpriteAnimator : MonoBehaviour
         }
     }
 
-    //private bool ApplySpriteFrame(SpriteRenderer renderer, string enemyId, SpriteData d)
-    //{
-    //    if (enemyTextures.TryGetValue(enemyId, out var texDict))
-    //    {
-    //        if (texDict.TryGetValue(d.atlasName, out Texture2D tex))
-    //        {
-    //            Rect pixelRect = new Rect(
-    //                d.f_quad.x,
-    //                tex.height - d.f_quad.y - d.f_quad.height,
-    //                d.f_quad.width,
-    //                d.f_quad.height
-    //            );
-
-    //            float pivotX = (d.fullSize.x * 0.5f - d.trim.x) / d.f_quad.width;
-    //            float pivotY = (d.trim.w) / d.f_quad.height;
-
-    //            renderer.sprite = Sprite.Create(tex, pixelRect, new Vector2(pivotX, pivotY), pixelsPerUnit);
-    //            return true;
-    //        }
-    //        else
-    //        {
-    //            Debug.LogError($"⚠️ [LỖI TEXTURE] Không tìm thấy ảnh Atlas có tên '{d.atlasName}' được map cho Enemy '{enemyId}' trên Inspector!");
-    //        }
-    //    }
-    //    return false;
-    //}
     private bool ApplySpriteFrame(SpriteRenderer renderer, string enemyId, SpriteData d)
     {
         if (!enemyTextures.TryGetValue(enemyId, out var texDict)) return false;

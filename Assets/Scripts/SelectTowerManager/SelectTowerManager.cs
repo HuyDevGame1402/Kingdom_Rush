@@ -16,6 +16,7 @@ public class SelectTowerManager : MonoBehaviour
     [SerializeField] private float offsetY;
 
     [SerializeField] private Sprite tickSelectTower;
+    [SerializeField] private Sprite tickSelectTowerGray;
     [SerializeField] private List<OnClickChooseTower> onClickChooseTowers = new List<OnClickChooseTower>();
     private Transform transformSelectedTower;
     private BaseTowerSO baseTowerSelected;
@@ -27,6 +28,7 @@ public class SelectTowerManager : MonoBehaviour
     public Transform towerTest;
     private GameObject towerCreate;
     [SerializeField] private Transform towerParent;
+    private bool isBuy;
 
     private void Awake()
     {
@@ -76,13 +78,22 @@ public class SelectTowerManager : MonoBehaviour
     {
         if(transformSelectedTower != null)
         {
-            transformSelectedTower.GetComponent<SpriteRenderer>().sprite = baseTowerSelected.towerIcon;
+            isBuy = SetIsBuy(transformSelectedTower);
+            if (isBuy)
+            {
+                transformSelectedTower.GetComponent<SpriteRenderer>().sprite = baseTowerSelected.towerIcon;
+            }
+            else
+            {
+                transformSelectedTower.GetComponent<SpriteRenderer>().sprite = baseTowerSelected.towerIconGray;
+            }
+            
         }
         if(transformSelectedTower != arg1 && transformSelectedTower != null)
         {
             transformSelectedTower.GetComponent<OnClickChooseTower>().SetIsSelected(false);
         }
-        if (arg3)
+        if (arg3 && SetIsBuy(arg1))
         {
             towerCreate = Instantiate(arg2.towerPrefab, towerParent);
             towerCreate.transform.position = groundSelected.position + arg2.offsetPositionSpawnTower;
@@ -92,14 +103,34 @@ public class SelectTowerManager : MonoBehaviour
                 barrackSpawnHero.SetTargetSpawn(groundSelected.GetChild(2));
             }
             
+            // Remove Bountry
+            if(GoldManager.Instance != null)
+            {
+                GoldManager.Instance.RemoveGold(arg2.priceTower);
+            }
+
             Hide();
             groundSelected = null;
             return;
         }
         transformSelectedTower = arg1;
         baseTowerSelected = arg2;
-        transformSelectedTower.GetComponent<SpriteRenderer>().sprite = tickSelectTower;
+        isBuy = SetIsBuy(transformSelectedTower);
+        if (isBuy)
+        {
+            transformSelectedTower.GetComponent<SpriteRenderer>().sprite = tickSelectTower;
+        }
+        else
+        {
+            transformSelectedTower.GetComponent<SpriteRenderer>().sprite = tickSelectTowerGray;
+        }
         transformSelectedTower.GetComponent<OnClickChooseTower>().SetIsSelected(true);
+    }
+
+    private bool SetIsBuy(Transform transformSelectedTower)
+    {
+        return GoldManager.Instance.CheckGold(transformSelectedTower.GetComponent<
+                OnClickChooseTower>().GetTowerSO().priceTower);
     }
 
     private void SelectTowerManager_OnClickBuildTower(Transform arg1, bool arg2)

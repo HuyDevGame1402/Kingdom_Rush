@@ -28,6 +28,8 @@ MonoBehaviour:
 
     GOOD LUCK, GENERAL!'
   startingGold: 265
+  live: 20
+  wave: 7
   strategicPointsCount: 8
   sheepCount: 8
   startingLives: 20

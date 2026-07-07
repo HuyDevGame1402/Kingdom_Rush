@@ -27,10 +27,6 @@ public class TowerInfoView : MonoBehaviour
     {
         OnRegisterEventChooseTower();
     }
-    private void OnDestroy()
-    {
-        
-    }
 
     private void OnRegisterEventChooseTower()
     {
