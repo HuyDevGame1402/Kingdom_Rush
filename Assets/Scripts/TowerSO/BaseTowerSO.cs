@@ -8,6 +8,7 @@ public class BaseTowerSO : ScriptableObject
     public Sprite towerIcon;
     public Sprite towerIconGray;
     public int priceTower;
+    public int priceBuyTower;
 
     // value
     public Sprite iconAttack;

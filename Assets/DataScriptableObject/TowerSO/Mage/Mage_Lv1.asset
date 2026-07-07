@@ -19,6 +19,7 @@ MonoBehaviour:
   towerIcon: {fileID: -1958130075, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   towerIconGray: {fileID: -510019823, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   priceTower: 100
+  priceBuyTower: 100
   iconAttack: {fileID: 329312923, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   minAttack: 9
   maxAttack: 17

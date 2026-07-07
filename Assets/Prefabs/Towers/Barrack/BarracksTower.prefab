@@ -274,7 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4b90c8a161fb9468317fd984337773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTowerSO: {fileID: 11400000, guid: e6b3a9bad86e65342ad2173135b718aa, type: 2}
+  currentBaseSOTower: {fileID: 11400000, guid: c228105d65692d34b9b0449fab5dd46f, type: 2}
+  baseTowerSONextLevel: {fileID: 11400000, guid: e6b3a9bad86e65342ad2173135b718aa, type: 2}
   groundTower: {fileID: 0}
 --- !u!114 &2540380237313937471
 MonoBehaviour:

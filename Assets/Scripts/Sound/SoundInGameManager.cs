@@ -8,6 +8,7 @@ public class SoundInGameManager : MonoBehaviour
     [SerializeField] private AudioClip tickWood;
     [SerializeField] private AudioClip clickNextInstruction;
     [SerializeField] private AudioClip levelUp;
+    [SerializeField] private AudioClip towerSell;
 
     private AudioSource audioSource;
 
@@ -47,6 +48,12 @@ public class SoundInGameManager : MonoBehaviour
         if (CheckSoundEnabled() == false) return;
         audioSource.Stop();
         audioSource.PlayOneShot(levelUp);
+    }
+    public void PlayTowerSell()
+    {
+        if (CheckSoundEnabled() == false) return;
+        audioSource.Stop();
+        audioSource.PlayOneShot(towerSell);
     }
     private bool CheckSoundEnabled()
     {

@@ -23,6 +23,14 @@ public class BarrackSpawnHero : MonoBehaviour
         barracksAnimation.OnSpawnHeroEvent += SpawnHero;
     }
 
+    private void OnDisable()
+    {
+        for (int i = 0; i < heroSpawnList.Count; i++)
+        {
+            heroSpawnList[i].gameObject.SetActive(false);
+        }
+    }
+
     private void SpawnHero()
     {
         for(int i = 0; i < heroCountSpawn; i++)

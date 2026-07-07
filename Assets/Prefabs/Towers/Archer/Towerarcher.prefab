@@ -904,7 +904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4b90c8a161fb9468317fd984337773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTowerSO: {fileID: 11400000, guid: ced14b186535836448c7b8ff7951c24d, type: 2}
+  currentBaseSOTower: {fileID: 11400000, guid: 5f6b4693b0f7f3241a4ba1467e7de870, type: 2}
+  baseTowerSONextLevel: {fileID: 11400000, guid: ced14b186535836448c7b8ff7951c24d, type: 2}
   groundTower: {fileID: 0}
 --- !u!114 &3501304120073319218
 MonoBehaviour:
@@ -918,7 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98174d629f68b53428410452e608da07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetY: 0.75
+  offsetY: 0.65
 --- !u!1 &8492146284085106604
 GameObject:
   m_ObjectHideFlags: 0

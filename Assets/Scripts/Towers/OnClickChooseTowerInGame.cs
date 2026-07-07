@@ -15,9 +15,17 @@ public class OnClickChooseTowerInGame : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(GameManager.Instance == null || SelectTowerManager.Instance == null)
+        if (GameManager.Instance == null || SelectTowerManager.Instance == null)
         {
             return;
+        }
+        if (SoundInGameManager.Instance != null)
+        {
+            SoundInGameManager.Instance.PlaySoundOpenTowerMenu();
+        }
+        if (SelectTowerManager.Instance != null)
+        {
+            SelectTowerManager.Instance.DisableTowerInfoBuy();
         }
         isSelected = !isSelected;
 
@@ -28,11 +36,13 @@ public class OnClickChooseTowerInGame : MonoBehaviour
             {
                 SelectTowerManager.Instance.ActiveViewUpdateTower(transform, towerLevelUp.GetBaseTowerSO()
                     .priceTower, offsetY);
+                Debug.LogWarning("Có nâng cấp" + towerLevelUp.GetBaseTowerSO().name);
             }
             // k có tower nâng cấp
             else
             {
                 SelectTowerManager.Instance.ActiveViewLockTower(transform, offsetY);
+                Debug.LogWarning("Không có nâng cấp" + towerLevelUp.GetBaseTowerSO().name);
             }
         }
         else

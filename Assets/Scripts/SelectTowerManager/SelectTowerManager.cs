@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
-using static UnityEngine.Rendering.GPUSort;
-using UnityEngine.PlayerLoop;
 
 public class SelectTowerManager : MonoBehaviour
 {
@@ -12,7 +10,9 @@ public class SelectTowerManager : MonoBehaviour
     [SerializeField] private Transform selectTowerBase;
     [SerializeField] private Transform updateTower;
     [SerializeField] private TextMeshPro priceUpdateTower;
+    [SerializeField] private OnClickBuyTower onclickBuyTowerInUpdateTower;
     [SerializeField] private Transform lockUpdateTower;
+    [SerializeField] private OnClickBuyTower onclickBuyTowerInLockTower;
     [SerializeField] private Transform updateTowerLevelMax;
     [SerializeField] private bool isSelected;
     private bool isShow;
@@ -34,6 +34,8 @@ public class SelectTowerManager : MonoBehaviour
     private GameObject towerCreate;
     [SerializeField] private Transform towerParent;
     private bool isBuy;
+
+    [SerializeField] private TowerInfoBuy towerInfoBuy;
 
     private void Awake()
     {
@@ -81,7 +83,8 @@ public class SelectTowerManager : MonoBehaviour
 
     private void SelectTowerManager_OnClickChooseTowerEvent(Transform arg1, BaseTowerSO arg2, bool arg3)
     {
-        if(transformSelectedTower != null)
+        DisableTowerInfoBuy();
+        if (transformSelectedTower != null)
         {
             isBuy = SetIsBuy(transformSelectedTower);
             if (isBuy)
@@ -141,6 +144,7 @@ public class SelectTowerManager : MonoBehaviour
 
     private void SelectTowerManager_OnClickBuildTower(Transform arg1, bool arg2)
     {
+        DisableTowerInfoBuy();
         backgroundSprite.gameObject.SetActive(false);
         selectTowerBase.gameObject.SetActive(false);
         updateTower.gameObject.SetActive(false);
@@ -176,6 +180,7 @@ public class SelectTowerManager : MonoBehaviour
         towerSelected = tower;
         transform.position = tower.transform.position + new Vector3(0, offsetY, 0);
         groundSelected = null;
+        onclickBuyTowerInUpdateTower.tower = tower;
     }
 
     public void ActiveViewLockTower(Transform tower, float offsetY)
@@ -186,8 +191,16 @@ public class SelectTowerManager : MonoBehaviour
         towerSelected = tower;
         transform.position = tower.transform.position + new Vector3(0, offsetY, 0);
         groundSelected = null;
+        onclickBuyTowerInLockTower.tower = tower;
     }
-
+    public void DisableTowerInfoBuy()
+    {
+        onclickBuyTowerInLockTower.SetConfirmSale(false);
+        onclickBuyTowerInUpdateTower.SetConfirmSale(false);
+        onclickBuyTowerInLockTower.SetupSpriteMoney();
+        onclickBuyTowerInUpdateTower.SetupSpriteMoney();
+        towerInfoBuy.ActiveChildCount(false);
+    }
     public void DisableViewTower()
     {
         Hide();
@@ -201,6 +214,7 @@ public class SelectTowerManager : MonoBehaviour
         lockUpdateTower.gameObject.SetActive(false);
         ResetSelectTower();
     }
+
     private void ResetSelectTower()
     {
         if (mainDescriptionTower != null)

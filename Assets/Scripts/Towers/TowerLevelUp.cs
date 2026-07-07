@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class TowerLevelUp : MonoBehaviour
 {
-    [SerializeField] private BaseTowerSO baseTowerSO;
+    [SerializeField] private BaseTowerSO currentBaseSOTower;
+    [SerializeField] private BaseTowerSO baseTowerSONextLevel;
 
     public Transform groundTower;
 
     public BaseTowerSO GetBaseTowerSO()
     {
-        return baseTowerSO;
+        return baseTowerSONextLevel;
+    }
+
+    public BaseTowerSO GetCurrentBaseTowerSO()
+    {
+        return currentBaseSOTower;
     }
 }

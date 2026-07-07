@@ -6,6 +6,16 @@ public class GameManager : MonoBehaviour
 
     public LevelData levelData;
 
+    public GameState currentGameState;
+
+    public enum GameState
+    {
+        Instruction,
+        Prepare,
+        Playing, 
+        FinishLevel,
+    }
+
     private void Awake()
     {
         Instance = this;
