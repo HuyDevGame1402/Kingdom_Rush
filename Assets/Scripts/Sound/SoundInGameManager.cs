@@ -9,6 +9,7 @@ public class SoundInGameManager : MonoBehaviour
     [SerializeField] private AudioClip clickNextInstruction;
     [SerializeField] private AudioClip levelUp;
     [SerializeField] private AudioClip towerSell;
+    [SerializeField] private AudioClip waveComming;
 
     private AudioSource audioSource;
 
@@ -54,6 +55,12 @@ public class SoundInGameManager : MonoBehaviour
         if (CheckSoundEnabled() == false) return;
         audioSource.Stop();
         audioSource.PlayOneShot(towerSell);
+    }
+    public void PlayWaveComming()
+    {
+        if (CheckSoundEnabled() == false) return;
+        audioSource.Stop();
+        audioSource.PlayOneShot(waveComming);
     }
     private bool CheckSoundEnabled()
     {

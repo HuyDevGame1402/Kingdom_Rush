@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class LevelEnemySpawner : MonoBehaviour
 {
+    public static LevelEnemySpawner Instance { get; private set; }
     [Header("--- Spawn & Path Settings ---")]
     [SerializeField] private List<Transform> positionSpawns = new List<Transform>();
     // Mỗi Transform trong này chứa các con (Child) là các Waypoint của đường đó
@@ -17,16 +18,15 @@ public class LevelEnemySpawner : MonoBehaviour
     private int activeEnemiesCount = 0; // Đếm số lượng quái đang còn sống trên map
     private bool isSpawningWave = false;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
-        if (currentLevelData == null)
-        {
-            Debug.LogError("Chưa gán Current Level Data vào Spawner!");
-            return;
-        }
-
         // Bắt đầu Wave đầu tiên (Wave 1)
-        StartCoroutine(PlayLevelCoroutine());
+        //StartCoroutine(PlayLevelCoroutine());
     }
 
     // Coroutine chính điều khiển toàn bộ các Wave trong Level
@@ -144,5 +144,10 @@ public class LevelEnemySpawner : MonoBehaviour
     {
         // Thực hiện logic cộng tiền cho người chơi tại đây
         // Ví dụ: GoldManager.Instance.AddGold(amount);
+    }
+
+    public List<EnemyGroup> GetCurrentEnemyGroup()
+    {
+        return currentLevelData.waves[currentWaveIndex].enemyGroups;
     }
 }

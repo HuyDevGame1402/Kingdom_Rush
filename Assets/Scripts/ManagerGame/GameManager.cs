@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class GameManager : MonoBehaviour
     public LevelData levelData;
 
     public GameState currentGameState;
+
+    public event Action<GameState> GameStateChanged;
 
     public enum GameState
     {
@@ -25,4 +28,11 @@ public class GameManager : MonoBehaviour
     {
         return levelData.allowedBaseTowers.Contains(baseTowerSO); 
     }
+
+    public void SetState(GameState state)
+    {
+        currentGameState = state;
+        GameStateChanged?.Invoke(currentGameState);
+    }
+
 }
