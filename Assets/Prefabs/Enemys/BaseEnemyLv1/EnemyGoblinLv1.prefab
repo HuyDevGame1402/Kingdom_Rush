@@ -53,24 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitData: {fileID: 11400000, guid: bb8f60f985af15a4695539cb4aea984c, type: 2}
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  waypoints: []
   target: {fileID: 0}
   targetList: []
   currentHealth: 0
@@ -81,6 +64,7 @@ MonoBehaviour:
   spriteRender: {fileID: 1378991697074639915}
   offsetSpawnTextY: 0.25
   attackerCount: 0
+  colliderTriggerHitDamage: {fileID: 0}
 --- !u!212 &1378991697074639915
 SpriteRenderer:
   m_ObjectHideFlags: 0

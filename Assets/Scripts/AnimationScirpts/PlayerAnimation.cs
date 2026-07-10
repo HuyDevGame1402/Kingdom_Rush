@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using static EnemyAnimatorTest;
 
 public class PlayerAnimation : MonoBehaviour
 {
@@ -12,13 +14,65 @@ public class PlayerAnimation : MonoBehaviour
     public GameObject muzzleFlashObj;
     public GameObject bombSfxObj;
 
+    [Header("Animation Viewer")]
+    public string animationName = "reinforce_A0_";
+    public int currentFrame = 1;
+    [Header("Manual Pivot Configuration")]
+    [Tooltip("Bấm dấu (+) để thêm cấu hình Pivot Offset cho từng frame cụ thể.")]
+    public List<FramePivotDebug> manualPivotOffsets = new List<FramePivotDebug>();
+
+    private void Start()
+    {
+        ShowSingleFrame(currentFrame);
+    }
+
     void Update()
     {
-        //AnimationP3();
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer6_", 29,29);
+            currentFrame++;
+            ShowSingleFrame(currentFrame);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            currentFrame = Mathf.Max(1, currentFrame - 1);
+            ShowSingleFrame(currentFrame);
+        }
+    }
+
+    private void ShowSingleFrame(int frameNumber)
+    {
+        // Kiểm tra an toàn Object đích trước khi thực hiện
+        if (targetObject == null)
+        {
+            Debug.LogWarning("Chưa gán targetObject trong Animation Viewer!");
+            return;
+        }
+
+        if (SpriteSheetAnimator.Instance == null)
+        {
+            Debug.LogWarning("Không tìm thấy Instance của SpriteSheetAnimator trong Scene!");
+            return;
+        }
+
+        // 1. Lấy giá trị Pivot Offset được cấu hình thủ công cho frame này (nếu có)
+        float offset = GetRegisteredPivotOffset(frameNumber);
+
+        // 2. Gọi SpriteSheetAnimator xử lý cắt ảnh và hiển thị lên targetObject
+        SpriteSheetAnimator.Instance.DisplaySingleFrame(targetObject, animationName, frameNumber, offset);
+    }
+
+    private float GetRegisteredPivotOffset(int frameNumber)
+    {
+        foreach (var config in manualPivotOffsets)
+        {
+            if (config.frameIndex == frameNumber)
+            {
+                return config.pivotYOffset;
+            }
+        }
+        return 0f;
     }
 
     private void AnimationP1()

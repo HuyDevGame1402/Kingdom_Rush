@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6232ca68a59a2549a0247198624f127, type: 3}
+  m_Name: Reinforce_A_0
+  m_EditorClassIdentifier: 
+  unitName: Reinforce_A_0
+  unitType: 0
+  description: "L\xEDnh \u0111\u1ED3ng b\u1EA3o v\u1EC7 "
+  maxHealth: 30
+  moveSpeed: 0.8
+  armor: 0
+  magicResistance: 0
+  minDamage: 1
+  maxDamage: 2
+  attackRange: 0.25
+  attackCooldown: 1.5
+  animations:
+    animPrefix: reinforce_A0_
+    frameRate: 0.05
+    idle:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    run:
+      startFrame: 1
+      endFrame: 6
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    runDown:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    runUp:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    attack:
+      startFrame: 7
+      endFrame: 17
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset:
+      - frameOffset: 11
+        offsetY: 0.05
+      - frameOffset: 12
+        offsetY: 0.05
+      - frameOffset: 13
+        offsetY: 0.05
+      - frameOffset: 14
+        offsetY: 0.05
+      - frameOffset: 15
+        offsetY: 0.05
+      - frameOffset: 16
+        offsetY: 0.05
+    death:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    skill:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+  localScaleLeft: {x: 0, y: 0, z: 0}
+  localScaleRight: {x: 0, y: 0, z: 0}
+  heroScale: 1.8
+  timeToResurrect: 5
+  maxAttacker: 2
+  bounty: 0

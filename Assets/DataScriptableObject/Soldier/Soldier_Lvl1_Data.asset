@@ -25,7 +25,7 @@ MonoBehaviour:
   attackCooldown: 1.5
   animations:
     animPrefix: soldier_lvl1_
-    frameRate: 0
+    frameRate: 0.1
     idle:
       startFrame: 1
       endFrame: 1
@@ -73,3 +73,4 @@ MonoBehaviour:
   heroScale: 1.8
   timeToResurrect: 5
   maxAttacker: 2
+  bounty: 0

@@ -50,65 +50,77 @@ MonoBehaviour:
     - enemyName: Goblin
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 3
-      spawnDelay: 0.7
+      spawnDelay: 1.5
       groupDelay: 0
     goldIncome: 9
-    waveDelay: 5
+    waveDelay: 0
+    timeBonus: 5
+    waveEvent: {fileID: 0}
   - waveIndex: 2
     enemyGroups:
     - enemyName: Goblin
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 6
-      spawnDelay: 1
+      spawnDelay: 1.5
       groupDelay: 0
     goldIncome: 18
-    waveDelay: 6
+    waveDelay: 15
+    timeBonus: 5
+    waveEvent: {fileID: 0}
   - waveIndex: 3
     enemyGroups:
     - enemyName: Goblin
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 9
-      spawnDelay: 1
+      spawnDelay: 1.5
       groupDelay: 0
     goldIncome: 27
-    waveDelay: 6.5
+    waveDelay: 15
+    timeBonus: 5
+    waveEvent: {fileID: 11400000, guid: a394fc1d78608454a957968ef8dd7aad, type: 2}
   - waveIndex: 4
     enemyGroups:
     - enemyName: Goblin
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 4
-      spawnDelay: 1
-      groupDelay: 1.5
+      spawnDelay: 1.5
+      groupDelay: 0
     - enemyName: Orc
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 1
       spawnDelay: 1.5
-      groupDelay: 0
+      groupDelay: 1.5
     goldIncome: 21
-    waveDelay: 8
+    waveDelay: 15
+    timeBonus: 5
+    waveEvent: {fileID: 0}
   - waveIndex: 5
     enemyGroups:
     - enemyName: Orc
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 3
-      spawnDelay: 2
+      spawnDelay: 1.5
       groupDelay: 0
     goldIncome: 27
-    waveDelay: 8
+    waveDelay: 15
+    timeBonus: 5
+    waveEvent: {fileID: 0}
   - waveIndex: 6
     enemyGroups:
     - enemyName: Goblin
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 10
-      spawnDelay: 1
-      groupDelay: 3
+      spawnDelay: 1.5
+      groupDelay: 0
     - enemyName: Orc
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       count: 4
       spawnDelay: 2
-      groupDelay: 0
+      groupDelay: 2
     goldIncome: 66
-    waveDelay: 9
+    waveDelay: 15
+    timeBonus: 5
+    waveEvent: {fileID: 0}
   - waveIndex: 7
     enemyGroups:
     - enemyName: Goblin
@@ -117,5 +129,7 @@ MonoBehaviour:
       spawnDelay: 1
       groupDelay: 0
     goldIncome: 48
-    waveDelay: 0
+    waveDelay: 15
+    timeBonus: 0
+    waveEvent: {fileID: 11400000, guid: 890ab1191f26d294a970a995e18c5cb5, type: 2}
   spriteIcon: {fileID: -7924455868910974521, guid: acdee527e6eeb1341b8a858affa0f4e7, type: 3}

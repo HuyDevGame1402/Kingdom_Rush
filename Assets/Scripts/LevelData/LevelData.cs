@@ -33,6 +33,9 @@ public struct WaveData
     public List<EnemyGroup> enemyGroups;    // Danh sách các nhóm quái sẽ xuất hiện trong Wave này
     public int goldIncome;                  // Tiền thưởng khi hoàn thành hoặc sống sót qua Wave này
     public float waveDelay;
+    public int timeBonus; // thời gian đợi sau khi spawn hết quái r ms chuyển sang time wave tiếp
+
+    public EventWaveScript waveEvent;
 }
 
 // Tạo Menu trong Unity Editor để dễ dàng bấm chuột phải tạo File dữ liệu

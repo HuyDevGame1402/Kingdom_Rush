@@ -356,19 +356,22 @@ public class EnemyController : MonoBehaviour
         // các waypoint xung quanh vị trí cũ (ví dụ: lùi lại 1 điểm cho chắc chắn)
         int startIndex = Mathf.Max(0, currentWaypointIndex - 1);
 
-        for (int i = startIndex; i < waypoints.Count - 1; i++)
+        if (waypoints.Count > 0)
         {
-            Vector3 wStart = waypoints[i].position;
-            Vector3 wEnd = waypoints[i + 1].position;
-
-            // Tìm điểm gần nhất trên đoạn thẳng từ wStart đến wEnd so với vị trí của Enemy
-            Vector3 closestPoint = ClosestPointOnLineSegment(transform.position, wStart, wEnd);
-            float dist = Vector3.Distance(transform.position, closestPoint);
-
-            if (dist < minDistance)
+            for (int i = startIndex; i < waypoints.Count - 1; i++)
             {
-                minDistance = dist;
-                bestIndex = i + 1; // Điểm đến tiếp theo chính là điểm cuối của đoạn đường này
+                Vector3 wStart = waypoints[i].position;
+                Vector3 wEnd = waypoints[i + 1].position;
+
+                // Tìm điểm gần nhất trên đoạn thẳng từ wStart đến wEnd so với vị trí của Enemy
+                Vector3 closestPoint = ClosestPointOnLineSegment(transform.position, wStart, wEnd);
+                float dist = Vector3.Distance(transform.position, closestPoint);
+
+                if (dist < minDistance)
+                {
+                    minDistance = dist;
+                    bestIndex = i + 1; // Điểm đến tiếp theo chính là điểm cuối của đoạn đường này
+                }
             }
         }
 

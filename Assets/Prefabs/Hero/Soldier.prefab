@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4024889557858994411}
   - component: {fileID: 8784699126538838626}
   - component: {fileID: 83056286018738495}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Soldier
   m_TagString: Soldier
   m_Icon: {fileID: 0}
@@ -113,6 +113,7 @@ MonoBehaviour:
   healthHero: {fileID: 8784699126538838626}
   attackerCount: 0
   textSO: {fileID: 11400000, guid: 7fa842dd57873d44ca321d47a8fb4002, type: 2}
+  isDead: 0
 --- !u!58 &9121840668447667614
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -12,6 +12,9 @@ TagManager:
   - TowersEnemy
   - EnemyKingdomRush
   - Soldier
+  - Wave1
+  - Wave3
+  - Wave7
   layers:
   - Default
   - TransparentFX

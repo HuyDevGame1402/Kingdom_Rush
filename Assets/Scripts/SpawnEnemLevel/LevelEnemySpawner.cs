@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class LevelEnemySpawner : MonoBehaviour
 {
@@ -17,16 +18,16 @@ public class LevelEnemySpawner : MonoBehaviour
     private int currentWaveIndex = 0;
     private int activeEnemiesCount = 0; // Đếm số lượng quái đang còn sống trên map
     private bool isSpawningWave = false;
+    [SerializeField] private int timeWaveNext = 0;
+    private int timeBonus;
+
+    // Danh sách enemy của wave hiện tại
+    private List<EnemyController> currentWaveEnemies = new List<EnemyController>();
+    public event Action<int> EventTimeNextWave;
 
     private void Awake()
     {
         Instance = this;
-    }
-
-    private void Start()
-    {
-        // Bắt đầu Wave đầu tiên (Wave 1)
-        //StartCoroutine(PlayLevelCoroutine());
     }
 
     // Coroutine chính điều khiển toàn bộ các Wave trong Level
@@ -90,46 +91,79 @@ public class LevelEnemySpawner : MonoBehaviour
     }
 
     // Hàm đảm nhận việc khởi tạo quái và setup đường đi
-    private void SpawnEnemy(GameObject enemyPrefab)
+    //private void SpawnEnemy(GameObject enemyPrefab)
+    //{
+    //    if (enemyPrefab == null) return;
+
+    //    // 1. Lấy ngẫu nhiên một điểm Spawn ban đầu
+    //    Transform randomSpawnPoint = transform; // Mặc định lấy chính vị trí Spawner nếu list trống
+    //    if (positionSpawns.Count > 0)
+    //    {
+    //        randomSpawnPoint = positionSpawns[Random.Range(0, positionSpawns.Count)];
+    //    }
+
+    //    // 2. Khởi tạo Enemy tại vị trí Spawn
+    //    GameObject spawnedEnemy = Instantiate(enemyPrefab, randomSpawnPoint.position, Quaternion.identity);
+    //    activeEnemiesCount++; // Tăng số lượng quái đang hoạt động
+
+    //    // 3. Lấy ngẫu nhiên một con đường (Road) trong RoadList và phân tích các Waypoints
+    //    Transform waypointsForEnemy = GetRandomRoadWaypoints();
+
+    //    // 4. Truyền Waypoints vào EnemyController
+    //    // Giả sử script trên quái của bạn tên là EnemyController
+    //    EnemyController enemyCtrl = spawnedEnemy.GetComponent<EnemyController>();
+    //    if (enemyCtrl != null)
+    //    {
+    //        // Gọi hàm setup của bạn và truyền list đường đi vào
+    //        enemyCtrl.SetupWayPoints(waypointsForEnemy);
+
+    //        // Đăng ký sự kiện khi quái chết hoặc lọt lưới để trừ activeEnemiesCount
+    //        // (Bạn nên viết một callback/event trong EnemyController để khi quái hủy thì gọi hàm OnEnemyDestroyed)
+    //        enemyCtrl.OnEnemyDestroyed += EnemyDiedHandler;
+    //    }
+    //    else
+    //    {
+    //        Debug.LogWarning($"Prefab {enemyPrefab.name} thiếu Component EnemyController!");
+    //    }
+    //}
+
+    private EnemyController SpawnEnemy(GameObject enemyPrefab)
     {
-        if (enemyPrefab == null) return;
+        if (enemyPrefab == null)
+            return null;
 
-        // 1. Lấy ngẫu nhiên một điểm Spawn ban đầu
-        Transform randomSpawnPoint = transform; // Mặc định lấy chính vị trí Spawner nếu list trống
+        Transform randomSpawnPoint = transform;
+
         if (positionSpawns.Count > 0)
-        {
-            randomSpawnPoint = positionSpawns[Random.Range(0, positionSpawns.Count)];
-        }
+            randomSpawnPoint = positionSpawns[UnityEngine.Random.Range(0, positionSpawns.Count)];
 
-        // 2. Khởi tạo Enemy tại vị trí Spawn
-        GameObject spawnedEnemy = Instantiate(enemyPrefab, randomSpawnPoint.position, Quaternion.identity);
-        activeEnemiesCount++; // Tăng số lượng quái đang hoạt động
+        GameObject spawnedEnemy = Instantiate(enemyPrefab,
+            randomSpawnPoint.position,
+            Quaternion.identity);
 
-        // 3. Lấy ngẫu nhiên một con đường (Road) trong RoadList và phân tích các Waypoints
+        activeEnemiesCount++;
+
         Transform waypointsForEnemy = GetRandomRoadWaypoints();
 
-        // 4. Truyền Waypoints vào EnemyController
-        // Giả sử script trên quái của bạn tên là EnemyController
         EnemyController enemyCtrl = spawnedEnemy.GetComponent<EnemyController>();
+
         if (enemyCtrl != null)
         {
-            // Gọi hàm setup của bạn và truyền list đường đi vào
             enemyCtrl.SetupWayPoints(waypointsForEnemy);
-
-            // Đăng ký sự kiện khi quái chết hoặc lọt lưới để trừ activeEnemiesCount
-            // (Bạn nên viết một callback/event trong EnemyController để khi quái hủy thì gọi hàm OnEnemyDestroyed)
             enemyCtrl.OnEnemyDestroyed += EnemyDiedHandler;
         }
         else
         {
-            Debug.LogWarning($"Prefab {enemyPrefab.name} thiếu Component EnemyController!");
+            Debug.LogWarning($"Prefab {enemyPrefab.name} thiếu EnemyController!");
         }
+
+        return enemyCtrl;
     }
 
     // Hàm bổ trợ lấy các điểm con (Child) từ một con đường ngẫu nhiên
     private Transform GetRandomRoadWaypoints()
     {
-        Transform randomRoad = roadList[Random.Range(0, roadList.Count)];
+        Transform randomRoad = roadList[UnityEngine.Random.Range(0, roadList.Count)];
         return randomRoad;
     }
 
@@ -149,5 +183,68 @@ public class LevelEnemySpawner : MonoBehaviour
     public List<EnemyGroup> GetCurrentEnemyGroup()
     {
         return currentLevelData.waves[currentWaveIndex].enemyGroups;
+    }
+
+    public void SpawnCurrentWave()
+    {
+        if (currentWaveIndex >= currentLevelData.waves.Count)
+        {
+            Debug.Log("Đã hết Wave!");
+            return;
+        }
+
+        WaveData wave = currentLevelData.waves[currentWaveIndex];
+        Debug.Log($"<color=yellow>Spawn Wave {wave.waveIndex}</color>");
+        if (wave.waveEvent != null)
+        {
+            wave.waveEvent.Execute();
+        }
+        currentWaveEnemies.Clear();
+        if (currentWaveIndex + 1 < currentLevelData.waves.Count)
+        {
+            timeWaveNext = (int)currentLevelData.waves[currentWaveIndex + 1].waveDelay;
+            timeBonus = currentLevelData.waves[currentWaveIndex].timeBonus;
+        }    
+        else
+            timeWaveNext = 0;
+        // Bắt đầu gọi Coroutine để spawn quái từ từ
+        StartCoroutine(SpawnWaveRoutine(wave));
+        currentWaveIndex++;
+    }
+    private IEnumerator SpawnWaveRoutine(WaveData wave)
+    {
+        foreach (EnemyGroup group in wave.enemyGroups)
+        {
+            // 1. Chờ một khoảng thời gian TRƯỚC KHI nhóm này bắt đầu spawn (groupDelay)
+            if (group.groupDelay > 0)
+            {
+                yield return new WaitForSeconds(group.groupDelay);
+            }
+
+            // 2. Spawn từng con quái trong nhóm
+            for (int i = 0; i < group.count; i++)
+            {
+                EnemyController enemy = SpawnEnemy(group.enemyPrefab);
+                if (enemy != null)
+                {
+                    currentWaveEnemies.Add(enemy);
+                }
+
+                // 3. Chờ một khoảng thời gian giữa mỗi con quái (spawnDelay)
+                // Không cần chờ ở con quái cuối cùng của group nếu bạn muốn tối ưu
+                if (i < group.count - 1 && group.spawnDelay > 0)
+                {
+                    yield return new WaitForSeconds(group.spawnDelay);
+                }
+            }
+        }
+        yield return new WaitForSeconds(timeBonus);
+        LastEnemySpawner_EventLastEnemyInGame();
+    }
+
+
+    private void LastEnemySpawner_EventLastEnemyInGame()
+    {
+        EventTimeNextWave?.Invoke(timeWaveNext);
     }
 }

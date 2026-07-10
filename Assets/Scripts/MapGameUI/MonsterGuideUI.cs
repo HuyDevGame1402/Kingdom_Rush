@@ -2,6 +2,7 @@
 using TMPro;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MonsterGuideUI : MonoBehaviour
 {
@@ -18,10 +19,23 @@ public class MonsterGuideUI : MonoBehaviour
 
     [SerializeField] private Transform panelMonsterGuideUI;
 
+    [SerializeField] private Image bgValueTime;
+    private Coroutine fillCoroutine;
 
     private void Start()
     {
         RegisterEventOnClick();
+        if(LevelEnemySpawner.Instance != null)
+        {
+            LevelEnemySpawner.Instance.EventTimeNextWave += LevelEnemySpawner_EventTimeNextWave;
+        }
+    }
+
+    private void LevelEnemySpawner_EventTimeNextWave(int time)
+    {
+        CancleMonsterUI();
+        main.SetActive(true);
+        SetBgTimeValueSpawn(time);
     }
 
     private void RegisterEventOnClick()
@@ -33,20 +47,20 @@ public class MonsterGuideUI : MonoBehaviour
 
     private void OnClickMonsterGuide_SpawnMonsterGuideUI()
     {
-        if(GameManager.Instance != null)
+        if(GameManager.Instance != null && GameManager.Instance.currentGameState == GameManager.GameState.Prepare)
         {
             GameManager.Instance.SetState(GameManager.GameState.Playing);
         }
         main.SetActive(false);
         DisableDes();
-        StartCoroutine(TestCoroutine());
         panelMonsterGuideUI.gameObject.SetActive(false);
-    }
-
-    private IEnumerator TestCoroutine()
-    {
-        yield return new WaitForSeconds(5f);
-        main.gameObject.SetActive(true);
+        bgValueTime.fillAmount = 0;
+        if (fillCoroutine != null)
+            StopCoroutine(fillCoroutine);
+        if (LevelEnemySpawner.Instance != null)
+        {
+            LevelEnemySpawner.Instance.SpawnCurrentWave();
+        }
     }
 
     private void OnClickMonsterGuide_OnClickMonsterGuideUI()
@@ -95,5 +109,44 @@ public class MonsterGuideUI : MonoBehaviour
         textMeshProUGUI.gameObject.SetActive(false);
         des.SetActive(false);
         lightUI.SetActive(false);
+    }
+
+    public void SetBgTimeValueSpawn(int time)
+    {
+        if (fillCoroutine != null)
+            StopCoroutine(fillCoroutine);
+
+        fillCoroutine = StartCoroutine(FillTimeCoroutine(time));
+    }
+
+    private IEnumerator FillTimeCoroutine(float duration)
+    {
+        bgValueTime.fillAmount = 0f;
+
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            bgValueTime.fillAmount = Mathf.Clamp01(elapsed / duration);
+
+            yield return null;
+        }
+
+        bgValueTime.fillAmount = 1f;
+        fillCoroutine = null;
+        // spawn enemy
+        if (LevelEnemySpawner.Instance != null)
+        {
+            LevelEnemySpawner.Instance.SpawnCurrentWave();
+        }
+        if (SoundInGameManager.Instance != null)
+        {
+            SoundInGameManager.Instance.PlayWaveComming();
+        }
+        main.SetActive(false);
+        DisableDes();
+        panelMonsterGuideUI.gameObject.SetActive(false);
+        bgValueTime.fillAmount = 0;
     }
 }
