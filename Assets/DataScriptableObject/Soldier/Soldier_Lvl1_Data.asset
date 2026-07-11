@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Soldier_Lvl1_Data
   m_EditorClassIdentifier: 
   unitName: Soldier_lv1
+  reinforceType: 3
   unitType: 0
   description: "L\xEDnh canh"
   maxHealth: 50

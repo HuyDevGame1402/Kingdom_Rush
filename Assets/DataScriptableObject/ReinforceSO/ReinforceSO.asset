@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae897e1f9fab6e64a99987985dc43717, type: 3}
+  m_Name: ReinforceSO
+  m_EditorClassIdentifier: 
+  reinforceHeros:
+  - level: 1
+    heros:
+    - type: 0
+      prefab: {fileID: 6451107008912888444, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      initialSize: 2
+    - type: 1
+      prefab: {fileID: 6451107008912888444, guid: c840e166567cd1f4c91175e6e46ff30d, type: 3}
+      initialSize: 2
+    - type: 2
+      prefab: {fileID: 6451107008912888444, guid: 52544b3cc9b343d44b6096f5badf5ef5, type: 3}
+      initialSize: 2

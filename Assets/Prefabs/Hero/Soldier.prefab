@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDead: 0
+  lifeSpan: -1
 --- !u!114 &83056286018738495
 MonoBehaviour:
   m_ObjectHideFlags: 0

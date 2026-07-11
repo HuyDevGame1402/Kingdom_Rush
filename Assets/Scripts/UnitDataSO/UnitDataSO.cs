@@ -14,6 +14,7 @@ public class UnitDataSO : ScriptableObject
 {
     [Header("Identity")]
     public string unitName;
+    public ReinforceType reinforceType;
     public UnitType unitType;
     [TextArea(2, 5)] public string description;
 

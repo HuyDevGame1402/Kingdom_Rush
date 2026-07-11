@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Reinforce_C_0
   m_EditorClassIdentifier: 
   unitName: Reinforce_C_0
+  reinforceType: 2
   unitType: 0
   description: "L\xEDnh \u0111\u1ED3ng b\u1EA3o v\u1EC7 "
   maxHealth: 30
