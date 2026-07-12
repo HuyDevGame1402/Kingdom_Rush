@@ -263,6 +263,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: go_decals-1_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 940
+        width: 149
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0cf3629d83e9442bde082412ddc83e
+      internalID: -284528213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -284,6 +306,7 @@ TextureImporter:
       go_decals-1_4: 268429937
       go_decals-1_5: 243127148
       go_decals-1_6: 1740784475
+      go_decals-1_7: -284528213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6504d8ccefb51439ef4d5c9957187b, type: 3}
+  m_Name: MeteorSkillData
+  m_EditorClassIdentifier: 
+  levels:
+  - numberOfMeteors: 3
+    meteorDamage: {x: 30, y: 60}
+    cooldown: 80
+    createScorchedEarth: 0
+    scorchedEarthDuration: 0
+    scorchedEarthDamage: {x: 0, y: 0}
+  - numberOfMeteors: 5
+    meteorDamage: {x: 50, y: 80}
+    cooldown: 80
+    createScorchedEarth: 0
+    scorchedEarthDuration: 0
+    scorchedEarthDamage: {x: 0, y: 0}
+  - numberOfMeteors: 5
+    meteorDamage: {x: 50, y: 80}
+    cooldown: 80
+    createScorchedEarth: 1
+    scorchedEarthDuration: 5
+    scorchedEarthDamage: {x: 10, y: 20}
+  - numberOfMeteors: 5
+    meteorDamage: {x: 90, y: 120}
+    cooldown: 70
+    createScorchedEarth: 1
+    scorchedEarthDuration: 5
+    scorchedEarthDamage: {x: 10, y: 20}
+  - numberOfMeteors: 5
+    meteorDamage: {x: 90, y: 120}
+    cooldown: 60
+    createScorchedEarth: 1
+    scorchedEarthDuration: 10
+    scorchedEarthDamage: {x: 20, y: 30}
+  - numberOfMeteors: 10
+    meteorDamage: {x: 90, y: 120}
+    cooldown: 60
+    createScorchedEarth: 1
+    scorchedEarthDuration: 10
+    scorchedEarthDamage: {x: 20, y: 30}

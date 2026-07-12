@@ -23,22 +23,23 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Start()
     {
-        ShowSingleFrame(currentFrame);
+        //ShowSingleFrame(currentFrame);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            currentFrame++;
-            ShowSingleFrame(currentFrame);
-        }
+        //if (Input.GetKeyDown(KeyCode.RightArrow))
+        //{
+        //    currentFrame++;
+        //    ShowSingleFrame(currentFrame);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            currentFrame = Mathf.Max(1, currentFrame - 1);
-            ShowSingleFrame(currentFrame);
-        }
+        //if (Input.GetKeyDown(KeyCode.LeftArrow))
+        //{
+        //    currentFrame = Mathf.Max(1, currentFrame - 1);
+        //    ShowSingleFrame(currentFrame);
+        //}
+        AnimationP3();
     }
 
     private void ShowSingleFrame(int frameNumber)
