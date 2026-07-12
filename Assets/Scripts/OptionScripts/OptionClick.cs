@@ -13,11 +13,22 @@ public class OptionClick : MonoBehaviour
 
     [SerializeField] private IHasLogicOption logicOption;
 
+    [SerializeField] private ReduceUITime reduceUITime;
+
     private void Awake()
     {
         button = GetComponent<Button>();
         reinforceUI = GetComponent<OptionUI>();
         TryGetComponent(out logicOption);
+        if(reduceUITime != null)
+        {
+            reduceUITime.OnReduceFinish += ReduceUITime_OnReduceFinish;
+        }
+    }
+
+    private void ReduceUITime_OnReduceFinish()
+    {
+        isOnClick = true;
     }
 
     private void Start()

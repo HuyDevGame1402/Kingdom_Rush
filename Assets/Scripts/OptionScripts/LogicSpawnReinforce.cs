@@ -11,6 +11,11 @@ public class LogicSpawnReinforce : MonoBehaviour, IHasLogicOption
     private Vector2 offset;
     [SerializeField] private OptionUI optionUI;
 
+    private int coolDownTime = 10;
+
+    [SerializeField] private ReduceUITime reduceUITime;
+    [SerializeField] private OptionClick optionClick;
+
     private void Start()
     {
         if(optionUI == null)
@@ -32,5 +37,7 @@ public class LogicSpawnReinforce : MonoBehaviour, IHasLogicOption
             }
         }
         optionUI.UpdateSpriteNormal();
+        optionClick.SetOnClick(false);
+        reduceUITime.StartCountdown(coolDownTime);
     }
 }

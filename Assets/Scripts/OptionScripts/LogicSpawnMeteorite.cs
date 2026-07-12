@@ -20,6 +20,9 @@ public class LogicSpawnMeteorite : MonoBehaviour, IHasLogicOption
 
     [SerializeField] private OptionUI optionUI;
 
+    [SerializeField] private ReduceUITime reduceUITime;
+    [SerializeField] private OptionClick optionClick;
+
     private void Start()
     {
         if (optionUI == null)
@@ -44,6 +47,8 @@ public class LogicSpawnMeteorite : MonoBehaviour, IHasLogicOption
         StartCoroutine(SpawnMeteorSequence(pos, totalMeteors, levelData));
 
         optionUI.UpdateSpriteNormal();
+        optionClick.SetOnClick(false);
+        reduceUITime.StartCountdown((int)levelData.cooldown);
     }
 
     private IEnumerator SpawnMeteorSequence(Vector3 centerPos, int count, MeteorLevelData levelData)
