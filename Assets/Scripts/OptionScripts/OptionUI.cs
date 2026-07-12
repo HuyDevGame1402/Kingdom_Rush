@@ -13,12 +13,12 @@ public class OptionUI : MonoBehaviour
         image = GetComponent<Image>();
     }
 
-    public void UpdateSpriteNormal()
+    public virtual void UpdateSpriteNormal()
     {
         image.sprite = normalSprite;
     }
 
-    public void UpdateSpriteSelected()
+    public virtual void UpdateSpriteSelected()
     {
        image.sprite = selectedSprite;
     }

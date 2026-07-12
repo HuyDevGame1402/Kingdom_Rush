@@ -36,7 +36,7 @@ public class OptionClick : MonoBehaviour
         button.onClick.AddListener(OnClickButton);
     }
 
-    private void OnClickButton()
+    protected virtual void OnClickButton()
     {
         if (isOnClick == false) return;
         reinforceUI.UpdateSpriteSelected();
