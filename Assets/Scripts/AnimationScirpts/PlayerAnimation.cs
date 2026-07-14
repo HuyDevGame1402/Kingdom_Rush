@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
     public GameObject bombSfxObj;
 
     [Header("Animation Viewer")]
-    public string animationName = "freeze_creep_";
+    public string animationName = "explosion_big_";
     public int currentFrame = 1;
     [Header("Manual Pivot Configuration")]
     [Tooltip("Bấm dấu (+) để thêm cấu hình Pivot Offset cho từng frame cụ thể.")]

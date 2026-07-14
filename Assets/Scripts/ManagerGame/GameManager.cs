@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
 
     public event Action<GameState> GameStateChanged;
 
-
-
     public enum GameState
     {
         Instruction,
@@ -29,7 +27,9 @@ public class GameManager : MonoBehaviour
     private Vector2 mousePos;
     private Collider2D hit;
     public GameObject frozotov;
+    public GameObject dynamite;
     private GameObject test;
+    public bool isFrozotovTest = true;
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -40,7 +40,14 @@ public class GameManager : MonoBehaviour
 
             if (hit != null)
             {
-                test = Instantiate(frozotov, mousePos ,Quaternion.identity);
+                if (isFrozotovTest)
+                {
+                    test = Instantiate(frozotov, mousePos, Quaternion.identity);
+                }
+                else
+                {
+                    test = Instantiate(dynamite, mousePos, Quaternion.identity);
+                }
                 test.GetComponent<ThrowableObject>().InitializeFromSky(mousePos);
             }
             else

@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8909729672500699379}
   - component: {fileID: 3843856980134152601}
+  - component: {fileID: 4134000773738934776}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8909729672500699379
 Transform:
   m_ObjectHideFlags: 0
@@ -87,6 +88,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4134000773738934776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543002255186766992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 13000
+  multiplier: 100
 --- !u!1 &3354297656608474812
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +156,6 @@ MonoBehaviour:
   bounceHeight: 1.8
   spawnOffsetX: -0.2
   spawnOffsetY: 0
-  test: {fileID: 0}
   explosionGameObject: {fileID: 1543002255186766992}
   animationExplosion: small_freeze_explosion_
   frameRate: 0.05
@@ -168,9 +182,9 @@ MonoBehaviour:
     offsetY: -3
   - frameOffset: 21
     offsetY: -3
-  slowDuration: 5
   circleCollider: {fileID: 2646515617521955728}
   enemyList: []
+  slowDuration: 5
 --- !u!58 &2646515617521955728
 CircleCollider2D:
   m_ObjectHideFlags: 0

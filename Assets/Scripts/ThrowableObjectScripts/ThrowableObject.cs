@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public abstract class ThrowableObject : MonoBehaviour
 {
@@ -22,8 +23,6 @@ public abstract class ThrowableObject : MonoBehaviour
     protected Vector3 targetPosition;
     private Vector3 startPosition;
 
-    public Transform test;
-
     [Header("Explosion")]
     [SerializeField] protected GameObject explosionGameObject;
     [SerializeField] protected string animationExplosion;
@@ -31,6 +30,16 @@ public abstract class ThrowableObject : MonoBehaviour
     [SerializeField] protected int startFrame;
     [SerializeField] protected int endFrame;
     [SerializeField] protected List<EnemyAnimConfig> animationConfigOffset = new List<EnemyAnimConfig>();
+
+    [Header("Collision and Trigger")]
+    [SerializeField] protected CircleCollider2D circleCollider;
+    protected const string enemyTag = "EnemyKingdomRush";
+    [SerializeField] protected List<Transform> enemyList = new List<Transform>();
+
+    private void Awake()
+    {
+        if(circleCollider == null) circleCollider = GetComponent<CircleCollider2D>();
+    }
 
     public virtual void InitializeFromSky(Vector3 clickPosition)
     {
@@ -88,5 +97,43 @@ public abstract class ThrowableObject : MonoBehaviour
         }
     }
 
-    protected abstract void OnHitTarget();
+    protected virtual void OnHitTarget()
+    {
+        StartCoroutine(CoroutineTriggerEnemy());
+        visualTransform.gameObject.SetActive(false);
+        explosionGameObject.gameObject.SetActive(true);
+        SpriteSheetAnimator.Instance.PlayAnimation(
+        target: explosionGameObject,
+        animPrefix: animationExplosion,
+        startFrame: startFrame,
+        endFrame: endFrame,
+        eventFrame: -1,
+        onEventTrigger: () => {
+            // Gây sát thương ngay tại event frame (ví dụ frame 11)
+        },
+        offsetConfigs: animationConfigOffset,
+        frameRate: frameRate,
+            onComplete: () => {
+                //gameObject.SetActive(false);
+                FuncOnCompleteAnimationExplosion();
+            }
+        );
+    }
+
+    protected virtual void FuncOnCompleteAnimationExplosion()
+    {
+        explosionGameObject.SetActive(false);
+    }
+
+
+    private IEnumerator CoroutineTriggerEnemy()
+    {
+        circleCollider.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        circleCollider.enabled = false;
+        enemyList.Clear();
+    }
+
+    protected abstract void OnTriggerEnter2D(Collider2D collision);
+    
 }

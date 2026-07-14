@@ -215,8 +215,11 @@ public class EnemyController : MonoBehaviour
             if (enemyHealth.IsDead())
             {
                 colliderTriggerHitDamage.enabled = false;
-                TextSpawnManager.Instance.SpawnText(transform.position + Vector3.up * offsetSpawnTextY, 
-                    textSO.sprites[UnityEngine.Random.Range(0, textSO.sprites.Count)]);
+                if(textSO != null)
+                {
+                    TextSpawnManager.Instance.SpawnText(transform.position + Vector3.up * offsetSpawnTextY,
+                        textSO.sprites[UnityEngine.Random.Range(0, textSO.sprites.Count)]);
+                }
                 if (target != null && target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
                 {
                     heroStateMachine.RemoveAttacker();
