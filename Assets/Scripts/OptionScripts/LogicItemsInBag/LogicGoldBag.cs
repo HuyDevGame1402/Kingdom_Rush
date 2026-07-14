@@ -15,7 +15,7 @@ public class LogicGoldBag : MonoBehaviour, IHasLogicOption
 
         if(ItemManager.Instance != null)
         {
-            ItemManager.Instance.AddItem(ItemType.GoldBag, 1);
+            ItemManager.Instance.RemoveItem(ItemType.GoldBag, 1);
         }
 
         bagOptionUI.UpdateSpriteNormal();

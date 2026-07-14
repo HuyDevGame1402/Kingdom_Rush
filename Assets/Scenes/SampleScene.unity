@@ -14998,6 +14998,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelData: {fileID: 11400000, guid: 325074ee0bac3314b832618afb928a55, type: 2}
   currentGameState: 1
+  pathLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  frozotov: {fileID: 3354297656608474812, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
 --- !u!1 &993878908
 GameObject:
   m_ObjectHideFlags: 0
@@ -23173,7 +23177,7 @@ Transform:
   m_GameObject: {fileID: 1490082914}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.65, y: 2.92, z: 0}
+  m_LocalPosition: {x: -5.72, y: 2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28419,20 +28423,16 @@ MonoBehaviour:
   cannonObj: {fileID: 0}
   muzzleFlashObj: {fileID: 0}
   bombSfxObj: {fileID: 0}
-  animationName: reinforce_C0_
-  currentFrame: 1
+  animationName: freeze_creep_
+  currentFrame: 7
   manualPivotOffsets:
-  - frameIndex: 11
-    pivotYOffset: 0
-  - frameIndex: 0
-    pivotYOffset: 0
-  - frameIndex: 0
-    pivotYOffset: 0
-  - frameIndex: 0
-    pivotYOffset: 0
-  - frameIndex: 0
-    pivotYOffset: 0
-  - frameIndex: 0
+  - frameIndex: 7
+    pivotYOffset: 0.4
+  - frameIndex: 8
+    pivotYOffset: -2
+  - frameIndex: 9
+    pivotYOffset: -2
+  - frameIndex: 10
     pivotYOffset: 0
 --- !u!114 &1809521896
 MonoBehaviour:
@@ -30465,6 +30465,7 @@ GameObject:
   - component: {fileID: 1957588725}
   - component: {fileID: 1957588728}
   - component: {fileID: 1957588729}
+  - component: {fileID: 1957588730}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -30607,6 +30608,20 @@ MonoBehaviour:
   bagTransform: {fileID: 1225785705}
   backgroundItemSelected: {fileID: -280231790, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   itemSelected: {fileID: -300066797, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+--- !u!114 &1957588730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957588723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9cfb28232b70c45bc6d7477242d8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldAdd: 500
+  bagOptionUI: {fileID: 1225785710}
 --- !u!1 &1967314392
 GameObject:
   m_ObjectHideFlags: 0
@@ -33241,6 +33256,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146317481}
   m_CullTransparentMesh: 1
+--- !u!1001 &4518405994309719654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3354297656608474812, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_Name
+      value: Frozotov
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354297656608474812, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519133546352515006, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 1490082915}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9182363221269645214, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e56868d9d6b2b2441bac0b2797415149, type: 3}
 --- !u!1001 &6752797641639278641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33352,7 +33432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2920997470549353124, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: waypoints.Array.size
@@ -33426,6 +33506,26 @@ PrefabInstance:
       propertyPath: 'waypoints.Array.data[16]'
       value: 
       objectReference: {fileID: 1562832770}
+    - target: {fileID: 3647846956039876977, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      propertyPath: endFrameFreeze
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647846956039876977, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      propertyPath: startFrameThaw
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647846956039876977, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      propertyPath: animationFreezeConfigOffset.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647846956039876977, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      propertyPath: animationFreezeConfigOffset.Array.data[4].offsetY
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3647846956039876977, guid: 865a2219b17fba347b30a2028652270e, type: 3}
+      propertyPath: animationFreezeConfigOffset.Array.data[4].frameOffset
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4625138844861754240, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.11
@@ -33652,3 +33752,4 @@ SceneRoots:
   - {fileID: 990128211}
   - {fileID: 7584276607136880815}
   - {fileID: 1490082915}
+  - {fileID: 4518405994309719654}

@@ -554,4 +554,20 @@ public class SpriteSheetAnimator : MonoBehaviour
             yield return new WaitForSeconds(frameRate);
         }
     }
+    // Hàm cắt chuỗi lấy số frame từ tên Frame (Ví dụ: "goblin_run0005" -> lấy ra số 5)
+    public int GetCurrentFrameNumber(GameObject target)
+    {
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null || renderer.sprite == null) return 1;
+
+        string spriteName = renderer.sprite.name;
+        // Tìm các chữ số ở cuối tên sprite
+        string numberString = System.Text.RegularExpressions.Regex.Match(spriteName, @"\d+$").Value;
+
+        if (int.TryParse(numberString, out int frameNumber))
+        {
+            return frameNumber;
+        }
+        return 1; // Mặc định trả về 1 nếu không tìm thấy số
+    }
 }

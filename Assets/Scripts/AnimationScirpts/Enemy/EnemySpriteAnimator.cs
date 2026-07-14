@@ -291,22 +291,78 @@ public class EnemySpriteAnimator : MonoBehaviour
         activeCoroutines[id] = c;
     }
 
+    //IEnumerator AnimateRoutineWithOffset(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, List<int> frameNumbers, List<EnemyAnimConfig> offsetConfigs, float frameRate, Action onComplete)
+    //{
+    //    int currentIndex = 0;
+    //    bool shouldLoop = (onComplete == null);
+
+    //    while (true)
+    //    {
+    //        string currentFrameKey = frames[currentIndex];
+    //        int currentActualFrameNum = frameNumbers[currentIndex];
+    //        SpriteData d = database[currentFrameKey];
+
+    //        // Tìm kiếm xem frame hiện tại có cấu hình offset riêng không
+    //        float calculatedOffsetY = 0f;
+    //        if (offsetConfigs != null && offsetConfigs.Count > 0)
+    //        {
+    //            // Tìm kiếm cấu hình có frameOffset trùng với số frame hiện tại
+    //            EnemyAnimConfig configForFrame = offsetConfigs.Find(c => c.frameOffset == currentActualFrameNum);
+    //            if (configForFrame != null)
+    //            {
+    //                calculatedOffsetY = configForFrame.offsetY;
+    //            }
+    //        }
+
+    //        // Gọi hàm ApplySpriteFrame cải tiến có tham số pivotYOffset
+    //        ApplySpriteFrame(renderer, enemyId, d, calculatedOffsetY);
+
+    //        if (currentIndex == frames.Count - 1)
+    //        {
+    //            if (!shouldLoop)
+    //            {
+    //                yield return new WaitForSeconds(frameRate);
+    //                onComplete?.Invoke();
+    //                yield break;
+    //            }
+    //        }
+
+    //        currentIndex = (currentIndex + 1) % frames.Count;
+    //        yield return new WaitForSeconds(frameRate);
+    //    }
+    //}
     IEnumerator AnimateRoutineWithOffset(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, List<int> frameNumbers, List<EnemyAnimConfig> offsetConfigs, float frameRate, Action onComplete)
     {
         int currentIndex = 0;
         bool shouldLoop = (onComplete == null);
 
+        // Lấy reference đến EnemyController để kiểm tra trạng thái đóng băng
+        EnemyController enemyCtrl = renderer.GetComponent<EnemyController>();
+
         while (true)
         {
+            // 🔥 NẾU ENEMY BỊ ĐÓNG BĂNG: Tạm dừng xử lý tại đây, không đổi frame mới
+            if (enemyCtrl != null && enemyCtrl.isFrozen)
+            {
+                yield return null; // Chờ sang frame tiếp theo rồi kiểm tra lại
+                continue;
+            }
+
             string currentFrameKey = frames[currentIndex];
             int currentActualFrameNum = frameNumbers[currentIndex];
             SpriteData d = database[currentFrameKey];
+
+            // Ghi nhớ frame hiện tại vào EnemyController trước khi đóng băng (để gán nếu cần)
+            if (enemyCtrl != null)
+            {
+                enemyCtrl.lastAnimPrefixBeforeFreeze = currentFrameKey;
+                enemyCtrl.lastFrameNumberBeforeFreeze = currentActualFrameNum;
+            }
 
             // Tìm kiếm xem frame hiện tại có cấu hình offset riêng không
             float calculatedOffsetY = 0f;
             if (offsetConfigs != null && offsetConfigs.Count > 0)
             {
-                // Tìm kiếm cấu hình có frameOffset trùng với số frame hiện tại
                 EnemyAnimConfig configForFrame = offsetConfigs.Find(c => c.frameOffset == currentActualFrameNum);
                 if (configForFrame != null)
                 {
@@ -331,14 +387,52 @@ public class EnemySpriteAnimator : MonoBehaviour
             yield return new WaitForSeconds(frameRate);
         }
     }
+    //IEnumerator AnimateRoutine(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, float frameRate, Action onComplete)
+    //{
+    //    int currentIndex = 0;
+    //    bool shouldLoop = (onComplete == null);
+
+    //    while (true)
+    //    {
+    //        SpriteData d = database[frames[currentIndex]];
+    //        ApplySpriteFrame(renderer, enemyId, d);
+
+    //        if (currentIndex == frames.Count - 1)
+    //        {
+    //            if (!shouldLoop)
+    //            {
+    //                yield return new WaitForSeconds(frameRate);
+    //                onComplete?.Invoke();
+    //                yield break;
+    //            }
+    //        }
+
+    //        currentIndex = (currentIndex + 1) % frames.Count;
+    //        yield return new WaitForSeconds(frameRate);
+    //    }
+    //}
     IEnumerator AnimateRoutine(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, float frameRate, Action onComplete)
     {
         int currentIndex = 0;
         bool shouldLoop = (onComplete == null);
+        EnemyController enemyCtrl = renderer.GetComponent<EnemyController>();
 
         while (true)
         {
+            // 🔥 NẾU ENEMY BỊ ĐÓNG BĂNG: Tạm dừng xử lý, giữ nguyên frame hiện tại
+            if (enemyCtrl != null && enemyCtrl.isFrozen)
+            {
+                yield return null;
+                continue;
+            }
+
             SpriteData d = database[frames[currentIndex]];
+
+            if (enemyCtrl != null)
+            {
+                enemyCtrl.lastAnimPrefixBeforeFreeze = frames[currentIndex];
+            }
+
             ApplySpriteFrame(renderer, enemyId, d);
 
             if (currentIndex == frames.Count - 1)

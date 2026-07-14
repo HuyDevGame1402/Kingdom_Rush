@@ -13,6 +13,7 @@ public class EnemyAttackState : IEnemyState
 
     public void UpdateState(EnemyController enemy)
     {
+        if (enemy.isDead || enemy.isFrozen) return;
         // Nếu mục tiêu bỗng nhiên biến mất, mất tầm đánh HOẶC bị lệch trục Y quá 0.05f -> quay lại MoveState để đuổi tiếp
         if (enemy.target == null || !enemy.IsTargetInAttackRange() || !enemy.IsAlignedWithTarget(0.1f))
         {

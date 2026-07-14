@@ -18,14 +18,14 @@ public class LiveManager : MonoBehaviour
         liveGame = GameManager.Instance.levelData.live;
     }
 
-    public void AddGold(int goldAdd)
+    public void AddLive(int liveAdd)
     {
-        liveGame += goldAdd;
+        liveGame += liveAdd;
         LiveChange?.Invoke(liveGame);
     }
-    public void RemoveGold(int goldRemove)
+    public void RemoveLive(int liveRemove)
     {
-        liveGame -= goldRemove;
+        liveGame -= liveRemove;
         if (liveGame < 0)
         {
             liveGame = 0;
@@ -33,8 +33,8 @@ public class LiveManager : MonoBehaviour
         LiveChange?.Invoke(liveGame);
     }
 
-    public bool CheckLive(int goldBuy)
+    public bool CheckLive(int live)
     {
-        return liveGame >= goldBuy;
+        return liveGame >= live;
     }
 }

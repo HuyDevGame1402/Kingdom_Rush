@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
     public GameObject bombSfxObj;
 
     [Header("Animation Viewer")]
-    public string animationName = "reinforce_A0_";
+    public string animationName = "freeze_creep_";
     public int currentFrame = 1;
     [Header("Manual Pivot Configuration")]
     [Tooltip("Bấm dấu (+) để thêm cấu hình Pivot Offset cho từng frame cụ thể.")]
@@ -28,18 +28,18 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.RightArrow))
-        //{
-        //    currentFrame++;
-        //    ShowSingleFrame(currentFrame);
-        //}
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            currentFrame++;
+            ShowSingleFrame(currentFrame);
+        }
 
-        //if (Input.GetKeyDown(KeyCode.LeftArrow))
-        //{
-        //    currentFrame = Mathf.Max(1, currentFrame - 1);
-        //    ShowSingleFrame(currentFrame);
-        //}
-        AnimationP3();
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            currentFrame = Mathf.Max(1, currentFrame - 1);
+            ShowSingleFrame(currentFrame);
+        }
+        //AnimationP3();
     }
 
     private void ShowSingleFrame(int frameNumber)

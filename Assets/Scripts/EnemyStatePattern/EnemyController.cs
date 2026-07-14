@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using System.Collections;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class EnemyController : MonoBehaviour
 {
@@ -48,6 +49,12 @@ public class EnemyController : MonoBehaviour
 
     private Transform checkTarget;
 
+    [Header("Freeze State")]
+    public bool isFrozen = false;
+    // Lưu lại frame cuối cùng trước khi bị đóng băng để đóng băng chính xác frame đó
+    [HideInInspector] public string lastAnimPrefixBeforeFreeze = "";
+    [HideInInspector] public int lastFrameNumberBeforeFreeze; // Mặc định hoặc dựa theo cách bạn đếm frame
+
     void Start()
     {
         if (unitData == null)
@@ -81,9 +88,27 @@ public class EnemyController : MonoBehaviour
             currentState.UpdateState(this);
         }
     }
+    public void FreezeEnemy()
+    {
+        if (isDead) return;
 
+        isFrozen = true;
+
+        // Nếu bạn đang dùng hệ thống State độc lập, có thể cần tạm dừng vận tốc vật lý nếu có Rigidbody2D
+        // Rigidbody2D rb = GetComponent<Rigidbody2D>(); if(rb != null) rb.linearVelocity = Vector2.zero;
+    }
+    public void ThawEnemy()
+    {
+        if (isDead) return;
+
+        isFrozen = false;
+
+        // Reset lại hướng để bắt buộc Animator vẽ lại animation di chuyển/tấn công ngay lập tức
+        ResetAnimDirection();
+    }
     public void TransitionToState(IEnemyState newState)
     {
+        if (isFrozen && newState != DeathState) return;
         if (currentState != null)
         {
             currentState.ExitState(this);
@@ -96,6 +121,7 @@ public class EnemyController : MonoBehaviour
     // --- LOGIC DI CHUYỂN THEO WAYPOINT & TỰ ĐỔI HƯỚNG SPRITE ---
     public void HandleMovement()
     {
+        if (isDead || isFrozen) return;
         if (waypoints == null || waypoints.Count == 0 || currentWaypointIndex >= waypoints.Count)
         {
             // Đã đi đến đích cuối cùng của bản đồ (Người chơi mất máu cổng thành)

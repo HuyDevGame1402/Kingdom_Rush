@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     public event Action<GameState> GameStateChanged;
 
+
+
     public enum GameState
     {
         Instruction,
@@ -22,6 +24,30 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+    [SerializeField] private LayerMask pathLayer;
+    private Vector2 mousePos;
+    private Collider2D hit;
+    public GameObject frozotov;
+    private GameObject test;
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            hit = Physics2D.OverlapPoint(mousePos, pathLayer);
+
+            if (hit != null)
+            {
+                test = Instantiate(frozotov, mousePos ,Quaternion.identity);
+                test.GetComponent<ThrowableObject>().InitializeFromSky(mousePos);
+            }
+            else
+            {
+                Debug.Log("Không phải đường");
+            }
+        }
     }
 
     public bool CheckTowerLevelUp(BaseTowerSO baseTowerSO)

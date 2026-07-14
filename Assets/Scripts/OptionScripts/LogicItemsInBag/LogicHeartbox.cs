@@ -1,16 +1,23 @@
 using UnityEngine;
 
-public class LogicHeartbox : MonoBehaviour
+public class LogicHeartbox : MonoBehaviour, IHasLogicOption
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int liveAdd = 5;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private BagOptionUI bagOptionUI;
+
+    public void Execute(Vector3 pos)
     {
-        
+        if (LiveManager.Instance != null)
+        {
+            LiveManager.Instance.AddLive(liveAdd);
+        }
+
+        if (ItemManager.Instance != null)
+        {
+            ItemManager.Instance.RemoveItem(ItemType.Heartbox, 1);
+        }
+
+        bagOptionUI.UpdateSpriteNormal();
     }
 }

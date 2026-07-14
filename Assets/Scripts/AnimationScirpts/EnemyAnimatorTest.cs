@@ -10,7 +10,7 @@ public class EnemyAnimatorTest : MonoBehaviour
         [Tooltip("Số frame muốn chỉnh (Ví dụ: 68, 69)")]
         public int frameIndex;
         [Tooltip("Thay đổi Pivot Y của ảnh (Kéo lên hoặc xuống để chân chạm đất)")]
-        [Range(-1f, 1f)]
+        [Range(-5f, 1f)]
         public float pivotYOffset = 0f;
     }
 
