@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System;
 using System.Collections;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class EnemyController : MonoBehaviour
 {
@@ -54,6 +53,8 @@ public class EnemyController : MonoBehaviour
     // Lưu lại frame cuối cùng trước khi bị đóng băng để đóng băng chính xác frame đó
     [HideInInspector] public string lastAnimPrefixBeforeFreeze = "";
     [HideInInspector] public int lastFrameNumberBeforeFreeze; // Mặc định hoặc dựa theo cách bạn đếm frame
+
+    public event Action OnEnemyDead;
 
     void Start()
     {
@@ -224,6 +225,7 @@ public class EnemyController : MonoBehaviour
                 {
                     heroStateMachine.RemoveAttacker();
                 }
+                OnEnemyDead?.Invoke();
                 attackerCount = 0; // Reset số lượng attacker khi chết
                 TransitionToState(DeathState);
                 targetList.Clear(); // Xóa danh sách mục tiêu khi chết
