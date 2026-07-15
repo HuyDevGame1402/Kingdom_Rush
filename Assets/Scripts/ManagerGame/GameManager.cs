@@ -30,32 +30,32 @@ public class GameManager : MonoBehaviour
     public GameObject dynamite;
     private GameObject test;
     public bool isFrozotovTest = true;
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    //private void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            hit = Physics2D.OverlapPoint(mousePos, pathLayer);
+    //        hit = Physics2D.OverlapPoint(mousePos, pathLayer);
 
-            if (hit != null)
-            {
-                if (isFrozotovTest)
-                {
-                    test = Instantiate(frozotov, mousePos, Quaternion.identity);
-                }
-                else
-                {
-                    test = Instantiate(dynamite, mousePos, Quaternion.identity);
-                }
-                test.GetComponent<ThrowableObject>().InitializeFromSky(mousePos);
-            }
-            else
-            {
-                Debug.Log("Không phải đường");
-            }
-        }
-    }
+    //        if (hit != null)
+    //        {
+    //            if (isFrozotovTest)
+    //            {
+    //                test = Instantiate(frozotov, mousePos, Quaternion.identity);
+    //            }
+    //            else
+    //            {
+    //                test = Instantiate(dynamite, mousePos, Quaternion.identity);
+    //            }
+    //            test.GetComponent<ThrowableObject>().InitializeFromSky(mousePos);
+    //        }
+    //        else
+    //        {
+    //            Debug.Log("Không phải đường");
+    //        }
+    //    }
+    //}
 
     public bool CheckTowerLevelUp(BaseTowerSO baseTowerSO)
     {

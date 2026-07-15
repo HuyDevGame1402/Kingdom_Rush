@@ -225,6 +225,7 @@ public class EnemyController : MonoBehaviour
                 {
                     heroStateMachine.RemoveAttacker();
                 }
+                if (LevelEnemySpawner.Instance != null) LevelEnemySpawner.Instance.RemoveEnemy(transform);
                 OnEnemyDead?.Invoke();
                 attackerCount = 0; // Reset số lượng attacker khi chết
                 TransitionToState(DeathState);

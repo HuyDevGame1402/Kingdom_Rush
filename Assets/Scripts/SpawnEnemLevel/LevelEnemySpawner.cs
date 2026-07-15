@@ -25,6 +25,8 @@ public class LevelEnemySpawner : MonoBehaviour
     private List<EnemyController> currentWaveEnemies = new List<EnemyController>();
     public event Action<int> EventTimeNextWave;
 
+    public List<Transform> enemyInGame = new List<Transform>();
+
     private void Awake()
     {
         Instance = this;
@@ -146,7 +148,7 @@ public class LevelEnemySpawner : MonoBehaviour
         Transform waypointsForEnemy = GetRandomRoadWaypoints();
 
         EnemyController enemyCtrl = spawnedEnemy.GetComponent<EnemyController>();
-
+        enemyInGame.Add(spawnedEnemy.transform);
         if (enemyCtrl != null)
         {
             enemyCtrl.SetupWayPoints(waypointsForEnemy);
@@ -246,5 +248,13 @@ public class LevelEnemySpawner : MonoBehaviour
     private void LastEnemySpawner_EventLastEnemyInGame()
     {
         EventTimeNextWave?.Invoke(timeWaveNext);
+    }
+
+    public void RemoveEnemy(Transform enemy)
+    {
+        if (enemyInGame.Contains(enemy))
+        {
+            enemyInGame.Remove(enemy);  
+        }
     }
 }
