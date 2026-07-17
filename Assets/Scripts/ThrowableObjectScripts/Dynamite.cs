@@ -4,7 +4,7 @@ using System.Collections;
 public class Dynamite : ThrowableObject
 {
     [Header("Dynamite Ice Settings")]
-    [SerializeField] private int damage = 50;
+    [SerializeField] private int damage = 250;
 
     [SerializeField] private TextSO textSO;
 

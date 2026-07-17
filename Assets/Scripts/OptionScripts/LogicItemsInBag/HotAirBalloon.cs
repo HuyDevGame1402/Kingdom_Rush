@@ -48,7 +48,30 @@ public class HotAirBalloon : MonoBehaviour
     {
         PlayAnimationPlaneEngine();
         PlayAnimationPlaneWing();
+        //StartCoroutine(FlyRoutine());
+    }
+
+    public void StartFly()
+    {
         StartCoroutine(FlyRoutine());
+    }
+
+    public void SetBombDropped(bool bombDropped)
+    {
+        this.bombDropped = bombDropped;
+    }
+
+    public bool CheckConstructor()
+    {
+        if (pointTarget == null || pointStart == null || pointEnd == null) return false;
+        return true;
+    }
+
+    public void Constructor(Transform target, Transform pointStart, Transform pointEnd)
+    {
+        this.pointTarget = target;
+        this.pointStart = pointStart;
+        this.pointEnd = pointEnd;
     }
 
     private void PlayAnimation(GameObject targetGameObject, string animationName, int startFrame,
@@ -159,5 +182,7 @@ public class HotAirBalloon : MonoBehaviour
         }
 
         transform.rotation = Quaternion.identity;
+        bombDropped = false;
+        gameObject.SetActive(false);
     }
 }

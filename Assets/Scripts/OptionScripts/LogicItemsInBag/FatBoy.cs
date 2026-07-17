@@ -26,6 +26,8 @@ public class FatBoy : MonoBehaviour
     private Vector3 offset = new Vector3(0.4f, -0.5300002f, 0f);
     private float rotation = -10.997f;
 
+    private int damage = 3000;
+
     private void Awake()
     {
         parent = transform.parent;
@@ -113,7 +115,7 @@ public class FatBoy : MonoBehaviour
         }
         yield return new WaitForSeconds(0.3f);
         if (ImageGlareUI.Instance != null) ImageGlareUI.Instance.ShowGlare();
-
+        TakeDamageUpAllEnemy();
         yield return new WaitForSeconds(0.5f);
         if(ExplosionFatBoyDeco.Instance != null)
         {
@@ -128,5 +130,20 @@ public class FatBoy : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0f, 0f, rotation);
         spriteBomb.enabled = true;
         gameObject.SetActive(false);
+    }
+
+    private void TakeDamageUpAllEnemy()
+    {
+        if (LevelEnemySpawner.Instance != null && LevelEnemySpawner.Instance.enemyInGame.Count > 0)
+        {
+            for (int i = 0; i < LevelEnemySpawner.Instance.enemyInGame.Count; i++)
+            {
+                if (LevelEnemySpawner.Instance.enemyInGame[i].TryGetComponent(out EnemyController
+                    enemyController))
+                {
+                    enemyController.TakeDamage(damage, null);
+                }
+            }
+        }
     }
 }
