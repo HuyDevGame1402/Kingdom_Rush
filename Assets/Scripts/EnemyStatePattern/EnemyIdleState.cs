@@ -4,35 +4,69 @@ public class EnemyIdleState : IEnemyState
 {
     public void EnterState(EnemyController enemy)
     {
-        // Khi bị đóng băng hoặc ép đứng im, lập tức kích hoạt hoạt ảnh Idle thủ thế
+        // Phát animation Idle
         if (EnemySpriteAnimator.Instance != null)
         {
             string id = enemy.unitData.unitName;
             string prefix = enemy.unitData.animations.animPrefix;
             float frameRate = enemy.unitData.animations.frameRate;
-            AnimationFrameRange idleConfig = enemy.unitData.animations.idle;
 
-            // Chạy hoạt ảnh đứng im dựa trên cấu hình ScriptableObject của quái
             EnemySpriteAnimator.Instance.PlayAnimationByRange(
-                enemy.gameObject, id, prefix, idleConfig, frameRate
+                enemy.gameObject,
+                id,
+                prefix,
+                enemy.unitData.animations.idle,
+                frameRate
             );
         }
 
-        // Reset lại hướng ghi nhớ hoạt ảnh để khi quái di chuyển trở lại sẽ cập nhật ngay lập tức
+        // Reset hướng animation
         enemy.ResetAnimDirection();
     }
 
     public void UpdateState(EnemyController enemy)
     {
-        // Trạng thái đứng im / đóng băng hoàn toàn: 
-        // KHÔNG di chuyển (HandleMovement)
-        // KHÔNG xử lý mục tiêu (target)
-        // Đóng băng toàn bộ logic cho đến khi có một ngoại lực hoặc hệ thống hiệu ứng 
-        // chuyển trạng thái của quái sang State khác (như MoveState).
+        if (enemy.isDead || enemy.isFrozen)
+            return;
+
+        // Không còn mục tiêu -> tiếp tục hành quân
+        if (enemy.target == null)
+        {
+            enemy.TransitionToState(enemy.MoveState);
+            return;
+        }
+
+        float distance = Vector2.Distance(
+            enemy.transform.position,
+            enemy.target.position);
+
+        // Nếu đã vào tầm đánh
+        if (distance <= enemy.unitData.attackRange)
+        {
+            if (enemy.IsAlignedWithTarget(0.1f))
+            {
+                enemy.TransitionToState(enemy.AttackState);
+            }
+            else
+            {
+                // Chưa thẳng hàng Y thì sang MoveState để chỉnh vị trí
+                enemy.TransitionToState(enemy.MoveState);
+            }
+
+            return;
+        }
+
+        // Hero đã chạy đủ gần để enemy chủ động quay lại
+        if (enemy.ShouldMoveBackToTarget())
+        {
+            enemy.TransitionToState(enemy.MoveState);
+        }
+
+        // Nếu chưa thì tiếp tục đứng chờ.
     }
 
     public void ExitState(EnemyController enemy)
     {
-        // Thực hiện dọn dẹp logic khi quái hết bị đóng băng (nếu cần)
+
     }
 }

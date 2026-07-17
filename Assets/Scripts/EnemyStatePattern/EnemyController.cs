@@ -26,6 +26,7 @@ public class EnemyController : MonoBehaviour
     private IEnemyState currentState;
 
     // Cache các trạng thái để tránh tạo rác bộ nhớ (Garbage Collection)
+    public EnemyIdleState IdleState = new EnemyIdleState();
     public EnemyMoveState MoveState = new EnemyMoveState();
     public EnemyAttackState AttackState = new EnemyAttackState();
     public EnemyDeathState DeathState = new EnemyDeathState();
@@ -426,5 +427,29 @@ public class EnemyController : MonoBehaviour
     public void ResetAnimDirection()
     {
         lastPlayedAnimDirection = "";
+    }
+    public bool ShouldMoveBackToTarget()
+    {
+        if (target == null)
+            return false;
+
+        // Soldier không target mình nữa
+        if (target.TryGetComponent(out BaseUnitStateMachine soldier))
+        {
+            if (!soldier.IsTargetingEnemy(this))
+                return false;
+        }
+
+        if (currentWaypointIndex >= waypoints.Count)
+            return true;
+
+        float targetDistance =
+            Vector2.Distance(transform.position, target.position);
+
+        float waypointDistance =
+            Vector2.Distance(transform.position,
+                             waypoints[currentWaypointIndex].position);
+
+        return targetDistance <= waypointDistance;
     }
 }

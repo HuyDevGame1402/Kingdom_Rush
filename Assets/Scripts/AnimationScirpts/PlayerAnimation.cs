@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
     public GameObject bombSfxObj;
 
     [Header("Animation Viewer")]
-    public string animationName = "atomicBomb_plane_wing_";
+    public string animationName = "archer_tower_";
     public int currentFrame = 1;
     [Header("Manual Pivot Configuration")]
     [Tooltip("Bấm dấu (+) để thêm cấu hình Pivot Offset cho từng frame cụ thể.")]
@@ -39,7 +39,7 @@ public class PlayerAnimation : MonoBehaviour
             currentFrame = Mathf.Max(1, currentFrame - 1);
             ShowSingleFrame(currentFrame);
         }
-        AnimationP3();
+        //AnimationP3();
     }
 
     private void ShowSingleFrame(int frameNumber)

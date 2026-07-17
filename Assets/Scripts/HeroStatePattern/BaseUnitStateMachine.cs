@@ -190,4 +190,8 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
             ResetTarget();
         }
     }
+    public bool IsTargetingEnemy(EnemyController enemy)
+    {
+        return currentTarget == enemy.transform;
+    }
 }

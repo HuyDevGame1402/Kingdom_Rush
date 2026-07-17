@@ -38,7 +38,17 @@ public class EnemyMoveState : IEnemyState
             {
                 // Chưa vào tầm đánh -> chủ động di chuyển thẳng về phía target
                 // thay vì tiếp tục chạy theo waypoint
-                MoveTowardsTarget(enemy, distance);
+                //MoveTowardsTarget(enemy, distance);
+                //return;
+                if (enemy.ShouldMoveBackToTarget())
+                {
+                    MoveTowardsTarget(enemy, distance);
+                }
+                else
+                {
+                    enemy.TransitionToState(enemy.IdleState);
+                }
+
                 return;
             }
         }
