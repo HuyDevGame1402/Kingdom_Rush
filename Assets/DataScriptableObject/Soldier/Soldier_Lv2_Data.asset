@@ -18,7 +18,7 @@ MonoBehaviour:
   description: "L\xEDnh canh"
   maxHealth: 100
   moveSpeed: 0.8
-  armor: 0
+  armor: 0.15
   magicResistance: 0
   minDamage: 3
   maxDamage: 4

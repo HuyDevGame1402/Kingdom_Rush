@@ -54,6 +54,10 @@ public class TowerStateMachine : MonoBehaviour
         currentState.EnterState(this);
     }
 
+    public void SetCastleData(CastleData castleData)
+    {
+        _archerDataTower = castleData;
+    }
     public CastleData GetDataTower()
     {
         return _archerDataTower;

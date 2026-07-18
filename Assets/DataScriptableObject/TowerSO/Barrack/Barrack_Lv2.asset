@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Barrack_Lv2
   m_EditorClassIdentifier: 
   towerID: 8
-  towerName: Militia Barracks
-  towerDescription: Trains militia, tough soldiers that block and damage your enemies.
+  towerName: Footmen Barracks
+  towerDescription: Footmen are better trained and equipped than basic militia. They
+    can become the backbone of a good army.
   towerIcon: {fileID: 1194111683, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   towerIconGray: {fileID: -1409468544, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   priceTower: 110
@@ -25,6 +26,6 @@ MonoBehaviour:
   offsetPositionSpawnTower: {x: 0, y: -0.271, z: 0}
   towerPrefab: {fileID: 1687071291506375736, guid: 092e22bfd79d4bb45893f8549fdbded5, type: 3}
   iconHealth: {fileID: -1376859796, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
-  health: 50
+  health: 100
   iconArmor: {fileID: 712742897, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
-  armor: none
+  armor: 15

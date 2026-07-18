@@ -652,6 +652,7 @@ GameObject:
   - component: {fileID: 3368430916841576766}
   - component: {fileID: 4621941402254270688}
   - component: {fileID: 3501304120073319218}
+  - component: {fileID: 3547530500075966952}
   m_Layer: 0
   m_Name: Towerarcher
   m_TagString: Towers
@@ -906,6 +907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBaseSOTower: {fileID: 11400000, guid: 5f6b4693b0f7f3241a4ba1467e7de870, type: 2}
   baseTowerSONextLevel: {fileID: 11400000, guid: ced14b186535836448c7b8ff7951c24d, type: 2}
+  towerUpLevelSO: {fileID: 11400000, guid: 7ae7eb7b74669824a9eb0ac3c9f22d56, type: 2}
   groundTower: {fileID: 0}
 --- !u!114 &3501304120073319218
 MonoBehaviour:
@@ -920,6 +922,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetY: 0.65
+  indexTowerUp: 0
+--- !u!114 &3547530500075966952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332110810862216084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f0eb9696151f04cb61338128c6845b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerLevelUp: {fileID: 0}
+  towerStateMachine: {fileID: 0}
+  towerAnimation: {fileID: 7383495479936257055}
 --- !u!1 &8492146284085106604
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -158,6 +157,14 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
                 bomb.LaunchWithArc(enemyTarget, tower.GetDataTower().attackSpeed, 
                     tower.GetDataTower().arrowArcHeight, damage);
             }
+        }
+    }
+
+    public void ReloadAnimationHeroList()
+    {
+        for(int i = 0; i < heroList.Count; i++)
+        {
+            heroList[i].ReloadAnimation();
         }
     }
 }

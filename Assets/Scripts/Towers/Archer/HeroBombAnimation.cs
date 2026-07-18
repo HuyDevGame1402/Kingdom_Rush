@@ -74,4 +74,8 @@ public class HeroBombAnimation : MonoBehaviour, IHeroAnimation
             }
         );
     }
+    public void ReloadAnimation()
+    {
+
+    }
 }

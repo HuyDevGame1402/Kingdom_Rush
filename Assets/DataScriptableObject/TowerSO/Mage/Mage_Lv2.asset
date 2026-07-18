@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Mage_Lv2
   m_EditorClassIdentifier: 
   towerID: 6
-  towerName: Mage Tower
-  towerDescription: Mages cast armor piercing bolts at your enemies, ignoring any
-    physical protection.
+  towerName: Adept Tower
+  towerDescription: Adepts cast enhanced bolts, tearing through armor, flesh, and
+    bone.
   towerIcon: {fileID: -1958130075, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   towerIconGray: {fileID: -510019823, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   priceTower: 160

@@ -9,6 +9,9 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
 
     [SerializeField] private ISoundHero soundHero;
 
+    private bool isAttacking;
+    private VerticalAnimation currentVertical;
+
     private void Awake()
     {
         soundHero = GetComponent<ISoundHero>();
@@ -21,6 +24,9 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
             out bool faceLeft,
             out VerticalAnimation vertical
         );
+
+        currentVertical = vertical;
+        isAttacking = false;
 
         UpdateFacing(faceLeft);
 
@@ -44,6 +50,9 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
             out bool faceLeft,
             out VerticalAnimation vertical
         );
+
+        currentVertical = vertical;
+        isAttacking = true;
 
         UpdateFacing(faceLeft);
 
@@ -99,11 +108,13 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
             endFrame,
             -1,
             null,
-            -1,
+            0.05f,
             () =>
             {
                 Debug.Log($"[LOG EVENT] Hoạt ảnh kết thúc! Gọi SpawnAttack ngay lập tức.");
                 if (enemyTarget != null) SpawnAttack(enemyTarget, tower);
+
+                isAttacking = false;
 
                 Debug.Log("[LOG CALLBACK] Quay về Idle và báo Hồi chiêu.");
                 Idle(dir, tower);
@@ -126,7 +137,7 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
             endFrame,
             -1,
             null,
-            -1,
+            0.05f,
             () =>
             {
                 // 🌟 SINH ĐẠN NGAY TẠI ĐÂY - Nơi chắc chắn code sẽ chạy tới
@@ -180,6 +191,86 @@ public class HeroArcherAnimation : MonoBehaviour, IHeroAnimation
                 projectileScript.Launch(enemyTarget, tower.GetDataTower().attackSpeed,
                     DamageStatic.GetDamageBase(tower.GetDataTower().minDamage, tower.GetDataTower().maxDamage));
             }
+        }
+    }
+    public void ReloadAnimation()
+    {
+        int currentFrame =
+            SpriteSheetAnimator.Instance.GetCurrentFrameNumber(gameObject);
+
+        // Nếu đang Idle
+        if (!isAttacking)
+        {
+            switch (currentVertical)
+            {
+                case VerticalAnimation.Down:
+                    {
+                        SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                            target: gameObject,
+                            animPrefix: _controller.GetDataTower().animationHero,
+                            startFrame: _controller.GetDataTower().frameHeroStartIdleDown,
+                            endFrame: _controller.GetDataTower().frameHeroEndIdleDown,
+                            startFromCurrentFrame: currentFrame,
+                            frameRate: -1f);
+
+                        break;
+                    }
+
+                case VerticalAnimation.Up:
+                    {
+                        SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                            target: gameObject,
+                            animPrefix: _controller.GetDataTower().animationHero,
+                            startFrame: _controller.GetDataTower().frameHeroStartIdleUp,
+                            endFrame: _controller.GetDataTower().frameHeroEndIdleUp,
+                            startFromCurrentFrame: currentFrame,
+                            frameRate: -1f);
+
+                        break;
+                    }
+            }
+
+            return;
+        }
+
+        // Nếu đang Attack
+        switch (currentVertical)
+        {
+            case VerticalAnimation.Down:
+                {
+                    SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                        target: gameObject,
+                        animPrefix: _controller.GetDataTower().animationHero,
+                        startFrame: _controller.GetDataTower().frameHeroStartAttackDown,
+                        endFrame: _controller.GetDataTower().frameHeroEndAttackDown,
+                        startFromCurrentFrame: currentFrame,
+                        frameRate: 0.05f,
+                        onComplete: () =>
+                        {
+                            isAttacking = false;
+                            Idle(dir, _controller);
+                        });
+
+                    break;
+                }
+
+            case VerticalAnimation.Up:
+                {
+                    SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                        target: gameObject,
+                        animPrefix: _controller.GetDataTower().animationHero,
+                        startFrame: _controller.GetDataTower().frameHeroStartAttackUp,
+                        endFrame: _controller.GetDataTower().frameHeroEndAttackUp,
+                        startFromCurrentFrame: currentFrame,
+                        frameRate: 0.05f,
+                        onComplete: () =>
+                        {
+                            isAttacking = false;
+                            Idle(dir, _controller);
+                        });
+
+                    break;
+                }
         }
     }
 }
