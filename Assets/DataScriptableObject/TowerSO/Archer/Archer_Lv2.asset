@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Archer_Lv2
   m_EditorClassIdentifier: 
   towerID: 5
-  towerName: Archer Tower
-  towerDescription: Archers ready to strike at your enemies from a distance.
+  towerName: Marksmen Tower
+  towerDescription: Marksmen shoot broadhead arrows, dealing more damage. Their longbows
+    have longer attack range.
   towerIcon: {fileID: -689765616, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   towerIconGray: {fileID: -1339529062, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   priceTower: 110
@@ -23,6 +24,6 @@ MonoBehaviour:
   minAttack: 7
   maxAttack: 11
   offsetPositionSpawnTower: {x: 0, y: -0.25, z: 0}
-  towerPrefab: {fileID: 8332110810862216084, guid: 899f12d2c2c16ca428b8613cdf234107, type: 3}
+  towerPrefab: {fileID: 8332110810862216084, guid: 0d9f0d27523d0f140a2fbc447f8a750a, type: 3}
   iconAttackRate: {fileID: -1695097776, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   attackRate: average

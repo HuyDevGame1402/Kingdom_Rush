@@ -9,6 +9,8 @@ public class LoadingTower : MonoBehaviour
     public event EventHandler OnCompletedInitTower;
     public event Action<float> OnInitTower;
 
+    private bool isDelayShow = false;
+
     private void OnEnable()
     {
         timerInitTower = timerMaxInitTower;
@@ -16,6 +18,15 @@ public class LoadingTower : MonoBehaviour
     }
     private void Update()
     {
+
+        if(timerMaxInitTower == 0f && isDelayShow == false)
+        {
+            towerSoundBasic.PlayAudioTowerReady();
+            OnCompletedInitTower?.Invoke(this, EventArgs.Empty);
+            timerInitTower = 0f;
+            gameObject.SetActive(false);
+        }
+
         if(timerInitTower > 0f)
         {
             timerInitTower -= Time.deltaTime;

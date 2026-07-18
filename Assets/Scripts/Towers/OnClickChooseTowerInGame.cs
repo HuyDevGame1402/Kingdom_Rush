@@ -7,6 +7,8 @@ public class OnClickChooseTowerInGame : MonoBehaviour
     [SerializeField] private float offsetY = 0.5f;
 
     private bool isSelected = false;
+    [SerializeField] private int indexTowerUp = 0;    
+    
 
     private void Awake()
     {
@@ -36,6 +38,13 @@ public class OnClickChooseTowerInGame : MonoBehaviour
             {
                 SelectTowerManager.Instance.ActiveViewUpdateTower(transform, towerLevelUp.GetBaseTowerSO()
                     .priceTower, offsetY);
+                SelectTowerManager.Instance.GetTransformOnClickUpdateTower().SetBaseTowerSO(
+                    towerLevelUp.GetBaseTowerSO());
+                SelectTowerManager.Instance.GetTransformOnClickUpdateTower().SetTowerUpLevelSO(
+                    towerLevelUp.GetTowerLevelUpSO().towerNextLevel[indexTowerUp]);
+                SelectTowerManager.Instance.GetTransformOnClickUpdateTower().SetupTowerSelected(transform);
+                SelectTowerManager.Instance.SetupGround(transform.GetComponent<TowerLevelUp>()
+                    .groundTower);
                 Debug.LogWarning("Có nâng cấp" + towerLevelUp.GetBaseTowerSO().name);
             }
             // k có tower nâng cấp
@@ -44,13 +53,18 @@ public class OnClickChooseTowerInGame : MonoBehaviour
                 SelectTowerManager.Instance.ActiveViewLockTower(transform, offsetY);
                 Debug.LogWarning("Không có nâng cấp" + towerLevelUp.GetBaseTowerSO().name);
             }
+
+            if (MapPathManager.Instance != null) MapPathManager.Instance.DisablePolygonCollider2D();
         }
         else
         {
             if (SelectTowerManager.Instance != null)
             {
                 SelectTowerManager.Instance.DisableViewTower();
+                SelectTowerManager.Instance.GetTransformOnClickUpdateTower().ResetOnClickUpdateTower();
+                SelectTowerManager.Instance.SetupGround(null);
             }
+            if (MapPathManager.Instance != null) MapPathManager.Instance.ActivePolygonCollider2D();
         }
     }
     public void SetIsSelected(bool isSelected)

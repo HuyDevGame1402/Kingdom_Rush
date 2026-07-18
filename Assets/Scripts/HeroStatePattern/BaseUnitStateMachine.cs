@@ -32,6 +32,8 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     private Transform checkTarget;
 
+    public Transform ground;
+
     protected virtual void Awake()
     {
         // Khởi tạo các trạng thái có sẵn
@@ -193,5 +195,88 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
     public bool IsTargetingEnemy(EnemyController enemy)
     {
         return currentTarget == enemy.transform;
+    }
+
+    public void ReloadAnimation()
+    {
+        if(CurrentState == IdleState)
+        {
+            int currentFrame = SpriteSheetAnimator.Instance.GetCurrentFrameNumber(spriteObject);
+
+            var config = unitData.animations.idle;
+
+            SpriteSheetAnimator.Instance.PlayAnimation(
+                target: spriteObject,
+                animPrefix: unitData.animations.animPrefix,
+                startFrame: config.startFrame,
+                endFrame: config.endFrame,
+                startFromCurrentFrame: currentFrame,
+                frameRate: unitData.animations.frameRate
+            );
+        }
+        else if(CurrentState == RunState)
+        {
+
+            int currentFrame = SpriteSheetAnimator.Instance.GetCurrentFrameNumber(spriteObject);
+
+            var config = unitData.animations.run;
+
+            SpriteSheetAnimator.Instance.PlayAnimation(
+                target: spriteObject,
+                animPrefix: unitData.animations.animPrefix,
+                startFrame: config.startFrame,
+                endFrame: config.endFrame,
+                startFromCurrentFrame: currentFrame,
+                frameRate: unitData.animations.frameRate
+            );
+        }
+        else if(CurrentState == AttackState)
+        {
+            if (!AttackState.IsAttacking)
+                return;
+
+            int currentFrame =
+            SpriteSheetAnimator.Instance.GetCurrentFrameNumber(spriteObject);
+
+            var config = unitData.animations.attack;
+
+            SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                target: spriteObject,
+                animPrefix: unitData.animations.animPrefix,
+                startFrame: config.startFrame,
+                endFrame: config.endFrame,
+                startFromCurrentFrame: currentFrame,
+                eventFrame: config.eventFrame,
+                onEventTrigger: () =>
+                {
+                    // damage
+                },
+                offsetConfigs: config.animationConfigOffset,
+                frameRate: unitData.animations.frameRate,
+                onComplete: () =>
+                {
+                    // attack complete
+                });
+        }
+        // Dead
+        else
+        {
+            int currentFrame =
+            SpriteSheetAnimator.Instance.GetCurrentFrameNumber(spriteObject);
+
+            var config = unitData.animations.death;
+
+            SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                target: spriteObject,
+                animPrefix: unitData.animations.animPrefix,
+                startFrame: config.startFrame,
+                endFrame: config.endFrame,
+                startFromCurrentFrame: currentFrame,
+                frameRate: unitData.animations.frameRate,
+                onComplete: () =>
+                {
+                    gameObject.SetActive(false);
+                });
+        }
     }
 }

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5712402635358878640}
   - component: {fileID: 4527023993060788630}
   - component: {fileID: 2540380237313937471}
+  - component: {fileID: 993891533615911798}
   m_Layer: 0
   m_Name: BarracksTower
   m_TagString: Towers
@@ -276,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBaseSOTower: {fileID: 11400000, guid: c228105d65692d34b9b0449fab5dd46f, type: 2}
   baseTowerSONextLevel: {fileID: 11400000, guid: e6b3a9bad86e65342ad2173135b718aa, type: 2}
+  towerUpLevelSO: {fileID: 11400000, guid: 29b7d516df95fa34d84daefc364e69b6, type: 2}
   groundTower: {fileID: 0}
 --- !u!114 &2540380237313937471
 MonoBehaviour:
@@ -290,6 +292,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetY: 0.75
+--- !u!114 &993891533615911798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687071291506375736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42bb6ec099221f479c45ae18ff8f00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2147060429946936535
 GameObject:
   m_ObjectHideFlags: 0

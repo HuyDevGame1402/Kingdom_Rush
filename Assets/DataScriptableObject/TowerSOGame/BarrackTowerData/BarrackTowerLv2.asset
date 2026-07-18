@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a062da0c5a38d25479d5ee443ef789c7, type: 3}
-  m_Name: BarrackTowerLv1
+  m_Name: BarrackTowerLv2
   m_EditorClassIdentifier: 
   castleName: Barrack Lv1
   description: "Tr\u1EE5 l\xEDnh hero"
@@ -26,7 +26,7 @@ MonoBehaviour:
   attackRate: 0
   arrowArcHeight: 1.5
   heroPositionList: []
-  animationTower: tower_barracks_lvl1_layer1_
+  animationTower: tower_barracks_lvl2_layer1_
   frameTowerStartIdle: 0
   frameTowerEndIdle: 0
   frameTowerStartAttack: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   frameHeroEndAttackUp: 0
   frameHeroStartAttackDown: 0
   frameHeroEndAttackDown: 0
-  heroDataSO: {fileID: 11400000, guid: 0d39048ec330c0f4cad1bee8156ac330, type: 2}
+  heroDataSO: {fileID: 11400000, guid: f97586079cdd09246a1ddc74304f94f7, type: 2}
   heroBombAnim: []
   positionSmoke: {x: 0, y: 0, z: 0}
   smokeAnim:

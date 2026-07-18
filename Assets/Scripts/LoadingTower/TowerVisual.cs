@@ -7,7 +7,7 @@ public class TowerVisual : MonoBehaviour
     [SerializeField] private LoadingTower loadingTower;
     [SerializeField] private Vector3 localScaleTower;
 
-    private void Start()
+    private void Awake()
     {
         loadingTower.OnCompletedInitTower += LoadingTower_OnCompletedInitTower;
     }
@@ -18,6 +18,7 @@ public class TowerVisual : MonoBehaviour
     }
     private void ShowTower()
     {
+        Debug.LogWarning("Show Tower");
         for(int i = 0; i < towerGameObject.Count; i++)
         {
             towerGameObject[i].transform.localScale = localScaleTower;

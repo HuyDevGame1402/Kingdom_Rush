@@ -28,18 +28,18 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            currentFrame++;
-            ShowSingleFrame(currentFrame);
-        }
+        //if (Input.GetKeyDown(KeyCode.RightArrow))
+        //{
+        //    currentFrame++;
+        //    ShowSingleFrame(currentFrame);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            currentFrame = Mathf.Max(1, currentFrame - 1);
-            ShowSingleFrame(currentFrame);
-        }
-        //AnimationP3();
+        //if (Input.GetKeyDown(KeyCode.LeftArrow))
+        //{
+        //    currentFrame = Mathf.Max(1, currentFrame - 1);
+        //    ShowSingleFrame(currentFrame);
+        //}
+        AnimationP89();
     }
 
     private void ShowSingleFrame(int frameNumber)

@@ -44,6 +44,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c228105d65692d34b9b0449fab5dd46f, type: 2}
   - {fileID: 11400000, guid: 19af43824ccf3c74f8266f94b61bfc7d, type: 2}
   - {fileID: 11400000, guid: ced14b186535836448c7b8ff7951c24d, type: 2}
+  - {fileID: 11400000, guid: e6b3a9bad86e65342ad2173135b718aa, type: 2}
   waves:
   - waveIndex: 1
     enemyGroups:

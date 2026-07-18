@@ -56,6 +56,8 @@ public class CastleData : ScriptableObject
     public int frameHeroStartAttackDown;
     public int frameHeroEndAttackDown;
 
+    public UnitDataSO heroDataSO;
+
     // Bomb Tower Hero
     public List<AnimationFrameRangeUpdate> heroBombAnim;
     public Vector3 positionSmoke;

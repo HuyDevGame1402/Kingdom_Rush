@@ -5,7 +5,8 @@ using TMPro;
 public class TowerInfoView : MonoBehaviour
 {
     [SerializeField] private List<OnClickChooseTower> onClickChooseTowers = new List<OnClickChooseTower>();
-    
+    [SerializeField] private OnClickUpdateTower onClickUpdateTower;
+
     [Header("UI Reference")]
     [SerializeField] private Transform mainUI;
     [SerializeField] private TextMeshPro towerName;
@@ -34,6 +35,7 @@ public class TowerInfoView : MonoBehaviour
         {
             onClickChooseTowers[i].OnClickChooseTowerEvent += TowerInfoView_OnClickChooseTowerEvent;
         }
+        onClickUpdateTower.OnClickChooseTowerUpdateEvent += TowerInfoView_OnClickChooseTowerEvent;
     }
 
     private void TowerInfoView_OnClickChooseTowerEvent(Transform arg1, BaseTowerSO arg2, bool arg3)

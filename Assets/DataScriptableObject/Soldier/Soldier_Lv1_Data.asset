@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6232ca68a59a2549a0247198624f127, type: 3}
-  m_Name: Soldier_Lvl1_Data
+  m_Name: Soldier_Lv1_Data
   m_EditorClassIdentifier: 
   unitName: Soldier_lv1
   reinforceType: 3
@@ -23,7 +23,7 @@ MonoBehaviour:
   minDamage: 1
   maxDamage: 3
   attackRange: 0.25
-  attackCooldown: 1.5
+  attackCooldown: 1
   animations:
     animPrefix: soldier_lvl1_
     frameRate: 0.1
@@ -72,6 +72,6 @@ MonoBehaviour:
   localScaleLeft: {x: 0, y: 0, z: 0}
   localScaleRight: {x: 0, y: 0, z: 0}
   heroScale: 1.8
-  timeToResurrect: 5
+  timeToResurrect: 10
   maxAttacker: 2
   bounty: 0

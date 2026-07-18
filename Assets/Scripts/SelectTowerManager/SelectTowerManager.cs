@@ -37,6 +37,8 @@ public class SelectTowerManager : MonoBehaviour
 
     [SerializeField] private TowerInfoBuy towerInfoBuy;
 
+    [SerializeField] private OnClickUpdateTower onClickUpdateTower;
+
     private void Awake()
     {
         Instance = this;
@@ -46,6 +48,7 @@ public class SelectTowerManager : MonoBehaviour
     {
         RegisterEventOnClickSelectGround();
         OnRegisterEventChooseTower();
+        onClickUpdateTower.OnUpdateTower += UpdateTower;
     }
     private void OnDestroy()
     {
@@ -136,6 +139,35 @@ public class SelectTowerManager : MonoBehaviour
         transformSelectedTower.GetComponent<OnClickChooseTower>().SetIsSelected(true);
     }
 
+    private void UpdateTower(Transform towerSelected ,BaseTowerSO baseTowerSO, 
+        TowerUpLevelSO currentTowerUpLevelSO)
+    {
+
+        if(towerSelected.TryGetComponent(out IHasUpdateTower updateTowerScript))
+        {
+            updateTowerScript.UpdateTower(currentTowerUpLevelSO);
+        }
+        else
+        {
+            towerCreate = Instantiate(baseTowerSO.towerPrefab, towerParent);
+            towerCreate.transform.position = groundSelected.position + baseTowerSO.offsetPositionSpawnTower;
+
+            if (towerCreate.TryGetComponent(out BarrackSpawnHero barrackSpawnHero))
+            {
+                barrackSpawnHero.SetTargetSpawn(groundSelected.GetChild(2));
+            }
+            towerCreate.GetComponent<TowerLevelUp>().groundTower = groundSelected;
+        }
+        // Remove Bountry
+        if (GoldManager.Instance != null)
+        {
+            GoldManager.Instance.RemoveGold(baseTowerSO.priceTower);
+        }
+        Hide();
+        groundSelected = null;
+        return;
+    }
+
     private bool SetIsBuy(Transform transformSelectedTower)
     {
         return GoldManager.Instance.CheckGold(transformSelectedTower.GetComponent<
@@ -144,6 +176,7 @@ public class SelectTowerManager : MonoBehaviour
 
     private void SelectTowerManager_OnClickBuildTower(Transform arg1, bool arg2)
     {
+        onClickUpdateTower.ResetOnClickUpdateTower();
         DisableTowerInfoBuy();
         backgroundSprite.gameObject.SetActive(false);
         selectTowerBase.gameObject.SetActive(false);
@@ -153,6 +186,7 @@ public class SelectTowerManager : MonoBehaviour
         {
             Hide();
             groundSelected = null;
+            if (MapPathManager.Instance != null) MapPathManager.Instance.ActivePolygonCollider2D();
         }
         else
         {
@@ -163,6 +197,7 @@ public class SelectTowerManager : MonoBehaviour
         {
             ActiveViewSelectedInit(true);
             transform.position = arg1.transform.position + new Vector3(0, offsetY, 0);
+            if (MapPathManager.Instance != null) MapPathManager.Instance.DisablePolygonCollider2D();
         }
     }
     private void ActiveViewSelectedInit(bool isActive)
@@ -242,5 +277,15 @@ public class SelectTowerManager : MonoBehaviour
             return groundSelected.position + offsetLeft;
         }
         return groundSelected.position + offsetRight;
+    }
+
+    public OnClickUpdateTower GetTransformOnClickUpdateTower()
+    {
+        return onClickUpdateTower;
+    }
+
+    public void SetupGround(Transform ground)
+    {
+        groundSelected = ground;
     }
 }

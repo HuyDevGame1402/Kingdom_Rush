@@ -27,6 +27,16 @@ public class BarracksAnimation : MonoBehaviour
         SpriteSheetAnimator.Instance.PlayAnimation(towerSprite,
             nameTowerAnimation);
     }
+
+    public void PlayAnimation()
+    {
+        int currentFrame = SpriteSheetAnimator.Instance.GetCurrentFrameNumber(towerSprite);
+
+        SpriteSheetAnimator.Instance.PlayAnimation(
+            towerSprite,
+            nameTowerAnimation,
+            currentFrame);
+    }
     
     public void IdleDoor()
     {
@@ -75,4 +85,10 @@ public class BarracksAnimation : MonoBehaviour
     {
         return timeOpenDoor;
     }
+
+    public void SetNameTowerAnimation(string nameTowerAnimation)
+    {
+        this.nameTowerAnimation = nameTowerAnimation;
+    }
+
 }

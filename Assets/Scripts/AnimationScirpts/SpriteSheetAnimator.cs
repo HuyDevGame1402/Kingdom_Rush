@@ -175,6 +175,124 @@ public class SpriteSheetAnimator : MonoBehaviour
             Debug.LogWarning($"[SpriteSheetAnimator] Không tìm thấy frames với prefix: '{animPrefix}'");
         }
     }
+    public void PlayAnimation(
+        GameObject target,
+        string animPrefix,
+        int startFromCurrentFrame,
+        float frameRate = -1,
+        Action onComplete = null)
+    {
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in spriteDatabase.Keys)
+        {
+            if (key.StartsWith(animPrefix))
+                frames.Add(key);
+        }
+
+        frames.Sort();
+
+        if (frames.Count == 0)
+        {
+            Debug.LogWarning($"[SpriteSheetAnimator] Không tìm thấy frames với prefix '{animPrefix}'");
+            return;
+        }
+
+        // Nếu chỉ có 1 frame
+        if (frames.Count == 1)
+        {
+            StopAnimationFor(target);
+
+            SpriteData d = spriteDatabase[frames[0]];
+
+            if (textures.TryGetValue(d.atlasName, out Texture2D tex))
+            {
+                Rect pixelRect = new Rect(
+                    d.f_quad.x,
+                    tex.height - d.f_quad.y - d.f_quad.height,
+                    d.f_quad.width,
+                    d.f_quad.height);
+
+                float pivotX = (d.fullSize.x * 0.5f - d.trim.x) / d.f_quad.width;
+                float pivotY = d.trim.w / d.f_quad.height;
+
+                renderer.sprite = Sprite.Create(
+                    tex,
+                    pixelRect,
+                    new Vector2(pivotX, pivotY),
+                    pixelsPerUnit);
+            }
+
+            onComplete?.Invoke();
+            return;
+        }
+
+        StopAnimationFor(target);
+
+        int startIndex = Mathf.Clamp(startFromCurrentFrame - 1, 0, frames.Count - 1);
+
+        int id = target.GetInstanceID();
+
+        Coroutine c = StartCoroutine(
+            AnimateRoutine(
+                renderer,
+                frames,
+                startIndex,
+                frameRate > 0 ? frameRate : defaultFrameRate,
+                onComplete));
+
+        activeCoroutines[id] = c;
+    }
+
+    IEnumerator AnimateRoutine(
+    SpriteRenderer renderer,
+    List<string> frames,
+    int startIndex,
+    float frameRate,
+    Action onComplete)
+    {
+        int currentIndex = startIndex;
+        bool shouldLoop = (onComplete == null);
+
+        while (true)
+        {
+            SpriteData d = spriteDatabase[frames[currentIndex]];
+
+            if (textures.TryGetValue(d.atlasName, out Texture2D tex))
+            {
+                Rect pixelRect = new Rect(
+                    d.f_quad.x,
+                    tex.height - d.f_quad.y - d.f_quad.height,
+                    d.f_quad.width,
+                    d.f_quad.height);
+
+                float pivotX = (d.fullSize.x * 0.5f - d.trim.x) / d.f_quad.width;
+                float pivotY = d.trim.w / d.f_quad.height;
+
+                renderer.sprite = Sprite.Create(
+                    tex,
+                    pixelRect,
+                    new Vector2(pivotX, pivotY),
+                    pixelsPerUnit);
+            }
+
+            if (currentIndex == frames.Count - 1)
+            {
+                if (!shouldLoop)
+                {
+                    yield return new WaitForSeconds(frameRate);
+                    onComplete?.Invoke();
+                    yield break;
+                }
+            }
+
+            currentIndex = (currentIndex + 1) % frames.Count;
+            yield return new WaitForSeconds(frameRate);
+        }
+    }
 
     // Gốc 2: Chạy theo khoảng chỉ số cụ thể (StartFrame -> EndFrame)
     public void PlayAnimation(GameObject target, string animPrefix, int startFrame, int endFrame, float frameRate = -1, Action onComplete = null)
@@ -223,6 +341,84 @@ public class SpriteSheetAnimator : MonoBehaviour
         {
             Debug.LogWarning($"[SpriteSheetAnimator] Không tìm thấy frames từ {startFrame} đến {endFrame} với prefix '{animPrefix}'");
         }
+    }
+    public void PlayAnimation(
+    GameObject target,
+    string animPrefix,
+    int startFrame,
+    int endFrame,
+    int startFromCurrentFrame,
+    float frameRate = -1,
+    Action onComplete = null)
+    {
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        List<string> frames = new List<string>();
+
+        for (int i = startFrame; i <= endFrame; i++)
+        {
+            string frameName = animPrefix + i.ToString("D4");
+
+            if (spriteDatabase.ContainsKey(frameName))
+                frames.Add(frameName);
+        }
+
+        if (frames.Count == 0)
+        {
+            Debug.LogWarning($"[SpriteSheetAnimator] Không tìm thấy frames từ {startFrame} đến {endFrame} với prefix '{animPrefix}'");
+            return;
+        }
+
+        if (frames.Count == 1)
+        {
+            StopAnimationFor(target);
+
+            SpriteData d = spriteDatabase[frames[0]];
+
+            if (textures.TryGetValue(d.atlasName, out Texture2D tex))
+            {
+                Rect pixelRect = new Rect(
+                    d.f_quad.x,
+                    tex.height - d.f_quad.y - d.f_quad.height,
+                    d.f_quad.width,
+                    d.f_quad.height);
+
+                float pivotX = (d.fullSize.x * 0.5f - d.trim.x) / d.f_quad.width;
+                float pivotY = d.trim.w / d.f_quad.height;
+
+                renderer.sprite = Sprite.Create(
+                    tex,
+                    pixelRect,
+                    new Vector2(pivotX, pivotY),
+                    pixelsPerUnit);
+            }
+
+            onComplete?.Invoke();
+            return;
+        }
+
+        StopAnimationFor(target);
+
+        // startFrame = 11
+        // currentFrame = 15
+        // => index = 4
+        int startIndex = Mathf.Clamp(
+            startFromCurrentFrame - startFrame,
+            0,
+            frames.Count - 1);
+
+        int id = target.GetInstanceID();
+
+        Coroutine c = StartCoroutine(
+            AnimateRoutine(
+                renderer,
+                frames,
+                startIndex,
+                frameRate > 0 ? frameRate : defaultFrameRate,
+                onComplete));
+
+        activeCoroutines[id] = c;
     }
 
     // Gốc 3: Chạy theo khoảng chỉ số cụ thể VÀ kích hoạt Action tại một Frame bất kỳ ở giữa
@@ -558,6 +754,7 @@ public class SpriteSheetAnimator : MonoBehaviour
     public int GetCurrentFrameNumber(GameObject target)
     {
         SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        Debug.LogWarning(renderer.sprite.name);
         if (renderer == null || renderer.sprite == null) return 1;
 
         string spriteName = renderer.sprite.name;
@@ -569,5 +766,250 @@ public class SpriteSheetAnimator : MonoBehaviour
             return frameNumber;
         }
         return 1; // Mặc định trả về 1 nếu không tìm thấy số
+    }
+    public void PlayAnimationContinue(
+    GameObject target,
+    string animPrefix,
+    int startFrame,
+    int endFrame,
+    int startFromCurrentFrame,
+    int eventFrame,
+    Action onEventTrigger,
+    List<EnemyAnimConfig> offsetConfigs,
+    float frameRate = -1,
+    Action onComplete = null)
+    {
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        List<string> frames = new List<string>();
+        List<float> frameOffsets = new List<float>();
+
+        int eventFrameIndex = -1;
+
+        for (int i = startFrame; i <= endFrame; i++)
+        {
+            string frameName = animPrefix + i.ToString("D4");
+
+            if (!spriteDatabase.ContainsKey(frameName))
+                continue;
+
+            frames.Add(frameName);
+
+            float offset = 0f;
+
+            if (offsetConfigs != null)
+            {
+                EnemyAnimConfig config =
+                    offsetConfigs.Find(x => x.frameOffset == i);
+
+                if (config != null)
+                    offset = config.offsetY;
+            }
+
+            frameOffsets.Add(offset);
+
+            if (i == eventFrame)
+                eventFrameIndex = frames.Count - 1;
+        }
+
+        if (frames.Count == 0)
+        {
+            Debug.LogWarning($"Không tìm thấy animation {animPrefix}");
+            return;
+        }
+
+        StopAnimationFor(target);
+
+        int startIndex =
+            Mathf.Clamp(startFromCurrentFrame - startFrame,
+                        0,
+                        frames.Count - 1);
+
+        int id = target.GetInstanceID();
+
+        Coroutine c =
+            StartCoroutine(
+                AnimateWithEventAndOffsetContinueRoutine(
+                    renderer,
+                    frames,
+                    frameOffsets,
+                    startIndex,
+                    eventFrameIndex,
+                    onEventTrigger,
+                    frameRate > 0 ? frameRate : defaultFrameRate,
+                    onComplete));
+
+        activeCoroutines[id] = c;
+    }
+    private IEnumerator AnimateWithEventAndOffsetContinueRoutine(
+    SpriteRenderer renderer,
+    List<string> frames,
+    List<float> frameOffsets,
+    int startIndex,
+    int eventFrameIndex,
+    Action onEventTrigger,
+    float frameRate,
+    Action onComplete)
+    {
+        int currentIndex = startIndex;
+
+        bool shouldLoop = (onComplete == null);
+
+        // Nếu đã vượt event thì không trigger nữa
+        bool eventTriggered =
+            currentIndex > eventFrameIndex;
+
+        while (true)
+        {
+            SpriteData d = spriteDatabase[frames[currentIndex]];
+
+            if (textures.TryGetValue(d.atlasName, out Texture2D tex))
+            {
+                Rect pixelRect = new Rect(
+                    d.f_quad.x,
+                    tex.height - d.f_quad.y - d.f_quad.height,
+                    d.f_quad.width,
+                    d.f_quad.height);
+
+                float pivotX =
+                    (d.fullSize.x * 0.5f - d.trim.x) /
+                    d.f_quad.width;
+
+                float pivotY =
+                    (d.trim.w + frameOffsets[currentIndex]) /
+                    d.f_quad.height;
+
+                Sprite sprite = Sprite.Create(
+                    tex,
+                    pixelRect,
+                    new Vector2(pivotX, pivotY),
+                    pixelsPerUnit);
+
+                sprite.name = frames[currentIndex];
+
+                renderer.sprite = sprite;
+            }
+
+            if (!eventTriggered &&
+                currentIndex == eventFrameIndex)
+            {
+                eventTriggered = true;
+                onEventTrigger?.Invoke();
+            }
+
+            if (currentIndex == frames.Count - 1)
+            {
+                if (!shouldLoop)
+                {
+                    yield return new WaitForSeconds(frameRate);
+
+                    onComplete?.Invoke();
+
+                    yield break;
+                }
+            }
+
+            currentIndex =
+                (currentIndex + 1) % frames.Count;
+
+            yield return new WaitForSeconds(frameRate);
+        }
+    }
+    public void PlayAnimationContinue(
+    GameObject target,
+    string animPrefix,
+    int startFrame,
+    int endFrame,
+    int startFromCurrentFrame,
+    float frameRate = -1,
+    Action onComplete = null)
+    {
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        List<string> frames = new List<string>();
+
+        for (int i = startFrame; i <= endFrame; i++)
+        {
+            string frameName = animPrefix + i.ToString("D4");
+
+            if (spriteDatabase.ContainsKey(frameName))
+                frames.Add(frameName);
+        }
+
+        if (frames.Count == 0)
+        {
+            Debug.LogWarning($"Không tìm thấy animation {animPrefix}");
+            return;
+        }
+
+        StopAnimationFor(target);
+
+        int startIndex = Mathf.Clamp(
+            startFromCurrentFrame - startFrame,
+            0,
+            frames.Count - 1);
+
+        int id = target.GetInstanceID();
+
+        Coroutine c = StartCoroutine(
+            AnimateContinueRoutine(
+                renderer,
+                frames,
+                startIndex,
+                frameRate > 0 ? frameRate : defaultFrameRate,
+                onComplete));
+
+        activeCoroutines[id] = c;
+    }
+    private IEnumerator AnimateContinueRoutine(
+    SpriteRenderer renderer,
+    List<string> frames,
+    int startIndex,
+    float frameRate,
+    Action onComplete)
+    {
+        int currentIndex = startIndex;
+
+        while (true)
+        {
+            SpriteData d = spriteDatabase[frames[currentIndex]];
+
+            if (textures.TryGetValue(d.atlasName, out Texture2D tex))
+            {
+                Rect pixelRect = new Rect(
+                    d.f_quad.x,
+                    tex.height - d.f_quad.y - d.f_quad.height,
+                    d.f_quad.width,
+                    d.f_quad.height);
+
+                float pivotX = (d.fullSize.x * 0.5f - d.trim.x) / d.f_quad.width;
+                float pivotY = d.trim.w / d.f_quad.height;
+
+                Sprite sprite = Sprite.Create(
+                    tex,
+                    pixelRect,
+                    new Vector2(pivotX, pivotY),
+                    pixelsPerUnit);
+
+                sprite.name = frames[currentIndex];
+
+                renderer.sprite = sprite;
+            }
+
+            if (currentIndex == frames.Count - 1)
+            {
+                yield return new WaitForSeconds(frameRate);
+
+                onComplete?.Invoke();
+
+                yield break;
+            }
+
+            currentIndex++;
+
+            yield return new WaitForSeconds(frameRate);
+        }
     }
 }
