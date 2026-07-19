@@ -67,4 +67,8 @@ public class TowerStateMachine : MonoBehaviour
     {
         currentTarget = enemy;
     }
+    public ITowerState GetCurrentState()
+    {
+        return currentState;
+    }
 }

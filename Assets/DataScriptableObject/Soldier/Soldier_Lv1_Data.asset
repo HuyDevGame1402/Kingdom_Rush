@@ -23,10 +23,10 @@ MonoBehaviour:
   minDamage: 1
   maxDamage: 3
   attackRange: 0.25
-  attackCooldown: 1
+  attackCooldown: 2
   animations:
     animPrefix: soldier_lvl1_
-    frameRate: 0.1
+    frameRate: 0.08
     idle:
       startFrame: 1
       endFrame: 1

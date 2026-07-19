@@ -39,7 +39,7 @@ public class PlayerAnimation : MonoBehaviour
         //    currentFrame = Mathf.Max(1, currentFrame - 1);
         //    ShowSingleFrame(currentFrame);
         //}
-        AnimationP89();
+        AnimationP14();
     }
 
     private void ShowSingleFrame(int frameNumber)
@@ -673,6 +673,7 @@ public class PlayerAnimation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             // Hiệu ứng nổ Arcane Hit
+            // thân trụ
             animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer1_");
         }
     }
@@ -680,22 +681,24 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            // Chạy animation tháp Arcane
+            // hero left
             animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer2_");
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            // Chạy animation Tesla
+            // hero right
             animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer3_");
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             // Hiệu ứng nổ Arcane Hit
+            // nòng
             animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer4_");
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             // Chạy animation tháp Arcane
+            // khói
             animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer5_");
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
@@ -706,6 +709,7 @@ public class PlayerAnimation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             // Hiệu ứng nổ Arcane Hit
+            // bom bên cạnh
             animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer7_");
         }
         if (Input.GetKeyDown(KeyCode.Alpha7))
@@ -727,6 +731,11 @@ public class PlayerAnimation : MonoBehaviour
         {
             // Hiệu ứng nổ Arcane Hit
             animator.PlayAnimation(targetObject, "tower_artillery_lvl2_layer4_");
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            // Hiệu ứng nổ Arcane Hit
+            animator.PlayAnimation(targetObject, "tower_artillery_lvl1_layer1_");
         }
     }
     private void AnimationP15()

@@ -27,7 +27,7 @@ MonoBehaviour:
 
 
     GOOD LUCK, GENERAL!'
-  startingGold: 265
+  startingGold: 1000
   live: 20
   wave: 7
   strategicPointsCount: 8
@@ -46,6 +46,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ced14b186535836448c7b8ff7951c24d, type: 2}
   - {fileID: 11400000, guid: e6b3a9bad86e65342ad2173135b718aa, type: 2}
   - {fileID: 11400000, guid: 396837c57872b8441ac790304ae154d2, type: 2}
+  - {fileID: 11400000, guid: 9e10622584eab9e41ac679982fbc8770, type: 2}
   waves:
   - waveIndex: 1
     enemyGroups:

@@ -26,7 +26,7 @@ MonoBehaviour:
   attackCooldown: 1.36
   animations:
     animPrefix: soldier_lvl2_
-    frameRate: 0.1
+    frameRate: 0.08
     idle:
       startFrame: 1
       endFrame: 1

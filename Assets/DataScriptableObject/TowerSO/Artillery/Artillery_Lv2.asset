@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Artillery_Lv2
   m_EditorClassIdentifier: 
   towerID: 7
-  towerName: Dwarven Bombard
-  towerDescription: Bombards ground enemies dealing area damage.
+  towerName: Dwarven Artillery
+  towerDescription: Enhanced dwarven ordinance. This artillery will blast an even
+    larger area.
   towerIcon: {fileID: -1874604821, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   towerIconGray: {fileID: 971995754, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   priceTower: 220

@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a062da0c5a38d25479d5ee443ef789c7, type: 3}
-  m_Name: ArtilleryTowerLv1
+  m_Name: ArtilleryTowerLv2
   m_EditorClassIdentifier: 
   castleName: Artillery
   description: "Tr\u1EE5 b\u1EAFn bom"
   maxHealth: 100
-  startGold: 125
+  startGold: 220
   icon: {fileID: 0}
   visualPrefab: {fileID: 0}
-  upgradeCost: 220
+  upgradeCost: 320
   nextLevel: {fileID: 11400000}
-  minDamage: 8
-  maxDamage: 15
+  minDamage: 20
+  maxDamage: 40
   attackSpeed: 3.5
   attackRate: 3.5
   arrowArcHeight: 1
   heroPositionList:
-  - {x: 0.066, y: 1.086, z: 0}
+  - {x: 0.066, y: 1.25, z: 0}
   - {x: -0.133, y: 0.66, z: 0}
-  animationTower: tower_artillery_lvl1_layer4_
+  animationTower: tower_artillery_lvl2_layer4_
   frameTowerStartIdle: 1
   frameTowerEndIdle: 1
   frameTowerStartAttack: 12
@@ -44,23 +44,23 @@ MonoBehaviour:
   frameHeroEndAttackDown: 0
   heroDataSO: {fileID: 0}
   heroBombAnim:
-  - nameAnimation: tower_artillery_lvl1_layer2_
+  - nameAnimation: tower_artillery_lvl2_layer2_
     startFrame: 1
     endFrame: 1
-  - nameAnimation: tower_artillery_lvl1_layer2_
+  - nameAnimation: tower_artillery_lvl2_layer2_
     startFrame: 1
     endFrame: 4
-  - nameAnimation: tower_artillery_lvl1_layer3_
+  - nameAnimation: tower_artillery_lvl2_layer3_
     startFrame: 1
     endFrame: 1
-  - nameAnimation: tower_artillery_lvl1_layer3_
+  - nameAnimation: tower_artillery_lvl2_layer3_
     startFrame: 2
     endFrame: 12
-  offsetCannon: {x: 0.013, y: 1.05, z: 0}
+  offsetCannon: {x: 0, y: 1.02, z: 0}
   offsetXTower: 0.077
-  offsetBombDeco: 0
+  offsetBombDeco: -0.15
   positionSmoke: {x: 0.043, y: 1.141, z: 0}
   smokeAnim:
-    nameAnimation: tower_artillery_lvl1_layer5_
+    nameAnimation: tower_artillery_lvl2_layer5_
     startFrame: 1
     endFrame: 24

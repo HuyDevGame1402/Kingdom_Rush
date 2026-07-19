@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 707635911071555393}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.068, y: 1.23, z: 0}
+  m_LocalPosition: {x: 0.133, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -202,6 +202,9 @@ MonoBehaviour:
   tower: {fileID: 8192080141062773108}
   spawnAttack: {fileID: 8759525955182938600, guid: b12bda59c1562914ebd418f36a18f6a9, type: 3}
   isSpawnAttack: 1
+  basePlatfromAnimations:
+  - {fileID: 7823039268199100119}
+  - {fileID: 7641337933060828815}
   basePlatfromAnimation: {fileID: 7823039268199100119}
   smokeOb: {fileID: 3620145109483235228}
   firePoint: {fileID: 7194789870264114666}
@@ -500,6 +503,7 @@ GameObject:
   - component: {fileID: 2279498923673592603}
   - component: {fileID: 21557846916376010}
   - component: {fileID: 8787620472655820413}
+  - component: {fileID: 7219324003743432582}
   m_Layer: 0
   m_Name: TowerArtillery
   m_TagString: Towers
@@ -525,6 +529,7 @@ Transform:
   - {fileID: 5039438335230616680}
   - {fileID: 4011427383529976471}
   - {fileID: 1734846158047622615}
+  - {fileID: 4174468594817359095}
   - {fileID: 1942388771979358212}
   - {fileID: 981319535734474540}
   - {fileID: 6529254213817175493}
@@ -590,11 +595,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerGameObject:
   - {fileID: 6685727788019965033}
-  - {fileID: 5192813912701347988}
-  - {fileID: 6813009411871596108}
-  - {fileID: 3111439985301300553}
   loadingTower: {fileID: 3979077499107349654}
   localScaleTower: {x: 1.5, y: 1.5, z: 0}
+  localScaleHero: {x: 2, y: 2, z: 0}
+  localScaleCannon: {x: 1.5, y: 1.3, z: 0}
+  bombObjectUpdateScale:
+  - {fileID: 5192813912701347988}
+  - {fileID: 6813009411871596108}
+  - {fileID: 5786213405857301722}
+  cannon: {fileID: 4011427383529976471}
 --- !u!114 &6285548924284940393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,6 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentBaseSOTower: {fileID: 11400000, guid: 78a7bd62f75e39c4ab8a17761c08949c, type: 2}
   baseTowerSONextLevel: {fileID: 11400000, guid: 9e10622584eab9e41ac679982fbc8770, type: 2}
+  towerUpLevelSO: {fileID: 11400000, guid: cd7d4191df3b11e4eb78405eb3a058e7, type: 2}
   groundTower: {fileID: 0}
 --- !u!114 &8787620472655820413
 MonoBehaviour:
@@ -773,6 +783,135 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetY: 0.75
+  indexTowerUp: 0
+--- !u!114 &7219324003743432582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284188405547762922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c668740a7baab40a25a9512f2c38d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerLevelUp: {fileID: 0}
+  towerStateMachine: {fileID: 0}
+  towerVisual: {fileID: 0}
+  cannon: {fileID: 4011427383529976471}
+  bombSprite: {fileID: 4174468594817359095}
+  basePlatfromAnimations:
+  - {fileID: 7823039268199100119}
+  - {fileID: 7641337933060828815}
+--- !u!1 &5786213405857301722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4174468594817359095}
+  - component: {fileID: 7995334239235155889}
+  - component: {fileID: 7641337933060828815}
+  m_Layer: 0
+  m_Name: BombSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4174468594817359095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786213405857301722}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.148, y: 0.301, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438792574567652847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7995334239235155889
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786213405857301722}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &7641337933060828815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786213405857301722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f6cc8a32ea41c42b400ed3d9679a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
+  animationPlatfroms:
+  - animName: tower_artillery_lvl1_layer7_
+    startFrame: 1
+    endFrame: 1
+  - animName: tower_artillery_lvl2_layer7_
+    startFrame: 1
+    endFrame: 1
 --- !u!1 &6685727788019965033
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +1012,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f6cc8a32ea41c42b400ed3d9679a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
+  animationPlatfroms:
+  - animName: tower_artillery_lvl1_layer1_
+    startFrame: 1
+    endFrame: 1
+  - animName: tower_artillery_lvl2_layer1_
+    startFrame: 1
+    endFrame: 1
 --- !u!1 &6797039530320570080
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,8 +1130,8 @@ Transform:
   m_GameObject: {fileID: 6813009411871596108}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.021, y: 0.621, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -0.133, y: 0.66, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 438792574567652847}

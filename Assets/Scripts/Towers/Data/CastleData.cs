@@ -60,6 +60,9 @@ public class CastleData : ScriptableObject
 
     // Bomb Tower Hero
     public List<AnimationFrameRangeUpdate> heroBombAnim;
+    public Vector3 offsetCannon;
+    public float offsetXTower;
+    public float offsetBombDeco;
     public Vector3 positionSmoke;
     public AnimationFrameRangeUpdate smokeAnim;
 }

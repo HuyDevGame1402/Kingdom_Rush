@@ -431,25 +431,79 @@ public class EnemyController : MonoBehaviour
     public bool ShouldMoveBackToTarget()
     {
         if (target == null)
+        {
+            Debug.Log($"[{name}] ShouldMoveBackToTarget: target null -> false");
             return false;
+        }
 
-        // Soldier không target mình nữa
         if (target.TryGetComponent(out BaseUnitStateMachine soldier))
         {
-            if (!soldier.IsTargetingEnemy(this))
+            bool targeting = soldier.IsTargetingEnemy(this);
+            Debug.Log($"[{name}] IsTargetingEnemy = {targeting}");
+            if (!targeting)
                 return false;
         }
 
         if (currentWaypointIndex >= waypoints.Count)
+        {
+            Debug.Log($"[{name}] currentWaypointIndex >= waypoints.Count -> true");
             return true;
+        }
 
-        float targetDistance =
-            Vector2.Distance(transform.position, target.position);
+        int heroWaypointIndex = GetWaypointIndexOfPosition(target.position, currentWaypointIndex);
 
-        float waypointDistance =
-            Vector2.Distance(transform.position,
-                             waypoints[currentWaypointIndex].position);
+        Debug.Log($"[{name}] currentWaypointIndex={currentWaypointIndex}, heroWaypointIndex={heroWaypointIndex}, " +
+                  $"heroPos={target.position}, enemyPos={transform.position}");
 
-        return targetDistance <= waypointDistance;
+        return heroWaypointIndex >= currentWaypointIndex;
+    }
+
+    private int GetWaypointIndexOfPosition(Vector3 position, int referenceIndex)
+    {
+        if (waypoints == null || waypoints.Count == 0)
+            return 0;
+
+        int bestIndex = -1; // đổi thành -1 để phát hiện trường hợp "không tìm thấy"
+        float bestScore = float.MaxValue;
+        float bestRawDistance = float.MaxValue;
+
+        const float distanceThreshold = 4f;
+        float sqrThreshold = distanceThreshold * distanceThreshold;
+
+        for (int i = 0; i < waypoints.Count - 1; i++)
+        {
+            Vector3 start = waypoints[i].position;
+            Vector3 end = waypoints[i + 1].position;
+            Vector3 closestPoint = ClosestPointOnLineSegment(position, start, end);
+            float sqrDistance = Vector3.SqrMagnitude(position - closestPoint);
+
+            // Track khoảng cách gần nhất tuyệt đối để log debug, kể cả khi không lọt threshold
+            if (sqrDistance < bestRawDistance)
+                bestRawDistance = sqrDistance;
+
+            if (sqrDistance > sqrThreshold)
+                continue;
+
+            int candidateIndex = i + 1;
+            float indexDiff = Mathf.Abs(candidateIndex - referenceIndex);
+            float score = indexDiff * 1000f + sqrDistance;
+
+            if (score < bestScore)
+            {
+                bestScore = score;
+                bestIndex = candidateIndex;
+            }
+        }
+
+        // QUAN TRỌNG: fallback khi không segment nào đủ gần
+        if (bestIndex == -1)
+        {
+            Debug.LogWarning($"Không tìm thấy segment nào trong threshold {distanceThreshold}. " +
+                              $"Khoảng cách gần nhất thực tế: {Mathf.Sqrt(bestRawDistance):F2}. " +
+                              $"Fallback về referenceIndex={referenceIndex}");
+            return referenceIndex; // coi như hero đang ngang hàng enemy, KHÔNG mặc định về 0
+        }
+
+        return bestIndex;
     }
 }

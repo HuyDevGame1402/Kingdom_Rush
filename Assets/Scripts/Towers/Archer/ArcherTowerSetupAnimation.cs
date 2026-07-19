@@ -10,6 +10,7 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
     [SerializeField] private TowerStateMachine tower;
     [SerializeField] private GameObject spawnAttack;
     [SerializeField] private bool isSpawnAttack;
+    [SerializeField] private List<BasePlatfromAnimation> basePlatfromAnimations = new List<BasePlatfromAnimation>();
     [SerializeField] private BasePlatfromAnimation basePlatfromAnimation;
     [SerializeField] private GameObject smokeOb;
     [SerializeField] private GameObject firePoint;
@@ -37,7 +38,14 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
 
     public void InitTower(string name, int frameStart, int frameEnd)
     {
-        if (basePlatfromAnimation != null) basePlatfromAnimation.PlatfromAnimation();
+        if (basePlatfromAnimation != null)
+        {
+            for(int i = 0; i < basePlatfromAnimations.Count; i++)
+            {
+                basePlatfromAnimations[i].PlatfromAnimation();
+            }
+            //basePlatfromAnimation.PlatfromAnimation();
+        }
         SpriteSheetAnimator.Instance.PlayAnimation(gameObject, name, frameStart, frameEnd);
     }
 
@@ -165,6 +173,45 @@ public class ArcherTowerSetupAnimation : MonoBehaviour
         for(int i = 0; i < heroList.Count; i++)
         {
             heroList[i].ReloadAnimation();
+        }
+    }
+
+    public void ReloadAnimationTower()
+    {
+        int currentFrame =
+            SpriteSheetAnimator.Instance.GetCurrentFrameNumber(gameObject);
+
+        CastleData data = tower.GetDataTower();
+
+        // Nếu đang Attack thì chạy tiếp phần Attack còn dang dở
+        if (tower.GetCurrentState() == tower.AttackState)
+        {
+            SpriteSheetAnimator.Instance.PlayAnimationContinue(
+                gameObject,
+                data.animationTower,
+                data.frameTowerStartAttack,
+                data.frameTowerEndAttack,
+                currentFrame,
+                0.1f,
+                () =>
+                {
+                    // Attack xong chuyển về Idle
+                    SpriteSheetAnimator.Instance.PlayAnimation(
+                        gameObject,
+                        data.animationTower,
+                        data.frameTowerStartIdle,
+                        data.frameTowerEndIdle);
+                });
+        }
+        else
+        {
+            // Idle thì chạy loop tiếp từ frame hiện tại
+            SpriteSheetAnimator.Instance.PlayAnimation(
+                gameObject,
+                data.animationTower,
+                data.frameTowerStartIdle,
+                data.frameTowerEndIdle,
+                currentFrame);
         }
     }
 }

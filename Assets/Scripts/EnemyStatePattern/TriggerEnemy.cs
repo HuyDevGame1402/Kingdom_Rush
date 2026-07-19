@@ -17,34 +17,34 @@ public class TriggerEnemy : MonoBehaviour
     {
         if (collision.CompareTag(SOLIDERTAG) && enemyController.target == null)
         {
-            if(collision.transform.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
+            if(collision.transform.parent.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
             {
                 if (heroStateMachine.CheckAttackerCount() && enemyController.target == null)
                 {
-                    enemyController.target = collision.transform;
+                    enemyController.target = collision.transform.parent;
                     heroStateMachine.attackerCount += 1;
                 }
             }
             else
             {
-                Debug.LogWarning("Không tìm thấy BaseUnitStateMachine trên đối tượng: " + collision.transform.name);
+                Debug.LogWarning("Không tìm thấy BaseUnitStateMachine trên đối tượng: " + collision.transform.parent.name);
             }
-            if(enemyController.targetList.Contains(collision.transform) == false)
+            if(enemyController.targetList.Contains(collision.transform.parent) == false)
             {
-                enemyController.targetList.Add(collision.transform);
+                enemyController.targetList.Add(collision.transform.parent);
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag(SOLIDERTAG) && enemyController.targetList.Contains(collision.transform))
+        if (collision.CompareTag(SOLIDERTAG) && enemyController.targetList.Contains(collision.transform.parent))
         {
-            if (collision.transform == enemyController.target)
+            if (collision.transform.parent == enemyController.target)
             {
                 enemyController.ResetTarget();
             }
-            enemyController.targetList.Remove(collision.transform);
+            enemyController.targetList.Remove(collision.transform.parent);
         }
     }
 }
