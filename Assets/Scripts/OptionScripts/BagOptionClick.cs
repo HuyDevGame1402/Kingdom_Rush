@@ -8,7 +8,12 @@ public class BagOptionClick : OptionClick
     protected override void OnClickButton()
     {
         base.OnClickButton();
-        //ActiveItemsInBag(true);
+
+        if (OptionManager.Instance != null)
+        {
+            OptionManager.Instance.ResetLogicOption();
+            OptionManager.Instance.SetSupportOptions(false);
+        }
         OnClickBag?.Invoke();
     }
 }

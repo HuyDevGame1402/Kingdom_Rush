@@ -10,6 +10,7 @@ public class SoundInGameManager : MonoBehaviour
     [SerializeField] private AudioClip levelUp;
     [SerializeField] private AudioClip towerSell;
     [SerializeField] private AudioClip waveComming;
+    [SerializeField] private AudioClip onClickOptionGame;
 
     private AudioSource audioSource;
 
@@ -62,7 +63,13 @@ public class SoundInGameManager : MonoBehaviour
         audioSource.Stop();
         audioSource.PlayOneShot(waveComming);
     }
-    private bool CheckSoundEnabled()
+    public void PlayOnClickOption()
+    {
+        if (CheckSoundEnabled() == false) return;
+        audioSource.Stop();
+        audioSource.PlayOneShot(onClickOptionGame);
+    }
+    public bool CheckSoundEnabled()
     {
         if(SettingInGame.Instance != null && SettingInGame.Instance.GetIsSound() == true)
         {

@@ -31,6 +31,8 @@ public class MeteoriteProjectile : MonoBehaviour
     private Vector3 startPos;
     private float totalDistance;
 
+    [SerializeField] private MeteoriteSound meteoriteSound;
+
     //private void Start()
     //{
     //    Initialize(posTest1.position, 10f);
@@ -63,6 +65,7 @@ public class MeteoriteProjectile : MonoBehaviour
 
         RotateTowardsTarget();
         StartCoroutine(CoroutineTest());
+        meteoriteSound.PlayAudioLoop();
     }
 
     private IEnumerator CoroutineTest()
@@ -145,6 +148,8 @@ public class MeteoriteProjectile : MonoBehaviour
             // Cách 2: Nếu bạn muốn ẩn đi thay vì xóa thì dùng dòng dưới:
             // spawnedShadow.SetActive(false); 
         }
+
+        meteoriteSound.PlayAudioHit();
 
         spriteMateorite.gameObject.SetActive(false);
         explosionTransform.gameObject.SetActive(true);

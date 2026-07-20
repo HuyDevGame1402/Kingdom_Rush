@@ -23,6 +23,10 @@ public class LogicSpawnMeteorite : MonoBehaviour, IHasLogicOption
     [SerializeField] private ReduceUITime reduceUITime;
     [SerializeField] private OptionClick optionClick;
 
+    [Header("Sound")]
+    [SerializeField] private AudioClip rainOfFireStartClip;
+    [SerializeField] private AudioSource audioSource;
+
     private void Start()
     {
         if (optionUI == null)
@@ -37,6 +41,11 @@ public class LogicSpawnMeteorite : MonoBehaviour, IHasLogicOption
         {
             Debug.LogWarning("Chưa gán MeteorSkillSO hoặc MeteoritePrefab!");
             return;
+        }
+
+        if(SoundInGameManager.Instance != null && SoundInGameManager.Instance.CheckSoundEnabled())
+        {
+            audioSource.PlayOneShot(rainOfFireStartClip);
         }
 
         // Lấy dữ liệu của level hiện tại

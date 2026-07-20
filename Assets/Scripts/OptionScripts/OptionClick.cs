@@ -15,6 +15,8 @@ public class OptionClick : MonoBehaviour
 
     [SerializeField] private ReduceUITime reduceUITime;
 
+    [SerializeField] protected bool isSelectedOption;
+
     private void Awake()
     {
         button = GetComponent<Button>();
@@ -39,12 +41,31 @@ public class OptionClick : MonoBehaviour
     protected virtual void OnClickButton()
     {
         if (isOnClick == false) return;
-        reinforceUI.UpdateSpriteSelected();
-        DisableSelectedOtherButton();
-        if(OptionManager.Instance != null && logicOption != null)
+
+        if(isSelectedOption == false)
         {
-            OptionManager.Instance.SetLogicOption(logicOption);
-            OptionManager.Instance.SetSupportOptions(true);
+            if (SoundInGameManager.Instance != null)
+            {
+                SoundInGameManager.Instance.PlayOnClickOption();
+            }
+            reinforceUI.UpdateSpriteSelected();
+            DisableSelectedOtherButton();
+            if (OptionManager.Instance != null && logicOption != null)
+            {
+                OptionManager.Instance.SetLogicOption(logicOption);
+                OptionManager.Instance.SetSupportOptions(true);
+            }
+            isSelectedOption = true;
+        }
+        else
+        {
+            reinforceUI.UpdateSpriteNormal();
+            if (OptionManager.Instance != null && logicOption != null)
+            {
+                OptionManager.Instance.ResetLogicOption();
+                OptionManager.Instance.SetSupportOptions(false);
+            }
+            isSelectedOption = false;
         }
     }
 
@@ -53,11 +74,21 @@ public class OptionClick : MonoBehaviour
         for(int i = 0; i < reinforceUIs.Count; i++)
         {
             reinforceUIs[i].UpdateSpriteNormal();
+
+            if (reinforceUIs[i].TryGetComponent(out OptionClick optionClick))
+            {
+                optionClick.ResetIsSelectedOption();
+            }
         }
     }
 
     public void SetOnClick(bool onClick)
     {
         isOnClick = onClick;
+    }
+
+    public void ResetIsSelectedOption()
+    {
+        isSelectedOption = false;
     }
 }

@@ -16,6 +16,10 @@ public class LogicSpawnReinforce : MonoBehaviour, IHasLogicOption
     [SerializeField] private ReduceUITime reduceUITime;
     [SerializeField] private OptionClick optionClick;
 
+    [Header("Sound")]
+    [SerializeField] private List<AudioClip> audioClips = new List<AudioClip>();
+    [SerializeField] private AudioSource audioSource;
+
     private void Start()
     {
         if(optionUI == null)
@@ -36,6 +40,12 @@ public class LogicSpawnReinforce : MonoBehaviour, IHasLogicOption
                     pos + new Vector3(offset.x, offset.y, 0f));
             }
         }
+
+        if (SoundInGameManager.Instance != null && SoundInGameManager.Instance.CheckSoundEnabled())
+        {
+            audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Count)]);
+        }
+
         optionUI.UpdateSpriteNormal();
         optionClick.SetOnClick(false);
         reduceUITime.StartCountdown(coolDownTime);

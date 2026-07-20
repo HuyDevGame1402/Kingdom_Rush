@@ -49,4 +49,8 @@ public class OptionManager : MonoBehaviour
     {
         currentLogicOption = logicOption;
     }
+    public void ResetLogicOption()
+    {
+        currentLogicOption = null;
+    }
 }
