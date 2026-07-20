@@ -24,6 +24,9 @@ public class CharacterFreezing : MonoBehaviour
 
     private Coroutine freezeRoutine;
 
+    public Color normalColor;
+    public Color iceColor;
+
     private void Awake()
     {
         enemyController = GetComponent<EnemyController>();

@@ -13,6 +13,10 @@ public class BagOptionUI : OptionUI
         background.gameObject.SetActive(false);
         bags.gameObject.SetActive(false);
         imageItemSelected.gameObject.SetActive(false);
+        if(transform.TryGetComponent(out OptionClick optionClick))
+        {
+            optionClick.ResetIsSelectedOption();
+        }
     }
 
     public override void UpdateSpriteSelected()

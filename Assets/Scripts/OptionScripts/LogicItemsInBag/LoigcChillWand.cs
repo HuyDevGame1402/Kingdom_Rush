@@ -8,6 +8,9 @@ public class LoigcChillWand : MonoBehaviour, IHasLogicOption
     [SerializeField] private Transform backgroundIceUI;
     [SerializeField] private BagOptionUI bagOptionUI;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+
     public void Execute(Vector3 pos)
     {
         if (ItemManager.Instance != null)
@@ -21,7 +24,8 @@ public class LoigcChillWand : MonoBehaviour, IHasLogicOption
             IceChillWandDecoMap.Instance.ShowIce();
             IceChillWandDecoMap.Instance.StartCoroutineDisable(timeIce);
         }
-        if(LevelEnemySpawner.Instance != null && LevelEnemySpawner.Instance.enemyInGame.Count > 0)
+        audioSource.PlayOneShot(audioClip);
+        if (LevelEnemySpawner.Instance != null && LevelEnemySpawner.Instance.enemyInGame.Count > 0)
         {
             for(int i = 0; i < LevelEnemySpawner.Instance.enemyInGame.Count; i++)
             {

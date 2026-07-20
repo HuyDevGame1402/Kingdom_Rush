@@ -12,6 +12,15 @@ public class Dynamite : ThrowableObject
     [SerializeField] private GameObject soilExpansion;
     [SerializeField] private float timeDelayDisable = 1.5f;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioBom;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        audioSource = GetComponent<AudioSource>();
+    }
+
     protected override void OnHitTarget()
     {
         soilExpansion.SetActive(true);
@@ -20,6 +29,7 @@ public class Dynamite : ThrowableObject
             TextSpawnManager.Instance.SpawnText(transform.position + Vector3.up * offsetSpawnTextY,
                 textSO.sprites[Random.Range(0, textSO.sprites.Count)]);
         }
+        PlayAudioExplosion();
         base.OnHitTarget();
     }
 
@@ -47,5 +57,10 @@ public class Dynamite : ThrowableObject
             }
             enemyList.Add(collision.transform);
         }
+    }
+
+    private void PlayAudioExplosion()
+    {
+        audioSource.PlayOneShot(audioBom);
     }
 }

@@ -36,7 +36,7 @@ public abstract class ThrowableObject : MonoBehaviour
     protected const string enemyTag = "EnemyKingdomRush";
     [SerializeField] protected List<Transform> enemyList = new List<Transform>();
 
-    private void Awake()
+    protected virtual void Awake()
     {
         if(circleCollider == null) circleCollider = GetComponent<CircleCollider2D>();
     }

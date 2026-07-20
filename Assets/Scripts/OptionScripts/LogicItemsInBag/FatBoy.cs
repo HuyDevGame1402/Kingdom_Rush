@@ -28,9 +28,14 @@ public class FatBoy : MonoBehaviour
 
     private int damage = 3000;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip inappNukeClip;
+    [SerializeField] private AudioClip explosionClip;
+
     private void Awake()
     {
         parent = transform.parent;
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Drop(Transform target)
@@ -47,6 +52,8 @@ public class FatBoy : MonoBehaviour
         Vector3 end = target.position;
 
         float elapsed = 0f;
+
+        audioSource.PlayOneShot(inappNukeClip);
 
         while (elapsed < flightTime)
         {
@@ -93,6 +100,7 @@ public class FatBoy : MonoBehaviour
         spriteBomb.enabled = false;
         transform.rotation = Quaternion.identity;
         explosionGameObject.SetActive(true);
+        audioSource.PlayOneShot(explosionClip);
         SpriteSheetAnimator.Instance.PlayAnimation(
         target: explosionGameObject,
         animPrefix: animationName,

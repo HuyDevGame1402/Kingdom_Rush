@@ -240,6 +240,8 @@ MonoBehaviour:
     offsetY: -2
   - frameOffset: 9
     offsetY: -2
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  iceColor: {r: 0.69803923, g: 0.8980392, b: 0.8980392, a: 1}
 --- !u!1 &2778689919189572829
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,5 +542,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseOrder: 10000
+  baseOrder: 10003
   multiplier: 100
