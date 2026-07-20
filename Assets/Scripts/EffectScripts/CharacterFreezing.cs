@@ -24,14 +24,13 @@ public class CharacterFreezing : MonoBehaviour
 
     private Coroutine freezeRoutine;
 
-    public Color normalColor;
-    public Color iceColor;
+    [SerializeField] private FreezeEffect freezeEffect;
 
     private void Awake()
     {
         enemyController = GetComponent<EnemyController>();
         enemyController.OnEnemyDead += InstantBreakIce;
-
+        if (freezeEffect == null) freezeEffect = GetComponent<FreezeEffect>();
     }
 
 
@@ -43,6 +42,7 @@ public class CharacterFreezing : MonoBehaviour
             StopCoroutine(freezeRoutine);
         }
         freezeRoutine = StartCoroutine(FreezeSequenceRoutine(duration));
+        freezeEffect.ApplyFreeze(duration);
     }
 
     private IEnumerator FreezeSequenceRoutine(float duration)

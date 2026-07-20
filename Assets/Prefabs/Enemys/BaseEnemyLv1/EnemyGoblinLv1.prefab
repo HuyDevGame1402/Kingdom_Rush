@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 623637933509492466}
   - component: {fileID: 3012525775329880863}
   - component: {fileID: 3647846956039876977}
+  - component: {fileID: 7050501803334855633}
   m_Layer: 0
   m_Name: EnemyGoblinLv1
   m_TagString: EnemyKingdomRush
@@ -240,8 +241,23 @@ MonoBehaviour:
     offsetY: -2
   - frameOffset: 9
     offsetY: -2
-  normalColor: {r: 1, g: 1, b: 1, a: 1}
-  iceColor: {r: 0.69803923, g: 0.8980392, b: 0.8980392, a: 1}
+  freezeEffect: {fileID: 7050501803334855633}
+--- !u!114 &7050501803334855633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122370129681020088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a275e1b63daaf1d448487c059fd3cbc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  iceMaterial: {fileID: 2100000, guid: 2937c4cf821d8b447be2e40aeae477c3, type: 2}
+  freezeDuration: 3
+  blendTime: 0.3
 --- !u!1 &2778689919189572829
 GameObject:
   m_ObjectHideFlags: 0
