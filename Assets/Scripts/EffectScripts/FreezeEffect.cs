@@ -6,30 +6,41 @@ public class FreezeEffect : MonoBehaviour
 {
     [Header("Setup")]
     [SerializeField] private Material defaultMaterial; // Material gốc của enemy
-    [SerializeField] private Material iceMaterial;     // Material băng (mat_Enemy_Ice) đã tạo ở Bước 1
+    [SerializeField] private Material iceMaterial;     // Material băng (mat_Enemy_Ice)
 
     [Header("Settings")]
     [SerializeField] private float freezeDuration = 3.0f; // Thời gian đóng băng mặc định
-    [SerializeField] private float blendTime = 0.3f;       // Thời gian chuyển màu (mượt mà)
+    [SerializeField] private float blendTime = 0.3f;       // Thời gian chuyển đổi mượt mà
+
+    [Tooltip("Độ phủ màu băng tối đa (Mặc định 0.2 cho giống Kingdom Rush)")]
+    [Range(0f, 1f)]
+    [SerializeField] private float maxIceBlend = 0.2f;     // Giới hạn Ice Blend ở 0.2f
 
     private SpriteRenderer spriteRenderer;
     private Coroutine freezeCoroutine;
-    private Material runtimeIceMaterial; // Tạo một instance riêng để không ảnh hưởng enemy khác
+    private Material runtimeIceMaterial; // Instance riêng cho từng Enemy
+
+    // Tên property trong Shader Graph
+    private static readonly int IceBlendID = Shader.PropertyToID("_IceBlend");
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        // Sử dụng defaultMaterial nếu không được gán, đề phòng lỗi
-        if (defaultMaterial == null) defaultMaterial = spriteRenderer.material;
 
-        // Tạo một instance mới của Material băng để có thể thay đổi thuộc tính riêng cho enemy này
+        // Lấy Material gốc hiện tại nếu Inspector chưa gán
+        if (defaultMaterial == null)
+        {
+            defaultMaterial = spriteRenderer.sharedMaterial;
+        }
+
+        // Tạo instance riêng của Ice Material
         if (iceMaterial != null)
         {
             runtimeIceMaterial = new Material(iceMaterial);
         }
     }
 
-    // Hàm gọi để đóng băng enemy
+    // Hàm gọi đóng băng từ bên ngoài
     public void ApplyFreeze(float duration = -1f)
     {
         float actualDuration = duration > 0f ? duration : freezeDuration;
@@ -44,47 +55,89 @@ public class FreezeEffect : MonoBehaviour
     private IEnumerator FreezeRoutine(float duration)
     {
         // 1. Chuyển sang Material băng
-        spriteRenderer.material = runtimeIceMaterial;
+        if (runtimeIceMaterial != null)
+        {
+            spriteRenderer.material = runtimeIceMaterial;
+        }
 
-        // 2. Chuyển màu dần sang băng (Blending in)
+        // 2. Chuyển màu dần sang băng (Blend từ 0 -> maxIceBlend = 0.2f)
         float timer = 0f;
         while (timer < blendTime)
         {
             timer += Time.deltaTime;
-            float blendValue = timer / blendTime;
-            // Thay đổi biến "_IceBlend" trong Shader
-            runtimeIceMaterial.SetFloat("_IceBlend", blendValue);
+            // Tính toán giá trị Blend tăng dần từ 0 đến maxIceBlend
+            float blendValue = Mathf.Lerp(0f, maxIceBlend, timer / blendTime);
+
+            if (runtimeIceMaterial != null)
+            {
+                runtimeIceMaterial.SetFloat(IceBlendID, blendValue);
+            }
             yield return null;
         }
-        // Đảm bảo blend đạt tối đa
-        runtimeIceMaterial.SetFloat("_IceBlend", 1f);
 
-        // 3. Đợi trong thời gian đóng băng (kết hợp với hiệu ứng đóng băng bạn đã làm)
+        // Đảm bảo blend đạt chính xác giá trị maxIceBlend (0.2f)
+        if (runtimeIceMaterial != null)
+        {
+            runtimeIceMaterial.SetFloat(IceBlendID, maxIceBlend);
+        }
+
+        // 3. Giữ hiệu ứng trong thời gian đóng băng
         yield return new WaitForSeconds(duration);
 
-        // 4. Chuyển màu dần về bình thường (Blending out)
+        // 4. Trở về bình thường dần dần (Blend từ maxIceBlend = 0.2f -> 0)
         timer = 0f;
         while (timer < blendTime)
         {
             timer += Time.deltaTime;
-            float blendValue = 1f - (timer / blendTime);
-            runtimeIceMaterial.SetFloat("_IceBlend", blendValue);
+            // Tính toán giá trị Blend giảm dần từ maxIceBlend về 0
+            float blendValue = Mathf.Lerp(maxIceBlend, 0f, timer / blendTime);
+
+            if (runtimeIceMaterial != null)
+            {
+                runtimeIceMaterial.SetFloat(IceBlendID, blendValue);
+            }
             yield return null;
         }
-        runtimeIceMaterial.SetFloat("_IceBlend", 0f);
 
-        // 5. Chuyển về Material gốc
+        if (runtimeIceMaterial != null)
+        {
+            runtimeIceMaterial.SetFloat(IceBlendID, 0f);
+        }
+
+        // 5. Trả lại Material gốc ban đầu
         spriteRenderer.material = defaultMaterial;
 
         freezeCoroutine = null;
     }
 
-    // Quan trọng: Dọn dẹp material instance để tránh memory leak
+    // Dọn dẹp bộ nhớ tránh Memory Leak
     private void OnDestroy()
     {
         if (runtimeIceMaterial != null)
         {
             Destroy(runtimeIceMaterial);
+        }
+    }
+    // Hàm gọi để HỦY ĐÓNG BĂNG NGAY LẬP TỨC
+    public void RemoveFreeze()
+    {
+        // 1. Dừng Coroutine đang làm mượt/đếm giờ (nếu có)
+        if (freezeCoroutine != null)
+        {
+            StopCoroutine(freezeCoroutine);
+            freezeCoroutine = null;
+        }
+
+        // 2. Reset biến _IceBlend trong Material về 0
+        if (runtimeIceMaterial != null)
+        {
+            runtimeIceMaterial.SetFloat(IceBlendID, 0f);
+        }
+
+        // 3. Trả lại Material gốc ngay lập tức
+        if (spriteRenderer != null && defaultMaterial != null)
+        {
+            spriteRenderer.material = defaultMaterial;
         }
     }
 }

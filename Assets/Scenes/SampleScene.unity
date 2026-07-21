@@ -32339,6 +32339,7 @@ MonoBehaviour:
   iceMaterial: {fileID: 0}
   freezeDuration: 3
   blendTime: 0.3
+  maxIceBlend: 0.2
 --- !u!1 &1812091066
 GameObject:
   m_ObjectHideFlags: 0
@@ -37697,7 +37698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920997470549353124, guid: 865a2219b17fba347b30a2028652270e, type: 3}
       propertyPath: waypoints.Array.size

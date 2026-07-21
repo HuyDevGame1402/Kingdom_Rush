@@ -112,6 +112,9 @@ public class CharacterFreezing : MonoBehaviour
         {
             freezecreepOb.SetActive(false);
         });
+
+        freezeEffect.RemoveFreeze();
+
         if (enemyController != null)
         {
             enemyController.ThawEnemy();

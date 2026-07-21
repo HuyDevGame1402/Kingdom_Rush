@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MeteoriteProjectile : MonoBehaviour
 {
@@ -33,10 +34,9 @@ public class MeteoriteProjectile : MonoBehaviour
 
     [SerializeField] private MeteoriteSound meteoriteSound;
 
-    //private void Start()
-    //{
-    //    Initialize(posTest1.position, 10f);
-    //}
+    private const string enemyTag = "EnemyKingdomRush";
+    [SerializeField] private List<Transform> enemyListTrigger = new List<Transform>();
+    [SerializeField] private CircleCollider2D circleCollider;
 
     public void Initialize(Vector3 targetPosition, float damageAmount)
     {
@@ -154,7 +154,7 @@ public class MeteoriteProjectile : MonoBehaviour
         spriteMateorite.gameObject.SetActive(false);
         explosionTransform.gameObject.SetActive(true);
         soilExpansionTransform.gameObject.SetActive(true);
-
+        circleCollider.enabled = true;
         SpriteSheetAnimator.Instance.PlayAnimation(
             target: explosionTransform.gameObject,
             animPrefix: animExplosionName,
@@ -162,6 +162,8 @@ public class MeteoriteProjectile : MonoBehaviour
             onComplete: () =>
             {
                 explosionTransform.gameObject.SetActive(false);
+                circleCollider.enabled = false;
+                enemyListTrigger.Clear();
                 StartCoroutine(CoroutineDisable());
             }
         );
@@ -171,5 +173,20 @@ public class MeteoriteProjectile : MonoBehaviour
     {
         yield return new WaitForSeconds(3.5f);
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision != null && collision.CompareTag(enemyTag) && 
+            enemyListTrigger.Contains(collision.transform) == false)
+        {
+            enemyListTrigger.Add(collision.transform);
+
+            if(collision.transform.TryGetComponent(out EnemyController enemyController))
+            {
+                enemyController.TakeDamage((int)damage, null);
+            }
+
+        }
     }
 }

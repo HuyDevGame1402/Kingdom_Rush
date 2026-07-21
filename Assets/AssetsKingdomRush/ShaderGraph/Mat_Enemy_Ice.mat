@@ -67,9 +67,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Desaturation: 0.15
+    - _Desaturation: 0.2
     - _EnableExternalAlpha: 0
-    - _Ice_Blend: 1
+    - _Ice_Blend: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ZWrite: 0
