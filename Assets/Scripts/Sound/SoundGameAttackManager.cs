@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using static GameEvents;
 
 public class SoundGameAttackManager : MonoBehaviour
 {
@@ -22,6 +21,18 @@ public class SoundGameAttackManager : MonoBehaviour
     [Header("Sound Barrack")]
     [SerializeField] private List<AudioSource> audioSourcesBarrackMove = new List<AudioSource>();
     [SerializeField] private SoundSO soundSOBarrackMove;
+
+    [Header("Sound Solider Attack")]
+    [SerializeField] private List<AudioSource> audioSourceSoliderAttack = new List<AudioSource>();
+    [SerializeField] private SoundSO soundSOSoliderAttack;
+
+    [Header("Sound Goblin Death")]
+    [SerializeField] private List<AudioSource> audioSourceGoblinDeath = new List<AudioSource>();
+    [SerializeField] private SoundSO soundSOGoblinDeath;
+    [Header("Sound Orc Death")]
+
+    [SerializeField] private List<AudioSource> audioSourceOrcDeath = new List<AudioSource>();
+    [SerializeField] private SoundSO soundSOOrcDeath;
 
     private void Awake()
     {
@@ -60,6 +71,21 @@ public class SoundGameAttackManager : MonoBehaviour
     public void PlayAudioBarrackMove()
     {
         PlayAudioGame(soundSOBarrackMove, audioSourcesBarrackMove);
+    }
+
+    public void PlayAudioSoliderAttack()
+    {
+        PlayAudioGame(soundSOSoliderAttack, audioSourceSoliderAttack);
+    }
+
+    public void PlayAudioGoblinDeath()
+    {
+        PlayAudioGame(soundSOGoblinDeath, audioSourceGoblinDeath);
+    }
+
+    public void PlayAudioOrcDeath()
+    {
+        PlayAudioGame(soundSOOrcDeath, audioSourceOrcDeath);
     }
 
     private AudioSource CheckSoundEmpty(SoundSO soundSO, List<AudioSource> audioSources)

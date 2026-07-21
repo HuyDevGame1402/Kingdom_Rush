@@ -36,6 +36,13 @@ public class UnitAttackState : UnitBaseState
                 isAttacking = false;
             }
         );
+
+        // Sound
+        if(SoundGameAttackManager.Instance != null)
+        {
+            SoundGameAttackManager.Instance.PlayAudioSoliderAttack();
+        }
+
     }
 
     public override void Update()
