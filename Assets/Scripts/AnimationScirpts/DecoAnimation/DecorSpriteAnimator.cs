@@ -380,8 +380,168 @@ public class DecorSpriteAnimator : MonoBehaviour
             new Vector2(pivotX, pivotY),
             pixelsPerUnit
         );
-
-
+        image.SetNativeSize();
         return true;
     }
+
+    public void PlayAnimation(
+    GameObject target,
+    string decorId,
+    string animPrefix,
+    int startFrame,
+    int endFrame,
+    float frameRate = -1,
+    Action onComplete = null)
+    {
+        if (target == null) return;
+
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        string cleanDecorId = decorId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+        if (!decorDatabases.TryGetValue(cleanDecorId, out var database))
+            return;
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in database.Keys)
+        {
+            if (key.StartsWith(cleanPrefix))
+                frames.Add(key);
+        }
+
+        frames.Sort();
+
+        if (frames.Count == 0)
+            return;
+
+        startFrame = Mathf.Clamp(startFrame, 0, frames.Count - 1);
+        endFrame = Mathf.Clamp(endFrame, startFrame, frames.Count - 1);
+
+        List<string> playFrames =
+            frames.GetRange(startFrame, endFrame - startFrame + 1);
+
+        StopAnimationFor(target);
+
+        int id = target.GetInstanceID();
+
+        float finalFrameRate =
+            frameRate > 0 ? frameRate : defaultFrameRate;
+
+        Coroutine c = StartCoroutine(
+            AnimateRoutine(
+                renderer,
+                cleanDecorId,
+                database,
+                playFrames,
+                finalFrameRate,
+                onComplete));
+
+        activeCoroutines[id] = c;
+    }
+    IEnumerator AnimateRoutine(
+    SpriteRenderer renderer,
+    string decorId,
+    Dictionary<string, SpriteData> database,
+    List<string> frames,
+    float frameRate,
+    Action onComplete = null)
+    {
+        for (int i = 0; i < frames.Count; i++)
+        {
+            if (renderer == null)
+                yield break;
+
+            ApplySpriteFrame(
+                renderer,
+                decorId,
+                database[frames[i]]
+            );
+
+            yield return new WaitForSeconds(frameRate);
+        }
+
+        onComplete?.Invoke();
+    }
+
+    public void PlayAnimationUI(
+    GameObject target,
+    string decorId,
+    string animPrefix,
+    float frameRate,
+    int startFrame,
+    int endFrame,
+    Action onComplete = null)
+    {
+        if (target == null) return;
+
+        Image image = target.GetComponent<Image>();
+        if (image == null) return;
+
+        string cleanDecorId = decorId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+        if (!decorDatabases.TryGetValue(cleanDecorId, out var database))
+            return;
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in database.Keys)
+        {
+            if (key.StartsWith(cleanPrefix))
+                frames.Add(key);
+        }
+
+        frames.Sort();
+
+        if (frames.Count == 0)
+            return;
+
+        startFrame = Mathf.Clamp(startFrame, 0, frames.Count - 1);
+        endFrame = Mathf.Clamp(endFrame, startFrame, frames.Count - 1);
+
+        List<string> playFrames =
+            frames.GetRange(startFrame, endFrame - startFrame + 1);
+
+        StopAnimationFor(target);
+
+        int id = target.GetInstanceID();
+
+        Coroutine c = StartCoroutine(
+            AnimateUIRoutine(
+                image,
+                cleanDecorId,
+                database,
+                playFrames,
+                frameRate,
+                onComplete));
+
+        activeCoroutines[id] = c;
+    }
+    IEnumerator AnimateUIRoutine(
+    Image image,
+    string decorId,
+    Dictionary<string, SpriteData> database,
+    List<string> frames,
+    float frameRate,
+    Action onComplete = null)
+    {
+        for (int i = 0; i < frames.Count; i++)
+        {
+            if (image == null)
+                yield break;
+
+            ApplySpriteFrameUI(
+                image,
+                decorId,
+                database[frames[i]]);
+
+            yield return new WaitForSeconds(frameRate);
+        }
+
+        onComplete?.Invoke();
+    }
+
 }

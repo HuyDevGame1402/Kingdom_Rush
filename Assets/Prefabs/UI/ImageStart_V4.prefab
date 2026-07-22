@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7333548321552813050}
   - component: {fileID: 3929294255641594607}
   - component: {fileID: 8031438000443948736}
+  - component: {fileID: 646141621994025886}
   m_Layer: 5
-  m_Name: ImageStart
+  m_Name: ImageStart_V4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -942784641, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
+  m_Sprite: {fileID: 759903720, guid: 604e4903e6ab5864e899bf6acd6daa02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75,3 +76,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &646141621994025886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6841598382995552321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d287c775ddab455409d48acb45653a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

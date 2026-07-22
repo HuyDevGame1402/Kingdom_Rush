@@ -5987,50 +5987,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gui_common-1_213
-      rect:
-        serializedVersion: 2
-        x: 1778
-        y: 877
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 584c3a8b05f9e41429d2cc9bd08439be
-      internalID: 440069902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gui_common-1_214
-      rect:
-        serializedVersion: 2
-        x: 1840
-        y: 876
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac9da72f24f484a43a13151f8b09f400
-      internalID: -601585537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: gui_common-1_215
       rect:
         serializedVersion: 2
@@ -6854,7 +6810,7 @@ TextureImporter:
         height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 37, y: 37, z: 37, w: 37}
       customData: 
       outline: []
       physicsShape: []

@@ -12,13 +12,15 @@ public class TestAnimationCommon : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            Play("button_continue");
+        {
+            PlayAimationByFrame(0, 18);
+        }    
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            Play("button_restart");
+            PlayAimationByFrame(0, 37);
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            Play("confirm_feedback");
+            PlayAimationByFrame(0, 53);
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
             Play("effect_powerbuy");
@@ -81,5 +83,16 @@ public class TestAnimationCommon : MonoBehaviour
             commonID,
             animationName,
             frameRate);
+    }
+    
+    private void PlayAimationByFrame(int startFrame, int endFrame)
+    {
+        DecorSpriteAnimator.Instance.PlayAnimation(
+            spriteGameObject,
+            commonID,
+            "victoryStars",
+            startFrame,
+            endFrame
+        );
     }
 }
