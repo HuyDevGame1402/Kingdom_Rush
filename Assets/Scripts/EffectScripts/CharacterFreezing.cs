@@ -103,6 +103,7 @@ public class CharacterFreezing : MonoBehaviour
     }
     private void InstantBreakIce()
     {
+        if (enemyController.isFrozen == false) return;
         if (freezeRoutine != null)
         {
             StopCoroutine(freezeRoutine);

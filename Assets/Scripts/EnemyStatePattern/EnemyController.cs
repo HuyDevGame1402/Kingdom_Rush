@@ -428,35 +428,35 @@ public class EnemyController : MonoBehaviour
     {
         lastPlayedAnimDirection = "";
     }
-    public bool ShouldMoveBackToTarget()
-    {
-        if (target == null)
-        {
-            Debug.Log($"[{name}] ShouldMoveBackToTarget: target null -> false");
-            return false;
-        }
+    //public bool ShouldMoveBackToTarget()
+    //{
+    //    if (target == null)
+    //    {
+    //        Debug.Log($"[{name}] ShouldMoveBackToTarget: target null -> false");
+    //        return false;
+    //    }
 
-        if (target.TryGetComponent(out BaseUnitStateMachine soldier))
-        {
-            bool targeting = soldier.IsTargetingEnemy(this);
-            Debug.Log($"[{name}] IsTargetingEnemy = {targeting}");
-            if (!targeting)
-                return false;
-        }
+    //    if (target.TryGetComponent(out BaseUnitStateMachine soldier))
+    //    {
+    //        bool targeting = soldier.IsTargetingEnemy(this);
+    //        Debug.Log($"[{name}] IsTargetingEnemy = {targeting}");
+    //        if (!targeting)
+    //            return false;
+    //    }
 
-        if (currentWaypointIndex >= waypoints.Count)
-        {
-            Debug.Log($"[{name}] currentWaypointIndex >= waypoints.Count -> true");
-            return true;
-        }
+    //    if (currentWaypointIndex >= waypoints.Count)
+    //    {
+    //        Debug.Log($"[{name}] currentWaypointIndex >= waypoints.Count -> true");
+    //        return true;
+    //    }
 
-        int heroWaypointIndex = GetWaypointIndexOfPosition(target.position, currentWaypointIndex);
+    //    int heroWaypointIndex = GetWaypointIndexOfPosition(target.position, currentWaypointIndex);
 
-        Debug.Log($"[{name}] currentWaypointIndex={currentWaypointIndex}, heroWaypointIndex={heroWaypointIndex}, " +
-                  $"heroPos={target.position}, enemyPos={transform.position}");
+    //    Debug.Log($"[{name}] currentWaypointIndex={currentWaypointIndex}, heroWaypointIndex={heroWaypointIndex}, " +
+    //              $"heroPos={target.position}, enemyPos={transform.position}");
 
-        return heroWaypointIndex >= currentWaypointIndex;
-    }
+    //    return heroWaypointIndex >= currentWaypointIndex;
+    //}
 
     private int GetWaypointIndexOfPosition(Vector3 position, int referenceIndex)
     {
@@ -505,5 +505,79 @@ public class EnemyController : MonoBehaviour
         }
 
         return bestIndex;
+    }
+
+    // fix
+    private float[] pathCumulativeDistance;
+
+    private void BuildPathCumulativeDistance()
+    {
+        if (waypoints == null || waypoints.Count == 0) return;
+        if (pathCumulativeDistance != null && pathCumulativeDistance.Length == waypoints.Count) return;
+
+        pathCumulativeDistance = new float[waypoints.Count];
+        pathCumulativeDistance[0] = 0f;
+        for (int i = 1; i < waypoints.Count; i++)
+        {
+            pathCumulativeDistance[i] = pathCumulativeDistance[i - 1] +
+                Vector3.Distance(waypoints[i - 1].position, waypoints[i].position);
+        }
+    }
+
+    // Trả về "quãng đường đã đi" (arc-length) của 1 vị trí bất kỳ, tìm quanh referenceIndex
+    private float GetArcLengthProgress(Vector3 position, int referenceIndex)
+    {
+        BuildPathCumulativeDistance();
+        if (waypoints == null || waypoints.Count < 2) return 0f;
+
+        const int searchWindow = 8;
+        int startI = Mathf.Max(0, referenceIndex - 1 - searchWindow);
+        int endI = Mathf.Min(waypoints.Count - 1, referenceIndex + searchWindow);
+
+        float bestProgress = pathCumulativeDistance[Mathf.Clamp(referenceIndex, 0, pathCumulativeDistance.Length - 1)];
+        float bestScore = float.MaxValue;
+
+        for (int i = startI; i < endI; i++)
+        {
+            Vector3 start = waypoints[i].position;
+            Vector3 end = waypoints[i + 1].position;
+            float segLength = Vector3.Distance(start, end);
+            if (segLength <= 0f) continue;
+
+            Vector3 closestPoint = ClosestPointOnLineSegment(position, start, end);
+            float t = Vector3.Distance(start, closestPoint) / segLength;
+            float sqrDistance = Vector3.SqrMagnitude(position - closestPoint);
+
+            // vẫn ưu tiên segment gần referenceIndex để tránh nhầm ở đường ngoằn ngoèo tự cắt nhau
+            float indexDiff = Mathf.Abs(i - (referenceIndex - 1));
+            float score = indexDiff * 1000f + sqrDistance;
+
+            if (score < bestScore)
+            {
+                bestScore = score;
+                bestProgress = pathCumulativeDistance[i] + t * segLength;
+            }
+        }
+
+        return bestProgress;
+    }
+    public bool ShouldMoveBackToTarget()
+    {
+        if (target == null) return false;
+
+        if (target.TryGetComponent(out BaseUnitStateMachine soldier))
+        {
+            if (!soldier.IsTargetingEnemy(this))
+                return false;
+        }
+
+        if (currentWaypointIndex >= waypoints.Count)
+            return true;
+
+        float enemyProgress = GetArcLengthProgress(transform.position, currentWaypointIndex);
+        float heroProgress = GetArcLengthProgress(target.position, currentWaypointIndex);
+
+        const float tolerance = 0.05f; // hero phải NGANG HÀNG hoặc TRƯỚC mới đuổi theo
+        return heroProgress >= enemyProgress - tolerance;
     }
 }

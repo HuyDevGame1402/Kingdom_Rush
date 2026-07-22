@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
+using UnityEngine.UI;
 
 public class DecorSpriteAnimator : MonoBehaviour
 {
@@ -220,6 +221,167 @@ public class DecorSpriteAnimator : MonoBehaviour
             new Vector2(pivotX, pivotY),
             pixelsPerUnit
         );
+        return true;
+    }
+    public void PlayAnimationUI(GameObject target, string decorId, string animPrefix, float frameRate = -1)
+    {
+        if (target == null) return;
+
+        Image image = target.GetComponent<Image>();
+
+        if (image == null)
+        {
+            Debug.LogError(
+                $"[{target.name}] Không tìm thấy UnityEngine.UI.Image"
+            );
+            return;
+        }
+
+
+        string cleanDecorId = decorId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+
+        if (!decorDatabases.TryGetValue(cleanDecorId, out var database))
+        {
+            Debug.LogError(
+                $"Không tồn tại Decor ID: {cleanDecorId}"
+            );
+            return;
+        }
+
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in database.Keys)
+        {
+            if (key.StartsWith(cleanPrefix))
+                frames.Add(key);
+        }
+
+
+        frames.Sort();
+
+
+        if (frames.Count == 0)
+        {
+            Debug.LogError(
+                $"Không tìm thấy animation: {cleanPrefix}"
+            );
+            return;
+        }
+
+
+        StopAnimationFor(target);
+
+
+        int id = target.GetInstanceID();
+
+        float finalFrameRate =
+            frameRate > 0 ? frameRate : defaultFrameRate;
+
+
+        Coroutine c = StartCoroutine(
+            AnimateUIRoutine(
+                image,
+                cleanDecorId,
+                database,
+                frames,
+                finalFrameRate
+            )
+        );
+
+
+        activeCoroutines[id] = c;
+    }
+    IEnumerator AnimateUIRoutine(
+    Image image,
+    string decorId,
+    Dictionary<string, SpriteData> database,
+    List<string> frames,
+    float frameRate)
+    {
+        int currentIndex = 0;
+
+
+        while (true)
+        {
+            if (image == null)
+                yield break;
+
+
+            SpriteData d = database[frames[currentIndex]];
+
+
+            ApplySpriteFrameUI(
+                image,
+                decorId,
+                d
+            );
+
+
+            currentIndex++;
+
+            if (currentIndex >= frames.Count)
+                currentIndex = 0;
+
+
+            yield return new WaitForSeconds(frameRate);
+        }
+    }
+    private bool ApplySpriteFrameUI(
+    Image image,
+    string decorId,
+    SpriteData d)
+    {
+        if (!decorTextures.TryGetValue(decorId, out var texDict))
+            return false;
+
+
+        if (!texDict.TryGetValue(d.atlasName, out Texture2D tex))
+            return false;
+
+
+        Rect pixelRect = new Rect(
+            d.f_quad.x,
+            tex.height - d.f_quad.y - d.f_quad.height,
+            d.f_quad.width,
+            d.f_quad.height
+        );
+
+
+        float trimLeft = d.trim.x;
+        float trimTop = d.trim.y;
+        float trimRight = d.trim.z;
+        float trimBottom = d.trim.w;
+
+
+        float croppedW = d.fullSize.x - trimLeft - trimRight;
+        float croppedH = d.fullSize.y - trimTop - trimBottom;
+
+
+        float anchorFullX = d.fullSize.x * 0.5f;
+        float anchorFullY = d.fullSize.y;
+
+
+        float localX = anchorFullX - trimLeft;
+        float localY = anchorFullY - trimTop;
+
+
+        float pivotX = Mathf.Clamp01(localX / croppedW);
+        float pivotY = Mathf.Clamp01(
+            1f - (localY / croppedH)
+        );
+
+
+        image.sprite = Sprite.Create(
+            tex,
+            pixelRect,
+            new Vector2(pivotX, pivotY),
+            pixelsPerUnit
+        );
+
+
         return true;
     }
 }

@@ -9,6 +9,8 @@ public class EnemyAttackState : IEnemyState
     {
         // Sẵn sàng tấn công ngay khi vừa áp sát mục tiêu
         attackTimer = enemy.unitData.attackCooldown;
+        // Quay mặt về phía target ngay khi bắt đầu tấn công
+        UpdateFacing(enemy);
     }
 
     public void UpdateState(EnemyController enemy)
@@ -20,7 +22,7 @@ public class EnemyAttackState : IEnemyState
             enemy.TransitionToState(enemy.MoveState);
             return;
         }
-
+        UpdateFacing(enemy);
         // Đếm ngược thời gian hồi đòn đánh (Cooldown)
         attackTimer += Time.deltaTime;
 
@@ -84,6 +86,15 @@ public class EnemyAttackState : IEnemyState
             // var playerUnit = enemy.target.GetComponent<PlayerUnitBase>();
             // if(playerUnit != null) playerUnit.TakeDamage(damage);
         }
+    }
+
+    private void UpdateFacing(EnemyController enemy)
+    {
+        if (enemy.target == null) return;
+
+        float dx = enemy.target.position.x - enemy.transform.position.x;
+        if (dx > 0.05f) enemy.transform.localScale = enemy.unitData.localScaleRight;
+        else if (dx < -0.05f) enemy.transform.localScale = enemy.unitData.localScaleLeft;
     }
 
     public void ExitState(EnemyController enemy)

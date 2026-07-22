@@ -25,7 +25,7 @@ MonoBehaviour:
   attackRange: 0.25
   attackCooldown: 1.5
   animations:
-    animPrefix: reinforce_A0_
+    animPrefix: reinforce_B0_
     frameRate: 0.05
     idle:
       startFrame: 1
