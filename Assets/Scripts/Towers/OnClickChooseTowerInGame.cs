@@ -7,9 +7,9 @@ public class OnClickChooseTowerInGame : MonoBehaviour
     [SerializeField] private float offsetY = 0.5f;
 
     private bool isSelected = false;
-    [SerializeField] private int indexTowerUp = 0;    
+    [SerializeField] private int indexTowerUp = 0;
+    [SerializeField] private bool isActiveFlagTower;    
     
-
     private void Awake()
     {
         towerLevelUp = GetComponent<TowerLevelUp>();
@@ -37,7 +37,7 @@ public class OnClickChooseTowerInGame : MonoBehaviour
             if (GameManager.Instance.CheckTowerLevelUp(towerLevelUp.GetBaseTowerSO()))
             {
                 SelectTowerManager.Instance.ActiveViewUpdateTower(transform, towerLevelUp.GetBaseTowerSO()
-                    .priceTower, offsetY);
+                    .priceTower, offsetY, isActiveFlagTower);
                 SelectTowerManager.Instance.GetTransformOnClickUpdateTower().SetBaseTowerSO(
                     towerLevelUp.GetBaseTowerSO());
                 SelectTowerManager.Instance.GetTransformOnClickUpdateTower().SetTowerUpLevelSO(
@@ -50,7 +50,7 @@ public class OnClickChooseTowerInGame : MonoBehaviour
             // k có tower nâng cấp
             else
             {
-                SelectTowerManager.Instance.ActiveViewLockTower(transform, offsetY);
+                SelectTowerManager.Instance.ActiveViewLockTower(transform, offsetY, isActiveFlagTower);
                 Debug.LogWarning("Không có nâng cấp" + towerLevelUp.GetBaseTowerSO().name);
             }
 

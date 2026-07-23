@@ -87,12 +87,12 @@ public class TestAnimationCommon : MonoBehaviour
     
     private void PlayAimationByFrame(int startFrame, int endFrame)
     {
-        DecorSpriteAnimator.Instance.PlayAnimation(
-            spriteGameObject,
-            commonID,
-            "victoryStars",
-            startFrame,
-            endFrame
-        );
+        //DecorSpriteAnimator.Instance.PlayAnimation(
+        //    spriteGameObject,
+        //    commonID,
+        //    "victoryStars",
+        //    startFrame,
+        //    endFrame
+        //);
     }
 }

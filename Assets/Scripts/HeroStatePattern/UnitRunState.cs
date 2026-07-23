@@ -7,7 +7,10 @@ public class UnitRunState : UnitBaseState
     // Biến lưu vị trí đích thực tế sau khi đã tính toán (có thể có offset hoặc không)
     private Vector2 actualTargetPosition;
 
-    public UnitRunState(BaseUnitStateMachine unit) : base(unit) { }
+    public UnitRunState(BaseUnitStateMachine unit) : base(unit) 
+    {
+        
+    }
 
     public override void Enter()
     {
@@ -15,29 +18,41 @@ public class UnitRunState : UnitBaseState
         var config = unit.unitData.animations.run;
         SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
 
-        // --- KHỞI TẠO ĐIỂM ĐÍCH THỰC TẾ ---
-        if (unit.currentTarget != null)
+        if (unit.isRunToFlag)
         {
-            if (unit.IsTargetEnemy())
-            {
-                // Nếu là Enemy: Đi thẳng tới vị trí hiện tại của Enemy
-                actualTargetPosition = unit.currentTarget.position;
-            }
-            else
-            {
-                // Nếu KHÔNG PHẢI Enemy (Điểm chỉ định/Rally Point): 
-                // Random một điểm xung quanh Target trong bán kính nhỏ (Ví dụ: từ 0.3 đến 0.6 đơn vị) để tránh chụm lại một chỗ
-                float randomRadius = Random.Range(0.3f, 0.6f);
-                Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
+            float randomRadius = Random.Range(0.3f, 0.6f);
+            Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
 
-                actualTargetPosition = (Vector2)unit.currentTarget.position + randomOffset;
+            actualTargetPosition = (Vector2)unit.positionFlag + randomOffset;
+            return;
+        }
+        else
+        {
+            // --- KHỞI TẠO ĐIỂM ĐÍCH THỰC TẾ ---
+            if (unit.currentTarget != null)
+            {
+                if (unit.IsTargetEnemy())
+                {
+                    // Nếu là Enemy: Đi thẳng tới vị trí hiện tại của Enemy
+                    actualTargetPosition = unit.currentTarget.position;
+                }
+                else
+                {
+                    // Nếu KHÔNG PHẢI Enemy (Điểm chỉ định/Rally Point): 
+                    // Random một điểm xung quanh Target trong bán kính nhỏ (Ví dụ: từ 0.3 đến 0.6 đơn vị) để tránh chụm lại một chỗ
+                    float randomRadius = Random.Range(0.3f, 0.6f);
+                    Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
+
+                    actualTargetPosition = (Vector2)unit.currentTarget.position + randomOffset;
+                }
             }
         }
     }
 
     public override void Update()
     {
-        if (unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf)
+        if ((unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf)
+            && unit.isRunToFlag == false)
         {
             unit.TransitionToState(unit.IdleState);
             return;
@@ -104,8 +119,15 @@ public class UnitRunState : UnitBaseState
         {
             if (distance <= 0.15f)
             {
-                unit.currentTarget = null;
-                unit.TransitionToState(unit.IdleState);
+                if (unit.isRunToFlag)
+                {
+                    unit.isRunToFlag = false;
+                }
+                else
+                {
+                    unit.currentTarget = null;
+                    unit.TransitionToState(unit.IdleState);
+                }
                 return;
             }
         }

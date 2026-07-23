@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 4011427383529976471}
   - component: {fileID: 8543335593319074563}
   - component: {fileID: 5252552366290916237}
+  - component: {fileID: 3478083948417741243}
   m_Layer: 0
   m_Name: cannonObj
   m_TagString: Untagged
@@ -210,6 +211,19 @@ MonoBehaviour:
   firePoint: {fileID: 7194789870264114666}
   indexHeroAttack: -1
   enemyTest: {fileID: 1190073144887686234}
+--- !u!114 &3478083948417741243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111439985301300553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10001
 --- !u!1 &3620145109483235228
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +409,7 @@ GameObject:
   - component: {fileID: 5698933817662240767}
   - component: {fileID: 2616067159772475053}
   - component: {fileID: 6652258816703209052}
+  - component: {fileID: 7582038777905209495}
   m_Layer: 0
   m_Name: soldier1Obj
   m_TagString: Untagged
@@ -486,6 +501,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indexHeroIdle: 0
   indexHeroAttack: 1
+--- !u!114 &7582038777905209495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5192813912701347988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10000
 --- !u!1 &5284188405547762922
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetY: 0.75
   indexTowerUp: 0
+  isActiveFlagTower: 0
 --- !u!114 &7219324003743432582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,6 +844,7 @@ GameObject:
   - component: {fileID: 4174468594817359095}
   - component: {fileID: 7995334239235155889}
   - component: {fileID: 7641337933060828815}
+  - component: {fileID: 5089048208422265106}
   m_Layer: 0
   m_Name: BombSprite
   m_TagString: Untagged
@@ -912,6 +942,19 @@ MonoBehaviour:
   - animName: tower_artillery_lvl2_layer7_
     startFrame: 1
     endFrame: 1
+--- !u!114 &5089048208422265106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786213405857301722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10001
 --- !u!1 &6685727788019965033
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +966,7 @@ GameObject:
   - component: {fileID: 8696925073591711439}
   - component: {fileID: 3357506668076155688}
   - component: {fileID: 7823039268199100119}
+  - component: {fileID: 2362886867298370288}
   m_Layer: 0
   m_Name: basePlatformObj
   m_TagString: Untagged
@@ -1020,6 +1064,19 @@ MonoBehaviour:
   - animName: tower_artillery_lvl2_layer1_
     startFrame: 1
     endFrame: 1
+--- !u!114 &2362886867298370288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6685727788019965033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10000
 --- !u!1 &6797039530320570080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1171,7 @@ GameObject:
   - component: {fileID: 5039438335230616680}
   - component: {fileID: 360546735231490058}
   - component: {fileID: 6251805141791832691}
+  - component: {fileID: 6140788525673465554}
   m_Layer: 0
   m_Name: soldier2Obj
   m_TagString: Untagged
@@ -1205,6 +1263,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   indexHeroIdle: 2
   indexHeroAttack: 3
+--- !u!114 &6140788525673465554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813009411871596108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10000
 --- !u!1 &7194789870264114666
 GameObject:
   m_ObjectHideFlags: 0

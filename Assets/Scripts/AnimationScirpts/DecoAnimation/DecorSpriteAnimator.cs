@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
 using UnityEngine.UI;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class DecorSpriteAnimator : MonoBehaviour
 {
@@ -541,6 +542,317 @@ public class DecorSpriteAnimator : MonoBehaviour
             yield return new WaitForSeconds(frameRate);
         }
 
+        onComplete?.Invoke();
+    }
+
+    private bool ApplySpriteFrame(
+    SpriteRenderer renderer,
+    string decorId,
+    SpriteData d,
+    int currentFrame,
+    List<EnemyAnimConfig> offsetConfigs)
+    {
+        if (!decorTextures.TryGetValue(decorId, out var texDict))
+            return false;
+
+        if (!texDict.TryGetValue(d.atlasName, out Texture2D tex))
+            return false;
+
+        Rect pixelRect = new Rect(
+            d.f_quad.x,
+            tex.height - d.f_quad.y - d.f_quad.height,
+            d.f_quad.width,
+            d.f_quad.height
+        );
+
+        float trimLeft = d.trim.x;
+        float trimBottom = d.trim.w;
+
+        float croppedW = d.f_quad.width;   // Kích thước thực tế sau crop trong Atlas
+        float croppedH = d.f_quad.height;
+
+        // --- Tính Pivot X ---
+        float anchorFullX = d.fullSize.x * 0.5f;
+        float localX = anchorFullX - trimLeft;
+        float pivotX = Mathf.Clamp01(localX / croppedW);
+
+        // --- Lấy Config Offset ---
+        float extraOffsetY = 0f;
+        if (offsetConfigs != null)
+        {
+            // Lưu ý: Tìm theo currentFrame
+            EnemyAnimConfig config = offsetConfigs.Find(x => x.frameOffset == currentFrame);
+            if (config != null)
+                extraOffsetY = config.offsetY;
+        }
+
+        // --- Tính Pivot Y ---
+        // Gốc pivot cơ bản (chưa offset) tính theo tỷ lệ trimBottom so với chiều cao frame cắt
+        float basePivotY = trimBottom / croppedH;
+
+        // Đổi extraOffsetY (World Unit) sang không gian normalized [0, 1] của Pivot
+        // Lưu ý: Nếu extraOffsetY tính bằng Pixel, chia cho croppedH. 
+        // Nếu extraOffsetY tính bằng World Unit, dùng (extraOffsetY * pixelsPerUnit) / croppedH.
+        float normalizedOffsetY = (extraOffsetY * pixelsPerUnit) / croppedH;
+
+        // Pivot Y mới (Cộng/Trừ offset tùy thuộc bạn muốn dịch Sprite lên hay xuống)
+        // Thay đổi PivotY sẽ làm vị trí hiển thị của Sprite bị dịch chuyển tương ứng
+        float pivotY = basePivotY - normalizedOffsetY;
+
+        // Tạo Sprite
+        renderer.sprite = Sprite.Create(
+            tex,
+            pixelRect,
+            new Vector2(pivotX, pivotY),
+            pixelsPerUnit
+        );
+
+        return true;
+    }
+
+    IEnumerator AnimateRoutine(
+    SpriteRenderer renderer,
+    string decorId,
+    Dictionary<string, SpriteData> database,
+    List<string> frames,
+    float frameRate,
+    List<EnemyAnimConfig> offsetConfigs)
+    {
+        int currentIndex = 0;
+
+        while (true)
+        {
+            if (renderer == null)
+                yield break;
+
+            SpriteData d = database[frames[currentIndex]];
+
+            ApplySpriteFrame(
+                renderer,
+                decorId,
+                d,
+                currentIndex,
+                offsetConfigs);
+
+            currentIndex = (currentIndex + 1) % frames.Count;
+
+            yield return new WaitForSeconds(frameRate);
+        }
+    }
+    public void PlayAnimation(
+    GameObject target,
+    string decorId,
+    string animPrefix,
+    List<EnemyAnimConfig> offsetConfigs,
+    float frameRate = -1)
+    {
+        if (target == null) return;
+
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        string cleanDecorId = decorId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+        if (!decorDatabases.TryGetValue(cleanDecorId, out var database))
+            return;
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in database.Keys)
+        {
+            if (key.StartsWith(cleanPrefix))
+                frames.Add(key);
+        }
+
+        frames.Sort();
+
+        if (frames.Count == 0)
+            return;
+
+        StopAnimationFor(target);
+
+        int id = target.GetInstanceID();
+
+        float finalFrameRate =
+            frameRate > 0 ? frameRate : defaultFrameRate;
+
+        Coroutine c = StartCoroutine(
+            AnimateRoutine(
+                renderer,
+                cleanDecorId,
+                database,
+                frames,
+                finalFrameRate,
+                offsetConfigs));
+
+        activeCoroutines[id] = c;
+    }
+    public void ShowFrame(
+    GameObject target,
+    string decorId,
+    string animPrefix,
+    int frameIndex,
+    List<EnemyAnimConfig> offsetConfigs = null)
+    {
+        if (target == null) return;
+
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        string cleanDecorId = decorId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+        if (!decorDatabases.TryGetValue(cleanDecorId, out var database))
+            return;
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in database.Keys)
+        {
+            if (key.StartsWith(cleanPrefix))
+                frames.Add(key);
+        }
+
+        frames.Sort();
+
+        if (frames.Count == 0)
+            return;
+
+        frameIndex = Mathf.Clamp(frameIndex, 0, frames.Count - 1);
+
+        SpriteData d = database[frames[frameIndex]];
+
+        ApplySpriteFrame(
+            renderer,
+            cleanDecorId,
+            d,
+            frameIndex,
+            offsetConfigs);
+    }
+    /// <summary>
+    /// Phát animation với tùy chỉnh khoảng frame (startFrame -> endFrame), số lần lặp, delay và callback.
+    /// </summary>
+    public void PlayAnimation(
+        GameObject target,
+        string decorId,
+        string animPrefix,
+        int loopCount = 1,                 // Số lần lặp (<= 0 là lặp vô tận)
+        int startFrame = 0,                // Frame bắt đầu
+        int endFrame = -1,                 // Frame kết thúc (-1: tự lấy frame cuối cùng của anim)
+        float frameRate = 0.05f,           // Thời gian chờ giữa các frame (giây)
+        Action onComplete = null,          // Callback gọi khi chạy xong
+        List<EnemyAnimConfig> offsetConfigs = null // List offset config
+    )
+    {
+        if (target == null) return;
+
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        string cleanDecorId = decorId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+        if (!decorDatabases.TryGetValue(cleanDecorId, out var database))
+            return;
+
+        List<string> frames = new List<string>();
+
+        foreach (var key in database.Keys)
+        {
+            if (key.StartsWith(cleanPrefix))
+                frames.Add(key);
+        }
+
+        frames.Sort();
+
+        if (frames.Count == 0)
+            return;
+
+        StopAnimationFor(target);
+
+        int id = target.GetInstanceID();
+
+        float finalFrameRate = frameRate > 0 ? frameRate : defaultFrameRate;
+
+        Coroutine c = StartCoroutine(
+            AnimateRoutine(
+                renderer,
+                cleanDecorId,
+                database,
+                frames,
+                finalFrameRate,
+                loopCount,
+                startFrame,
+                endFrame,
+                onComplete,
+                offsetConfigs));
+
+        activeCoroutines[id] = c;
+    }
+    IEnumerator AnimateRoutine(
+    SpriteRenderer renderer,
+    string decorId,
+    Dictionary<string, SpriteData> database,
+    List<string> frames,
+    float frameRate,
+    int loopCount,
+    int startFrame,
+    int endFrame,
+    Action onComplete,
+    List<EnemyAnimConfig> offsetConfigs)
+    {
+        // Xác định giới hạn frame đầu và cuối
+        int minFrame = Mathf.Clamp(startFrame, 0, frames.Count - 1);
+
+        // Nếu endFrame = -1 hoặc lớn hơn số frame hiện có -> lấy frame cuối cùng
+        int maxFrame = (endFrame < 0 || endFrame >= frames.Count) ? frames.Count - 1 : endFrame;
+
+        // Trường hợp lỡ truyền startFrame > endFrame thì kẹp lại
+        if (minFrame > maxFrame)
+            minFrame = maxFrame;
+
+        int currentIndex = minFrame;
+        int currentLoop = 0;
+        bool isInfinite = loopCount <= 0;
+
+        while (isInfinite || currentLoop < loopCount)
+        {
+            if (renderer == null)
+                yield break;
+
+            SpriteData d = database[frames[currentIndex]];
+
+            ApplySpriteFrame(
+                renderer,
+                decorId,
+                d,
+                currentIndex,
+                offsetConfigs);
+
+            yield return new WaitForSeconds(frameRate);
+
+            currentIndex++;
+
+            // Khi chạy đến qua endFrame -> tính là xong 1 vòng loop
+            if (currentIndex > maxFrame)
+            {
+                currentIndex = minFrame; // Quay lại startFrame
+                currentLoop++;
+            }
+        }
+
+        // Xóa coroutine khỏi danh sách active khi hoàn thành
+        if (renderer != null && renderer.gameObject != null)
+        {
+            int id = renderer.gameObject.GetInstanceID();
+            if (activeCoroutines.ContainsKey(id))
+            {
+                activeCoroutines.Remove(id);
+            }
+        }
+
+        // Gọi callback kết thúc
         onComplete?.Invoke();
     }
 

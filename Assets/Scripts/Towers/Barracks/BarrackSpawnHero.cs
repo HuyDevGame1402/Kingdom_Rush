@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
@@ -14,6 +14,8 @@ public class BarrackSpawnHero : MonoBehaviour
     public List<GameObject> heroSpawnList = new List<GameObject>();
     [SerializeField] private TowerSoundBrackTower towerSoundBasic;
 
+    [SerializeField] private OnClickTriggerFlag onClickTriggerFlag;
+
     private void Start()
     {
         if(barracksAnimation == null)
@@ -21,6 +23,22 @@ public class BarrackSpawnHero : MonoBehaviour
             barracksAnimation = GetComponent<BarracksAnimation>();
         }
         barracksAnimation.OnSpawnHeroEvent += SpawnHero;
+        onClickTriggerFlag.OnMoveToFlagEvent += OnClickTriggerFlag_OnMoveToFlagEvent;
+    }
+
+    public void OnClickTriggerFlag_OnMoveToFlagEvent(Vector3 pos)
+    {
+        Debug.LogWarning("Chạy đến cờ!");
+        for(int i = 0; i < heroCountSpawn; i++)
+        {
+            if (heroSpawnList[i].GetComponent<BaseUnitStateMachine>().isDead == false)
+            {
+                heroSpawnList[i].GetComponent<BaseUnitStateMachine>().positionFlag = pos;
+                heroSpawnList[i].GetComponent<BaseUnitStateMachine>().isRunToFlag = true;
+                heroSpawnList[i].GetComponent<BaseUnitStateMachine>().TransitionToState(
+                    heroSpawnList[i].GetComponent<BaseUnitStateMachine>().RunState);
+            }
+        }
     }
 
     private void OnDisable()

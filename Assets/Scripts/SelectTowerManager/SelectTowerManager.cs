@@ -9,9 +9,11 @@ public class SelectTowerManager : MonoBehaviour
     [SerializeField] private Transform backgroundSprite;
     [SerializeField] private Transform selectTowerBase;
     [SerializeField] private Transform updateTower;
+    [SerializeField] private Transform flagUpdateTower;
     [SerializeField] private TextMeshPro priceUpdateTower;
     [SerializeField] private OnClickBuyTower onclickBuyTowerInUpdateTower;
     [SerializeField] private Transform lockUpdateTower;
+    [SerializeField] private Transform flagLockUpdateTower;
     [SerializeField] private OnClickBuyTower onclickBuyTowerInLockTower;
     [SerializeField] private Transform updateTowerLevelMax;
     [SerializeField] private bool isSelected;
@@ -206,7 +208,7 @@ public class SelectTowerManager : MonoBehaviour
         selectTowerBase.gameObject.SetActive(isActive);
     }
 
-    public void ActiveViewUpdateTower(Transform tower ,int priceUpdate, float offsetY)
+    public void ActiveViewUpdateTower(Transform tower ,int priceUpdate, float offsetY, bool isActiveFlag)
     {
         Hide();
         backgroundSprite.gameObject.SetActive(true);
@@ -216,9 +218,10 @@ public class SelectTowerManager : MonoBehaviour
         transform.position = tower.transform.position + new Vector3(0, offsetY, 0);
         groundSelected = null;
         onclickBuyTowerInUpdateTower.tower = tower;
+        flagUpdateTower.gameObject.SetActive(isActiveFlag);
     }
 
-    public void ActiveViewLockTower(Transform tower, float offsetY)
+    public void ActiveViewLockTower(Transform tower, float offsetY, bool isActiveFlag)
     {
         Hide();
         backgroundSprite.gameObject.SetActive(true);
@@ -227,6 +230,7 @@ public class SelectTowerManager : MonoBehaviour
         transform.position = tower.transform.position + new Vector3(0, offsetY, 0);
         groundSelected = null;
         onclickBuyTowerInLockTower.tower = tower;
+        flagLockUpdateTower.gameObject.SetActive(isActiveFlag);
     }
     public void DisableTowerInfoBuy()
     {
@@ -241,7 +245,7 @@ public class SelectTowerManager : MonoBehaviour
         Hide();
     }
 
-    private void Hide()
+    public void Hide()
     {
         backgroundSprite.gameObject.SetActive(false);
         selectTowerBase.gameObject.SetActive(false);
@@ -287,5 +291,10 @@ public class SelectTowerManager : MonoBehaviour
     public void SetupGround(Transform ground)
     {
         groundSelected = ground;
+    }
+
+    public Transform GetTowerSelected()
+    {
+        return towerSelected;
     }
 }

@@ -22,9 +22,6 @@ public class AutoSortingOrder : MonoBehaviour
 
     private void LateUpdate()
     {
-        //spriteRenderer.sortingOrder =
-        //    baseOrder - Mathf.RoundToInt(transform.position.y * multiplier);
-        //int order = baseOrder - Mathf.RoundToInt(transform.position.y * multiplier);
         spriteRenderer.sortingOrder = baseOrder - Mathf.RoundToInt(transform.position.y * multiplier) + tieBreaker;
     }
 }

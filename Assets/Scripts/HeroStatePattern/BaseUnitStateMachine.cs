@@ -34,6 +34,9 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     public Transform ground;
 
+    public Vector3 positionFlag;
+    public bool isRunToFlag;
+
     protected virtual void Awake()
     {
         // Khởi tạo các trạng thái có sẵn

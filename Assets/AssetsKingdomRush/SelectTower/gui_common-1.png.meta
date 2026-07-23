@@ -8080,9 +8080,9 @@ TextureImporter:
       name: gui_common-1_310
       rect:
         serializedVersion: 2
-        x: 1034
-        y: 527
-        width: 76
+        x: 1035
+        y: 528
+        width: 74
         height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

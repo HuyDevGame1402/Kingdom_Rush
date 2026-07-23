@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 3005042005296570088}
   - component: {fileID: 2401093126955193778}
   - component: {fileID: 3913923352998892414}
+  - component: {fileID: 4547351009916499719}
   m_Layer: 0
   m_Name: Hero_1
   m_TagString: Untagged
@@ -319,6 +320,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be583a8a7898c744780f96882f722cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4547351009916499719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289923403261373397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10770
 --- !u!1 &3537653574925647611
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +375,7 @@ GameObject:
   - component: {fileID: 7132264724690726008}
   - component: {fileID: 4740687701167014312}
   - component: {fileID: 7383495479936257055}
+  - component: {fileID: 2158999277913258237}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -456,11 +471,25 @@ MonoBehaviour:
   tower: {fileID: 5232578818587668210}
   spawnAttack: {fileID: 0}
   isSpawnAttack: 0
+  basePlatfromAnimations: []
   basePlatfromAnimation: {fileID: 0}
   smokeOb: {fileID: 0}
   firePoint: {fileID: 0}
   indexHeroAttack: 0
   enemyTest: {fileID: 0}
+--- !u!114 &2158999277913258237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832390443677894729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10000
 --- !u!1 &4240038771953313218
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +772,10 @@ MonoBehaviour:
   - {fileID: 8672950889784936884}
   loadingTower: {fileID: 9083498708589645608}
   localScaleTower: {x: 1.5, y: 1.5, z: 1}
+  localScaleHero: {x: 0, y: 0, z: 0}
+  localScaleCannon: {x: 0, y: 0, z: 0}
+  bombObjectUpdateScale: []
+  cannon: {fileID: 0}
 --- !u!114 &5407074614568545176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetY: 0.65
   indexTowerUp: 0
+  isActiveFlagTower: 0
 --- !u!114 &3547530500075966952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,6 +1049,7 @@ GameObject:
   - component: {fileID: 8595175915264393728}
   - component: {fileID: 3430631693053128195}
   - component: {fileID: 7608828558442526562}
+  - component: {fileID: 3669117169442324319}
   m_Layer: 0
   m_Name: Hero_2
   m_TagString: Untagged
@@ -1121,3 +1156,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be583a8a7898c744780f96882f722cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3669117169442324319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672950889784936884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10770

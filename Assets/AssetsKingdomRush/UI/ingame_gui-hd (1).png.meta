@@ -417,6 +417,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ingame_gui-hd (1)_14
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 375
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb9bd8117604324a9dc6ca240f921b9
+      internalID: 1193279983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -437,6 +459,7 @@ TextureImporter:
       ingame_gui-hd (1)_11: 2144243720
       ingame_gui-hd (1)_12: -1711225051
       ingame_gui-hd (1)_13: -1045541906
+      ingame_gui-hd (1)_14: 1193279983
       ingame_gui-hd (1)_2: -330325198
       ingame_gui-hd (1)_3: -748371742
       ingame_gui-hd (1)_4: -92853120

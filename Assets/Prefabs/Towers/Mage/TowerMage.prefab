@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6047094766000420631}
   - component: {fileID: 2067192235790650384}
   - component: {fileID: 6890173220830931042}
+  - component: {fileID: 7631090620675567059}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -105,11 +106,25 @@ MonoBehaviour:
   tower: {fileID: 919447040639492033}
   spawnAttack: {fileID: 0}
   isSpawnAttack: 0
+  basePlatfromAnimations: []
   basePlatfromAnimation: {fileID: 0}
   smokeOb: {fileID: 0}
   firePoint: {fileID: 0}
   indexHeroAttack: 0
   enemyTest: {fileID: 0}
+--- !u!114 &7631090620675567059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617366234423482588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10000
 --- !u!1 &1827490327846508625
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +584,10 @@ MonoBehaviour:
   - {fileID: 8721171912605228889}
   loadingTower: {fileID: 7151636422210586953}
   localScaleTower: {x: 1.5, y: 1.5, z: 0}
+  localScaleHero: {x: 0, y: 0, z: 0}
+  localScaleCannon: {x: 0, y: 0, z: 0}
+  bombObjectUpdateScale: []
+  cannon: {fileID: 0}
 --- !u!114 &7262696515556208075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetY: 0.75
   indexTowerUp: 0
+  isActiveFlagTower: 0
 --- !u!114 &1239021824699088655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +796,7 @@ GameObject:
   - component: {fileID: 1368396229304682511}
   - component: {fileID: 556398772515315953}
   - component: {fileID: 6966941364403463084}
+  - component: {fileID: 5190090526214869629}
   m_Layer: 0
   m_Name: Hero_1
   m_TagString: Untagged
@@ -882,6 +903,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebaaec4a6640b447a82526dc498fcd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5190090526214869629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8721171912605228889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseOrder: 10005
 --- !u!1 &8914837380965182301
 GameObject:
   m_ObjectHideFlags: 0
