@@ -17,7 +17,7 @@ public class AnimationVictory : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             PlayAnimationShowVictory();
         }

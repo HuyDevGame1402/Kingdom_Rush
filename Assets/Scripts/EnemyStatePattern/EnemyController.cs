@@ -127,6 +127,12 @@ public class EnemyController : MonoBehaviour
         if (waypoints == null || waypoints.Count == 0 || currentWaypointIndex >= waypoints.Count)
         {
             // Đã đi đến đích cuối cùng của bản đồ (Người chơi mất máu cổng thành)
+
+            if(LiveManager.Instance != null)
+            {
+                LiveManager.Instance.RemoveLive(unitData.livesTaken);
+            }
+
             ReachedEndOfTheLine();
             return;
         }
@@ -216,6 +222,16 @@ public class EnemyController : MonoBehaviour
             enemyHealth.ApplyDamage(amount);
             if (enemyHealth.IsDead())
             {
+                if(GoldManager.Instance != null)
+                {
+                    GoldManager.Instance.AddGold(unitData.bounty);
+                }
+
+                if(LevelEnemySpawner.Instance != null)
+                {
+                    LevelEnemySpawner.Instance.CalculatorGem(transform
+                        .GetComponent<EnemyDataScript>().centerEnemy.position);
+                }
                 colliderTriggerHitDamage.enabled = false;
                 if(textSO != null)
                 {
@@ -428,35 +444,6 @@ public class EnemyController : MonoBehaviour
     {
         lastPlayedAnimDirection = "";
     }
-    //public bool ShouldMoveBackToTarget()
-    //{
-    //    if (target == null)
-    //    {
-    //        Debug.Log($"[{name}] ShouldMoveBackToTarget: target null -> false");
-    //        return false;
-    //    }
-
-    //    if (target.TryGetComponent(out BaseUnitStateMachine soldier))
-    //    {
-    //        bool targeting = soldier.IsTargetingEnemy(this);
-    //        Debug.Log($"[{name}] IsTargetingEnemy = {targeting}");
-    //        if (!targeting)
-    //            return false;
-    //    }
-
-    //    if (currentWaypointIndex >= waypoints.Count)
-    //    {
-    //        Debug.Log($"[{name}] currentWaypointIndex >= waypoints.Count -> true");
-    //        return true;
-    //    }
-
-    //    int heroWaypointIndex = GetWaypointIndexOfPosition(target.position, currentWaypointIndex);
-
-    //    Debug.Log($"[{name}] currentWaypointIndex={currentWaypointIndex}, heroWaypointIndex={heroWaypointIndex}, " +
-    //              $"heroPos={target.position}, enemyPos={transform.position}");
-
-    //    return heroWaypointIndex >= currentWaypointIndex;
-    //}
 
     private int GetWaypointIndexOfPosition(Vector3 position, int referenceIndex)
     {

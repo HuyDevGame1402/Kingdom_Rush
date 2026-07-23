@@ -44,6 +44,7 @@ public class UnitDataSO : ScriptableObject
     public int maxAttacker = 1;
 
     public int bounty;
+    public int livesTaken;
 
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()

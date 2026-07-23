@@ -64,5 +64,10 @@ public class LevelData : ScriptableObject
     [Header("--- Wave Composition ---")]
     public List<WaveData> waves;
 
+    [Header("Gems")]
+    public int dropGemPercent;
+    public int gemDefaut;
+    public List<int> gems;
+
     public Sprite spriteIcon;
 }

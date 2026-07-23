@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: go_enemies_grass_lv1
   m_EditorClassIdentifier: 
   unitName: go_enemies_grass
+  reinforceType: 0
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv1"
   maxHealth: 20
@@ -74,3 +75,8 @@ MonoBehaviour:
   timeToResurrect: 0
   maxAttacker: 1
   bounty: 3
+  livesTaken: 1
+  gemDropMin: 3
+  gemDropMax: 5
+  minGem: 10
+  maxGem: 20

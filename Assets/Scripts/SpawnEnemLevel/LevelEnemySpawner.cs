@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using Unity.Jobs;
 
 public class LevelEnemySpawner : MonoBehaviour
 {
@@ -255,6 +256,24 @@ public class LevelEnemySpawner : MonoBehaviour
         if (enemyInGame.Contains(enemy))
         {
             enemyInGame.Remove(enemy);  
+        }
+    }
+
+    public void CalculatorGem(Vector3 positionSpawn)
+    {
+        if(UnityEngine.Random.Range(0f,1f) < currentLevelData.dropGemPercent / 100f)
+        {
+            int gem = currentLevelData.gems[UnityEngine.Random.Range(0, currentLevelData.gems.Count)];
+            
+            if(GemManager.Instance != null)
+            {
+                GemManager.Instance.AddGem(gem);
+            }
+
+            if (GemVisualManager.Instance != null)
+            {
+                GemVisualManager.Instance.SpawnGemVisual(gem, positionSpawn);
+            }
         }
     }
 }
