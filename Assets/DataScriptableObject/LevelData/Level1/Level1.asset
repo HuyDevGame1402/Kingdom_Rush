@@ -135,7 +135,7 @@ MonoBehaviour:
     waveDelay: 15
     timeBonus: 0
     waveEvent: {fileID: 11400000, guid: 890ab1191f26d294a970a995e18c5cb5, type: 2}
-  dropGemPercent: 90
+  dropGemPercent: 10
   gemDefaut: 0
   gems: 080000000d000000
   spriteIcon: {fileID: -7924455868910974521, guid: acdee527e6eeb1341b8a858affa0f4e7, type: 3}

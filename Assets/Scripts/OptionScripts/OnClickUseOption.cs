@@ -8,6 +8,7 @@ public class OnClickUseOption : MonoBehaviour
     private Collider2D hit;
 
     public event Action<Vector3> OnClick;
+    public event Action<Vector3> OnClickOutPath;
 
     private void Update()
     {
@@ -23,7 +24,7 @@ public class OnClickUseOption : MonoBehaviour
             }
             else
             {
-                Debug.Log("Không phải đường");
+                OnClickOutPath?.Invoke(mousePos);
             }
         }
     }
