@@ -76,7 +76,3 @@ MonoBehaviour:
   maxAttacker: 1
   bounty: 3
   livesTaken: 1
-  gemDropMin: 3
-  gemDropMax: 5
-  minGem: 10
-  maxGem: 20

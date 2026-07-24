@@ -13,6 +13,14 @@ public class EnemyMoveState : IEnemyState
     public void UpdateState(EnemyController enemy)
     {
         if (enemy.isDead || enemy.isFrozen) return;
+
+        if(enemy.target != null && enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine)
+            && baseUnitStateMachine.isRunToFlag == true)
+        {
+            enemy.target = null;
+            enemy.ResetTarget();
+        }
+
         // 1. Nếu đang có mục tiêu (Player) chặn đường -> ưu tiên xử lý mục tiêu, KHÔNG chạy waypoint nữa
         if (enemy.target != null)
         {

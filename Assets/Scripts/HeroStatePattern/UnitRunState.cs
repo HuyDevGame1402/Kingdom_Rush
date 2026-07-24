@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class UnitRunState : UnitBaseState
 {
-    // Biến lưu vị trí đích thực tế sau khi đã tính toán (có thể có offset hoặc không)
     private Vector2 actualTargetPosition;
 
-    public UnitRunState(BaseUnitStateMachine unit) : base(unit) 
-    {
-        
-    }
+    public UnitRunState(BaseUnitStateMachine unit) : base(unit) { }
 
     public override void Enter()
     {
@@ -18,138 +14,126 @@ public class UnitRunState : UnitBaseState
         var config = unit.unitData.animations.run;
         SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
 
+        // Đặt mục tiêu di chuyển
+        SetTargetDestination();
+    }
+
+    private void SetTargetDestination()
+    {
+        // ƯU TIÊN 1: Nếu đang di chuyển theo cờ -> Tính vị trí cờ (+ offset ngẫu nhiên)
         if (unit.isRunToFlag)
         {
             float randomRadius = Random.Range(0.3f, 0.6f);
             Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
-
             actualTargetPosition = (Vector2)unit.positionFlag + randomOffset;
-            return;
         }
-        else
+        // ƯU TIÊN 2: Nếu không có cờ -> Đi theo target hiện tại (Enemy hoặc Point)
+        else if (unit.currentTarget != null)
         {
-            // --- KHỞI TẠO ĐIỂM ĐÍCH THỰC TẾ ---
-            if (unit.currentTarget != null)
+            if (unit.IsTargetEnemy())
             {
-                if (unit.IsTargetEnemy())
-                {
-                    // Nếu là Enemy: Đi thẳng tới vị trí hiện tại của Enemy
-                    actualTargetPosition = unit.currentTarget.position;
-                }
-                else
-                {
-                    // Nếu KHÔNG PHẢI Enemy (Điểm chỉ định/Rally Point): 
-                    // Random một điểm xung quanh Target trong bán kính nhỏ (Ví dụ: từ 0.3 đến 0.6 đơn vị) để tránh chụm lại một chỗ
-                    float randomRadius = Random.Range(0.3f, 0.6f);
-                    Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
-
-                    actualTargetPosition = (Vector2)unit.currentTarget.position + randomOffset;
-                }
+                actualTargetPosition = unit.currentTarget.position;
+            }
+            else
+            {
+                float randomRadius = Random.Range(0.3f, 0.6f);
+                Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
+                actualTargetPosition = (Vector2)unit.currentTarget.position + randomOffset;
             }
         }
     }
 
     public override void Update()
     {
-        if ((unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf)
-            && unit.isRunToFlag == false)
+        // Nếu mất target VÀ không có lệnh chạy tới cờ -> Quay về Idle
+        if ((unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf) && !unit.isRunToFlag)
         {
             unit.TransitionToState(unit.IdleState);
             return;
         }
 
-        if (unit.IsTargetEnemy())
+        // CHỈ cập nhật đuổi theo Enemy NẾU lính KHÔNG trong trạng thái chạy theo Cờ
+        if (!unit.isRunToFlag && unit.IsTargetEnemy() && unit.currentTarget != null)
         {
             actualTargetPosition = unit.currentTarget.position;
         }
 
         Vector2 currentPos = unit.transform.position;
-
         float distance = Vector2.Distance(currentPos, actualTargetPosition);
 
         //--------------------------------------------------
-        // ĐỊCH
+        // TRƯỜNG HỢP 1: ĐANG CHẠY ĐẾN CỜ (IS RUN TO FLAG)
         //--------------------------------------------------
-        if (unit.IsTargetEnemy())
+        if (unit.isRunToFlag)
+        {
+            // Đến đích cờ (bán kính <= 0.15f)
+            if (distance <= 0.15f)
+            {
+                unit.isRunToFlag = false; // ✅ Đã đến cờ -> Reset trạng thái cờ
+                unit.TransitionToState(unit.IdleState); // Về Idle để bắt đầu quét tìm enemy xung quanh cờ mới
+                return;
+            }
+        }
+        //--------------------------------------------------
+        // TRƯỜNG HỢP 2: TỰ ĐỘNG ĐỦI THEO ĐỊCH (KHI KHÔNG CÓ CỜ)
+        //--------------------------------------------------
+        else if (unit.IsTargetEnemy())
         {
             bool inAttackRange = distance <= unit.unitData.attackRange;
 
-            // Đã tới tầm đánh
             if (inAttackRange)
             {
-                // Sử dụng chung hàm IsAlignedWithTarget() thay vì check cứng > 0.1f
+                // Căn chỉnh trục Y với quái trước khi đánh
                 if (!unit.IsAlignedWithTarget())
                 {
-                    // Nếu chưa thẳng hàng theo tolerance (ví dụ 0.01f), tiếp tục đi chỉnh Y
-                    Vector2 alignPos = new Vector2(
-                        unit.transform.position.x,
-                        unit.currentTarget.position.y);
+                    Vector2 alignPos = new Vector2(unit.transform.position.x, unit.currentTarget.position.y);
+                    Vector2 dirAlign = (alignPos - currentPos).normalized;
 
-                    Vector2 dir = (alignPos - currentPos).normalized;
+                    unit.transform.position += (Vector3)(dirAlign * unit.unitData.moveSpeed * Time.deltaTime);
 
-                    unit.transform.position +=
-                        (Vector3)(dir * unit.unitData.moveSpeed * Time.deltaTime);
-
-                    if (dir.x != 0)
+                    if (dirAlign.x != 0)
                     {
-                        float scaleX = (dir.x > 0 ? 1 : -1) * unit.unitData.heroScale;
+                        float scaleX = (dirAlign.x > 0 ? 1 : -1) * unit.unitData.heroScale;
                         unit.spriteObject.transform.localScale = new Vector3(scaleX, unit.unitData.heroScale, 1);
                     }
-
                     return;
                 }
 
-                // Đã ngang hàng -> CHỈ chuyển sang Attack nếu đã HỒI COOLDOWN
+                // Đã nằm trong tầm đánh & thẳng hàng Y
                 if (unit.CanAttack())
                 {
                     unit.TransitionToState(unit.AttackState);
                 }
                 else
                 {
-                    // Nếu chưa hồi chiêu thì về Idle đứng đợi, tránh lặp State gây lỗi tốc đánh
                     unit.TransitionToState(unit.IdleState);
                 }
                 return;
             }
         }
         //--------------------------------------------------
-        // POINT
+        // TRƯỜNG HỢP 3: ĐIỂM CHỈ ĐỊNH KHÁC
         //--------------------------------------------------
         else
         {
             if (distance <= 0.15f)
             {
-                if (unit.isRunToFlag)
-                {
-                    unit.isRunToFlag = false;
-                }
-                else
-                {
-                    unit.currentTarget = null;
-                    unit.TransitionToState(unit.IdleState);
-                }
+                unit.currentTarget = null;
+                unit.TransitionToState(unit.IdleState);
                 return;
             }
         }
 
         //--------------------------------------------------
-        // MOVE
+        // XỬ LÝ DI CHUYỂN (MOVE LOGIC)
         //--------------------------------------------------
-        Vector3 direction =
-            ((Vector3)actualTargetPosition - unit.transform.position).normalized;
-
-        unit.transform.position +=
-            direction * unit.unitData.moveSpeed * Time.deltaTime;
+        Vector3 direction = ((Vector3)actualTargetPosition - unit.transform.position).normalized;
+        unit.transform.position += direction * unit.unitData.moveSpeed * Time.deltaTime;
 
         if (direction.x != 0)
         {
-            float scaleX =
-                (direction.x > 0 ? 1 : -1) * unit.unitData.heroScale;
-
-            unit.spriteObject.transform.localScale =
-                new Vector3(scaleX,
-                            unit.unitData.heroScale,
-                            1);
+            float scaleX = (direction.x > 0 ? 1 : -1) * unit.unitData.heroScale;
+            unit.spriteObject.transform.localScale = new Vector3(scaleX, unit.unitData.heroScale, 1);
         }
     }
 

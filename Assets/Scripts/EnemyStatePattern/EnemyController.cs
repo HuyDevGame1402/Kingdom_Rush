@@ -335,7 +335,8 @@ public class EnemyController : MonoBehaviour
             for(int i = 0; i < targetList.Count; i++)
             {
                 if (targetList[i].TryGetComponent(out BaseUnitStateMachine heroStateMachineList)
-                    && heroStateMachineList.CheckAttackerCount())
+                    && heroStateMachineList.CheckAttackerCount() && heroStateMachineList.isRunToFlag
+                    == false)
                 {
                     target = targetList[i];
                     return;

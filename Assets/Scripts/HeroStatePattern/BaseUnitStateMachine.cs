@@ -282,4 +282,22 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
                 });
         }
     }
+    // Thêm hàm này vào BaseUnitStateMachine.cs
+    public void MoveToFlag(Vector3 flagPos)
+    {
+        positionFlag = flagPos;
+        isRunToFlag = true;
+        currentTarget = null; // Xóa target cũ
+
+        // Nếu lính ĐÃ Ở sẵn RunState (đang chạy ra targetSpawn),
+        // ta phải ép gọi Enter() để nó tính lại actualTargetPosition theo Cờ mới!
+        if (CurrentState == RunState)
+        {
+            RunState.Enter();
+        }
+        else
+        {
+            TransitionToState(RunState);
+        }
+    }
 }

@@ -29,14 +29,22 @@ public class BarrackSpawnHero : MonoBehaviour
     public void OnClickTriggerFlag_OnMoveToFlagEvent(Vector3 pos)
     {
         Debug.LogWarning("Chạy đến cờ!");
-        for(int i = 0; i < heroCountSpawn; i++)
+
+        if (targetSpawn != null)
         {
-            if (heroSpawnList[i].GetComponent<BaseUnitStateMachine>().isDead == false)
+            targetSpawn.position = pos;
+        }
+
+        for (int i = 0; i < heroSpawnList.Count; i++)
+        {
+            // Kiểm tra null an toàn tránh lỗi IndexOutOfRange
+            if (heroSpawnList[i] != null && heroSpawnList[i].activeSelf)
             {
-                heroSpawnList[i].GetComponent<BaseUnitStateMachine>().positionFlag = pos;
-                heroSpawnList[i].GetComponent<BaseUnitStateMachine>().isRunToFlag = true;
-                heroSpawnList[i].GetComponent<BaseUnitStateMachine>().TransitionToState(
-                    heroSpawnList[i].GetComponent<BaseUnitStateMachine>().RunState);
+                var unitSM = heroSpawnList[i].GetComponent<BaseUnitStateMachine>();
+                if (unitSM != null && !unitSM.isDead)
+                {
+                    unitSM.MoveToFlag(pos);
+                }
             }
         }
     }

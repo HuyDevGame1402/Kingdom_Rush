@@ -213,6 +213,8 @@ public class LevelEnemySpawner : MonoBehaviour
         // Bắt đầu gọi Coroutine để spawn quái từ từ
         StartCoroutine(SpawnWaveRoutine(wave));
         currentWaveIndex++;
+
+        if (WaveManager.Instance != null) WaveManager.Instance.AddWave();
     }
     private IEnumerator SpawnWaveRoutine(WaveData wave)
     {
