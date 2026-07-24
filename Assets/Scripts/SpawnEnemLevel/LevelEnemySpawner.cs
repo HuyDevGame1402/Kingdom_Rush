@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
-using Unity.Jobs;
 
 public class LevelEnemySpawner : MonoBehaviour
 {
@@ -27,6 +26,8 @@ public class LevelEnemySpawner : MonoBehaviour
     public event Action<int> EventTimeNextWave;
 
     public List<Transform> enemyInGame = new List<Transform>();
+
+    public event Action OnFinalGameKingdomRush;
 
     private void Awake()
     {
@@ -258,6 +259,11 @@ public class LevelEnemySpawner : MonoBehaviour
         if (enemyInGame.Contains(enemy))
         {
             enemyInGame.Remove(enemy);  
+        }
+        if(enemyInGame.Count == 0 && currentWaveIndex == currentLevelData.wave &&
+            FinnalGameKingdomRush.Instance != null)
+        {
+            OnFinalGameKingdomRush?.Invoke();
         }
     }
 

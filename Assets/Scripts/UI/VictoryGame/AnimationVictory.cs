@@ -8,23 +8,39 @@ public class AnimationVictory : MonoBehaviour
     private Animator animator;
 
     [SerializeField] private StarAnimationWinGame starAnimationWinGame;
+    [SerializeField] private AnimationStarVictory animationStarVictory;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         starAnimationWinGame = GetComponent<StarAnimationWinGame>();
+        animationStarVictory = GetComponent<AnimationStarVictory>();
     }
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(FinnalGameKingdomRush.Instance != null)
         {
-            PlayAnimationShowVictory();
+            FinnalGameKingdomRush.Instance.OnCompleteCalculatorStarGame += Instance_OnCompleteCalculatorStarGame;
         }
     }
 
-    public void PlayAnimationShowVictory()
+    private void Instance_OnCompleteCalculatorStarGame()
     {
+        PlayAnimationShowVictory();
+    }
+
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        PlayAnimationShowVictory();
+    //    }
+    //}
+
+    private void PlayAnimationShowVictory()
+    {
+        animationStarVictory.PlayVictoryStarAnimation();
         animator.SetTrigger(TRIGGERNAMESHOWVICTORY);
     }
 

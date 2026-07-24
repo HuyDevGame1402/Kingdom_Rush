@@ -10844,7 +10844,7 @@ MonoBehaviour:
   - {fileID: 626340761}
   - {fileID: 1188973046}
   - {fileID: 1240900377}
-  currentLevelData: {fileID: 11400000, guid: 325074ee0bac3314b832618afb928a55, type: 2}
+  currentLevelData: {fileID: 11400000, guid: 15d224fa28340d745b03fbda44551cd3, type: 2}
   timeWaveNext: 0
   enemyInGame: []
 --- !u!1 &528024554
@@ -43863,6 +43863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starAnimationWinGame: {fileID: 2137799711}
+  animationStarVictory: {fileID: 2137799709}
 --- !u!1 &2138288038
 GameObject:
   m_ObjectHideFlags: 0

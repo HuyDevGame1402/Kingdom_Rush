@@ -35,13 +35,13 @@ public class AnimationStarVictory : MonoBehaviour
         InitializeStarPool();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            PlayVictoryStarAnimation();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        PlayVictoryStarAnimation();
+    //    }
+    //}
 
     private void InitializeStarPool()
     {

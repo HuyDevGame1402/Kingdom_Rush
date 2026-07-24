@@ -37,4 +37,9 @@ public class LiveManager : MonoBehaviour
     {
         return liveGame >= live;
     }
+
+    public int GetLiveGame()
+    {
+        return liveGame;
+    }
 }

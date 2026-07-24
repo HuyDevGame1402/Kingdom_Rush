@@ -549,15 +549,28 @@ public class EnemyController : MonoBehaviour
 
         return bestProgress;
     }
+    //public bool ShouldMoveBackToTarget()
+    //{
+    //    if (target == null) return false;
+
+    //    if (target.TryGetComponent(out BaseUnitStateMachine soldier))
+    //    {
+    //        if (!soldier.IsTargetingEnemy(this))
+    //            return false;
+    //    }
+
+    //    if (currentWaypointIndex >= waypoints.Count)
+    //        return true;
+
+    //    float enemyProgress = GetArcLengthProgress(transform.position, currentWaypointIndex);
+    //    float heroProgress = GetArcLengthProgress(target.position, currentWaypointIndex);
+
+    //    const float tolerance = 0.05f; // hero phải NGANG HÀNG hoặc TRƯỚC mới đuổi theo
+    //    return heroProgress >= enemyProgress - tolerance;
+    //}
     public bool ShouldMoveBackToTarget()
     {
         if (target == null) return false;
-
-        if (target.TryGetComponent(out BaseUnitStateMachine soldier))
-        {
-            if (!soldier.IsTargetingEnemy(this))
-                return false;
-        }
 
         if (currentWaypointIndex >= waypoints.Count)
             return true;
@@ -565,7 +578,10 @@ public class EnemyController : MonoBehaviour
         float enemyProgress = GetArcLengthProgress(transform.position, currentWaypointIndex);
         float heroProgress = GetArcLengthProgress(target.position, currentWaypointIndex);
 
-        const float tolerance = 0.05f; // hero phải NGANG HÀNG hoặc TRƯỚC mới đuổi theo
+        const float tolerance = 0.05f;
+
+        // true  = hero đang ngang hàng/phía trước enemy trên path -> được phép tiến tới đánh
+        // false = hero đã ở phía sau (enemy đã đi vượt qua) -> đứng Idle chờ, KHÔNG quay đầu
         return heroProgress >= enemyProgress - tolerance;
     }
 }

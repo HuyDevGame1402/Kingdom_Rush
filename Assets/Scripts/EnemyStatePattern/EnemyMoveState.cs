@@ -42,21 +42,40 @@ public class EnemyMoveState : IEnemyState
                     return;
                 }
             }
+            //else
+            //{
+            //    if (enemy.ShouldMoveBackToTarget())
+            //    {
+            //        MoveTowardsTarget(enemy, distance);
+            //    }
+            //    else
+            //    {
+            //        enemy.TransitionToState(enemy.IdleState);
+            //    }
+
+            //    return;
+            //}
             else
             {
-                // Chưa vào tầm đánh -> chủ động di chuyển thẳng về phía target
-                // thay vì tiếp tục chạy theo waypoint
-                //MoveTowardsTarget(enemy, distance);
-                //return;
+                bool soldierTargetsMe = enemy.target.TryGetComponent(out BaseUnitStateMachine soldierRef)
+                                         && soldierRef.IsTargetingEnemy(enemy);
+
                 if (enemy.ShouldMoveBackToTarget())
                 {
+                    // Soldier còn ở phía trước (hoặc ngang hàng) -> cứ tiến tới đánh
                     MoveTowardsTarget(enemy, distance);
+                }
+                else if (soldierTargetsMe)
+                {
+                    // Soldier ĐANG thật sự target mình nhưng đã ở phía sau -> đứng chờ, không quay đầu
+                    enemy.TransitionToState(enemy.IdleState);
                 }
                 else
                 {
-                    enemy.TransitionToState(enemy.IdleState);
+                    // Soldier không target mình, đã ở phía sau -> nó sẽ không bao giờ tự tới -> bỏ qua, đi tiếp
+                    enemy.ResetTarget();
+                    enemy.HandleMovement();
                 }
-
                 return;
             }
         }
