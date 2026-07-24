@@ -392,6 +392,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cd511d74a0d70a941b2ff6723e9b64f3, type: 3}
   - {fileID: 8300000, guid: f4c0181436c5cef49b83d83055393871, type: 3}
   - {fileID: 8300000, guid: e10b2d5aed1c7094dbe5729c8ed24871, type: 3}
+  - {fileID: 8300000, guid: 5f0dfd2e5feb70c4a9de0710463338b3, type: 3}
   audioTowerBuild: {fileID: 8300000, guid: 9ffa890c3b177a641b951b0e49f15a76, type: 3}
   audioDoorOpen: {fileID: 8300000, guid: 2cb051767cd4c7f42874f616bda68677, type: 3}
 --- !u!114 &95468063597698005
@@ -1027,6 +1028,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   barrack: {fileID: 0}
+  towerSoundBrackTower: {fileID: 3341795790903572181}
 --- !u!1 &6568737870671085623
 GameObject:
   m_ObjectHideFlags: 0

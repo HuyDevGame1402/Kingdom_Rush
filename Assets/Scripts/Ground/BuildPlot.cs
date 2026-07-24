@@ -9,9 +9,14 @@ public class BuildPlot : MonoBehaviour
 
     private CapsuleCollider2D capsuleCollider;
 
+    private Vector3 positionDefault;
+
+    [SerializeField] private Transform spawnPointHero;
+
     private void Awake()
     {
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        positionDefault = spawnPointHero.position;
     }
 
     private void OnMouseDown()
@@ -26,6 +31,8 @@ public class BuildPlot : MonoBehaviour
     public void EnableCapsualCollider()
     {
         capsuleCollider.enabled = true;
+        isOccupied = false;
+        spawnPointHero.position = positionDefault;
     }
     public void DisableCapsualCollider()
     {

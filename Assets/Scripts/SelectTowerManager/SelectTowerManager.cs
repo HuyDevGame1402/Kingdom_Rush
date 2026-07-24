@@ -251,6 +251,7 @@ public class SelectTowerManager : MonoBehaviour
         selectTowerBase.gameObject.SetActive(false);
         updateTower.gameObject.SetActive(false);
         lockUpdateTower.gameObject.SetActive(false);
+        groundSelected = null;
         ResetSelectTower();
     }
 

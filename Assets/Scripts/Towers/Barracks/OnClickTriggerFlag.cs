@@ -15,9 +15,10 @@ public class OnClickTriggerFlag : MonoBehaviour
     private Vector3 positionFlag;
 
     public event Action<Vector3> OnMoveToFlagEvent;
-    [SerializeField] private BarrackSpawnHero barrack;
+    [SerializeField] private TowerSoundBrackTower towerSoundBrackTower;    
     
 
+    
     
 
     private void OnEnable()
@@ -56,7 +57,8 @@ public class OnClickTriggerFlag : MonoBehaviour
                     ShowAnimationFlag(mousePos);
                     positionFlag = mousePos;
                     OnMoveToFlagEvent?.Invoke(positionFlag);
-                    //barrack.OnClickTriggerFlag_OnMoveToFlagEvent(positionFlag);
+                    if (SoundGameAttackManager.Instance != null) SoundGameAttackManager.Instance.PlayAudioFlagPoint();
+                    towerSoundBrackTower.PlayAudioTowerReady();
                     gameObject.SetActive(false);
                 }
                 else

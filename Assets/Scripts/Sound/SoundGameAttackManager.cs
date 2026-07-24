@@ -29,10 +29,18 @@ public class SoundGameAttackManager : MonoBehaviour
     [Header("Sound Goblin Death")]
     [SerializeField] private List<AudioSource> audioSourceGoblinDeath = new List<AudioSource>();
     [SerializeField] private SoundSO soundSOGoblinDeath;
-    [Header("Sound Orc Death")]
 
+    [Header("Sound Orc Death")]
     [SerializeField] private List<AudioSource> audioSourceOrcDeath = new List<AudioSource>();
     [SerializeField] private SoundSO soundSOOrcDeath;
+
+    [Header("Sound Sheep")]
+    [SerializeField] private List<AudioSource> audioSourceSheep = new List<AudioSource>();
+    [SerializeField] private SoundSO soundSOSheep;
+
+    [Header("Sound Flag")]
+    [SerializeField] private List<AudioSource> audioSourceFlagPoint = new List<AudioSource>();
+    [SerializeField] private SoundSO soundSOFlagPoint;
 
     private void Awake()
     {
@@ -86,6 +94,16 @@ public class SoundGameAttackManager : MonoBehaviour
     public void PlayAudioOrcDeath()
     {
         PlayAudioGame(soundSOOrcDeath, audioSourceOrcDeath);
+    }
+
+    public void PlayAudioSheep()
+    {
+        PlayAudioGame(soundSOSheep, audioSourceSheep);
+    }
+
+    public void PlayAudioFlagPoint()
+    {
+        PlayAudioGame(soundSOFlagPoint, audioSourceFlagPoint);
     }
 
     private AudioSource CheckSoundEmpty(SoundSO soundSO, List<AudioSource> audioSources)
