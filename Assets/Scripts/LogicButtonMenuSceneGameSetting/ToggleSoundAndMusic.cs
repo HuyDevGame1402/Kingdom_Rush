@@ -9,17 +9,27 @@ public class ToggleSoundAndMusic : MonoBehaviour
     private Button button;
     private Image image;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         button = gameObject.GetComponent<Button>();
         image = gameObject.GetComponent<Image>();
         button.onClick.AddListener(OnClickButton);
     }
-    private void OnClickButton()
+    protected virtual void OnClickButton()
     {
         if (SoundMenuGameManager.Instance != null)
         {
             SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
         }
+    }
+
+    public void ChangeSprite(bool isOn)
+    {
+        if (isOn)
+        {
+            image.sprite = activeSprite;
+            return;
+        }
+        image.sprite = disableSprite;
     }
 }
