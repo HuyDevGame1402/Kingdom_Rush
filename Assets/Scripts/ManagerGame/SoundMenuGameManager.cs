@@ -8,6 +8,9 @@ public class SoundMenuGameManager : MonoBehaviour
 
     [Header("Sound Click Button")]
     [SerializeField] private AudioClip soundClick;
+    [SerializeField] private AudioClip soundUpgrades;
+    [SerializeField] private AudioClip soundTransitionOpen;
+    [SerializeField] private AudioClip soundTransitionClose;    
     [SerializeField] private AudioSource audioSourceClickButton;
 
     [Header("Sound and Music Value On")]
@@ -36,7 +39,7 @@ public class SoundMenuGameManager : MonoBehaviour
     private IEnumerator CoroutineDelayEvent()
     {
         yield return new WaitForSeconds(timeDelay);
-        IsSoundOnChange?.Invoke(isSoundOn);
+        InvokeEventSound();
     }
 
     public void SoundChange()
@@ -44,6 +47,11 @@ public class SoundMenuGameManager : MonoBehaviour
         isSoundOn = !isSoundOn;
         PlayerPrefs.SetInt(SOUND_KEY, isSoundOn ? 1 : 0);
         PlayerPrefs.Save();
+        InvokeEventSound();
+    }
+
+    public void InvokeEventSound()
+    {
         IsSoundOnChange?.Invoke(isSoundOn);
     }
 
@@ -51,5 +59,21 @@ public class SoundMenuGameManager : MonoBehaviour
     {
         if (isSoundOn == false) return;
         audioSourceClickButton.PlayOneShot(soundClick);
+    }
+
+    public void PlayAudioSourceClickUpgradesAndHeroRoom()
+    {
+        if (isSoundOn == false) return;
+        audioSourceClickButton.PlayOneShot(soundUpgrades);
+    }
+    public void PlayAudioSourceTransitionOpen()
+    {
+        if (isSoundOn == false) return;
+        audioSourceClickButton.PlayOneShot(soundTransitionOpen);
+    }
+    public void PlayAudioSourceTransitionClose()
+    {
+        if (isSoundOn == false) return;
+        audioSourceClickButton.PlayOneShot(soundTransitionClose);
     }
 }

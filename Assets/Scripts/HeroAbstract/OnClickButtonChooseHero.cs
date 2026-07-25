@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using Unity.VisualScripting;
 
 public class OnClickButtonChooseHero : MonoBehaviour
 {
@@ -15,6 +14,11 @@ public class OnClickButtonChooseHero : MonoBehaviour
     }
     private void OnButtonClicked()
     {
+        if(SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceClickUpgradesAndHeroRoom();
+        }
+
         OnHeroSelected?.Invoke(transform, heroData);
     }
 }

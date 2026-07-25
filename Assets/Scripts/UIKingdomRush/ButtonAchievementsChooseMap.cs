@@ -1,12 +1,9 @@
-using UnityEngine;
 using System;
-using System.Collections;
+using UnityEngine;
 
-public class UIMainBoardButtonRight : UIView
+public class ButtonAchievementsChooseMap : UIView
 {
-    [SerializeField] private GameObject shopUI;
-
-    private float timeDelay = 0.1f;
+    [SerializeField] private ChangeSpriteLightButton changeSpriteLightButton;
 
     private void Start()
     {
@@ -22,22 +19,27 @@ public class UIMainBoardButtonRight : UIView
 
     protected override void OpenUI(Action onComplete = null)
     {
+        PlayAudioClick();
+        changeSpriteLightButton.ChangeSprite();
         isOpen = true;
-        //shopUI.SetActive(isOpen);
-        StartCoroutine(CoroutineActiveUI(isOpen));
-        onComplete?.Invoke();
-    }
 
-    private IEnumerator CoroutineActiveUI(bool isOpen)
-    {
-        yield return new WaitForSeconds(timeDelay);
-        shopUI.SetActive(isOpen);
+        onComplete?.Invoke();
     }
 
     protected override void CloseUI(Action onComplete = null)
     {
+        PlayAudioClick();
         isOpen = false;
-        shopUI.SetActive(isOpen);
+        changeSpriteLightButton.ChangeSprite();
+
         onComplete?.Invoke();
+    }
+
+    private void PlayAudioClick()
+    {
+        if (SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
+        }
     }
 }

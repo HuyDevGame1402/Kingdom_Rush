@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using DG.Tweening.Plugins.Options;
 
 public class MainBoardMapUI : UIView
 {
@@ -11,6 +12,8 @@ public class MainBoardMapUI : UIView
 
     public AudioClip musicMainMenu;
     public AudioClip musicMap;
+
+    [SerializeField] private Transform settingOptions;
 
     private void Start()
     {
@@ -49,6 +52,7 @@ public class MainBoardMapUI : UIView
         isOpen = false;
         StartCoroutine(WaitTimeForLoadCredits(false));
         MusicManager.Instance.PlayeMusicGame(musicMainMenu);
+        settingOptions.gameObject.SetActive(false);
         onComplete?.Invoke();
     }
     private void ActiveObjects(bool isActive)

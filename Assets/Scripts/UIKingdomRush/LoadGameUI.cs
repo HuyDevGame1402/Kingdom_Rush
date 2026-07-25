@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LoadGameUI : MonoBehaviour
@@ -20,5 +18,20 @@ public class LoadGameUI : MonoBehaviour
     public void DoorOpen()
     {
        animator.SetTrigger("Open");
+    }
+
+    public void PlayAudioTransitionOpen()
+    {
+        if(SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceTransitionOpen();
+        }
+    }
+    public void PlayAudioTransitionClose()
+    {
+        if (SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceTransitionClose();
+        }
     }
 }

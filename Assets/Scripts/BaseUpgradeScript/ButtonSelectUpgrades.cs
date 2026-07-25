@@ -22,6 +22,10 @@ public class ButtonSelectUpgrades : MonoBehaviour
 
     private void OnClickButton()
     {
+        if (SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceClickUpgradesAndHeroRoom();
+        }
         OnClickSelectUpgrade?.Invoke(transform, upgrade);
     }
 

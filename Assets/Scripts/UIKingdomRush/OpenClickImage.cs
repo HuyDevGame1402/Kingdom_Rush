@@ -18,10 +18,10 @@ public class OpenClickImage : MonoBehaviour, IPointerClickHandler
         {
             EventManager.Notify(uIView.nameEventOpen);
 
-            if (SoundMenuGameManager.Instance != null)
-            {
-                SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
-            }
+            //if (SoundMenuGameManager.Instance != null)
+            //{
+            //    SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
+            //}
         }
     }
 }

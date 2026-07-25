@@ -35,6 +35,11 @@ public class MusicManager : MonoBehaviour
     private IEnumerator CoroutineDelayEvent()
     {
         yield return new WaitForSeconds(timeDelay);
+        InvokeEventMusic();
+    }
+
+    public void InvokeEventMusic()
+    {
         IsMusicOnChange?.Invoke(isMusicOn);
     }
 
@@ -56,7 +61,7 @@ public class MusicManager : MonoBehaviour
         isMusicOn = !isMusicOn;
         PlayerPrefs.SetInt(MUSIC_KEY, isMusicOn ? 1 : 0);
         PlayerPrefs.Save();
-        IsMusicOnChange?.Invoke(isMusicOn);
+        InvokeEventMusic();
 
         if(isMusicOn)
         {
