@@ -28,7 +28,7 @@ MonoBehaviour:
 
     GOOD LUCK, GENERAL!'
   startingGold: 265
-  live: 20
+  live: 3
   wave: 1
   strategicPointsCount: 8
   sheepCount: 8
@@ -52,7 +52,7 @@ MonoBehaviour:
     enemyGroups:
     - enemyName: Goblin
       enemyPrefab: {fileID: 122370129681020088, guid: 865a2219b17fba347b30a2028652270e, type: 3}
-      count: 2
+      count: 3
       spawnDelay: 0.5
       groupDelay: 0
     goldIncome: 9
@@ -60,6 +60,6 @@ MonoBehaviour:
     timeBonus: 5
     waveEvent: {fileID: 0}
   dropGemPercent: 10
-  gemDefaut: 0
+  gemDefaut: 61
   gems: 080000000d000000
   spriteIcon: {fileID: -7924455868910974521, guid: acdee527e6eeb1341b8a858affa0f4e7, type: 3}

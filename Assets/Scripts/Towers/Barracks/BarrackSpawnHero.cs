@@ -8,7 +8,7 @@ public class BarrackSpawnHero : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private GameObject heroTower;
     [SerializeField] private BarracksAnimation barracksAnimation;
-    private int heroCountSpawn = 1;
+    private int heroCountSpawn = 3;
     private GameObject heroSpawn;
 
     public List<GameObject> heroSpawnList = new List<GameObject>();

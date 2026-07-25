@@ -5,7 +5,7 @@ public class WaveUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI waveText;
 
-    private void Start()
+    private void Awake()
     {
         waveText = transform.GetComponent<TextMeshProUGUI>();
         WaveManager.Instance.WaveChange += WaveManager_WaveChange;

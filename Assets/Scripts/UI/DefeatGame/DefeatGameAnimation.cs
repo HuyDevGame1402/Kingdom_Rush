@@ -10,6 +10,14 @@ public class DefeatGameAnimation : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        if(LiveManager.Instance != null)
+        {
+            LiveManager.Instance.OnGameDefeat += ShowDefeatUI;
+        }
+    }
+
     private void ShowDefeatUI()
     {
         animator.SetTrigger(TRIGGERANIMATION);

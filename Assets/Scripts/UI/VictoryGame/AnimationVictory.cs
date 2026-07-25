@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class AnimationVictory : MonoBehaviour
@@ -9,12 +10,16 @@ public class AnimationVictory : MonoBehaviour
 
     [SerializeField] private StarAnimationWinGame starAnimationWinGame;
     [SerializeField] private AnimationStarVictory animationStarVictory;
+    private float timeDelay = 1f;
+
+    [SerializeField] private VictorySound victorySound;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         starAnimationWinGame = GetComponent<StarAnimationWinGame>();
         animationStarVictory = GetComponent<AnimationStarVictory>();
+        victorySound = GetComponent<VictorySound>();    
     }
 
     private void Start()
@@ -27,7 +32,14 @@ public class AnimationVictory : MonoBehaviour
 
     private void Instance_OnCompleteCalculatorStarGame()
     {
+        StartCoroutine(CoroutineVictoryVisual());
+    }
+
+    private IEnumerator CoroutineVictoryVisual()
+    {
+        yield return new WaitForSeconds(timeDelay);
         PlayAnimationShowVictory();
+        victorySound.PlaySoundVictoryGame();
     }
 
     //private void Update()
@@ -47,6 +59,7 @@ public class AnimationVictory : MonoBehaviour
     public void PlayAnimationShowButtonAndGems()
     {
         animator.SetTrigger(TRIGGERNAMESHOWBUTTONANDGEMS);
+        victorySound.PlaySoundMerchant();
     }
 
     public void OnTriggerFunctionStarAnimation()

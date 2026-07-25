@@ -16,6 +16,7 @@ public class GoldManager : MonoBehaviour
     private void Start()
     {
         goldGame = GameManager.Instance.levelData.startingGold;
+        GoldChange?.Invoke(goldGame);
     }
 
     public void AddGold(int goldAdd)

@@ -28,6 +28,7 @@ public class LevelEnemySpawner : MonoBehaviour
     public List<Transform> enemyInGame = new List<Transform>();
 
     public event Action OnFinalGameKingdomRush;
+    public event Action<int> CalculatorGemEvent;
 
     private void Awake()
     {
@@ -260,11 +261,17 @@ public class LevelEnemySpawner : MonoBehaviour
         {
             enemyInGame.Remove(enemy);  
         }
-        if(enemyInGame.Count == 0 && currentWaveIndex == currentLevelData.wave &&
+        InvokeEventCalculatorGems();
+        if (enemyInGame.Count == 0 && currentWaveIndex == currentLevelData.wave &&
             FinnalGameKingdomRush.Instance != null)
         {
             OnFinalGameKingdomRush?.Invoke();
         }
+    }
+
+    public void InvokeEventCalculatorGems()
+    {
+        CalculatorGemEvent?.Invoke(currentLevelData.gemDefaut);
     }
 
     public void CalculatorGem(Vector3 positionSpawn)
@@ -283,5 +290,20 @@ public class LevelEnemySpawner : MonoBehaviour
                 GemVisualManager.Instance.SpawnGemVisual(gem, positionSpawn);
             }
         }
+    }
+
+    public int GetGold()
+    {
+        return currentLevelData.startingGold;
+    }
+
+    public int GetLive()
+    {
+        return currentLevelData.live;
+    }
+
+    public int GetTotalWave()
+    {
+        return currentLevelData.wave;
     }
 }

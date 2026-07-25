@@ -16,6 +16,7 @@ public class WaveManager : MonoBehaviour
     private void Start()
     {
         waveMax = GameManager.Instance.levelData.wave;
+        WaveChange?.Invoke(waveGame, waveMax);
     }
 
     public void AddWave()

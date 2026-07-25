@@ -5,7 +5,7 @@ public class LiveUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI liveText;
 
-    private void Start()
+    private void Awake()
     {
         liveText = GetComponent<TextMeshProUGUI>();
         LiveManager.Instance.LiveChange += LiveManager_LiveChange;

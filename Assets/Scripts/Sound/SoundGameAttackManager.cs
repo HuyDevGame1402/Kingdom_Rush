@@ -42,6 +42,10 @@ public class SoundGameAttackManager : MonoBehaviour
     [SerializeField] private List<AudioSource> audioSourceFlagPoint = new List<AudioSource>();
     [SerializeField] private SoundSO soundSOFlagPoint;
 
+    [Header("Sound Live Remove")]
+    [SerializeField] private List<AudioSource> audioSourceLosseLife = new List<AudioSource>();
+    [SerializeField] private SoundSO soundSOLosseLife;
+
     private void Awake()
     {
         Instance = this;
@@ -104,6 +108,11 @@ public class SoundGameAttackManager : MonoBehaviour
     public void PlayAudioFlagPoint()
     {
         PlayAudioGame(soundSOFlagPoint, audioSourceFlagPoint);
+    }
+    
+    public void PlayAudioLosseLife()
+    {
+        PlayAudioGame(soundSOLosseLife, audioSourceLosseLife);
     }
 
     private AudioSource CheckSoundEmpty(SoundSO soundSO, List<AudioSource> audioSources)
