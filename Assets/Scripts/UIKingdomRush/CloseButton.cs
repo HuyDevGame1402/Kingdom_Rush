@@ -17,5 +17,9 @@ public class CloseButton : MonoBehaviour
     public void OnCloseUI()
     {
         EventManager.Notify(uiView.nameEventClose);
+        if (SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
+        }
     }
 }

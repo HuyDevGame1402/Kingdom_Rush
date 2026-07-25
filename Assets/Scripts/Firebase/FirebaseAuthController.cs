@@ -37,6 +37,13 @@ public class FirebaseAuthController : MonoBehaviour
 
     public void RegisterButton()
     {
+
+        if (auth == null)
+        {
+            statusText.text = "<color=yellow>Firebase chưa sẵn sàng, vui lòng đợi giây lát...</color>";
+            return;
+        }
+
         string email = emailInput.text.Trim();
         string password = passwordInput.text;
 

@@ -17,6 +17,11 @@ public class OpenClickImage : MonoBehaviour, IPointerClickHandler
         if (eventData.button == PointerEventData.InputButton.Left)
         {
             EventManager.Notify(uIView.nameEventOpen);
+
+            if (SoundMenuGameManager.Instance != null)
+            {
+                SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
+            }
         }
     }
 }

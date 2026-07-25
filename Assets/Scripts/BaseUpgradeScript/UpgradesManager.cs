@@ -33,6 +33,8 @@ public class UpgradesManager : MonoBehaviour
         }
         upgradesData.Sort((a, b) =>
             int.Parse(a.upgradeID).CompareTo(int.Parse(b.upgradeID)));
+
+        Debug.LogWarning(gameObject.name);
     }
 
     // Khởi tạo danh sách ID từ 1 đến 30

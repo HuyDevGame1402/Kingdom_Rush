@@ -18,5 +18,11 @@ public class OpenClickButton : MonoBehaviour
     private void OnOpenUI()
     {
         EventManager.Notify(uiView.nameEventOpen);
+
+        if(SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
+        }
+
     }
 }

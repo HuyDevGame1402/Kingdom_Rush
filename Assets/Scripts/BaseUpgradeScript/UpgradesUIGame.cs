@@ -67,19 +67,19 @@ public class UpgradesUIGame : MonoBehaviour
 
     private void SetupUpgradesDataAndUIInButton()
     {
-        upgradesUI.localScale = Vector3.zero;
-        upgradesUI.gameObject.SetActive(true);
-        for (int i = 0; i < arrayButtonSelectUpgrades.Length; i++)
-        {
-            arrayButtonSelectUpgrades[i].Initialize(
-                UpgradesManager.Instance.upgradesData[i],
-                UpgradesManager.Instance.UpgradesInventory[
-                    i + 1] ? white : brown,
-                UpgradesManager.Instance.UpgradesInventory[i + 1]
-                );
-        }
-        upgradesUI.localScale = Vector3.one;
-        upgradesUI.gameObject.SetActive(false);
+        //upgradesUI.localScale = Vector3.zero;
+        //upgradesUI.gameObject.SetActive(true);
+        //for (int i = 0; i < arrayButtonSelectUpgrades.Length; i++)
+        //{
+        //    arrayButtonSelectUpgrades[i].Initialize(
+        //        UpgradesManager.Instance.upgradesData[i],
+        //        UpgradesManager.Instance.UpgradesInventory[
+        //            i + 1] ? white : brown,
+        //        UpgradesManager.Instance.UpgradesInventory[i + 1]
+        //        );
+        //}
+        //upgradesUI.localScale = Vector3.one;
+        //upgradesUI.gameObject.SetActive(false);
     }
 
     private void RegisterEventOnClickSelectUpgrades()
