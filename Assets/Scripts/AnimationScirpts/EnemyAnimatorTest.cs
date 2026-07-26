@@ -106,7 +106,7 @@ public class EnemyAnimatorTest : MonoBehaviour
 
     private void ShowSingleFrame(int frameNumber)
     {
-        if (EnemySpriteAnimator.Instance == null || targetEnemy == null) return;
+        if (CharacterSpriteAnimator.Instance == null || targetEnemy == null) return;
 
         string frameKey = $"{animPrefix.Trim().ToLower()}{frameNumber:D4}";
 
@@ -114,7 +114,7 @@ public class EnemyAnimatorTest : MonoBehaviour
         float currentOffset = GetRegisteredPivotOffset(frameNumber);
 
         // Truyền thẳng sang hàm DisplaySingleFrame mới của Animator
-        bool success = EnemySpriteAnimator.Instance.DisplaySingleFrame(targetEnemy, enemyId, frameKey, currentOffset);
+        bool success = CharacterSpriteAnimator.Instance.DisplaySingleFrame(targetEnemy, enemyId, frameKey, currentOffset);
 
         if (success)
         {
@@ -137,13 +137,13 @@ public class EnemyAnimatorTest : MonoBehaviour
 
     public void TestAnimationEnemy(AnimationFrameRange animationRange)
     {
-        if (EnemySpriteAnimator.Instance == null || test == null || test.animations == null)
+        if (CharacterSpriteAnimator.Instance == null || test == null || test.animations == null)
         {
             Debug.LogError("Thiếu Instance Animator hoặc dữ liệu cấu hình 'test'!");
             return;
         }
 
-        EnemySpriteAnimator.Instance.PlayAnimationByRange(
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
             gameObject,
             test.unitName,
             test.animations.animPrefix,

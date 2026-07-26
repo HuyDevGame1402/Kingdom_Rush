@@ -11,8 +11,9 @@ public class UnitRunState : UnitBaseState
     public override void Enter()
     {
         // Chạy animation di chuyển
-        var config = unit.unitData.animations.run;
-        SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
+        unit.baseUnitAnimationHandler.PlayRunAnimation(unit.unitData.animations, unit.spriteObject);
+        //var config = unit.unitData.animations.run;
+        //SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
 
         // Đặt mục tiêu di chuyển
         SetTargetDestination();

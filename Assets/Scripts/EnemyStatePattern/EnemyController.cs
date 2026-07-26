@@ -160,7 +160,7 @@ public class EnemyController : MonoBehaviour
 
     private void UpdateMoveAnimation(Vector2 moveDir)
     {
-        if (EnemySpriteAnimator.Instance == null) return;
+        if (CharacterSpriteAnimator.Instance == null) return;
 
         // 1. Xử lý lật mặt Sprite trái / phải
         if (moveDir.x > 0.1f) transform.localScale = unitData.localScaleRight;
@@ -200,7 +200,7 @@ public class EnemyController : MonoBehaviour
         string prefix = unitData.animations.animPrefix; // Sử dụng prefix động từ SO thay vì fix cứng "goblin_"
         float frameRate = unitData.animations.frameRate;
 
-        EnemySpriteAnimator.Instance.PlayAnimationByRange(gameObject, id, prefix, selectedRange, frameRate);
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(gameObject, id, prefix, selectedRange, frameRate);
     
     }
 

@@ -1,0 +1,4186 @@
+fileFormatVersion: 2
+guid: 2d7c4f5793082f54bbf669f403fd3f10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7178333197021252286
+    second: go_hero_gerald-1_0
+  - first:
+      213: 1271873575892838437
+    second: go_hero_gerald-1_1
+  - first:
+      213: 716001218825130498
+    second: go_hero_gerald-1_2
+  - first:
+      213: 4839399924613645178
+    second: go_hero_gerald-1_3
+  - first:
+      213: 994552970303764435
+    second: go_hero_gerald-1_4
+  - first:
+      213: 1453521883655491749
+    second: go_hero_gerald-1_5
+  - first:
+      213: 2151565095808342807
+    second: go_hero_gerald-1_6
+  - first:
+      213: -9121234158195896665
+    second: go_hero_gerald-1_7
+  - first:
+      213: 730920696778819851
+    second: go_hero_gerald-1_8
+  - first:
+      213: -1675122876128240830
+    second: go_hero_gerald-1_9
+  - first:
+      213: -5633270001558114350
+    second: go_hero_gerald-1_10
+  - first:
+      213: -507418951275351838
+    second: go_hero_gerald-1_11
+  - first:
+      213: -1690092836757704811
+    second: go_hero_gerald-1_12
+  - first:
+      213: 6706292543125436627
+    second: go_hero_gerald-1_13
+  - first:
+      213: 4753814326517582252
+    second: go_hero_gerald-1_14
+  - first:
+      213: 988208049688573509
+    second: go_hero_gerald-1_15
+  - first:
+      213: 6669045199950009395
+    second: go_hero_gerald-1_16
+  - first:
+      213: -5690010884430117284
+    second: go_hero_gerald-1_17
+  - first:
+      213: 2667649836964960837
+    second: go_hero_gerald-1_18
+  - first:
+      213: 9022766820892593663
+    second: go_hero_gerald-1_19
+  - first:
+      213: -3298748543440986772
+    second: go_hero_gerald-1_20
+  - first:
+      213: 5540937334276459741
+    second: go_hero_gerald-1_21
+  - first:
+      213: -8386435911110106789
+    second: go_hero_gerald-1_22
+  - first:
+      213: -2521958308515311488
+    second: go_hero_gerald-1_23
+  - first:
+      213: 2963596669079688858
+    second: go_hero_gerald-1_24
+  - first:
+      213: -4064074476081899236
+    second: go_hero_gerald-1_25
+  - first:
+      213: 3428360429986106364
+    second: go_hero_gerald-1_26
+  - first:
+      213: 6521103998259050871
+    second: go_hero_gerald-1_27
+  - first:
+      213: 7127510870971757965
+    second: go_hero_gerald-1_28
+  - first:
+      213: 3071292371556119232
+    second: go_hero_gerald-1_29
+  - first:
+      213: -2736201927216716113
+    second: go_hero_gerald-1_30
+  - first:
+      213: 1738211547807192611
+    second: go_hero_gerald-1_31
+  - first:
+      213: 108330438018141
+    second: go_hero_gerald-1_32
+  - first:
+      213: 4393362360358610641
+    second: go_hero_gerald-1_33
+  - first:
+      213: 2859924361033342446
+    second: go_hero_gerald-1_34
+  - first:
+      213: -8794491711897698495
+    second: go_hero_gerald-1_35
+  - first:
+      213: 7137590564402213915
+    second: go_hero_gerald-1_36
+  - first:
+      213: -9213620232634266280
+    second: go_hero_gerald-1_37
+  - first:
+      213: 3230787453308835910
+    second: go_hero_gerald-1_38
+  - first:
+      213: 5164781396155658109
+    second: go_hero_gerald-1_39
+  - first:
+      213: -4857110249518538939
+    second: go_hero_gerald-1_40
+  - first:
+      213: 7038584094433173316
+    second: go_hero_gerald-1_41
+  - first:
+      213: 6568263161030551070
+    second: go_hero_gerald-1_42
+  - first:
+      213: 2147905499055482387
+    second: go_hero_gerald-1_43
+  - first:
+      213: 2380099688421114992
+    second: go_hero_gerald-1_44
+  - first:
+      213: -1499950763602655777
+    second: go_hero_gerald-1_45
+  - first:
+      213: -2662466840371884597
+    second: go_hero_gerald-1_46
+  - first:
+      213: -7355841736671645476
+    second: go_hero_gerald-1_47
+  - first:
+      213: -6575560202605351490
+    second: go_hero_gerald-1_48
+  - first:
+      213: 108187345308856459
+    second: go_hero_gerald-1_49
+  - first:
+      213: -2602893818943358526
+    second: go_hero_gerald-1_50
+  - first:
+      213: 9079253213070993311
+    second: go_hero_gerald-1_51
+  - first:
+      213: 7450141648840028786
+    second: go_hero_gerald-1_52
+  - first:
+      213: 7844632775589711484
+    second: go_hero_gerald-1_53
+  - first:
+      213: -1070799359894582811
+    second: go_hero_gerald-1_54
+  - first:
+      213: -4083473038706752980
+    second: go_hero_gerald-1_55
+  - first:
+      213: 4665587612015538804
+    second: go_hero_gerald-1_56
+  - first:
+      213: -3178549125350696839
+    second: go_hero_gerald-1_57
+  - first:
+      213: 5909660452975045249
+    second: go_hero_gerald-1_58
+  - first:
+      213: 7060328854106274488
+    second: go_hero_gerald-1_59
+  - first:
+      213: 3778348106955014541
+    second: go_hero_gerald-1_60
+  - first:
+      213: -8798562679683639362
+    second: go_hero_gerald-1_61
+  - first:
+      213: -7589532258045845507
+    second: go_hero_gerald-1_62
+  - first:
+      213: 6757435009309868441
+    second: go_hero_gerald-1_63
+  - first:
+      213: 3209235475684205413
+    second: go_hero_gerald-1_64
+  - first:
+      213: 136497446252074658
+    second: go_hero_gerald-1_65
+  - first:
+      213: -8350108448296601091
+    second: go_hero_gerald-1_66
+  - first:
+      213: -8714849953144585656
+    second: go_hero_gerald-1_67
+  - first:
+      213: -2116478594039708877
+    second: go_hero_gerald-1_68
+  - first:
+      213: -4575293547698672294
+    second: go_hero_gerald-1_69
+  - first:
+      213: 8533886198580696715
+    second: go_hero_gerald-1_70
+  - first:
+      213: -7976544289776432510
+    second: go_hero_gerald-1_71
+  - first:
+      213: 8120682314906088744
+    second: go_hero_gerald-1_72
+  - first:
+      213: 264613685394208385
+    second: go_hero_gerald-1_73
+  - first:
+      213: -7724866626765586340
+    second: go_hero_gerald-1_74
+  - first:
+      213: -502558125898902061
+    second: go_hero_gerald-1_75
+  - first:
+      213: -4900737932180671490
+    second: go_hero_gerald-1_76
+  - first:
+      213: -3292249154189850902
+    second: go_hero_gerald-1_77
+  - first:
+      213: 5513126888755236337
+    second: go_hero_gerald-1_78
+  - first:
+      213: -3431695249727267603
+    second: go_hero_gerald-1_79
+  - first:
+      213: -2931963299149336018
+    second: go_hero_gerald-1_80
+  - first:
+      213: 8608148950753738134
+    second: go_hero_gerald-1_81
+  - first:
+      213: 7093066915248595989
+    second: go_hero_gerald-1_82
+  - first:
+      213: -6047913490546183830
+    second: go_hero_gerald-1_83
+  - first:
+      213: 315130628379565436
+    second: go_hero_gerald-1_84
+  - first:
+      213: -658315617404457022
+    second: go_hero_gerald-1_85
+  - first:
+      213: 3614122742641333039
+    second: go_hero_gerald-1_86
+  - first:
+      213: -8112735485866748910
+    second: go_hero_gerald-1_87
+  - first:
+      213: 5302880472255172965
+    second: go_hero_gerald-1_88
+  - first:
+      213: 1749628263413800858
+    second: go_hero_gerald-1_89
+  - first:
+      213: -3716135303378201693
+    second: go_hero_gerald-1_90
+  - first:
+      213: -812862252244510662
+    second: go_hero_gerald-1_91
+  - first:
+      213: 4367168176308865987
+    second: go_hero_gerald-1_92
+  - first:
+      213: -3871910702592722396
+    second: go_hero_gerald-1_93
+  - first:
+      213: 2172528334036102023
+    second: go_hero_gerald-1_94
+  - first:
+      213: 8374211550255293351
+    second: go_hero_gerald-1_95
+  - first:
+      213: 3432888409621875676
+    second: go_hero_gerald-1_96
+  - first:
+      213: -8464982617705704928
+    second: go_hero_gerald-1_97
+  - first:
+      213: -6185053259944556712
+    second: go_hero_gerald-1_98
+  - first:
+      213: -2076396775780048939
+    second: go_hero_gerald-1_99
+  - first:
+      213: 7476162802569692757
+    second: go_hero_gerald-1_100
+  - first:
+      213: -7596841305924399438
+    second: go_hero_gerald-1_101
+  - first:
+      213: 4485908688795803512
+    second: go_hero_gerald-1_102
+  - first:
+      213: -1553949046282477701
+    second: go_hero_gerald-1_103
+  - first:
+      213: 7571342026745783157
+    second: go_hero_gerald-1_104
+  - first:
+      213: -1824712309300586497
+    second: go_hero_gerald-1_105
+  - first:
+      213: 8231796334322847296
+    second: go_hero_gerald-1_106
+  - first:
+      213: -2796093266664363343
+    second: go_hero_gerald-1_107
+  - first:
+      213: -1092483831389343180
+    second: go_hero_gerald-1_108
+  - first:
+      213: -2729095929128239234
+    second: go_hero_gerald-1_109
+  - first:
+      213: -6344297644638969637
+    second: go_hero_gerald-1_110
+  - first:
+      213: -8323776468744939877
+    second: go_hero_gerald-1_111
+  - first:
+      213: -5138353012411834604
+    second: go_hero_gerald-1_112
+  - first:
+      213: 4104174062116503510
+    second: go_hero_gerald-1_113
+  - first:
+      213: 8999602410229592539
+    second: go_hero_gerald-1_114
+  - first:
+      213: -3535729758151176466
+    second: go_hero_gerald-1_115
+  - first:
+      213: -8418082117027007272
+    second: go_hero_gerald-1_116
+  - first:
+      213: -2786529547520208077
+    second: go_hero_gerald-1_117
+  - first:
+      213: 7083244279762257072
+    second: go_hero_gerald-1_118
+  - first:
+      213: 2821269856608291404
+    second: go_hero_gerald-1_119
+  - first:
+      213: 2483683351560728932
+    second: go_hero_gerald-1_120
+  - first:
+      213: -3857633685951627850
+    second: go_hero_gerald-1_121
+  - first:
+      213: 8039011654195641252
+    second: go_hero_gerald-1_122
+  - first:
+      213: 308402916318669083
+    second: go_hero_gerald-1_123
+  - first:
+      213: -297050708711355793
+    second: go_hero_gerald-1_124
+  - first:
+      213: 4660027588435500486
+    second: go_hero_gerald-1_125
+  - first:
+      213: -1365852736949034608
+    second: go_hero_gerald-1_126
+  - first:
+      213: 6514166001814289271
+    second: go_hero_gerald-1_127
+  - first:
+      213: -580296746066524045
+    second: go_hero_gerald-1_128
+  - first:
+      213: 5385638863076814061
+    second: go_hero_gerald-1_129
+  - first:
+      213: -7304712541420619659
+    second: go_hero_gerald-1_130
+  - first:
+      213: 3321488183334549736
+    second: go_hero_gerald-1_131
+  - first:
+      213: -5180293360763150894
+    second: go_hero_gerald-1_132
+  - first:
+      213: 844528789856764406
+    second: go_hero_gerald-1_133
+  - first:
+      213: -7021805314727839443
+    second: go_hero_gerald-1_134
+  - first:
+      213: -5634247785426479632
+    second: go_hero_gerald-1_135
+  - first:
+      213: -213788991828786915
+    second: go_hero_gerald-1_136
+  - first:
+      213: -1267397450229539225
+    second: go_hero_gerald-1_137
+  - first:
+      213: -3502900271618651472
+    second: go_hero_gerald-1_138
+  - first:
+      213: 6557042708441796381
+    second: go_hero_gerald-1_139
+  - first:
+      213: 82777103868685249
+    second: go_hero_gerald-1_140
+  - first:
+      213: 4708683064051840207
+    second: go_hero_gerald-1_141
+  - first:
+      213: -4313438206665519013
+    second: go_hero_gerald-1_142
+  - first:
+      213: -1857214461357163136
+    second: go_hero_gerald-1_143
+  - first:
+      213: -6444620138814620169
+    second: go_hero_gerald-1_144
+  - first:
+      213: 3617109084730574404
+    second: go_hero_gerald-1_145
+  - first:
+      213: 6637437230063790608
+    second: go_hero_gerald-1_146
+  - first:
+      213: 5837260318831654308
+    second: go_hero_gerald-1_147
+  - first:
+      213: -7037726865859130316
+    second: go_hero_gerald-1_148
+  - first:
+      213: 4770470863120147780
+    second: go_hero_gerald-1_149
+  - first:
+      213: -6683289814570222344
+    second: go_hero_gerald-1_150
+  - first:
+      213: 6985015955945958960
+    second: go_hero_gerald-1_151
+  - first:
+      213: 7031607592196893941
+    second: go_hero_gerald-1_152
+  - first:
+      213: -675393020250913738
+    second: go_hero_gerald-1_153
+  - first:
+      213: 2754670272713986786
+    second: go_hero_gerald-1_154
+  - first:
+      213: 3580306105175300885
+    second: go_hero_gerald-1_155
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: go_hero_gerald-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 965
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24577206dff616c90800000000000000
+      internalID: -7178333197021252286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 965
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5286c42574a96a110800000000000000
+      internalID: 1271873575892838437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 965
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20291d2a05fbfe900800000000000000
+      internalID: 716001218825130498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 965
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7306a85790092340800000000000000
+      internalID: 4839399924613645178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 967
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7f34938ac5dcd00800000000000000
+      internalID: 994552970303764435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 967
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0da8cb372fb2410800000000000000
+      internalID: 1453521883655491749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 967
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b19ce1e05ebdd10800000000000000
+      internalID: 2151565095808342807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_7
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 967
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae03970cddda6180800000000000000
+      internalID: -9121234158195896665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_8
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 970
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b098b7a4080c42a00800000000000000
+      internalID: 730920696778819851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 970
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bde3d8e94c0c8e0800000000000000
+      internalID: -1675122876128240830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_10
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 970
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfa349a7ca92d1b0800000000000000
+      internalID: -5633270001558114350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 970
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e07ee8f62945f8f0800000000000000
+      internalID: -507418951275351838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 971
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fef9bf4859b88e0800000000000000
+      internalID: -1690092836757704811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 975
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8b7d85989811d50800000000000000
+      internalID: 6706292543125436627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 971
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca94e3471f0f8f140800000000000000
+      internalID: 4753814326517582252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_15
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 968
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5467ed54cf1d6bd00800000000000000
+      internalID: 988208049688573509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_16
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 968
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3345b0676453d8c50800000000000000
+      internalID: 6669045199950009395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_17
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 971
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56cf616f350901b0800000000000000
+      internalID: -5690010884430117284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_18
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 976
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54adc659465650520800000000000000
+      internalID: 2667649836964960837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_19
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 971
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdcb727e9e473d70800000000000000
+      internalID: 9022766820892593663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_20
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 972
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ddcd06dad7832d0800000000000000
+      internalID: -3298748543440986772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_21
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 976
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc8f3cf52d55ec40800000000000000
+      internalID: 5540937334276459741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_22
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 972
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51e3bad8f46d9b80800000000000000
+      internalID: -8386435911110106789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_23
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 972
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0809992c744300dd0800000000000000
+      internalID: -2521958308515311488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_24
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 977
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96960ef77fc02920800000000000000
+      internalID: 2963596669079688858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_25
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 972
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c191860ebc18997c0800000000000000
+      internalID: -4064074476081899236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_26
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 973
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbc35795abf39f20800000000000000
+      internalID: 3428360429986106364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_27
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 972
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7793c9f398d9f7a50800000000000000
+      internalID: 6521103998259050871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_28
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 973
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85b10dbf510ae260800000000000000
+      internalID: 7127510870971757965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_29
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 977
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c238f7b32c6f9a20800000000000000
+      internalID: 3071292371556119232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_30
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 973
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6228e18de070ad0800000000000000
+      internalID: -2736201927216716113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_31
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 967
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326978b713e5f1810800000000000000
+      internalID: 1738211547807192611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 915
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54c645a682600000800000000000000
+      internalID: 108330438018141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_33
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 915
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d62fba2acb58fc30800000000000000
+      internalID: 4393362360358610641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 913
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedd0e7cd0e70b720800000000000000
+      internalID: 2859924361033342446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_35
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 916
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f783c1260b3f580800000000000000
+      internalID: -8794491711897698495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_36
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 916
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14bf5f3dc0dd0360800000000000000
+      internalID: 7137590564402213915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_37
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 916
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d8b7ad635a22080800000000000000
+      internalID: -9213620232634266280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_38
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 916
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6481343421016dc20800000000000000
+      internalID: 3230787453308835910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_39
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 916
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f676cc05dfca740800000000000000
+      internalID: 5164781396155658109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_40
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 916
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fd98e46f3189cb0800000000000000
+      internalID: -4857110249518538939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_41
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 916
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f576e11f21ea160800000000000000
+      internalID: 7038584094433173316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_42
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 917
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16a2887b88272b50800000000000000
+      internalID: 6568263161030551070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_43
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 917
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3166f4adba4eecd10800000000000000
+      internalID: 2147905499055482387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_44
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 913
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074cb5a6e00d70120800000000000000
+      internalID: 2380099688421114992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_45
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 914
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd543e24aba1f2be0800000000000000
+      internalID: -1499950763602655777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_46
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 915
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd8069d3840d0bd0800000000000000
+      internalID: -2662466840371884597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_47
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 917
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0b1b5d9eccae990800000000000000
+      internalID: -7355841736671645476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_48
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 917
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd2384a5daeeb4a0800000000000000
+      internalID: -6575560202605351490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_49
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 917
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80b35e31db508100800000000000000
+      internalID: 108187345308856459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_50
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 917
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c932d5ccd9a0ebd0800000000000000
+      internalID: -2602893818943358526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_51
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 917
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97abee71bcfffd70800000000000000
+      internalID: 9079253213070993311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_52
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 918
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272f3796b58346760800000000000000
+      internalID: 7450141648840028786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_53
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 918
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e496e52fbbddc60800000000000000
+      internalID: 7844632775589711484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_54
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 918
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e984cfc7a1c321f0800000000000000
+      internalID: -1070799359894582811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_55
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 918
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22cffd08e69457c0800000000000000
+      internalID: -4083473038706752980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_56
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 918
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47236aab63f7fb040800000000000000
+      internalID: 4665587612015538804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_57
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 913
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978d752496683e3d0800000000000000
+      internalID: -3178549125350696839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_58
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 918
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a60ca0fd4530250800000000000000
+      internalID: 5909660452975045249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_59
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 919
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baf1728fa35bf160800000000000000
+      internalID: 7060328854106274488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_60
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 943
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81c2d0b5936f6430800000000000000
+      internalID: 3778348106955014541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_61
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 921
+        width: 46
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7927f0cd935e580800000000000000
+      internalID: -8798562679683639362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_62
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 860
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff1fc35f909ca690800000000000000
+      internalID: -7589532258045845507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_63
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 860
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99104baa65b37cd50800000000000000
+      internalID: 6757435009309868441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_64
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 865
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5632db079ae798c20800000000000000
+      internalID: 3209235475684205413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_65
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 830
+        width: 39
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a65a9444bfe4e100800000000000000
+      internalID: 136497446252074658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_66
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 831
+        width: 39
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9fa476b947e1c80800000000000000
+      internalID: -8350108448296601091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_67
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 864
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842ccff0422ae0780800000000000000
+      internalID: -8714849953144585656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_68
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 865
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3338b8baee1c0a2e0800000000000000
+      internalID: -2116478594039708877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_69
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 866
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5da84262ca4180c0800000000000000
+      internalID: -4575293547698672294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_70
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 866
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86d20c78447e6670800000000000000
+      internalID: 8533886198580696715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_71
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 870
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a84b0ea3f9d4190800000000000000
+      internalID: -7976544289776432510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_72
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 830
+        width: 38
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82536c94a8572b070800000000000000
+      internalID: 8120682314906088744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_73
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 830
+        width: 38
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186f0a0beb81ca300800000000000000
+      internalID: 264613685394208385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_74
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 859
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c500e562bb2cbc490800000000000000
+      internalID: -7724866626765586340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_75
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 861
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d55fc21c0e8609f0800000000000000
+      internalID: -502558125898902061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_76
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 862
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3b61fd0d41dfbb0800000000000000
+      internalID: -4900737932180671490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_77
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 863
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae60f6c56d49f42d0800000000000000
+      internalID: -3292249154189850902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_78
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 866
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd09ed02bf828c40800000000000000
+      internalID: 5513126888755236337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_79
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 894
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec5c9e2a5b2060d0800000000000000
+      internalID: -3431695249727267603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_80
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 895
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22b8b3e9e29f47d0800000000000000
+      internalID: -2931963299149336018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_81
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 875
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69df35fdcd9467770800000000000000
+      internalID: 8608148950753738134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_82
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 835
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514e77b57c2af6260800000000000000
+      internalID: 7093066915248595989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_83
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 838
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61b3bb39be711ca0800000000000000
+      internalID: -6047913490546183830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_84
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 839
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dd86a03a19f5400800000000000000
+      internalID: 315130628379565436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_85
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 846
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfe3821f613dd6f0800000000000000
+      internalID: -658315617404457022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_86
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 846
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f231cc96c71f72230800000000000000
+      internalID: 3614122742641333039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_87
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 851
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214d4380f06c96f80800000000000000
+      internalID: -8112735485866748910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_88
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 842
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561102391bd979940800000000000000
+      internalID: 5302880472255172965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_89
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 843
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f53c9b2ade74810800000000000000
+      internalID: 1749628263413800858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_90
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 844
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a39ad861a2ad6cc0800000000000000
+      internalID: -3716135303378201693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_91
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 847
+        width: 35
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3854ab961228b4f0800000000000000
+      internalID: -812862252244510662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_92
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 857
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc74f615c4b9c30800000000000000
+      internalID: 4367168176308865987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_93
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 806
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a7de1fab5344ac0800000000000000
+      internalID: -3871910702592722396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 803
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b61be520f562e10800000000000000
+      internalID: 2172528334036102023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_95
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 832
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3a0f6590d273470800000000000000
+      internalID: 8374211550255293351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_96
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 840
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb411102d114af20800000000000000
+      internalID: 3432888409621875676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_97
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 839
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0229bc99827568a80800000000000000
+      internalID: -8464982617705704928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_98
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 805
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857022474d64a2aa0800000000000000
+      internalID: -6185053259944556712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_99
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 752
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df1dd632282f23e0800000000000000
+      internalID: -2076396775780048939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 753
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556c722657aa0c760800000000000000
+      internalID: 7476162802569692757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_101
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 785
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be8c510519929690800000000000000
+      internalID: -7596841305924399438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_102
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 765
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f13826f26214e30800000000000000
+      internalID: 4485908688795803512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_103
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 699
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f964953934f6ae0800000000000000
+      internalID: -1553949046282477701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 705
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5732b29657fc21960800000000000000
+      internalID: 7571342026745783157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_105
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 714
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff71bda82d15da6e0800000000000000
+      internalID: -1824712309300586497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_106
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 647
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e0da2f6273d3270800000000000000
+      internalID: 8231796334322847296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_107
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 683
+        width: 46
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baeb910df74239d0800000000000000
+      internalID: -2796093266664363343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_108
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 674
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4323e2b5eb7b6d0f0800000000000000
+      internalID: -1092483831389343180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 661
+        width: 46
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fb85a36bd402ad0800000000000000
+      internalID: -2729095929128239234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_110
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 654
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd062fdd7e684f7a0800000000000000
+      internalID: -6344297644638969637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_111
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 595
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96d3b627610c7c80800000000000000
+      internalID: -8323776468744939877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 615
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f52acc827e0b8b0800000000000000
+      internalID: -5138353012411834604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_113
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 572
+        width: 40
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df73dc8094f4f830800000000000000
+      internalID: 4104174062116503510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_114
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 543
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1fb7dc5b205ec70800000000000000
+      internalID: 8999602410229592539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_115
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 569
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee0f9f94809eeec0800000000000000
+      internalID: -3535729758151176466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_116
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 494
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4798c5ae6fc2b80800000000000000
+      internalID: -8418082117027007272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_117
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 523
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3339de3e3224459d0800000000000000
+      internalID: -2786529547520208077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_118
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 490
+        width: 40
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b40c80d42dbc4260800000000000000
+      internalID: 7083244279762257072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_119
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 445
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a87a2acf9272720800000000000000
+      internalID: 2821269856608291404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_120
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 445
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461345069d0d77220800000000000000
+      internalID: 2483683351560728932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 479
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bdb54be99ee67ac0800000000000000
+      internalID: -3857633685951627850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_122
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 437
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab7e89c18e409f60800000000000000
+      internalID: 8039011654195641252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_123
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 397
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b196ed281daa74400800000000000000
+      internalID: 308402916318669083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 397
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a4bfa44f9a0ebf0800000000000000
+      internalID: -297050708711355793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_125
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 390
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdd73cd66ebba040800000000000000
+      internalID: 4660027588435500486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_126
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 348
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09168ae1c248b0de0800000000000000
+      internalID: -1365852736949034608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_127
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 348
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b31121777f66a50800000000000000
+      internalID: 6514166001814289271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_128
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 351
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378c36a1f2f52f7f0800000000000000
+      internalID: -580296746066524045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_129
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 353
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec6b3af202adba40800000000000000
+      internalID: 5385638863076814061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_130
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 347
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578784645a270aa90800000000000000
+      internalID: -7304712541420619659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_131
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 302
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8305d97eb481e20800000000000000
+      internalID: 3321488183334549736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_132
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 330
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddd56f72a6eb18b0800000000000000
+      internalID: -5180293360763150894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_133
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 313
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1c00ab57e58bb00800000000000000
+      internalID: 844528789856764406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_134
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 309
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2972b5f4498d8e90800000000000000
+      internalID: -7021805314727839443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_135
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 293
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f59f1d9d712fc1b0800000000000000
+      internalID: -5634247785426479632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_136
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 249
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11082d6b08780df0800000000000000
+      internalID: -213788991828786915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_137
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 289
+        width: 43
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e15d5ebbc496ee0800000000000000
+      internalID: -1267397450229539225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_138
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 210
+        width: 39
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba0d8a13c2336fc0800000000000000
+      internalID: -3502900271618651472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_139
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 269
+        width: 43
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f0db54a9b4ffa50800000000000000
+      internalID: 6557042708441796381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_140
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 196
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbe0af5655162100800000000000000
+      internalID: 82777103868685249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 186
+        width: 42
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc435b09c4a985140800000000000000
+      internalID: 4708683064051840207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_142
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 127
+        width: 39
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b509a1bfdc69324c0800000000000000
+      internalID: -4313438206665519013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_143
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 147
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d761f8949d936e0800000000000000
+      internalID: -1857214461357163136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_144
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 147
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd30a9f02c1096a0800000000000000
+      internalID: -6444620138814620169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_145
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 104
+        width: 42
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446443d5c8d823230800000000000000
+      internalID: 3617109084730574404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_146
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 98
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01aa7ec7ef9ec1c50800000000000000
+      internalID: 6637437230063790608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_147
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 98
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5b175355d120150800000000000000
+      internalID: 5837260318831654308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 53
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c4e36f3b8f45e90800000000000000
+      internalID: -7037726865859130316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_149
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 44
+        width: 39
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445a0a799fd143240800000000000000
+      internalID: 4770470863120147780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_150
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 49
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc3e8fb25f2043a0800000000000000
+      internalID: -6683289814570222344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_151
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 49
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e2894f003cfe060800000000000000
+      internalID: 6985015955945958960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fce5dc99d9459160800000000000000
+      internalID: 7031607592196893941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_153
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6348a2060a580a6f0800000000000000
+      internalID: -675393020250913738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_154
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e21276a40e8a3620800000000000000
+      internalID: 2754670272713986786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_gerald-1_155
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bd222fe6dcfa130800000000000000
+      internalID: 3580306105175300885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      go_hero_gerald-1_0: -7178333197021252286
+      go_hero_gerald-1_1: 1271873575892838437
+      go_hero_gerald-1_10: -5633270001558114350
+      go_hero_gerald-1_100: 7476162802569692757
+      go_hero_gerald-1_101: -7596841305924399438
+      go_hero_gerald-1_102: 4485908688795803512
+      go_hero_gerald-1_103: -1553949046282477701
+      go_hero_gerald-1_104: 7571342026745783157
+      go_hero_gerald-1_105: -1824712309300586497
+      go_hero_gerald-1_106: 8231796334322847296
+      go_hero_gerald-1_107: -2796093266664363343
+      go_hero_gerald-1_108: -1092483831389343180
+      go_hero_gerald-1_109: -2729095929128239234
+      go_hero_gerald-1_11: -507418951275351838
+      go_hero_gerald-1_110: -6344297644638969637
+      go_hero_gerald-1_111: -8323776468744939877
+      go_hero_gerald-1_112: -5138353012411834604
+      go_hero_gerald-1_113: 4104174062116503510
+      go_hero_gerald-1_114: 8999602410229592539
+      go_hero_gerald-1_115: -3535729758151176466
+      go_hero_gerald-1_116: -8418082117027007272
+      go_hero_gerald-1_117: -2786529547520208077
+      go_hero_gerald-1_118: 7083244279762257072
+      go_hero_gerald-1_119: 2821269856608291404
+      go_hero_gerald-1_12: -1690092836757704811
+      go_hero_gerald-1_120: 2483683351560728932
+      go_hero_gerald-1_121: -3857633685951627850
+      go_hero_gerald-1_122: 8039011654195641252
+      go_hero_gerald-1_123: 308402916318669083
+      go_hero_gerald-1_124: -297050708711355793
+      go_hero_gerald-1_125: 4660027588435500486
+      go_hero_gerald-1_126: -1365852736949034608
+      go_hero_gerald-1_127: 6514166001814289271
+      go_hero_gerald-1_128: -580296746066524045
+      go_hero_gerald-1_129: 5385638863076814061
+      go_hero_gerald-1_13: 6706292543125436627
+      go_hero_gerald-1_130: -7304712541420619659
+      go_hero_gerald-1_131: 3321488183334549736
+      go_hero_gerald-1_132: -5180293360763150894
+      go_hero_gerald-1_133: 844528789856764406
+      go_hero_gerald-1_134: -7021805314727839443
+      go_hero_gerald-1_135: -5634247785426479632
+      go_hero_gerald-1_136: -213788991828786915
+      go_hero_gerald-1_137: -1267397450229539225
+      go_hero_gerald-1_138: -3502900271618651472
+      go_hero_gerald-1_139: 6557042708441796381
+      go_hero_gerald-1_14: 4753814326517582252
+      go_hero_gerald-1_140: 82777103868685249
+      go_hero_gerald-1_141: 4708683064051840207
+      go_hero_gerald-1_142: -4313438206665519013
+      go_hero_gerald-1_143: -1857214461357163136
+      go_hero_gerald-1_144: -6444620138814620169
+      go_hero_gerald-1_145: 3617109084730574404
+      go_hero_gerald-1_146: 6637437230063790608
+      go_hero_gerald-1_147: 5837260318831654308
+      go_hero_gerald-1_148: -7037726865859130316
+      go_hero_gerald-1_149: 4770470863120147780
+      go_hero_gerald-1_15: 988208049688573509
+      go_hero_gerald-1_150: -6683289814570222344
+      go_hero_gerald-1_151: 6985015955945958960
+      go_hero_gerald-1_152: 7031607592196893941
+      go_hero_gerald-1_153: -675393020250913738
+      go_hero_gerald-1_154: 2754670272713986786
+      go_hero_gerald-1_155: 3580306105175300885
+      go_hero_gerald-1_16: 6669045199950009395
+      go_hero_gerald-1_17: -5690010884430117284
+      go_hero_gerald-1_18: 2667649836964960837
+      go_hero_gerald-1_19: 9022766820892593663
+      go_hero_gerald-1_2: 716001218825130498
+      go_hero_gerald-1_20: -3298748543440986772
+      go_hero_gerald-1_21: 5540937334276459741
+      go_hero_gerald-1_22: -8386435911110106789
+      go_hero_gerald-1_23: -2521958308515311488
+      go_hero_gerald-1_24: 2963596669079688858
+      go_hero_gerald-1_25: -4064074476081899236
+      go_hero_gerald-1_26: 3428360429986106364
+      go_hero_gerald-1_27: 6521103998259050871
+      go_hero_gerald-1_28: 7127510870971757965
+      go_hero_gerald-1_29: 3071292371556119232
+      go_hero_gerald-1_3: 4839399924613645178
+      go_hero_gerald-1_30: -2736201927216716113
+      go_hero_gerald-1_31: 1738211547807192611
+      go_hero_gerald-1_32: 108330438018141
+      go_hero_gerald-1_33: 4393362360358610641
+      go_hero_gerald-1_34: 2859924361033342446
+      go_hero_gerald-1_35: -8794491711897698495
+      go_hero_gerald-1_36: 7137590564402213915
+      go_hero_gerald-1_37: -9213620232634266280
+      go_hero_gerald-1_38: 3230787453308835910
+      go_hero_gerald-1_39: 5164781396155658109
+      go_hero_gerald-1_4: 994552970303764435
+      go_hero_gerald-1_40: -4857110249518538939
+      go_hero_gerald-1_41: 7038584094433173316
+      go_hero_gerald-1_42: 6568263161030551070
+      go_hero_gerald-1_43: 2147905499055482387
+      go_hero_gerald-1_44: 2380099688421114992
+      go_hero_gerald-1_45: -1499950763602655777
+      go_hero_gerald-1_46: -2662466840371884597
+      go_hero_gerald-1_47: -7355841736671645476
+      go_hero_gerald-1_48: -6575560202605351490
+      go_hero_gerald-1_49: 108187345308856459
+      go_hero_gerald-1_5: 1453521883655491749
+      go_hero_gerald-1_50: -2602893818943358526
+      go_hero_gerald-1_51: 9079253213070993311
+      go_hero_gerald-1_52: 7450141648840028786
+      go_hero_gerald-1_53: 7844632775589711484
+      go_hero_gerald-1_54: -1070799359894582811
+      go_hero_gerald-1_55: -4083473038706752980
+      go_hero_gerald-1_56: 4665587612015538804
+      go_hero_gerald-1_57: -3178549125350696839
+      go_hero_gerald-1_58: 5909660452975045249
+      go_hero_gerald-1_59: 7060328854106274488
+      go_hero_gerald-1_6: 2151565095808342807
+      go_hero_gerald-1_60: 3778348106955014541
+      go_hero_gerald-1_61: -8798562679683639362
+      go_hero_gerald-1_62: -7589532258045845507
+      go_hero_gerald-1_63: 6757435009309868441
+      go_hero_gerald-1_64: 3209235475684205413
+      go_hero_gerald-1_65: 136497446252074658
+      go_hero_gerald-1_66: -8350108448296601091
+      go_hero_gerald-1_67: -8714849953144585656
+      go_hero_gerald-1_68: -2116478594039708877
+      go_hero_gerald-1_69: -4575293547698672294
+      go_hero_gerald-1_7: -9121234158195896665
+      go_hero_gerald-1_70: 8533886198580696715
+      go_hero_gerald-1_71: -7976544289776432510
+      go_hero_gerald-1_72: 8120682314906088744
+      go_hero_gerald-1_73: 264613685394208385
+      go_hero_gerald-1_74: -7724866626765586340
+      go_hero_gerald-1_75: -502558125898902061
+      go_hero_gerald-1_76: -4900737932180671490
+      go_hero_gerald-1_77: -3292249154189850902
+      go_hero_gerald-1_78: 5513126888755236337
+      go_hero_gerald-1_79: -3431695249727267603
+      go_hero_gerald-1_8: 730920696778819851
+      go_hero_gerald-1_80: -2931963299149336018
+      go_hero_gerald-1_81: 8608148950753738134
+      go_hero_gerald-1_82: 7093066915248595989
+      go_hero_gerald-1_83: -6047913490546183830
+      go_hero_gerald-1_84: 315130628379565436
+      go_hero_gerald-1_85: -658315617404457022
+      go_hero_gerald-1_86: 3614122742641333039
+      go_hero_gerald-1_87: -8112735485866748910
+      go_hero_gerald-1_88: 5302880472255172965
+      go_hero_gerald-1_89: 1749628263413800858
+      go_hero_gerald-1_9: -1675122876128240830
+      go_hero_gerald-1_90: -3716135303378201693
+      go_hero_gerald-1_91: -812862252244510662
+      go_hero_gerald-1_92: 4367168176308865987
+      go_hero_gerald-1_93: -3871910702592722396
+      go_hero_gerald-1_94: 2172528334036102023
+      go_hero_gerald-1_95: 8374211550255293351
+      go_hero_gerald-1_96: 3432888409621875676
+      go_hero_gerald-1_97: -8464982617705704928
+      go_hero_gerald-1_98: -6185053259944556712
+      go_hero_gerald-1_99: -2076396775780048939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

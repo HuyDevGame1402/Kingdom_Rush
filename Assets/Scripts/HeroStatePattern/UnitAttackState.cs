@@ -11,20 +11,12 @@ public class UnitAttackState : UnitBaseState
     {
         isAttacking = true;
         unit.lastAttackTime = Time.time;
-
-        var config = unit.unitData.animations.attack;
-
-        SpriteSheetAnimator.Instance.PlayAnimation(
-            target: unit.spriteObject,
-            animPrefix: unit.unitData.animations.animPrefix,
-            startFrame: config.startFrame,
-            endFrame: config.endFrame,
-            eventFrame: config.eventFrame,
+        unit.baseUnitAnimationHandler.PlayAttackAnimation(
+            unit.unitData.animations,
+            unit.spriteObject,
             onEventTrigger: () => {
-                // Sát thương khi chạm eventFrame
+                // Sát thương khi chạm eventFrame (nếu cần xử lý tại frame này)
             },
-            offsetConfigs: config.animationConfigOffset,
-            frameRate: unit.unitData.animations.frameRate,
             onComplete: () => {
                 if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
                 {

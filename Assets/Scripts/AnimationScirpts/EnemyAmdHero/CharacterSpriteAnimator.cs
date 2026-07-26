@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
 
-public class EnemySpriteAnimator : MonoBehaviour
+public class CharacterSpriteAnimator : MonoBehaviour
 {
     [System.Serializable]
     public class AtlasMapping
@@ -14,15 +14,15 @@ public class EnemySpriteAnimator : MonoBehaviour
     }
 
     [System.Serializable]
-    public class EnemyAnimationConfig
+    public class CharacterAnimationConfig
     {
-        public string enemyId;
+        public string characterId;
         public TextAsset dataFile;
         public List<AtlasMapping> atlases;
     }
 
-    [Header("Enemy Databases")]
-    public List<EnemyAnimationConfig> enemyConfigs;
+    [Header("Character Databases")]
+    public List<CharacterAnimationConfig> characterConfigs;
 
     [Header("Global Settings")]
     public float defaultFrameRate = 0.1f;
@@ -42,7 +42,7 @@ public class EnemySpriteAnimator : MonoBehaviour
     private Dictionary<string, Dictionary<string, Texture2D>> enemyTextures = new Dictionary<string, Dictionary<string, Texture2D>>();
     private Dictionary<int, Coroutine> activeCoroutines = new Dictionary<int, Coroutine>();
 
-    public static EnemySpriteAnimator Instance { get; private set; }
+    public static CharacterSpriteAnimator Instance { get; private set; }
 
     void Awake()
     {
@@ -54,14 +54,14 @@ public class EnemySpriteAnimator : MonoBehaviour
 
     private void InitializeDatabases()
     {
-        if (enemyConfigs == null) return;
+        if (characterConfigs == null) return;
 
-        foreach (var config in enemyConfigs)
+        foreach (var config in characterConfigs)
         {
-            if (string.IsNullOrEmpty(config.enemyId)) continue;
+            if (string.IsNullOrEmpty(config.characterId)) continue;
 
             // Chuẩn hóa ID quái: Xóa khoảng trắng và đưa về chữ thường
-            string cleanEnemyId = config.enemyId.Trim().ToLower();
+            string cleanEnemyId = config.characterId.Trim().ToLower();
 
             // 1. Xử lý Texture
             var texDict = new Dictionary<string, Texture2D>();

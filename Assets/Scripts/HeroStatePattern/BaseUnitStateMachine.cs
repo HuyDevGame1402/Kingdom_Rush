@@ -37,8 +37,11 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
     public Vector3 positionFlag;
     public bool isRunToFlag;
 
+    public BaseUnitAnimationHandler baseUnitAnimationHandler;
+
     protected virtual void Awake()
     {
+        if(baseUnitAnimationHandler == null) baseUnitAnimationHandler = GetComponent<BaseUnitAnimationHandler>();
         // Khởi tạo các trạng thái có sẵn
         IdleState = new UnitIdleState(this);
         RunState = new UnitRunState(this);

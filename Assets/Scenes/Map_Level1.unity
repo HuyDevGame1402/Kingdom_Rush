@@ -38525,7 +38525,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.87, y: 4.18, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -38592,7 +38592,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809521892}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a160435947e86bb4c94b0f2a331ddf27, type: 3}
   m_Name: 
@@ -38615,15 +38615,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809521892}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f56c29292da77241958d5352def0cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetEnemy: {fileID: 1809521892}
-  enemyId: go_enemies_grass
-  animPrefix: ogre_
-  currentFrameIndex: 27
+  enemyId: go_hero_gerald
+  animPrefix: hero_barracks_
+  currentFrameIndex: 1
   manualPivotOffsets:
   - frameIndex: 63
     pivotYOffset: 0.1
@@ -39948,12 +39948,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffaefb6085b7cce4aa9fab4cf906ebb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyConfigs:
-  - enemyId: go_enemies_grass
+  characterConfigs:
+  - characterId: go_enemies_grass
     dataFile: {fileID: 4900000, guid: 4becafd223079644395335d835313518, type: 3}
     atlases:
     - atlasNameInTxt: go_enemies_grass-1.png
       texture: {fileID: 2800000, guid: a41a9ea6231cacb44b8fa3678297ce03, type: 3}
+  - characterId: go_hero_gerald
+    dataFile: {fileID: 4900000, guid: b4a881378323b434c9c10485ddfcda00, type: 3}
+    atlases:
+    - atlasNameInTxt: go_hero_gerald-1.png
+      texture: {fileID: 2800000, guid: 2d7c4f5793082f54bbf669f403fd3f10, type: 3}
   defaultFrameRate: 0.1
   pixelsPerUnit: 100
 --- !u!1 &1893813497
@@ -42283,6 +42288,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8810445399225762464, guid: 6c75a110b511a9c48be360e3b68bacfa, type: 3}
   m_PrefabInstance: {fileID: 2042587916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2046443024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660554994523108327, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451107008912888444, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_Name
+      value: Hero Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451107008912888444, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928152499720415701, guid: 81aed312eb637b14da79e088646be02f, type: 3}
+      propertyPath: unitData
+      value: 
+      objectReference: {fileID: 11400000, guid: 16763ac91aa52ea479c0021c3c03a4ec, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81aed312eb637b14da79e088646be02f, type: 3}
 --- !u!1 &2049895695
 GameObject:
   m_ObjectHideFlags: 0
@@ -45068,6 +45138,7 @@ SceneRoots:
   - {fileID: 2019266132}
   - {fileID: 9179312490383553106}
   - {fileID: 870067891}
+  - {fileID: 2046443024}
   - {fileID: 1809521893}
   - {fileID: 83623598}
   - {fileID: 695343875}

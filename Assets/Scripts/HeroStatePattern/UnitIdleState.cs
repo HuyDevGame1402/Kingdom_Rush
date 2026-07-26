@@ -8,14 +8,14 @@ public class UnitIdleState : UnitBaseState
 
     public override void Enter()
     {
-        var config = unit.unitData.animations.idle;
-        SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
+        unit.baseUnitAnimationHandler.PlayIdleAnimation(unit.unitData.animations, unit.spriteObject);
+        //var config = unit.unitData.animations.idle;
+        //SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
     
         if(unit.currentTarget != null && unit.IsTargetEnemy() && unit.currentTarget.GetComponent<EnemyController>().isDead)
         {
             unit.ResetTarget();
         }
-    
     }
 
     public override void Update()

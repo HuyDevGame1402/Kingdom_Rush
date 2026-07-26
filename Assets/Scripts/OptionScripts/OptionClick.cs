@@ -31,6 +31,7 @@ public class OptionClick : MonoBehaviour
     private void ReduceUITime_OnReduceFinish()
     {
         isOnClick = true;
+        isSelectedOption = false;
     }
 
     private void Start()
@@ -56,6 +57,12 @@ public class OptionClick : MonoBehaviour
                 OptionManager.Instance.SetSupportOptions(true);
             }
             isSelectedOption = true;
+
+            if(MapPathManager.Instance != null)
+            {
+                MapPathManager.Instance.ActivePolygonCollider2D();
+            }
+
         }
         else
         {

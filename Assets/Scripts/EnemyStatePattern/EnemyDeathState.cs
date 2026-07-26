@@ -6,7 +6,7 @@ public class EnemyDeathState : IEnemyState
     {
         enemy.isDead = true;
 
-        if (EnemySpriteAnimator.Instance != null)
+        if (CharacterSpriteAnimator.Instance != null)
         {
             string id = enemy.unitData.unitName;
             string prefix = enemy.unitData.animations.animPrefix; // Sử dụng tiền tố động từ SO
@@ -16,7 +16,7 @@ public class EnemyDeathState : IEnemyState
             AnimationFrameRange deathConfig = enemy.unitData.animations.death;
 
             // Gọi hàm PlayAnimationByRange nâng cấp
-            EnemySpriteAnimator.Instance.PlayAnimationByRange(
+            CharacterSpriteAnimator.Instance.PlayAnimationByRange(
                 enemy.gameObject, id, prefix, deathConfig, frameRate,
                 onComplete: () => {
                     Debug.Log($"💀 [{enemy.name}] Đã diễn xong hoạt ảnh chết. Xóa GameObject.");

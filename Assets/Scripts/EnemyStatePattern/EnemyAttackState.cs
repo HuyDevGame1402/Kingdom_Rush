@@ -43,7 +43,7 @@ public class EnemyAttackState : IEnemyState
 
     private void ExecuteAttack(EnemyController enemy)
     {
-        if (EnemySpriteAnimator.Instance == null) return;
+        if (CharacterSpriteAnimator.Instance == null) return;
 
         // 1. Lấy dữ liệu định danh và cấu hình đòn đánh từ ScriptableObject
         string id = enemy.unitData.unitName;
@@ -55,13 +55,13 @@ public class EnemyAttackState : IEnemyState
         AnimationFrameRange idleConfig = enemy.unitData.animations.idle;
 
         // 2. Kích hoạt hoạt ảnh tấn công (Truyền nguyên cụm Object chứa list Offset chỉnh tay)
-        EnemySpriteAnimator.Instance.PlayAnimationByRange(
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
             enemy.gameObject, id, prefix, attackConfig, frameRate,
             onComplete: () => {
                 // Khi bổ củi xong, nếu mục tiêu vẫn trong tầm thì quay về hoạt ảnh Idle đứng thủ thế
                 if (!enemy.isDead && enemy.target != null && enemy.IsTargetInAttackRange())
                 {
-                    EnemySpriteAnimator.Instance.PlayAnimationByRange(
+                    CharacterSpriteAnimator.Instance.PlayAnimationByRange(
                         enemy.gameObject, id, prefix, idleConfig, frameRate
                     );
 

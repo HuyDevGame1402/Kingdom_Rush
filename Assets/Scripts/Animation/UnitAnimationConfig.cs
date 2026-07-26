@@ -45,6 +45,14 @@ public class UnitAnimationConfig
     public AnimationFrameRange attack;
     public AnimationFrameRange death;
 
-    [Header("Optional States (Cho Hero hoặc Quái đặc biệt)")]
-    public AnimationFrameRange skill;
+    [Header("Attacks (Hỗ trợ 1 hoặc nhiều dáng đánh)")]
+    // Dùng List giúp Hero khai báo Attack 1, Attack 2... Lính thường chỉ cần 1 phần tử
+    public List<AnimationFrameRange> attacks = new List<AnimationFrameRange>();
+
+    // Hàm tiện ích: Lấy ngẫu nhiên 1 animation đánh thường
+    public AnimationFrameRange GetRandomAttack()
+    {
+        if (attacks == null || attacks.Count == 0) return null;
+        return attacks[UnityEngine.Random.Range(0, attacks.Count)];
+    }
 }
