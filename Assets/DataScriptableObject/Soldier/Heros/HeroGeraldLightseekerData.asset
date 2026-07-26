@@ -23,9 +23,9 @@ MonoBehaviour:
   minDamage: 11
   maxDamage: 18
   attackRange: 0.5
-  attackCooldown: 1.5
+  attackCooldown: 2.5
   animations:
-    animPrefix: go_hero_gerald
+    animPrefix: hero_barracks_
     frameRate: 0.08
     idle:
       startFrame: 1
