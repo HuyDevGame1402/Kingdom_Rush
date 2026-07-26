@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: 8784699126538838626}
   - component: {fileID: 83056286018738495}
   - component: {fileID: 7771183200120436276}
+  - component: {fileID: 1025547466657839781}
   m_Layer: 2
   m_Name: Reinforce_C0
   m_TagString: Untagged
@@ -303,3 +304,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dce64d5d6e2bad439058c2bec1675f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1025547466657839781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451107008912888444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb33529b229e914faa671e668075d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 1
+  heroLevelStat:
+    level: 0
+    maxHP: 0
+    casualHP: 0
+    minDamage: 0
+    maxDamage: 0
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 0
+  minDamage: 0
+  maxDamage: 0
+  armor: 0
+  baseStateMachine: {fileID: 6928152499720415701}

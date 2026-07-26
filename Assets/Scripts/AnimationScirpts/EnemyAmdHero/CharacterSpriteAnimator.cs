@@ -291,46 +291,6 @@ public class CharacterSpriteAnimator : MonoBehaviour
         activeCoroutines[id] = c;
     }
 
-    //IEnumerator AnimateRoutineWithOffset(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, List<int> frameNumbers, List<EnemyAnimConfig> offsetConfigs, float frameRate, Action onComplete)
-    //{
-    //    int currentIndex = 0;
-    //    bool shouldLoop = (onComplete == null);
-
-    //    while (true)
-    //    {
-    //        string currentFrameKey = frames[currentIndex];
-    //        int currentActualFrameNum = frameNumbers[currentIndex];
-    //        SpriteData d = database[currentFrameKey];
-
-    //        // Tìm kiếm xem frame hiện tại có cấu hình offset riêng không
-    //        float calculatedOffsetY = 0f;
-    //        if (offsetConfigs != null && offsetConfigs.Count > 0)
-    //        {
-    //            // Tìm kiếm cấu hình có frameOffset trùng với số frame hiện tại
-    //            EnemyAnimConfig configForFrame = offsetConfigs.Find(c => c.frameOffset == currentActualFrameNum);
-    //            if (configForFrame != null)
-    //            {
-    //                calculatedOffsetY = configForFrame.offsetY;
-    //            }
-    //        }
-
-    //        // Gọi hàm ApplySpriteFrame cải tiến có tham số pivotYOffset
-    //        ApplySpriteFrame(renderer, enemyId, d, calculatedOffsetY);
-
-    //        if (currentIndex == frames.Count - 1)
-    //        {
-    //            if (!shouldLoop)
-    //            {
-    //                yield return new WaitForSeconds(frameRate);
-    //                onComplete?.Invoke();
-    //                yield break;
-    //            }
-    //        }
-
-    //        currentIndex = (currentIndex + 1) % frames.Count;
-    //        yield return new WaitForSeconds(frameRate);
-    //    }
-    //}
     IEnumerator AnimateRoutineWithOffset(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, List<int> frameNumbers, List<EnemyAnimConfig> offsetConfigs, float frameRate, Action onComplete)
     {
         int currentIndex = 0;
@@ -387,30 +347,6 @@ public class CharacterSpriteAnimator : MonoBehaviour
             yield return new WaitForSeconds(frameRate);
         }
     }
-    //IEnumerator AnimateRoutine(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, float frameRate, Action onComplete)
-    //{
-    //    int currentIndex = 0;
-    //    bool shouldLoop = (onComplete == null);
-
-    //    while (true)
-    //    {
-    //        SpriteData d = database[frames[currentIndex]];
-    //        ApplySpriteFrame(renderer, enemyId, d);
-
-    //        if (currentIndex == frames.Count - 1)
-    //        {
-    //            if (!shouldLoop)
-    //            {
-    //                yield return new WaitForSeconds(frameRate);
-    //                onComplete?.Invoke();
-    //                yield break;
-    //            }
-    //        }
-
-    //        currentIndex = (currentIndex + 1) % frames.Count;
-    //        yield return new WaitForSeconds(frameRate);
-    //    }
-    //}
     IEnumerator AnimateRoutine(SpriteRenderer renderer, string enemyId, Dictionary<string, SpriteData> database, List<string> frames, float frameRate, Action onComplete)
     {
         int currentIndex = 0;
@@ -517,11 +453,17 @@ public class CharacterSpriteAnimator : MonoBehaviour
         float localY = anchorFullY - trimTop;
 
         // ── 5. Quy đổi ra [0,1] theo kích thước miếng cắt và cộng thêm PIVOT OFFSET ──
+        // ── 5. Quy đổi ra [0,1] theo kích thước miếng cắt và cộng thêm PIVOT OFFSET ──
         float pivotX = Mathf.Clamp01(localX / croppedW);
 
-        // Tính toán pivotY chuẩn theo hệ tọa độ gốc, sau đó cộng thêm lượng offset của bạn
-        float basePivotY = Mathf.Clamp01(1f - (localY / croppedH));
-        float pivotY = Mathf.Clamp01(basePivotY + pivotYOffset);
+        // Tọa độ Pivot Y cơ bản gốc
+        float basePivotY = 1f - (localY / croppedH);
+
+        // 🔥 ĐỔI THÀNH DẤU TRỪ (-):
+        // - Nhập offset DƯƠNG (+) -> Pivot Y GIẢM -> Sprite nhô LÊN
+        // - Nhập offset ÂM (-)   -> Pivot Y TĂNG -> Sprite thụt XUỐNG
+        // Bỏ Clamp01 để cho phép Pivot chạy thoải mái ra ngoài biên [0, 1]
+        float pivotY = basePivotY - pivotYOffset;
 
         // Tạo Sprite với tâm Pivot mới đã được bù trừ hoàn hảo
         renderer.sprite = Sprite.Create(

@@ -16,7 +16,7 @@ MonoBehaviour:
   reinforceType: 0
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv1"
-  maxHealth: 100
+  maxHealth: 150
   moveSpeed: 1
   armor: 0
   magicResistance: 0

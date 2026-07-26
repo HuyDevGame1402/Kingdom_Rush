@@ -69,4 +69,28 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             onComplete: onComplete
         );
     }
+
+    public void PlayCourageSkillAnimation(UnitAnimationConfig baseAnim, GeraldLightseekerAnimationConfig heroAnim, GameObject target, Action onComplete)
+    {
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+            target: target,
+            enemyId: animationID,
+            animPrefix: baseAnim.animPrefix,
+            rangeConfig: heroAnim.courageSkill,
+            frameRate: baseAnim.frameRate,
+            onComplete: onComplete
+        );
+    }
+
+    public void PlayShieldBlockAnimation(UnitAnimationConfig baseAnim, GeraldLightseekerAnimationConfig heroAnim, GameObject target, Action onComplete)
+    {
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+            target: target,
+            enemyId: animationID,
+            animPrefix: baseAnim.animPrefix,
+            rangeConfig: heroAnim.shieldBlock,
+            frameRate: baseAnim.frameRate,
+            onComplete: onComplete
+        );
+    }
 }

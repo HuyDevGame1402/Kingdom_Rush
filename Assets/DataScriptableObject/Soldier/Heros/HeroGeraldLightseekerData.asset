@@ -81,22 +81,23 @@ MonoBehaviour:
   maxAttacker: 2
   bounty: 0
   livesTaken: 0
+  isHasLevelHero: 1
   heroAnimations:
     levelUp:
-      startFrame: 1
-      endFrame: 1
+      startFrame: 29
+      endFrame: 52
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     courageSkill:
-      startFrame: 1
-      endFrame: 1
+      startFrame: 78
+      endFrame: 131
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     shieldBlock:
-      startFrame: 1
-      endFrame: 1
+      startFrame: 53
+      endFrame: 77
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
@@ -107,5 +108,94 @@ MonoBehaviour:
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
-  healthPerLevel: 20
-  damagePerLevel: 2
+  levelStats:
+  - level: 1
+    expToNextLevel: 30
+    maxHP: 400
+    casualHP: 480
+    minDamage: 11
+    maxDamage: 18
+    armorType: 30
+    armorPercentage: 0.3
+    respawnTime: 15
+  - level: 2
+    expToNextLevel: 70
+    maxHP: 420
+    casualHP: 504
+    minDamage: 12
+    maxDamage: 20
+    armorType: 30
+    armorPercentage: 0.3
+    respawnTime: 15
+  - level: 3
+    expToNextLevel: 120
+    maxHP: 440
+    casualHP: 528
+    minDamage: 14
+    maxDamage: 23
+    armorType: 50
+    armorPercentage: 0.4
+    respawnTime: 15
+  - level: 4
+    expToNextLevel: 180
+    maxHP: 460
+    casualHP: 552
+    minDamage: 15
+    maxDamage: 25
+    armorType: 50
+    armorPercentage: 0.4
+    respawnTime: 15
+  - level: 5
+    expToNextLevel: 250
+    maxHP: 480
+    casualHP: 576
+    minDamage: 17
+    maxDamage: 28
+    armorType: 50
+    armorPercentage: 0.5
+    respawnTime: 15
+  - level: 6
+    expToNextLevel: 350
+    maxHP: 500
+    casualHP: 600
+    minDamage: 18
+    maxDamage: 30
+    armorType: 50
+    armorPercentage: 0.5
+    respawnTime: 15
+  - level: 7
+    expToNextLevel: 480
+    maxHP: 520
+    casualHP: 624
+    minDamage: 20
+    maxDamage: 33
+    armorType: 50
+    armorPercentage: 0.6
+    respawnTime: 15
+  - level: 8
+    expToNextLevel: 630
+    maxHP: 540
+    casualHP: 648
+    minDamage: 21
+    maxDamage: 35
+    armorType: 50
+    armorPercentage: 0.6
+    respawnTime: 15
+  - level: 9
+    expToNextLevel: 890
+    maxHP: 560
+    casualHP: 672
+    minDamage: 23
+    maxDamage: 38
+    armorType: 80
+    armorPercentage: 0.7
+    respawnTime: 15
+  - level: 10
+    expToNextLevel: 0
+    maxHP: 580
+    casualHP: 696
+    minDamage: 24
+    maxDamage: 40
+    armorType: 80
+    armorPercentage: 0.8
+    respawnTime: 15

@@ -21,7 +21,6 @@ public class TriggerEnemyHero : MonoBehaviour
             if(collision.transform.TryGetComponent(out EnemyController enemyCtr)
                 /*&& enemyCtr.CheckAttackerCount()*/ && heroStateMachine.IsTargetEnemy() == false)
             {
-                //enemyCtr.attackerCount += 1;
                 heroStateMachine.currentTarget = collision.gameObject.transform;
             }
 

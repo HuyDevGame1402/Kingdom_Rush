@@ -46,6 +46,8 @@ public class UnitDataSO : ScriptableObject
     public int bounty;
     public int livesTaken;
 
+    public bool isHasLevelHero;
+
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()
     {
