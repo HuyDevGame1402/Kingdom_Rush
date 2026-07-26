@@ -29,14 +29,14 @@ public class MapSelectUIGame : MonoBehaviour
     {
         for(int i = 0; i < listButtonChooseMap.Count; i++)
         {
-            listButtonChooseMap[i].OnClick += MapSelectUIGame_OnClick;
+            listButtonChooseMap[i].OnClickChooseMap += MapSelectUIGame_OnClick;
         }
     }
     private void UnRegisterEventChooseMap()
     {
         for (int i = 0; i < listButtonChooseMap.Count; i++)
         {
-            listButtonChooseMap[i].OnClick -= MapSelectUIGame_OnClick;
+            listButtonChooseMap[i].OnClickChooseMap -= MapSelectUIGame_OnClick;
         }
     }
     private void MapSelectUIGame_OnClick(LevelData obj)

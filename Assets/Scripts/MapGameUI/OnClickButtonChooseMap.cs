@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class OnClickButtonChooseMap : MonoBehaviour
 {
     [SerializeField] private LevelData levelData;
-    public event Action<LevelData> OnClick;
+    public event Action<LevelData> OnClickChooseMap;
 
     private void Start()
     {
@@ -14,6 +14,12 @@ public class OnClickButtonChooseMap : MonoBehaviour
 
     private void OnClickChooseMapGame()
     {
-        OnClick?.Invoke(levelData);
+
+        if(SoundMenuGameManager.Instance != null)
+        {
+            SoundMenuGameManager.Instance.PlayAudioSourceClickButton();
+        }
+
+        OnClickChooseMap?.Invoke(levelData);
     }
 }
