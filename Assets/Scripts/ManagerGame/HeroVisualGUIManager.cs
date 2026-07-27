@@ -15,6 +15,7 @@ public class HeroVisualGUIManager : MonoBehaviour
     [SerializeField] private Image expGUI;
     private RectTransform expRectTransform;
     [SerializeField] private TextMeshProUGUI currentLevelText;
+    [SerializeField] private OnClickMovePlayerHero onClickMovePlayerHero;
     private Vector3 localScaleHealth = Vector3.one;
     private float percentHealth;
     private Vector3 localScaleEXP = Vector3.one;
@@ -25,6 +26,15 @@ public class HeroVisualGUIManager : MonoBehaviour
         Instance = this;
         healthRectTransform = healthGUI.GetComponent<RectTransform>();
         expRectTransform = expGUI.GetComponent<RectTransform>();
+        onClickMovePlayerHero.OnClickMoveToFlag += PlayerHeroMoveToFlag;
+    }
+
+    private void PlayerHeroMoveToFlag(Vector3 pos)
+    {
+        if (playerHero.TryGetComponent(out HeroDataInGame heroDataInGame))
+        {
+            heroDataInGame.SetPositionFlag(pos);
+        }
     }
 
     public void SetPlayerHero(Transform playerHero)

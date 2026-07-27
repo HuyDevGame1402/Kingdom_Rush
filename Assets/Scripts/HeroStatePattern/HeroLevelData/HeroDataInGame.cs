@@ -14,8 +14,11 @@ public class HeroDataInGame : MonoBehaviour
     public int nextExp;
     public event Action<int, int> OnChangeExpEvent;
     public event Action<int> OnLevelUpEvent;
+    public event Action<Vector3> OnMoveToFlagEvent;
 
     [SerializeField] private BaseUnitStateMachine baseStateMachine;
+
+    public Vector3 positionFlag;
 
     private void Start()
     {
@@ -61,5 +64,11 @@ public class HeroDataInGame : MonoBehaviour
         }
 
         OnChangeExpEvent?.Invoke(currentExp, nextExp);
+    }
+
+    public void SetPositionFlag(Vector3 pos)
+    {
+        positionFlag = pos;
+        OnMoveToFlagEvent?.Invoke(positionFlag);
     }
 }

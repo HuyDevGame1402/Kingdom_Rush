@@ -30495,6 +30495,8 @@ GameObject:
   - component: {fileID: 1429764784}
   - component: {fileID: 1429764783}
   - component: {fileID: 1429764782}
+  - component: {fileID: 1429764785}
+  - component: {fileID: 1429764786}
   m_Layer: 5
   m_Name: ButtonHeroGUI
   m_TagString: Untagged
@@ -30603,6 +30605,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429764780}
   m_CullTransparentMesh: 1
+--- !u!114 &1429764785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429764780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5103bf8c385d6ac47a226397af2b6fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedGameObject: {fileID: 2023201918}
+  onClickMovePlayerHero: {fileID: 1429764786}
+--- !u!114 &1429764786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429764780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612d4623607b6ed46ba05fd3bf7834d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1434565690
 GameObject:
   m_ObjectHideFlags: 0
@@ -35732,6 +35763,7 @@ MonoBehaviour:
   healthGUI: {fileID: 1770291268}
   expGUI: {fileID: 1144840697}
   currentLevelText: {fileID: 1420975744}
+  onClickMovePlayerHero: {fileID: 1429764786}
 --- !u!1001 &1638338408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45885,6 +45917,7 @@ MonoBehaviour:
   currentExp: 0
   nextExp: 0
   baseStateMachine: {fileID: 9121840669402516367}
+  positionFlag: {x: 0, y: 0, z: 0}
 --- !u!114 &9121840669402516370
 MonoBehaviour:
   m_ObjectHideFlags: 0

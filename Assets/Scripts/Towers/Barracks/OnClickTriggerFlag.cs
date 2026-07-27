@@ -17,10 +17,6 @@ public class OnClickTriggerFlag : MonoBehaviour
     public event Action<Vector3> OnMoveToFlagEvent;
     [SerializeField] private TowerSoundBrackTower towerSoundBrackTower;    
     
-
-    
-    
-
     private void OnEnable()
     { 
         justActivated = true;

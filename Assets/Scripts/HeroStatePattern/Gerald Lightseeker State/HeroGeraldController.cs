@@ -34,6 +34,12 @@ public class HeroGeraldController : BaseUnitStateMachine
         LevelUpState = new GeraldLevelUpState(this); // ✅ MỚI
 
         transform.GetComponent<HeroDataInGame>().OnLevelUpEvent += TriggerLevelUp;
+        transform.GetComponent<HeroDataInGame>().OnMoveToFlagEvent += HeroGeraldController_OnMoveToFlagEvent;
+    }
+
+    private void HeroGeraldController_OnMoveToFlagEvent(Vector3 pos)
+    {
+        MoveToFlag(pos);
     }
 
     protected override void Start()
