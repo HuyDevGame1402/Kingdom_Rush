@@ -9,7 +9,10 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     [Header("Combat Targets (Dành cho AI)")]
     public Transform currentTarget;
+    // list enemy ở gần đánh cận chiến
     public List<Transform> targetList = new List<Transform>();
+    // list enemy ở xa đánh xa
+    public List<Transform> targetLongRangeList = new List<Transform>();
     [HideInInspector] public float lastAttackTime;
 
     // Quản lý các States
@@ -39,6 +42,8 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
 
     public BaseUnitAnimationHandler baseUnitAnimationHandler;
 
+    [SerializeField] private Transform triggerAttackRange;
+
     protected virtual void Awake()
     {
         if(baseUnitAnimationHandler == null) baseUnitAnimationHandler = GetComponent<BaseUnitAnimationHandler>();
@@ -50,6 +55,20 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         healthHero = GetComponent<HealthHero>();
         healthHero.InitHealth((int)unitData.maxHealth);
         healthHero.OnDead += HealthHero_OnDead;
+        SetActiveTriggerAttackRange();
+    }
+
+    private void SetActiveTriggerAttackRange()
+    {
+        if (triggerAttackRange == null) return;
+        if (unitData.isLongRangeAttack)
+        {
+            triggerAttackRange.gameObject.SetActive(true);
+        }
+        else
+        {
+            triggerAttackRange.gameObject.SetActive(false);
+        }
     }
 
     private void HealthHero_OnDead()
@@ -117,10 +136,26 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
     public bool IsTargetEnemy()
     {
         if (currentTarget == null) return false;
-
         // Kiểm tra xem mục tiêu có đúng Tag kẻ địch hay không
         return currentTarget.CompareTag("EnemyKingdomRush");
+
     }
+
+    public bool CheckEnemyInCloseCombat(Transform enemy)
+    {
+        // nếu dạng cận chiến thì k cần setup lại enemy
+        if (unitData.isLongRangeAttack == false) return false;
+        // nếu enemy vào dạng cận chiến mà  chính là thg ở bên ngoài long range đi vào thì k cần set lại
+        if (currentTarget == enemy) return false;
+
+        // cần set lại enemy cận chiến nếu thứ 1 là khác current enemy, thứ 2 current enemy đang ở long range
+        if(currentTarget != enemy && CheckEnemyInAttackLongRange())
+        {
+            return true;
+        }
+        return false;
+    }
+
     public bool IsAlignedWithTarget(float tolerance = 0.05f)
     {
         if (currentTarget == null)
@@ -302,5 +337,16 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         {
             TransitionToState(RunState);
         }
+    }
+    // trả về true nếu enemy trong pv tấn công xa
+    public bool CheckEnemyInAttackLongRange()
+    {
+        if (unitData.isLongRangeAttack == false) return false;
+        return (targetLongRangeList.Contains(currentTarget) && !targetList.Contains(currentTarget));
+    }
+
+    public bool CheckEnemyInAttackCloseCombat()
+    {
+        return targetList.Contains(currentTarget);
     }
 }

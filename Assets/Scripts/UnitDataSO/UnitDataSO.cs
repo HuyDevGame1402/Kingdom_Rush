@@ -31,6 +31,7 @@ public class UnitDataSO : ScriptableObject
     public float maxDamage;
     public float attackRange = 0.5f;
     public float attackCooldown = 1.5f;
+    public float attackCooldownAdd;
 
     [Header("Animation Settings")]
     public UnitAnimationConfig animations;
@@ -47,6 +48,7 @@ public class UnitDataSO : ScriptableObject
     public int livesTaken;
 
     public bool isHasLevelHero;
+    public bool isLongRangeAttack;
 
     public Sprite characterGUI;
 

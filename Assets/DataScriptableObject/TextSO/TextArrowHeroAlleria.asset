@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6b10f0e26587c48b183e31fb6b2c20, type: 3}
+  m_Name: TextArrowHeroAlleria
+  m_EditorClassIdentifier: 
+  textId: 1
+  sprites:
+  - {fileID: 1499306358, guid: 547c1537cb39c6946a67b7df0000b861, type: 3}
+  - {fileID: 6951528819651954738, guid: 7d94993e4b04f914eb991bd2860c5b10, type: 3}
+  - {fileID: -3508723787017080785, guid: 7d94993e4b04f914eb991bd2860c5b10, type: 3}
+  - {fileID: 5735824713246589990, guid: 7d94993e4b04f914eb991bd2860c5b10, type: 3}

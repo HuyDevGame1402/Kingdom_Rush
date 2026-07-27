@@ -16,14 +16,15 @@ MonoBehaviour:
   reinforceType: 0
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv1"
-  maxHealth: 20
+  maxHealth: 250
   moveSpeed: 1
   armor: 0
   magicResistance: 0
-  minDamage: 20
-  maxDamage: 30
+  minDamage: 1
+  maxDamage: 4
   attackRange: 0.25
   attackCooldown: 2.5
+  attackCooldownAdd: 0
   animations:
     animPrefix: goblin_
     frameRate: 0.04
@@ -72,4 +73,5 @@ MonoBehaviour:
   bounty: 3
   livesTaken: 1
   isHasLevelHero: 0
+  isLongRangeAttack: 0
   characterGUI: {fileID: 0}

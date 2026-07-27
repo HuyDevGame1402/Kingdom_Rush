@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UnitRunState : UnitBaseState
 {
@@ -12,8 +10,6 @@ public class UnitRunState : UnitBaseState
     {
         // Chạy animation di chuyển
         unit.baseUnitAnimationHandler.PlayRunAnimation(unit.unitData.animations, unit.spriteObject);
-        //var config = unit.unitData.animations.run;
-        //SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
 
         // Đặt mục tiêu di chuyển
         SetTargetDestination();
@@ -46,14 +42,14 @@ public class UnitRunState : UnitBaseState
 
     public override void Update()
     {
-        // Nếu mất target VÀ không có lệnh chạy tới cờ -> Quay về Idle
+        // 1. Mất target VÀ không chạy tới cờ -> Về Idle
         if ((unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf) && !unit.isRunToFlag)
         {
             unit.TransitionToState(unit.IdleState);
             return;
         }
 
-        // CHỈ cập nhật đuổi theo Enemy NẾU lính KHÔNG trong trạng thái chạy theo Cờ
+        // 2. Cập nhật vị trí đuổi theo Enemy (chỉ khi không đi tới cờ)
         if (!unit.isRunToFlag && unit.IsTargetEnemy() && unit.currentTarget != null)
         {
             actualTargetPosition = unit.currentTarget.position;
@@ -62,24 +58,45 @@ public class UnitRunState : UnitBaseState
         Vector2 currentPos = unit.transform.position;
         float distance = Vector2.Distance(currentPos, actualTargetPosition);
 
-        //--------------------------------------------------
-        // TRƯỜNG HỢP 1: ĐANG CHẠY ĐẾN CỜ (IS RUN TO FLAG)
-        //--------------------------------------------------
+        // --------------------------------------------------
+        // TRƯỜNG HỢP 1: ĐANG CHẠY ĐẾN CỜ
+        // --------------------------------------------------
         if (unit.isRunToFlag)
         {
-            // Đến đích cờ (bán kính <= 0.15f)
             if (distance <= 0.15f)
             {
-                unit.isRunToFlag = false; // ✅ Đã đến cờ -> Reset trạng thái cờ
-                unit.TransitionToState(unit.IdleState); // Về Idle để bắt đầu quét tìm enemy xung quanh cờ mới
+                unit.isRunToFlag = false;
+                unit.TransitionToState(unit.IdleState);
                 return;
             }
         }
-        //--------------------------------------------------
-        // TRƯỜNG HỢP 2: TỰ ĐỘNG ĐỦI THEO ĐỊCH (KHI KHÔNG CÓ CỜ)
-        //--------------------------------------------------
+        // --------------------------------------------------
+        // TRƯỜNG HỢP 2: TỰ ĐỘNG ĐỦI THEO ĐỊCH
+        // --------------------------------------------------
         else if (unit.IsTargetEnemy())
         {
+            // --- XỬ LÝ DÀNH CHO UNIT ĐÁNH XA ---
+            if (unit.unitData.isLongRangeAttack)
+            {
+                bool isInLongRange = unit.CheckEnemyInAttackLongRange();
+
+                if (isInLongRange)
+                {
+                    // Dừng di chuyển ngay lập tức khi quái đã vào tầm đánh xa
+                    if (unit.CanAttack())
+                    {
+                        unit.TransitionToState(unit.AttackState);
+                    }
+                    else
+                    {
+                        // Nếu đang chờ Cooldown, đứng đợi (Idle) chứ KHÔNG chạy tiếp vào mặt Enemy
+                        unit.TransitionToState(unit.IdleState);
+                    }
+                    return; // 🛑 Bắt buộc return để KHÔNG chạy xuống đoạn code di chuyển ở dưới
+                }
+            }
+
+            // --- XỬ LÝ CẬN CHIẾN (Hoặc Unit đánh xa khi Enemy đã áp sát Cận chiến) ---
             bool inAttackRange = distance <= unit.unitData.attackRange;
 
             if (inAttackRange)
@@ -100,7 +117,6 @@ public class UnitRunState : UnitBaseState
                     return;
                 }
 
-                // Đã nằm trong tầm đánh & thẳng hàng Y
                 if (unit.CanAttack())
                 {
                     unit.TransitionToState(unit.AttackState);
@@ -112,9 +128,9 @@ public class UnitRunState : UnitBaseState
                 return;
             }
         }
-        //--------------------------------------------------
+        // --------------------------------------------------
         // TRƯỜNG HỢP 3: ĐIỂM CHỈ ĐỊNH KHÁC
-        //--------------------------------------------------
+        // --------------------------------------------------
         else
         {
             if (distance <= 0.15f)
@@ -125,9 +141,9 @@ public class UnitRunState : UnitBaseState
             }
         }
 
-        //--------------------------------------------------
-        // XỬ LÝ DI CHUYỂN (MOVE LOGIC)
-        //--------------------------------------------------
+        // --------------------------------------------------
+        // DI CHUYỂN (Chỉ chạy khi chưa vào tầm đánh)
+        // --------------------------------------------------
         Vector3 direction = ((Vector3)actualTargetPosition - unit.transform.position).normalized;
         unit.transform.position += direction * unit.unitData.moveSpeed * Time.deltaTime;
 

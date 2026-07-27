@@ -41,11 +41,29 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
     UnitAnimationConfig animData,
     GameObject target,
     Action onEventTrigger,
-    Action onComplete)
+    Action onComplete, bool isLongAttackRangeCurrent, bool isLongAttackRange)
     {
-        AnimationFrameRange config = (animData.attacks != null && animData.attacks.Count > 0)
-            ? animData.GetRandomAttack()
-            : animData.attack;
+        AnimationFrameRange config;
+        if (isLongAttackRangeCurrent == false && isLongAttackRange == false)
+        {
+            config = (animData.attacks != null && animData.attacks.Count > 0)
+                   ? animData.GetRandomAttack()
+                   : animData.attack;
+        }
+        else if(isLongAttackRange && isLongAttackRangeCurrent)
+        {
+            // tại index = 0 thì chính là attack đánh xa
+            config = animData.attacks[0];
+        }
+        else if(isLongAttackRangeCurrent == false && isLongAttackRange == true)
+        {
+            config = animData.attacks[1];
+        }
+        // thêm vào cho có chứ k rơi vào nhánh này
+        else
+        {
+            config = animData.attacks[0];
+        }
 
         // Bổ sung tham số onEventTrigger vào call
         CharacterSpriteAnimator.Instance.PlayAnimationByRange(
@@ -111,6 +129,56 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             rangeConfig: config,
             frameRate: baseConfig.frameRate,
             onEventTrigger: null,
+            onComplete: onComplete
+        );
+    }
+    public void PlayLevelUpAnimation(
+        UnitAnimationConfig baseConfig,
+        AlleriaSwiftwindAnimationConfig heroConfig,
+        GameObject spriteObject,
+        Action onComplete)
+    {
+        var config = heroConfig.levelUp;
+
+        // Chuyển sang dùng CharacterSpriteAnimator đồng bộ với toàn bộ class
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+            target: spriteObject,
+            enemyId: animationID,
+            animPrefix: baseConfig.animPrefix,
+            rangeConfig: config,
+            frameRate: baseConfig.frameRate,
+            onEventTrigger: null,
+            onComplete: onComplete
+        );
+    }
+    public void PlayMultishotSkillAnimation(
+        UnitAnimationConfig baseAnim,
+        AlleriaSwiftwindAnimationConfig heroAnim,
+        GameObject target,
+        Action onComplete)
+    {
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+            target: target,
+            enemyId: animationID,
+            animPrefix: baseAnim.animPrefix,
+            rangeConfig: heroAnim.multishotSkill,
+            frameRate: baseAnim.frameRate,
+            onComplete: onComplete
+        );
+    }
+
+    public void PlayCallOfTheWildSkillAnimation(
+        UnitAnimationConfig baseAnim,
+        AlleriaSwiftwindAnimationConfig heroAnim,
+        GameObject target,
+        Action onComplete)
+    {
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+            target: target,
+            enemyId: animationID,
+            animPrefix: baseAnim.animPrefix,
+            rangeConfig: heroAnim.callOfTheWildSkill,
+            frameRate: baseAnim.frameRate,
             onComplete: onComplete
         );
     }

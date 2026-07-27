@@ -8,6 +8,8 @@ public class HeroDataInGame : MonoBehaviour
 
     public int minDamage;
     public int maxDamage;
+    public int minRangedDamage;
+    public int maxRangedDamage;
     public float armor;
 
     public int currentExp;
@@ -39,6 +41,8 @@ public class HeroDataInGame : MonoBehaviour
         heroLevelStat = transform.GetComponent<IHasDataLevel>().GetHeroLevelStat(currentLevel);
         minDamage = heroLevelStat.minDamage;
         maxDamage = heroLevelStat.maxDamage;
+        minRangedDamage = heroLevelStat.minRangedDamage;
+        maxRangedDamage = heroLevelStat.maxRangedDamage;
         armor = heroLevelStat.armorPercentage;
         nextExp = heroLevelStat.expToNextLevel;
     }

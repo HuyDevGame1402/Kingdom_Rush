@@ -6,62 +6,80 @@ public class UnitAttackState : UnitBaseState
     public bool IsAttacking => isAttacking;
 
     public UnitAttackState(BaseUnitStateMachine unit) : base(unit) { }
-
     private int damageFinal;
+    private bool isLongAttackRangeCurrent;
 
     public override void Enter()
     {
+        FaceTarget();
         isAttacking = true;
-        unit.lastAttackTime = Time.time;
+        //unit.lastAttackTime = Time.time;
+        isLongAttackRangeCurrent = unit.unitData.isLongRangeAttack;
+
+        if (unit.CheckEnemyInAttackLongRange())
+        {
+            isLongAttackRangeCurrent = true;
+        }
+        else
+        {
+            isLongAttackRangeCurrent = false;
+        }
+
+        if(unit.unitData.isLongRangeAttack && isLongAttackRangeCurrent == false)
+        {
+            unit.lastAttackTime = Time.time + unit.unitData.attackCooldownAdd;
+        }
+        else
+        {
+            unit.lastAttackTime = Time.time;
+        }
+
         unit.baseUnitAnimationHandler.PlayAttackAnimation(
             unit.unitData.animations,
             unit.spriteObject,
             onEventTrigger: () => {
-                // Sát thương khi chạm eventFrame (nếu cần xử lý tại frame này)
-                if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
+                // cận chiến
+                if(isLongAttackRangeCurrent == false)
                 {
-                    damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().minDamage,
-                        unit.GetComponent<HeroDataInGame>().maxDamage);
-                    enemy.TakeDamage(damageFinal
-                        /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
-                        unit.textSO,
-                        unit.transform
-                    );
-                }
+                    // Sát thương khi chạm eventFrame (nếu cần xử lý tại frame này)
+                    if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
+                    {
+                        damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().minDamage,
+                            unit.GetComponent<HeroDataInGame>().maxDamage);
+                        enemy.TakeDamage(damageFinal
+                            /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
+                            unit.textSO,
+                            unit.transform
+                        );
+                    }
 
-                // Add Exp if hero is PlayerHero not hero of tower or hero farmer
-                if (unit.TryGetComponent(out HeroEXPManager expManager))
+                    // Add Exp if hero is PlayerHero not hero of tower or hero farmer
+                    if (unit.TryGetComponent(out HeroEXPManager expManager))
+                    {
+                        expManager.OnDealDamage(damageFinal);
+                    }
+                    if (SoundGameAttackManager.Instance != null)
+                    {
+                        SoundGameAttackManager.Instance.PlayAudioSoliderAttack();
+                    }
+                }
+                // đánh xa
+                else
                 {
-                    expManager.OnDealDamage(damageFinal);
+                    if(
+                    //unit.currentTarget.TryGetComponent(out EnemyController enemyController) &&
+                    //enemyController.isDead == false &&
+                    unit.TryGetComponent(out IHasSpawnBullet spawnBullet))
+                    {
+                        spawnBullet.SpawnBullet(unit.currentTarget);
+                    }
                 }
             },
             onComplete: () => {
-                //if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
-                //{
-                //    damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().minDamage,
-                //        unit.GetComponent<HeroDataInGame>().maxDamage);
-                //    enemy.TakeDamage(damageFinal
-                //        /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
-                //        unit.textSO,
-                //        unit.transform
-                //    );
-                //}
-
-                //// Add Exp if hero is PlayerHero not hero of tower or hero farmer
-                //if(unit.TryGetComponent(out HeroEXPManager expManager))
-                //{
-                //    expManager.OnDealDamage(damageFinal);
-                //}
-
-
                 isAttacking = false;
-            }
+            }, isLongAttackRangeCurrent, unit.unitData.isLongRangeAttack
         );
 
-        if (SoundGameAttackManager.Instance != null)
-        {
-            SoundGameAttackManager.Instance.PlayAudioSoliderAttack();
-        }
     }
 
     public override void Update()
@@ -103,5 +121,23 @@ public class UnitAttackState : UnitBaseState
     public override void Exit()
     {
         isAttacking = false;
+    }
+    private void FaceTarget()
+    {
+        if (unit.currentTarget == null)
+            return;
+
+        float dirX = unit.currentTarget.position.x - unit.transform.position.x;
+
+        if (Mathf.Abs(dirX) < 0.01f)
+            return;
+
+        float scaleX = (dirX > 0 ? 1f : -1f) * unit.unitData.heroScale;
+
+        unit.spriteObject.transform.localScale =
+            new Vector3(
+                scaleX,
+                unit.unitData.heroScale,
+                1f);
     }
 }

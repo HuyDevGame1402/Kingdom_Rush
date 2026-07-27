@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6452a2043288b43bfff19da1493476, type: 3}
+  m_Name: HeroAlleriaSwiftwindData
+  m_EditorClassIdentifier: 
+  unitName: Alleria Swiftwind
+  reinforceType: 3
+  unitType: 1
+  description: "L\xEDnh Cung th\u1EE7"
+  maxHealth: 250
+  moveSpeed: 2
+  armor: 0
+  magicResistance: 0
+  minDamage: 2
+  maxDamage: 4
+  attackRange: 0.5
+  attackCooldown: 1
+  attackCooldownAdd: 1
+  animations:
+    animPrefix: hero_archer_
+    frameRate: 0.08
+    idle:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    run:
+      startFrame: 2
+      endFrame: 6
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    runDown:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    runUp:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    attack:
+      startFrame: 1
+      endFrame: 1
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    death:
+      startFrame: 118
+      endFrame: 125
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    attacks:
+    - startFrame: 7
+      endFrame: 17
+      hasEvent: 1
+      eventFrame: 13
+      animationConfigOffset: []
+    - startFrame: 19
+      endFrame: 33
+      hasEvent: 1
+      eventFrame: 26
+      animationConfigOffset: []
+  localScaleLeft: {x: 0, y: 0, z: 0}
+  localScaleRight: {x: 0, y: 0, z: 0}
+  heroScale: 1.8
+  timeToResurrect: 15
+  maxAttacker: 2
+  bounty: 0
+  livesTaken: 0
+  isHasLevelHero: 1
+  isLongRangeAttack: 1
+  characterGUI: {fileID: 608920292672427001, guid: 31228bfd6a07fef428833fdc5bf57c34, type: 3}
+  heroAnimations:
+    levelUp:
+      startFrame: 34
+      endFrame: 52
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    multishotSkill:
+      startFrame: 53
+      endFrame: 72
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+    callOfTheWildSkill:
+      startFrame: 78
+      endFrame: 117
+      hasEvent: 0
+      eventFrame: -1
+      animationConfigOffset: []
+  multishotCooldown: 4
+  multishotLevels:
+  - abilityLevel: 1
+    requiredHeroLevel: 2
+    arrowCount: 3
+  - abilityLevel: 2
+    requiredHeroLevel: 5
+    arrowCount: 4
+  - abilityLevel: 3
+    requiredHeroLevel: 8
+    arrowCount: 5
+  wildcatRespawnTime: 20
+  wildcatStats:
+  - abilityLevel: 1
+    requiredHeroLevel: 4
+    maxHP: 200
+    casualHP: 240
+    flashHP: 250
+    minDamage: 6
+    maxDamage: 8
+    armorType: 0
+    respawnTime: 20
+  - abilityLevel: 2
+    requiredHeroLevel: 7
+    maxHP: 400
+    casualHP: 480
+    flashHP: 500
+    minDamage: 10
+    maxDamage: 12
+    armorType: 0
+    respawnTime: 20
+  - abilityLevel: 3
+    requiredHeroLevel: 10
+    maxHP: 600
+    casualHP: 720
+    flashHP: 750
+    minDamage: 14
+    maxDamage: 16
+    armorType: 0
+    respawnTime: 20
+  levelStats:
+  - level: 1
+    expToNextLevel: 30
+    maxHP: 250
+    casualHP: 300
+    minDamage: 2
+    maxDamage: 4
+    minRangedDamage: 7
+    maxRangedDamage: 12
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 2
+    expToNextLevel: 70
+    maxHP: 270
+    casualHP: 324
+    minDamage: 4
+    maxDamage: 6
+    minRangedDamage: 8
+    maxRangedDamage: 14
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 3
+    expToNextLevel: 120
+    maxHP: 290
+    casualHP: 348
+    minDamage: 6
+    maxDamage: 8
+    minRangedDamage: 9
+    maxRangedDamage: 15
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 4
+    expToNextLevel: 180
+    maxHP: 310
+    casualHP: 372
+    minDamage: 7
+    maxDamage: 11
+    minRangedDamage: 10
+    maxRangedDamage: 17
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 5
+    expToNextLevel: 250
+    maxHP: 330
+    casualHP: 396
+    minDamage: 9
+    maxDamage: 13
+    minRangedDamage: 11
+    maxRangedDamage: 18
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 6
+    expToNextLevel: 350
+    maxHP: 350
+    casualHP: 420
+    minDamage: 10
+    maxDamage: 16
+    minRangedDamage: 12
+    maxRangedDamage: 20
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 7
+    expToNextLevel: 480
+    maxHP: 370
+    casualHP: 444
+    minDamage: 12
+    maxDamage: 18
+    minRangedDamage: 13
+    maxRangedDamage: 21
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 8
+    expToNextLevel: 630
+    maxHP: 390
+    casualHP: 468
+    minDamage: 14
+    maxDamage: 20
+    minRangedDamage: 14
+    maxRangedDamage: 23
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 9
+    expToNextLevel: 890
+    maxHP: 410
+    casualHP: 492
+    minDamage: 15
+    maxDamage: 23
+    minRangedDamage: 14
+    maxRangedDamage: 24
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15
+  - level: 10
+    expToNextLevel: 0
+    maxHP: 430
+    casualHP: 516
+    minDamage: 17
+    maxDamage: 25
+    minRangedDamage: 15
+    maxRangedDamage: 26
+    armorType: 0
+    armorPercentage: 0
+    respawnTime: 15

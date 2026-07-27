@@ -1,0 +1,4730 @@
+fileFormatVersion: 2
+guid: de70616666400a843b97b123bd51c148
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4973642598270361434
+    second: go_hero_alleria-1_0
+  - first:
+      213: 2056159678046484143
+    second: go_hero_alleria-1_1
+  - first:
+      213: -5944656665165234422
+    second: go_hero_alleria-1_2
+  - first:
+      213: 3844571343885230647
+    second: go_hero_alleria-1_3
+  - first:
+      213: -1315318943828969616
+    second: go_hero_alleria-1_4
+  - first:
+      213: -8171706610194939200
+    second: go_hero_alleria-1_5
+  - first:
+      213: -8610154828660058
+    second: go_hero_alleria-1_6
+  - first:
+      213: -3634980570122709552
+    second: go_hero_alleria-1_7
+  - first:
+      213: 7979289863667159940
+    second: go_hero_alleria-1_8
+  - first:
+      213: 3982719034569717119
+    second: go_hero_alleria-1_9
+  - first:
+      213: 4763013646331639100
+    second: go_hero_alleria-1_10
+  - first:
+      213: -7241459606916573273
+    second: go_hero_alleria-1_11
+  - first:
+      213: 2786496866998358479
+    second: go_hero_alleria-1_12
+  - first:
+      213: 4167350589931799474
+    second: go_hero_alleria-1_13
+  - first:
+      213: -2279472160208740031
+    second: go_hero_alleria-1_14
+  - first:
+      213: -5829579896168829563
+    second: go_hero_alleria-1_15
+  - first:
+      213: 734000643447828200
+    second: go_hero_alleria-1_16
+  - first:
+      213: -6413418142452346754
+    second: go_hero_alleria-1_17
+  - first:
+      213: 8465571041958830342
+    second: go_hero_alleria-1_18
+  - first:
+      213: 7675008116420772963
+    second: go_hero_alleria-1_19
+  - first:
+      213: -4728410277245551265
+    second: go_hero_alleria-1_20
+  - first:
+      213: -3496947094597405343
+    second: go_hero_alleria-1_21
+  - first:
+      213: -2164785273385531405
+    second: go_hero_alleria-1_22
+  - first:
+      213: 481955149948490228
+    second: go_hero_alleria-1_23
+  - first:
+      213: 3487702226496502103
+    second: go_hero_alleria-1_24
+  - first:
+      213: -7543961836023754542
+    second: go_hero_alleria-1_25
+  - first:
+      213: -7564741575058373304
+    second: go_hero_alleria-1_26
+  - first:
+      213: 7657456513685935635
+    second: go_hero_alleria-1_27
+  - first:
+      213: -3959545876670042531
+    second: go_hero_alleria-1_28
+  - first:
+      213: -6936476771328392075
+    second: go_hero_alleria-1_29
+  - first:
+      213: 1330576973675481135
+    second: go_hero_alleria-1_30
+  - first:
+      213: 2934487436797768570
+    second: go_hero_alleria-1_31
+  - first:
+      213: -1017613904539446631
+    second: go_hero_alleria-1_32
+  - first:
+      213: 5687658041572754179
+    second: go_hero_alleria-1_33
+  - first:
+      213: -5473628887614180787
+    second: go_hero_alleria-1_34
+  - first:
+      213: 2156820766431583252
+    second: go_hero_alleria-1_35
+  - first:
+      213: -4208557790764286482
+    second: go_hero_alleria-1_36
+  - first:
+      213: -109478478462973173
+    second: go_hero_alleria-1_37
+  - first:
+      213: -2311171252585449335
+    second: go_hero_alleria-1_38
+  - first:
+      213: -808602084686779733
+    second: go_hero_alleria-1_39
+  - first:
+      213: -2416532782378901389
+    second: go_hero_alleria-1_40
+  - first:
+      213: 3701318480194431976
+    second: go_hero_alleria-1_41
+  - first:
+      213: -2964188227804050921
+    second: go_hero_alleria-1_42
+  - first:
+      213: 3392274910026760891
+    second: go_hero_alleria-1_43
+  - first:
+      213: -6438516317035244849
+    second: go_hero_alleria-1_44
+  - first:
+      213: -7935961258403421753
+    second: go_hero_alleria-1_45
+  - first:
+      213: -2606927945878670211
+    second: go_hero_alleria-1_46
+  - first:
+      213: -4364270828552486806
+    second: go_hero_alleria-1_47
+  - first:
+      213: 4803988997493271785
+    second: go_hero_alleria-1_48
+  - first:
+      213: 5206792166289374884
+    second: go_hero_alleria-1_49
+  - first:
+      213: 954686442089841795
+    second: go_hero_alleria-1_50
+  - first:
+      213: 2967885926505062379
+    second: go_hero_alleria-1_51
+  - first:
+      213: 8352773680335932952
+    second: go_hero_alleria-1_52
+  - first:
+      213: -7397159973745494375
+    second: go_hero_alleria-1_53
+  - first:
+      213: 2575109261161812035
+    second: go_hero_alleria-1_54
+  - first:
+      213: 3222582020754566068
+    second: go_hero_alleria-1_55
+  - first:
+      213: 8914760770432911317
+    second: go_hero_alleria-1_56
+  - first:
+      213: 5623389653740444049
+    second: go_hero_alleria-1_57
+  - first:
+      213: 6573145852919373733
+    second: go_hero_alleria-1_58
+  - first:
+      213: -18687480897046235
+    second: go_hero_alleria-1_59
+  - first:
+      213: -3728788061687776405
+    second: go_hero_alleria-1_60
+  - first:
+      213: -3608587384003074162
+    second: go_hero_alleria-1_61
+  - first:
+      213: -1772239786166281033
+    second: go_hero_alleria-1_62
+  - first:
+      213: 8429876121092256962
+    second: go_hero_alleria-1_63
+  - first:
+      213: 145438946168716323
+    second: go_hero_alleria-1_64
+  - first:
+      213: -2074441853392620102
+    second: go_hero_alleria-1_65
+  - first:
+      213: -9067423187410141637
+    second: go_hero_alleria-1_66
+  - first:
+      213: 7084389633173488485
+    second: go_hero_alleria-1_67
+  - first:
+      213: 4990263964369925579
+    second: go_hero_alleria-1_68
+  - first:
+      213: 2856907371118755739
+    second: go_hero_alleria-1_69
+  - first:
+      213: -6557042174579660579
+    second: go_hero_alleria-1_70
+  - first:
+      213: -1982234730769549805
+    second: go_hero_alleria-1_71
+  - first:
+      213: -4531832969273197033
+    second: go_hero_alleria-1_72
+  - first:
+      213: -1148871623680796915
+    second: go_hero_alleria-1_73
+  - first:
+      213: -7498931012247434679
+    second: go_hero_alleria-1_74
+  - first:
+      213: 833981177699997204
+    second: go_hero_alleria-1_75
+  - first:
+      213: 7046232235867556807
+    second: go_hero_alleria-1_76
+  - first:
+      213: -1105175193427499925
+    second: go_hero_alleria-1_77
+  - first:
+      213: -2627843217113688947
+    second: go_hero_alleria-1_78
+  - first:
+      213: -390025688746957303
+    second: go_hero_alleria-1_79
+  - first:
+      213: 5696528893599383607
+    second: go_hero_alleria-1_80
+  - first:
+      213: -6917435013607970092
+    second: go_hero_alleria-1_81
+  - first:
+      213: -8602534722006979597
+    second: go_hero_alleria-1_82
+  - first:
+      213: 1807987806697025779
+    second: go_hero_alleria-1_83
+  - first:
+      213: 4519257973838385978
+    second: go_hero_alleria-1_84
+  - first:
+      213: -8372217321415394387
+    second: go_hero_alleria-1_85
+  - first:
+      213: -4902528982033131428
+    second: go_hero_alleria-1_86
+  - first:
+      213: -4849022082629339402
+    second: go_hero_alleria-1_87
+  - first:
+      213: -4970321236832068043
+    second: go_hero_alleria-1_88
+  - first:
+      213: 7393735499291557900
+    second: go_hero_alleria-1_89
+  - first:
+      213: -1183910868587560442
+    second: go_hero_alleria-1_90
+  - first:
+      213: 5597760690457230995
+    second: go_hero_alleria-1_91
+  - first:
+      213: 5114529869661126903
+    second: go_hero_alleria-1_92
+  - first:
+      213: -1045928406483658411
+    second: go_hero_alleria-1_93
+  - first:
+      213: 7883252023563905218
+    second: go_hero_alleria-1_94
+  - first:
+      213: 6786442607454966505
+    second: go_hero_alleria-1_95
+  - first:
+      213: 8741736440180542165
+    second: go_hero_alleria-1_96
+  - first:
+      213: -799030748108925504
+    second: go_hero_alleria-1_97
+  - first:
+      213: -4520738133856584431
+    second: go_hero_alleria-1_98
+  - first:
+      213: 6861563612005026354
+    second: go_hero_alleria-1_99
+  - first:
+      213: 7338491260982324127
+    second: go_hero_alleria-1_100
+  - first:
+      213: -1115636211286893505
+    second: go_hero_alleria-1_101
+  - first:
+      213: -1785322887073190803
+    second: go_hero_alleria-1_102
+  - first:
+      213: -5999294355672663378
+    second: go_hero_alleria-1_103
+  - first:
+      213: 8569210064337237740
+    second: go_hero_alleria-1_104
+  - first:
+      213: -6806894189216252586
+    second: go_hero_alleria-1_105
+  - first:
+      213: 9120071935002857924
+    second: go_hero_alleria-1_106
+  - first:
+      213: 759788680150354533
+    second: go_hero_alleria-1_107
+  - first:
+      213: 94148188841003820
+    second: go_hero_alleria-1_108
+  - first:
+      213: -2834060220896459621
+    second: go_hero_alleria-1_109
+  - first:
+      213: 8949231262028365611
+    second: go_hero_alleria-1_110
+  - first:
+      213: -8626984057156802129
+    second: go_hero_alleria-1_111
+  - first:
+      213: -2043478317269945041
+    second: go_hero_alleria-1_112
+  - first:
+      213: 8629324444985936939
+    second: go_hero_alleria-1_113
+  - first:
+      213: -1166904045624577875
+    second: go_hero_alleria-1_114
+  - first:
+      213: -362578630864574270
+    second: go_hero_alleria-1_115
+  - first:
+      213: -1612549169765018322
+    second: go_hero_alleria-1_116
+  - first:
+      213: 8513980538491880670
+    second: go_hero_alleria-1_117
+  - first:
+      213: -6088918638055632905
+    second: go_hero_alleria-1_118
+  - first:
+      213: -2063453917872713556
+    second: go_hero_alleria-1_119
+  - first:
+      213: -4178390837336734101
+    second: go_hero_alleria-1_120
+  - first:
+      213: 2558636005001745110
+    second: go_hero_alleria-1_121
+  - first:
+      213: 6796956011379134689
+    second: go_hero_alleria-1_122
+  - first:
+      213: -2407385810782427717
+    second: go_hero_alleria-1_123
+  - first:
+      213: -2714169844922413901
+    second: go_hero_alleria-1_124
+  - first:
+      213: 3144788843678134255
+    second: go_hero_alleria-1_125
+  - first:
+      213: -6482916431700479226
+    second: go_hero_alleria-1_126
+  - first:
+      213: 3210286443830296853
+    second: go_hero_alleria-1_127
+  - first:
+      213: -4436001222948617048
+    second: go_hero_alleria-1_128
+  - first:
+      213: -7173536552078279893
+    second: go_hero_alleria-1_129
+  - first:
+      213: 8912896501652222549
+    second: go_hero_alleria-1_130
+  - first:
+      213: 229778579916491311
+    second: go_hero_alleria-1_131
+  - first:
+      213: -1292708075477168420
+    second: go_hero_alleria-1_132
+  - first:
+      213: 7257310714891160470
+    second: go_hero_alleria-1_133
+  - first:
+      213: -3644177765669475536
+    second: go_hero_alleria-1_134
+  - first:
+      213: -1093900119625052411
+    second: go_hero_alleria-1_135
+  - first:
+      213: 2871715230879159062
+    second: go_hero_alleria-1_136
+  - first:
+      213: -6524829144907353959
+    second: go_hero_alleria-1_137
+  - first:
+      213: 5967800266114660807
+    second: go_hero_alleria-1_138
+  - first:
+      213: 7529688192789100533
+    second: go_hero_alleria-1_139
+  - first:
+      213: 8983848518558037092
+    second: go_hero_alleria-1_140
+  - first:
+      213: 7121574004198759478
+    second: go_hero_alleria-1_141
+  - first:
+      213: -3850811640128285817
+    second: go_hero_alleria-1_142
+  - first:
+      213: 1846824866496966353
+    second: go_hero_alleria-1_143
+  - first:
+      213: 7686786840294011828
+    second: go_hero_alleria-1_144
+  - first:
+      213: -2315227401594321219
+    second: go_hero_alleria-1_145
+  - first:
+      213: 7500906897937587301
+    second: go_hero_alleria-1_146
+  - first:
+      213: 5209059746914063116
+    second: go_hero_alleria-1_147
+  - first:
+      213: -6437214821525991953
+    second: go_hero_alleria-1_148
+  - first:
+      213: -5244421818668990886
+    second: go_hero_alleria-1_149
+  - first:
+      213: 8698578548203752375
+    second: go_hero_alleria-1_150
+  - first:
+      213: -4457371211542010891
+    second: go_hero_alleria-1_151
+  - first:
+      213: 7697690499086253341
+    second: go_hero_alleria-1_152
+  - first:
+      213: 5985403650767101167
+    second: go_hero_alleria-1_153
+  - first:
+      213: -3583505917453853212
+    second: go_hero_alleria-1_154
+  - first:
+      213: 1301852499601493914
+    second: go_hero_alleria-1_155
+  - first:
+      213: -5942890826334296900
+    second: go_hero_alleria-1_156
+  - first:
+      213: 6368694247986355778
+    second: go_hero_alleria-1_157
+  - first:
+      213: 7081552303445560883
+    second: go_hero_alleria-1_158
+  - first:
+      213: 2052883294867465408
+    second: go_hero_alleria-1_159
+  - first:
+      213: -4054718784196947633
+    second: go_hero_alleria-1_160
+  - first:
+      213: 8433130664015132280
+    second: go_hero_alleria-1_161
+  - first:
+      213: 2488627327992517100
+    second: go_hero_alleria-1_162
+  - first:
+      213: 3831999582737850252
+    second: go_hero_alleria-1_163
+  - first:
+      213: -8092863283004479814
+    second: go_hero_alleria-1_164
+  - first:
+      213: -5212614972504827189
+    second: go_hero_alleria-1_165
+  - first:
+      213: 7856492462231671491
+    second: go_hero_alleria-1_166
+  - first:
+      213: 2738409260152537250
+    second: go_hero_alleria-1_167
+  - first:
+      213: 2748420430086408723
+    second: go_hero_alleria-1_168
+  - first:
+      213: -230720375251833453
+    second: go_hero_alleria-1_169
+  - first:
+      213: 5241502406923302497
+    second: go_hero_alleria-1_170
+  - first:
+      213: 897946690139305322
+    second: go_hero_alleria-1_171
+  - first:
+      213: -3770551103796070566
+    second: go_hero_alleria-1_172
+  - first:
+      213: 6464270399607612903
+    second: go_hero_alleria-1_173
+  - first:
+      213: 8622898537937773787
+    second: go_hero_alleria-1_174
+  - first:
+      213: 8071938129924965074
+    second: go_hero_alleria-1_175
+  - first:
+      213: 3958592582860002065
+    second: go_hero_alleria-1_176
+  - first:
+      213: 6795821215602443360
+    second: go_hero_alleria-1_177
+  - first:
+      213: 1335251297227365902
+    second: go_hero_alleria-1_178
+  - first:
+      213: 8042951472683739562
+    second: go_hero_alleria-1_179
+  - first:
+      213: -1099034483742847210
+    second: go_hero_alleria-1_180
+  - first:
+      213: -304272818387544961
+    second: go_hero_alleria-1_181
+  - first:
+      213: 3140890057422458482
+    second: go_hero_alleria-1_182
+  - first:
+      213: 8700071487344804317
+    second: go_hero_alleria-1_183
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: go_hero_alleria-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 974
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0285a88621afab0800000000000000
+      internalID: -4973642598270361434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1013
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6317b4552f88c10800000000000000
+      internalID: 2056159678046484143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 978
+        width: 55
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ffa295246508da0800000000000000
+      internalID: -5944656665165234422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 974
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732ece19449aa5530800000000000000
+      internalID: 3844571343885230647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 974
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0777bb2b36c0fbde0800000000000000
+      internalID: -1315318943828969616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 974
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c28e923224489e80800000000000000
+      internalID: -8171706610194939200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 979
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a20afb1c1961eff0800000000000000
+      internalID: -8610154828660058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 991
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d593603e64fd8dc0800000000000000
+      internalID: -3634980570122709552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 992
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48391cbdad12cbe60800000000000000
+      internalID: 7979289863667159940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 997
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75f6bf4cd5754730800000000000000
+      internalID: 3982719034569717119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_10
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 979
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c357fe10daf991240800000000000000
+      internalID: 4763013646331639100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_11
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 992
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7d56abada218b90800000000000000
+      internalID: -7241459606916573273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_12
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 992
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc11d251320aba620800000000000000
+      internalID: 2786496866998358479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_13
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 997
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3466f284765d930800000000000000
+      internalID: 4167350589931799474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_14
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 993
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141ad5fb520bd50e0800000000000000
+      internalID: -2279472160208740031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_15
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 978
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d291b88fb291fa0800000000000000
+      internalID: -5829579896168829563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_16
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 978
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eead9142b1bf2a00800000000000000
+      internalID: 734000643447828200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_17
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 979
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70151fdd26fef6a0800000000000000
+      internalID: -6413418142452346754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_18
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1007
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6012ac89200cb7570800000000000000
+      internalID: 8465571041958830342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_19
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 978
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364008bc73b138a60800000000000000
+      internalID: 7675008116420772963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_20
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 978
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5df870b7ef416eb0800000000000000
+      internalID: -4728410277245551265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_21
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 979
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165ff242529587fc0800000000000000
+      internalID: -3496947094597405343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_22
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 974
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7cbdc634325f1e0800000000000000
+      internalID: -2164785273385531405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_23
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 959
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f19956c7af30b600800000000000000
+      internalID: 481955149948490228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 963
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759b9a442bec66030800000000000000
+      internalID: 3487702226496502103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_25
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 894
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d053b40ea67e4790800000000000000
+      internalID: -7543961836023754542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 927
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84544010e93a40790800000000000000
+      internalID: -7564741575058373304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_27
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 928
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3165045d020c44a60800000000000000
+      internalID: 7657456513685935635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_28
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 928
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e2835f00edc09c0800000000000000
+      internalID: -3959545876670042531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_29
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 930
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5740934a02facbf90800000000000000
+      internalID: -6936476771328392075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_30
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 931
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28cd3635b8277210800000000000000
+      internalID: 1330576973675481135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_31
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 931
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a737d24b6c469b820800000000000000
+      internalID: 2934487436797768570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_32
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 931
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9929d6d9b85b0e1f0800000000000000
+      internalID: -1017613904539446631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_33
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 931
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30386d3bade9eee40800000000000000
+      internalID: 5687658041572754179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_34
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 931
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42b079f683c904b0800000000000000
+      internalID: -5473628887614180787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_35
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 932
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c175b4f019eed10800000000000000
+      internalID: 2156820766431583252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_36
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 933
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedbac8bcf23895c0800000000000000
+      internalID: -4208557790764286482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_37
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 931
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b0aa467ed0b7ef0800000000000000
+      internalID: -109478478462973173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_38
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 933
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988bc8aadf11defd0800000000000000
+      internalID: -2311171252585449335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_39
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 934
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baaaa9920b447c4f0800000000000000
+      internalID: -808602084686779733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_40
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 934
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370283edc30c67ed0800000000000000
+      internalID: -2416532782378901389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_41
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 936
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebe39c1c89bd5330800000000000000
+      internalID: 3701318480194431976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_42
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 936
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a485203861dd6d0800000000000000
+      internalID: -2964188227804050921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_43
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 936
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb28d90ce08c31f20800000000000000
+      internalID: 3392274910026760891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_44
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 939
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2de8ab58bc5a6a0800000000000000
+      internalID: -6438516317035244849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_45
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 924
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c12a91384dcdd190800000000000000
+      internalID: -7935961258403421753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_46
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 913
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74fcd668d452dbd0800000000000000
+      internalID: -2606927945878670211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_47
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 915
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a608788edcefe63c0800000000000000
+      internalID: -4364270828552486806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_48
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 906
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eca8746a823ba240800000000000000
+      internalID: 4803988997493271785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_49
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 875
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aef6f273ed324840800000000000000
+      internalID: 5206792166289374884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_50
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 876
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38485acc24abf3d00800000000000000
+      internalID: 954686442089841795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_51
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 876
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef173f868c003920800000000000000
+      internalID: 2967885926505062379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_52
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 878
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ec7a948630be370800000000000000
+      internalID: 8352773680335932952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_53
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 917
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996792a1232085990800000000000000
+      internalID: -7397159973745494375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_54
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 889
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3405e51ca30acb320800000000000000
+      internalID: 2575109261161812035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_55
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 896
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbe2ae1649e8bc20800000000000000
+      internalID: 3222582020754566068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_56
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 896
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7cd3330b797bb70800000000000000
+      internalID: 8914760770432911317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_57
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 875
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1995ec8981b4a0e40800000000000000
+      internalID: 5623389653740444049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_58
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af5714c351883b50800000000000000
+      internalID: 6573145852919373733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_59
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529726bc5db9dbff0800000000000000
+      internalID: -18687480897046235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_60
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bf16c830fa04cc0800000000000000
+      internalID: -3728788061687776405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_61
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e876a83b4e8bbedc0800000000000000
+      internalID: -3608587384003074162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_62
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc9eb0ed4db767e0800000000000000
+      internalID: -1772239786166281033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_63
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c470423bafecf470800000000000000
+      internalID: 8429876121092256962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_64
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cb4e273f3b40200800000000000000
+      internalID: 145438946168716323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_65
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 875
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5745d002a1633e0800000000000000
+      internalID: -2074441853392620102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 874
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e374ef6aa0a2280800000000000000
+      internalID: -9067423187410141637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_67
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 909
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56304cf26dec05260800000000000000
+      internalID: 7084389633173488485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 908
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5b3b3d2aaf04540800000000000000
+      internalID: 4990263964369925579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_69
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 814
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f7ab31e16c5a720800000000000000
+      internalID: 2856907371118755739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_70
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 871
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8ace602e4b005a0800000000000000
+      internalID: -6557042174579660579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_71
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 872
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316f903c300bd74e0800000000000000
+      internalID: -1982234730769549805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_72
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 872
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e3115dce1bb11c0800000000000000
+      internalID: -4531832969273197033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_73
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 872
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07daf168536e00f0800000000000000
+      internalID: -1148871623680796915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_74
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 822
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ac4d3b9f17ee790800000000000000
+      internalID: -7498931012247434679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_75
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 819
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4169b266675e29b00800000000000000
+      internalID: 833981177699997204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_76
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 829
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cbcacfc2ee39c160800000000000000
+      internalID: 7046232235867556807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_77
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 829
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b642e2d5401a9a0f0800000000000000
+      internalID: -1105175193427499925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_78
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 831
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84d4865486088bd0800000000000000
+      internalID: -2627843217113688947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_79
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 831
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906e5f8d3b9569af0800000000000000
+      internalID: -390025688746957303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_80
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 832
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7308db3e8d22e0f40800000000000000
+      internalID: 5696528893599383607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_81
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 833
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da2c0951855000a0800000000000000
+      internalID: -6917435013607970092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_82
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 843
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb6fce9f38ad9880800000000000000
+      internalID: -8602534722006979597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_83
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 834
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0f960c453471910800000000000000
+      internalID: 1807987806697025779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_84
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 843
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a331df2ee21a7be30800000000000000
+      internalID: 4519257973838385978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_85
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 834
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabb9ae34b8efcb80800000000000000
+      internalID: -8372217321415394387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_86
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 835
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c589bd49dd7b6fbb0800000000000000
+      internalID: -4902528982033131428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_87
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 835
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f67ad86b10d4bcb0800000000000000
+      internalID: -4849022082629339402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_88
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 841
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e5b034b2fd50bb0800000000000000
+      internalID: -4970321236832068043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_89
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 836
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00087e4343db9660800000000000000
+      internalID: 7393735499291557900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_90
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 837
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6024d107657e19fe0800000000000000
+      internalID: -1183910868587560442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_91
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 839
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e395490bd3fad40800000000000000
+      internalID: 5597760690457230995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_92
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 841
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0c64a81d57af640800000000000000
+      internalID: 5114529869661126903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_93
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 841
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5591d07e7ad1c71f0800000000000000
+      internalID: -1045928406483658411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_94
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 841
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8e76bb2ffe66d60800000000000000
+      internalID: 7883252023563905218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_95
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 842
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2dde968994e2e50800000000000000
+      internalID: 6786442607454966505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_96
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 833
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da8c050af2e05970800000000000000
+      internalID: 8741736440180542165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_97
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 772
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c55a5e94c549e4f0800000000000000
+      internalID: -799030748108925504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_98
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 807
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d7ae08e9c1341c0800000000000000
+      internalID: -4520738133856584431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_99
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 734
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a4e4140cb293f50800000000000000
+      internalID: 6861563612005026354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_100
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 767
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9be82ebbee87d560800000000000000
+      internalID: 7338491260982324127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_101
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 792
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c9ea7d6c67480f0800000000000000
+      internalID: -1115636211286893505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_102
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 752
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ca0a21b424937e0800000000000000
+      internalID: -1785322887073190803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_103
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 760
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaff13b1993ebca0800000000000000
+      internalID: -5999294355672663378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_104
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 754
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6f582e623fbe670800000000000000
+      internalID: 8569210064337237740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_105
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 756
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d3814accd0981a0800000000000000
+      internalID: -6806894189216252586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_106
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 711
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1dadbca11019e70800000000000000
+      internalID: 9120071935002857924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_107
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 715
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a89b077cf4b8a00800000000000000
+      internalID: 759788680150354533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_108
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 747
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b4d18674b7e4100800000000000000
+      internalID: 94148188841003820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_109
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 727
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94c66d9e356ba8d0800000000000000
+      internalID: -2834060220896459621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_110
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 659
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f7502fa6e023c70800000000000000
+      internalID: 8949231262028365611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_111
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 654
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9e53e25bbc64880800000000000000
+      internalID: -8626984057156802129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_112
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 705
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2579e81c4b14a3e0800000000000000
+      internalID: -2043478317269945041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_113
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 687
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c4bf2dcd481c770800000000000000
+      internalID: 8629324444985936939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_114
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 698
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0b499f3f25ecfe0800000000000000
+      internalID: -1166904045624577875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_115
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 663
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c86b2008acd7faf0800000000000000
+      internalID: -362578630864574270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_116
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 647
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e251e41e2131f99e0800000000000000
+      internalID: -1612549169765018322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 609
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4c565d03cb72670800000000000000
+      internalID: 8513980538491880670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_118
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 644
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff407852c0df7ba0800000000000000
+      internalID: -6088918638055632905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_119
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 574
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca01fc628932d53e0800000000000000
+      internalID: -2063453917872713556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_120
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 612
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b660cc7ebaf5306c0800000000000000
+      internalID: -4178390837336734101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_121
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 617
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d257abe3e9128320800000000000000
+      internalID: 2558636005001745110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_122
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 557
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e095340b73a35e50800000000000000
+      internalID: 6796956011379134689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_123
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 592
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb56ff62c5f379ed0800000000000000
+      internalID: -2407385810782427717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_124
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 561
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc825508e4555ad0800000000000000
+      internalID: -2714169844922413901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_125
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 589
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefeb01aac884ab20800000000000000
+      internalID: 3144788843678134255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_126
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 494
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60333f37add0806a0800000000000000
+      internalID: -6482916431700479226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_127
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 561
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511c1c7038a3d8c20800000000000000
+      internalID: 3210286443830296853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_128
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 536
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a403f204682072c0800000000000000
+      internalID: -4436001222948617048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_129
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 512
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bf71e438a727c90800000000000000
+      internalID: -7173536552078279893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_130
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 548
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5527dcc4528f0bb70800000000000000
+      internalID: 8912896501652222549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_131
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 534
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a8ae8a666503300800000000000000
+      internalID: 229778579916491311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_132
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 498
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde87eabad06f0ee0800000000000000
+      internalID: -1292708075477168420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_133
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 502
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b49b1f4a527b460800000000000000
+      internalID: 7257310714891160470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_134
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 505
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03be4ea31a74d6dc0800000000000000
+      internalID: -3644177765669475536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_135
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 453
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fcdfd03afa1d0f0800000000000000
+      internalID: -1093900119625052411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_136
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 483
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61391a899c16ad720800000000000000
+      internalID: 2871715230879159062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_137
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 476
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9907ea576762375a0800000000000000
+      internalID: -6524829144907353959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_138
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 415
+        width: 46
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9fe3829b2e1d250800000000000000
+      internalID: 5967800266114660807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_139
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 482
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7b5a07483de7860800000000000000
+      internalID: 7529688192789100533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_140
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 463
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464329011aa0dac70800000000000000
+      internalID: 8983848518558037092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_141
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 473
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c5ce933d9e4d260800000000000000
+      internalID: 7121574004198759478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_142
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 477
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783d63d373b2f8ac0800000000000000
+      internalID: -3850811640128285817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_143
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 474
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dee8e16e6d31a910800000000000000
+      internalID: 1846824866496966353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_144
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 455
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b33fd7a7e3fcaa60800000000000000
+      internalID: 7686786840294011828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_145
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 448
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db648b1e1f8aedfd0800000000000000
+      internalID: -2315227401594321219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_146
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 449
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cd8d80513981860800000000000000
+      internalID: 7500906897937587301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_147
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 456
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c035994bd3c4a4840800000000000000
+      internalID: 5209059746914063116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_148
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 415
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed4014c93b6aa6a0800000000000000
+      internalID: -6437214821525991953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_149
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 453
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e3ded54221837b0800000000000000
+      internalID: -5244421818668990886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_150
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 449
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb84804a1f87b870800000000000000
+      internalID: 8698578548203752375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_151
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 456
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f36cffcf7c3422c0800000000000000
+      internalID: -4457371211542010891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_152
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 433
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d7fec89b0b3da60800000000000000
+      internalID: 7697690499086253341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_153
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 437
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec9c4988ec601350800000000000000
+      internalID: 5985403650767101167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_154
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 399
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed17a3ba54d44ec0800000000000000
+      internalID: -3583505917453853212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_155
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 427
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f83bc63fb111210800000000000000
+      internalID: 1301852499601493914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_156
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 407
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4aa6db74c968da0800000000000000
+      internalID: -5942890826334296900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_157
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 337
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24edc4efca5226850800000000000000
+      internalID: 6368694247986355778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_158
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 367
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ec831ec4ab64260800000000000000
+      internalID: 7081552303445560883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_159
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 398
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4a8e3ea7e4d7c10800000000000000
+      internalID: 2052883294867465408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_160
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 376
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4156d3afbebab7c0800000000000000
+      internalID: -4054718784196947633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_161
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 341
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876731588af780570800000000000000
+      internalID: 8433130664015132280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_162
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 319
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1d2579e51698220800000000000000
+      internalID: 2488627327992517100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_163
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 286
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fd884515ffd2530800000000000000
+      internalID: 3831999582737850252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_164
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 326
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab667b0d8bf50bf80800000000000000
+      internalID: -8092863283004479814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_165
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 264
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca97f4dc4219a7b0800000000000000
+      internalID: -5212614972504827189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_166
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 271
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c25ad7d44ed70d60800000000000000
+      internalID: 7856492462231671491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_167
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 304
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a04801a6b8c00620800000000000000
+      internalID: 2738409260152537250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_168
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 206
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a0ab4c1d9542620800000000000000
+      internalID: 2748420430086408723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_169
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 220
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d6ba68a015cccf0800000000000000
+      internalID: -230720375251833453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_170
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 225
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166b40e1bae8db840800000000000000
+      internalID: 5241502406923302497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_171
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 126
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65bdf4d1c5267c00800000000000000
+      internalID: 897946690139305322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_172
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 176
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5737c29fbf4cabc0800000000000000
+      internalID: -3770551103796070566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_173
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 179
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e52fa4eda3b5b950800000000000000
+      internalID: 6464270399607612903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_174
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 134
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd42400c880baa770800000000000000
+      internalID: 8622898537937773787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_175
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 133
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2cb1356f8450070800000000000000
+      internalID: 8071938129924965074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_176
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 69
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113ddd70bfebfe630800000000000000
+      internalID: 3958592582860002065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_177
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 54
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0640c09c36b9f4e50800000000000000
+      internalID: 6795821215602443360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_178
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 88
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0edd19faf3c78210800000000000000
+      internalID: 1335251297227365902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_179
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 16
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9e40340cd4e9f60800000000000000
+      internalID: 8042951472683739562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_180
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 53
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f4a90c5f17fb0f0800000000000000
+      internalID: -1099034483742847210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_181
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 45
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f741439db7107cbf0800000000000000
+      internalID: -304272818387544961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_182
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ec837bddea69b20800000000000000
+      internalID: 3140890057422458482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go_hero_alleria-1_183
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 3
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd101bb3cecdcb870800000000000000
+      internalID: 8700071487344804317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

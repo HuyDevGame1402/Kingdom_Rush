@@ -12,7 +12,7 @@ public abstract class BaseUnitAnimationHandler : MonoBehaviour
         UnitAnimationConfig animData,
         GameObject target,
         Action onEventTrigger,
-        Action onComplete
+        Action onComplete, bool isLongAttackRangeCurrent, bool isLongAttackRange
     );
 
     public abstract void PlayDeathAnimation(

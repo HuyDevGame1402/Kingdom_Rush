@@ -24,6 +24,10 @@ public struct HeroLevelStat
     public int minDamage;
     public int maxDamage;
 
+    [Header("Damage (Ranged - 1.0s)")]
+    public int minRangedDamage;
+    public int maxRangedDamage;
+
     [Header("Armor & Defense")]
     public ArmorType armorType;
     [Range(0f, 1f)] public float armorPercentage; // Ví dụ: 0.3 = 30%, 0.8 = 80%

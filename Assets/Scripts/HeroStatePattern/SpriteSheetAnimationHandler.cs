@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class SpriteSheetAnimationHandler : BaseUnitAnimationHandler
@@ -29,11 +29,29 @@ public class SpriteSheetAnimationHandler : BaseUnitAnimationHandler
         UnitAnimationConfig animData,
         GameObject target,
         Action onEventTrigger,
-        Action onComplete)
+        Action onComplete, bool isLongAttackRangeCurrent, bool isLongAttackRange)
     {
-        AnimationFrameRange config = animData.attacks != null && animData.attacks.Count > 0
-            ? animData.GetRandomAttack()
-            : animData.attack;
+        AnimationFrameRange config;
+        if (isLongAttackRangeCurrent == false && isLongAttackRange == false)
+        {
+            config = (animData.attacks != null && animData.attacks.Count > 0)
+                   ? animData.GetRandomAttack()
+                   : animData.attack;
+        }
+        else if (isLongAttackRange && isLongAttackRangeCurrent)
+        {
+            // tại index = 0 thì chính là attack đánh xa
+            config = animData.attacks[0];
+        }
+        else if (isLongAttackRangeCurrent == false && isLongAttackRange == true)
+        {
+            config = animData.attacks[1];
+        }
+        // thêm vào cho có chứ k rơi vào nhánh này
+        else
+        {
+            config = animData.attacks[0];
+        }
 
         SpriteSheetAnimator.Instance.PlayAnimation(
             target: target,

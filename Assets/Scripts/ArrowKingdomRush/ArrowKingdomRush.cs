@@ -85,6 +85,59 @@ public class ArrowKingdomRush : BaseProjectile
         transform.gameObject.SetActive(false);
     }
 
+    //protected override void OnLaunched()
+    //{
+    //    elapsed = 0f;
+    //    pointA = transform.position;
+    //    if (speed > 0f) arrowSpeed = speed;
+
+    //    cachedEnemyCtr = null;
+    //    if (targetEnemy != null)
+    //    {
+    //        cachedEnemyCtr = targetEnemy.GetComponent<EnemyController>();
+    //        if (cachedEnemyCtr == null)
+    //        {
+    //            cachedEnemyCtr = targetEnemy.GetComponentInParent<EnemyController>();
+    //        }
+    //    }
+
+    //    // Bước 1: ước lượng thô flightTime dựa trên vị trí hiện tại của enemy
+    //    Vector3 currentEnemyPos = targetEnemy.position;
+    //    float estFlightTime = Vector3.Distance(pointA, currentEnemyPos) / Mathf.Max(arrowSpeed, 0.01f);
+    //    estFlightTime = Mathf.Max(estFlightTime, 0.05f);
+
+    //    // Bước 2: lặp vài vòng để hội tụ điểm dự đoán + flightTime + arcLength
+    //    Vector3 predictedB = currentEnemyPos;
+    //    const int iterations = 3;
+    //    for (int iter = 0; iter < iterations; iter++)
+    //    {
+    //        predictedB = cachedEnemyCtr != null
+    //            ? cachedEnemyCtr.GetFuturePosition(estFlightTime)
+    //            : currentEnemyPos;
+
+    //        Vector3 M = Vector3.Lerp(pointA, predictedB, 0.5f) + Vector3.up * arcHeight;
+
+    //        float arcLength = 0f;
+    //        Vector3 prev = pointA;
+    //        int samples = 20;
+    //        for (int i = 1; i <= samples; i++)
+    //        {
+    //            float ti = i / (float)samples;
+    //            float inv = 1f - ti;
+    //            Vector3 pt = inv * inv * pointA + 2f * inv * ti * M + ti * ti * predictedB;
+    //            arcLength += Vector3.Distance(prev, pt);
+    //            prev = pt;
+    //        }
+
+    //        estFlightTime = Mathf.Max(arcLength / arrowSpeed, 0.05f);
+    //    }
+
+    //    // Chốt lại quỹ đạo CỐ ĐỊNH: A, M, B không đổi trong suốt quá trình bay
+    //    pointB = predictedB;
+    //    pointM = Vector3.Lerp(pointA, pointB, 0.5f) + Vector3.up * arcHeight;
+    //    flightTime = estFlightTime;
+    //}
+
     // ── Init ─────────────────────────────────────────────────────────────────
 
     protected override void OnLaunched()
@@ -94,8 +147,14 @@ public class ArrowKingdomRush : BaseProjectile
         if (speed > 0f) arrowSpeed = speed;
 
         cachedEnemyCtr = null;
-        if (targetEnemy != null && targetEnemy.parent != null)
-            targetEnemy.parent.TryGetComponent(out cachedEnemyCtr);
+        if (targetEnemy != null)
+        {
+            cachedEnemyCtr = targetEnemy.GetComponent<EnemyController>();
+            if (cachedEnemyCtr == null)
+            {
+                cachedEnemyCtr = targetEnemy.GetComponentInParent<EnemyController>();
+            }
+        }
 
         // Bước 1: ước lượng thô flightTime dựa trên vị trí hiện tại của enemy
         Vector3 currentEnemyPos = targetEnemy.position;
@@ -111,7 +170,13 @@ public class ArrowKingdomRush : BaseProjectile
                 ? cachedEnemyCtr.GetFuturePosition(estFlightTime)
                 : currentEnemyPos;
 
-            Vector3 M = Vector3.Lerp(pointA, predictedB, 0.5f) + Vector3.up * arcHeight;
+            // 🌟 TÍNH ĐIỂM UỐN M CHUẨN CHO MỌI HƯỚNG BẮN
+            // Lấy điểm cao nhất giữa A và B, sau đó cộng thêm arcHeight
+            float highestY = Mathf.Max(pointA.y, predictedB.y);
+
+            // Điểm M có X, Z nằm ở giữa A và B; Y nằm cao hơn điểm cao nhất một khoảng arcHeight
+            Vector3 M = Vector3.Lerp(pointA, predictedB, 0.5f);
+            M.y = highestY + arcHeight;
 
             float arcLength = 0f;
             Vector3 prev = pointA;
@@ -128,12 +193,16 @@ public class ArrowKingdomRush : BaseProjectile
             estFlightTime = Mathf.Max(arcLength / arrowSpeed, 0.05f);
         }
 
-        // Chốt lại quỹ đạo CỐ ĐỊNH: A, M, B không đổi trong suốt quá trình bay
+        // Chốt lại quỹ đạo CỐ ĐỊNH
         pointB = predictedB;
-        pointM = Vector3.Lerp(pointA, pointB, 0.5f) + Vector3.up * arcHeight;
+
+        // 🌟 CHỐT ĐIỂM M VỚI CÔNG THỨC MỚI
+        float finalHighestY = Mathf.Max(pointA.y, pointB.y);
+        pointM = Vector3.Lerp(pointA, pointB, 0.5f);
+        pointM.y = finalHighestY + arcHeight;
+
         flightTime = estFlightTime;
     }
-
     // ── Mỗi frame ────────────────────────────────────────────────────────────
 
     protected override void MoveLogic()

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UnitIdleState : UnitBaseState
 {
@@ -8,11 +6,15 @@ public class UnitIdleState : UnitBaseState
 
     public override void Enter()
     {
-        unit.baseUnitAnimationHandler.PlayIdleAnimation(unit.unitData.animations, unit.spriteObject);
-        //var config = unit.unitData.animations.idle;
-        //SpriteSheetAnimator.Instance.PlayAnimation(unit.spriteObject, unit.unitData.animations.animPrefix, config.startFrame, config.endFrame);
-    
-        if(unit.currentTarget != null && unit.IsTargetEnemy() && unit.currentTarget.GetComponent<EnemyController>().isDead)
+        unit.baseUnitAnimationHandler.PlayIdleAnimation(
+            unit.unitData.animations,
+            unit.spriteObject);
+
+        // Nếu target chết thì reset
+        if (unit.currentTarget != null &&
+            unit.IsTargetEnemy() &&
+            unit.currentTarget.TryGetComponent(out EnemyController enemy) &&
+            enemy.isDead)
         {
             unit.ResetTarget();
         }
@@ -20,47 +22,106 @@ public class UnitIdleState : UnitBaseState
 
     public override void Update()
     {
-        // Nếu không có mục tiêu nào cả -> Đứng im an toàn, không làm gì hết
         if (unit.currentTarget == null || !unit.currentTarget.gameObject.activeSelf)
             return;
 
-        // Ép tọa độ về 2D để tính khoảng cách chính xác
-        Vector2 línhPos2D = unit.transform.position;
-        Vector2 mụcTiêuPos2D = unit.currentTarget.position;
-        float distance = Vector2.Distance(línhPos2D, mụcTiêuPos2D);
-
-        // PHÂN LOẠI XỬ LÝ RÕ RÀNG:
+        //==================================================
+        // TARGET LÀ ENEMY
+        //==================================================
         if (unit.IsTargetEnemy())
         {
-            // --- LOGIC CHIẾN ĐẤU VỚI ENEMY ---
-            if (distance <= unit.unitData.attackRange)
+            //--------------------------------------------------
+            // HERO ĐÁNH XA
+            //--------------------------------------------------
+            if (unit.unitData.isLongRangeAttack)
             {
-                if (unit.IsAlignedWithTarget())
+                // ===== ƯU TIÊN 1 : Enemy áp sát =====
+                if (unit.CheckEnemyInAttackCloseCombat())
+                {
+                    float distance = Vector2.Distance(
+                        unit.transform.position,
+                        unit.currentTarget.position);
+
+                    if (distance <= unit.unitData.attackRange)
+                    {
+                        if (unit.IsAlignedWithTarget())
+                        {
+                            if (unit.CanAttack())
+                            {
+                                unit.TransitionToState(unit.AttackState);
+                            }
+                        }
+                        else
+                        {
+                            unit.TransitionToState(unit.RunState);
+                        }
+                    }
+                    else
+                    {
+                        unit.TransitionToState(unit.RunState);
+                    }
+
+                    return;
+                }
+
+                // ===== ƯU TIÊN 2 : Enemy ở vùng bắn xa =====
+                if (unit.CheckEnemyInAttackLongRange())
                 {
                     if (unit.CanAttack())
+                    {
                         unit.TransitionToState(unit.AttackState);
+                    }
+
+                    // Chưa hết cooldown thì đứng Idle
+                    return;
                 }
-                else
+
+                // ===== Chưa vào bất kỳ vùng nào =====
+                unit.TransitionToState(unit.RunState);
+                return;
+            }
+
+            //--------------------------------------------------
+            // HERO CẬN CHIẾN
+            //--------------------------------------------------
+            float meleeDistance = Vector2.Distance(
+                unit.transform.position,
+                unit.currentTarget.position);
+
+            if (meleeDistance <= unit.unitData.attackRange)
+            {
+                if (!unit.IsAlignedWithTarget())
                 {
                     unit.TransitionToState(unit.RunState);
+                    return;
                 }
+
+                if (unit.CanAttack())
+                {
+                    unit.TransitionToState(unit.AttackState);
+                }
+
+                return;
             }
-            else
-            {
-                unit.TransitionToState(unit.RunState); // Địch ở xa -> Chạy đuổi theo
-            }
+
+            unit.TransitionToState(unit.RunState);
+            return;
         }
-        else
+
+        //==================================================
+        // TARGET KHÔNG PHẢI ENEMY
+        //==================================================
+        float pointDistance = Vector2.Distance(
+            unit.transform.position,
+            unit.currentTarget.position);
+
+        if (pointDistance > 0.25f)
         {
-            // --- LOGIC DI CHUYỂN ĐẾN ĐIỂM POINT ---
-            // Chỉ khi nào khoảng cách thực sự LỚN HƠN hẳn phạm vi dừng (0.25f) thì mới được phép Chạy
-            if (distance > 0.25f)
-            {
-                unit.TransitionToState(unit.RunState);
-            }
-            // Nếu nhỏ hơn hoặc bằng 0.25f, code sẽ đứng im ở IdleState này và không đi đâu cả!
+            unit.TransitionToState(unit.RunState);
         }
     }
 
-    public override void Exit() { }
+    public override void Exit()
+    {
+    }
 }
