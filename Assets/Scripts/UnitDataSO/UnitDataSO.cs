@@ -48,6 +48,8 @@ public class UnitDataSO : ScriptableObject
 
     public bool isHasLevelHero;
 
+    public Sprite characterGUI;
+
     // --- TIỆN ÍCH LẤY SÁT THƯƠNG NGẪU NHIÊN ---
     public float GetRandomDamage()
     {

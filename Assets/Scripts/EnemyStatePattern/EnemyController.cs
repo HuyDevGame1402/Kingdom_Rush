@@ -200,7 +200,7 @@ public class EnemyController : MonoBehaviour
         string prefix = unitData.animations.animPrefix; // Sử dụng prefix động từ SO thay vì fix cứng "goblin_"
         float frameRate = unitData.animations.frameRate;
 
-        CharacterSpriteAnimator.Instance.PlayAnimationByRange(gameObject, id, prefix, selectedRange, frameRate);
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(gameObject, id, prefix, selectedRange, frameRate, null, null);
     
     }
 
@@ -214,7 +214,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // --- HÀM NHẬN SÁT THƯƠNG ĐỂ KIỂM TRA TRẠNG THÁI CHẾT ---
-    public void TakeDamage(int amount, TextSO textSO)
+    public void TakeDamage(int amount, TextSO textSO, Transform attacker = null)
     {
         if (isDead) return;
         if(enemyHealth != null)
@@ -232,6 +232,12 @@ public class EnemyController : MonoBehaviour
                     LevelEnemySpawner.Instance.CalculatorGem(transform
                         .GetComponent<EnemyDataScript>().centerEnemy.position);
                 }
+
+                if(attacker != null && attacker.TryGetComponent(out HeroEXPManager heroEXPManager))
+                {
+                    heroEXPManager.OnEnemyKilled(enemyHealth.GetMaxHealth(), transform.position);
+                }
+
                 colliderTriggerHitDamage.enabled = false;
                 if(textSO != null)
                 {

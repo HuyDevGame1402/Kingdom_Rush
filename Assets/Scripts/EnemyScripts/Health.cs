@@ -22,4 +22,9 @@ public class Health : MonoBehaviour
     {
         health = maxHealth;
     }
+
+    public int GetMaxHealth()
+    {
+        return maxHealth;
+    }
 }

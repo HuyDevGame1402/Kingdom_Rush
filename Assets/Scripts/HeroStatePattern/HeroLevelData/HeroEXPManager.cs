@@ -60,15 +60,16 @@ public class HeroEXPManager : MonoBehaviour
     /// </summary>
     public void OnEnemyKilled(int enemyMaxHP, Vector3 enemyPosition)
     {
-        float distance = Vector3.Distance(transform.position, enemyPosition);
+        //float distance = Vector3.Distance(transform.position, enemyPosition);
 
-        if (distance <= assistRadius)
-        {
-            // Tính EXP = % Max HP của quái và kẹp trong khoảng [minKillExp, maxKillExp]
-            int rawKillExp = Mathf.RoundToInt(enemyMaxHP * enemyMaxHpToExpRate);
-            int killEXP = Mathf.Clamp(rawKillExp, minKillExp, maxKillExp);
+        //if (distance <= assistRadius)
+        //{
+        //    // Tính EXP = % Max HP của quái và kẹp trong khoảng [minKillExp, maxKillExp]
+        //    int rawKillExp = Mathf.RoundToInt(enemyMaxHP * enemyMaxHpToExpRate);
+        //    int killEXP = Mathf.Clamp(rawKillExp, minKillExp, maxKillExp);
 
-            heroData.AddEXP(killEXP);
-        }
+        //    heroData.AddEXP(killEXP);
+        //}
+        heroData.AddEXP(40);
     }
 }

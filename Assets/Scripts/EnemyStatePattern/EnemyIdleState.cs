@@ -16,7 +16,7 @@ public class EnemyIdleState : IEnemyState
                 id,
                 prefix,
                 enemy.unitData.animations.idle,
-                frameRate
+                frameRate, null, null
             );
         }
 

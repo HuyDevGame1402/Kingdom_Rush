@@ -19,7 +19,8 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             enemyId: animationID,
             animPrefix: animData.animPrefix,
             rangeConfig: config,
-            frameRate: animData.frameRate
+            frameRate: animData.frameRate,
+            null, null
         );
     }
 
@@ -31,28 +32,29 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             enemyId: animationID,
             animPrefix: animData.animPrefix,
             rangeConfig: config,
-            frameRate: animData.frameRate
+            frameRate: animData.frameRate,
+            null,null
         );
     }
 
     public override void PlayAttackAnimation(
-        UnitAnimationConfig animData,
-        GameObject target,
-        Action onEventTrigger,
-        Action onComplete)
+    UnitAnimationConfig animData,
+    GameObject target,
+    Action onEventTrigger,
+    Action onComplete)
     {
         AnimationFrameRange config = (animData.attacks != null && animData.attacks.Count > 0)
             ? animData.GetRandomAttack()
             : animData.attack;
 
-        // Lưu ý: Nếu muốn kích hoạt onEventTrigger đúng frame thì có thể bổ sung callback vào Routine, 
-        // ở đây truyền callback hoàn thành (onComplete) vào animator.
+        // Bổ sung tham số onEventTrigger vào call
         CharacterSpriteAnimator.Instance.PlayAnimationByRange(
             target: target,
             enemyId: animationID,
             animPrefix: animData.animPrefix,
             rangeConfig: config,
             frameRate: animData.frameRate,
+            onEventTrigger: onEventTrigger, // <-- THÊM DÒNG NÀY
             onComplete: onComplete
         );
     }
@@ -90,6 +92,25 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             animPrefix: baseAnim.animPrefix,
             rangeConfig: heroAnim.shieldBlock,
             frameRate: baseAnim.frameRate,
+            onComplete: onComplete
+        );
+    }
+    public void PlayLevelUpAnimation(
+        UnitAnimationConfig baseConfig,
+        GeraldLightseekerAnimationConfig heroConfig,
+        GameObject spriteObject,
+        Action onComplete)
+    {
+        var config = heroConfig.levelUp;
+
+        // Chuyển sang dùng CharacterSpriteAnimator đồng bộ với toàn bộ class
+        CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+            target: spriteObject,
+            enemyId: animationID,
+            animPrefix: baseConfig.animPrefix,
+            rangeConfig: config,
+            frameRate: baseConfig.frameRate,
+            onEventTrigger: null,
             onComplete: onComplete
         );
     }

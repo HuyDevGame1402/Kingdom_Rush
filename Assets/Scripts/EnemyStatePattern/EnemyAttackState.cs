@@ -62,7 +62,7 @@ public class EnemyAttackState : IEnemyState
                 if (!enemy.isDead && enemy.target != null && enemy.IsTargetInAttackRange())
                 {
                     CharacterSpriteAnimator.Instance.PlayAnimationByRange(
-                        enemy.gameObject, id, prefix, idleConfig, frameRate
+                        enemy.gameObject, id, prefix, idleConfig, frameRate, null, null
                     );
 
                     if(enemy.target.TryGetComponent(out HealthHero healthHero) &&

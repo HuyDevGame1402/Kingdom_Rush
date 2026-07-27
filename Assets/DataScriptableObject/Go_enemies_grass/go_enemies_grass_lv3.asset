@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: go_enemies_grass_lv3
   m_EditorClassIdentifier: 
   unitName: go_enemies_grass
+  reinforceType: 0
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv3\n"
   maxHealth: 800
@@ -22,7 +23,7 @@ MonoBehaviour:
   minDamage: 40
   maxDamage: 60
   attackRange: 0.25
-  attackCooldown: 1.5
+  attackCooldown: 2.5
   animations:
     animPrefix: ogre_
     frameRate: 0.04
@@ -118,15 +119,13 @@ MonoBehaviour:
         offsetY: 0.15
       - frameOffset: 145
         offsetY: 0.15
-    skill:
-      startFrame: 1
-      endFrame: 1
-      hasEvent: 0
-      eventFrame: -1
-      animationConfigOffset: []
+    attacks: []
   localScaleLeft: {x: -1.5, y: 1.5, z: 0}
   localScaleRight: {x: 1.5, y: 1.5, z: 0}
   heroScale: 0
   timeToResurrect: 0
   maxAttacker: 1
   bounty: 50
+  livesTaken: 0
+  isHasLevelHero: 0
+  characterGUI: {fileID: 0}

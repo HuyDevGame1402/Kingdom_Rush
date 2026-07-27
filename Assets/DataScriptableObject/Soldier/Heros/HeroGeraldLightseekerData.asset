@@ -66,13 +66,13 @@ MonoBehaviour:
     attacks:
     - startFrame: 7
       endFrame: 17
-      hasEvent: 0
-      eventFrame: 0
+      hasEvent: 1
+      eventFrame: 12
       animationConfigOffset: []
     - startFrame: 18
       endFrame: 28
-      hasEvent: 0
-      eventFrame: 0
+      hasEvent: 1
+      eventFrame: 23
       animationConfigOffset: []
   localScaleLeft: {x: 0, y: 0, z: 0}
   localScaleRight: {x: 0, y: 0, z: 0}
@@ -82,6 +82,7 @@ MonoBehaviour:
   bounty: 0
   livesTaken: 0
   isHasLevelHero: 1
+  characterGUI: {fileID: 572645969639619351, guid: 31228bfd6a07fef428833fdc5bf57c34, type: 3}
   heroAnimations:
     levelUp:
       startFrame: 29

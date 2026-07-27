@@ -16,14 +16,14 @@ MonoBehaviour:
   reinforceType: 0
   unitType: 3
   description: "Qu\xE1i c\u01A1 b\u1EA3n lv2\n"
-  maxHealth: 35
+  maxHealth: 80
   moveSpeed: 0.5
   armor: 0
   magicResistance: 0
-  minDamage: 2
-  maxDamage: 4
+  minDamage: 4
+  maxDamage: 8
   attackRange: 0.25
-  attackCooldown: 1.5
+  attackCooldown: 2.5
   animations:
     animPrefix: orc_
     frameRate: 0.04
@@ -63,12 +63,7 @@ MonoBehaviour:
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
-    skill:
-      startFrame: 1
-      endFrame: 1
-      hasEvent: 0
-      eventFrame: -1
-      animationConfigOffset: []
+    attacks: []
   localScaleLeft: {x: -1.5, y: 1.5, z: 0}
   localScaleRight: {x: 1.5, y: 1.5, z: 0}
   heroScale: 0
@@ -76,7 +71,5 @@ MonoBehaviour:
   maxAttacker: 1
   bounty: 9
   livesTaken: 1
-  gemDropMin: 6
-  gemDropMax: 8
-  minGem: 15
-  maxGem: 25
+  isHasLevelHero: 0
+  characterGUI: {fileID: 0}

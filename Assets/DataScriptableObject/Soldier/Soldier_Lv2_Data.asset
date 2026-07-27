@@ -54,8 +54,8 @@ MonoBehaviour:
     attack:
       startFrame: 7
       endFrame: 16
-      hasEvent: 0
-      eventFrame: -1
+      hasEvent: 1
+      eventFrame: 16
       animationConfigOffset: []
     death:
       startFrame: 17
@@ -63,15 +63,13 @@ MonoBehaviour:
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
-    skill:
-      startFrame: 1
-      endFrame: 1
-      hasEvent: 0
-      eventFrame: -1
-      animationConfigOffset: []
+    attacks: []
   localScaleLeft: {x: 0, y: 0, z: 0}
   localScaleRight: {x: 0, y: 0, z: 0}
   heroScale: 1.8
   timeToResurrect: 10
   maxAttacker: 2
   bounty: 0
+  livesTaken: 0
+  isHasLevelHero: 0
+  characterGUI: {fileID: 0}

@@ -7,6 +7,8 @@ public class UnitAttackState : UnitBaseState
 
     public UnitAttackState(BaseUnitStateMachine unit) : base(unit) { }
 
+    private int damageFinal;
+
     public override void Enter()
     {
         isAttacking = true;
@@ -16,15 +18,42 @@ public class UnitAttackState : UnitBaseState
             unit.spriteObject,
             onEventTrigger: () => {
                 // Sát thương khi chạm eventFrame (nếu cần xử lý tại frame này)
-            },
-            onComplete: () => {
                 if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
                 {
-                    enemy.TakeDamage(
-                        DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage),
-                        unit.textSO
+                    damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().minDamage,
+                        unit.GetComponent<HeroDataInGame>().maxDamage);
+                    enemy.TakeDamage(damageFinal
+                        /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
+                        unit.textSO,
+                        unit.transform
                     );
                 }
+
+                // Add Exp if hero is PlayerHero not hero of tower or hero farmer
+                if (unit.TryGetComponent(out HeroEXPManager expManager))
+                {
+                    expManager.OnDealDamage(damageFinal);
+                }
+            },
+            onComplete: () => {
+                //if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
+                //{
+                //    damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().minDamage,
+                //        unit.GetComponent<HeroDataInGame>().maxDamage);
+                //    enemy.TakeDamage(damageFinal
+                //        /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
+                //        unit.textSO,
+                //        unit.transform
+                //    );
+                //}
+
+                //// Add Exp if hero is PlayerHero not hero of tower or hero farmer
+                //if(unit.TryGetComponent(out HeroEXPManager expManager))
+                //{
+                //    expManager.OnDealDamage(damageFinal);
+                //}
+
+
                 isAttacking = false;
             }
         );

@@ -12,7 +12,7 @@ public class HeroGeraldController : BaseUnitStateMachine
 
     [Header("Shield Block Settings")]
     [SerializeField] private float shieldBlockCooldown = 10f;
-    [Range(0f, 1f)][SerializeField] private float blockChance = 0.3f; // 30% tỷ lệ đỡ đòn khi bị đánh
+    [Range(0f, 1f)][SerializeField] private float blockChance = 0.3f;
 
     private float lastCourageTime = -999f;
     private float lastShieldBlockTime = -999f;
@@ -22,6 +22,7 @@ public class HeroGeraldController : BaseUnitStateMachine
     // States của Hero
     public GeraldCourageState CourageState { get; private set; }
     public GeraldShieldBlockState ShieldBlockState { get; private set; }
+    public GeraldLevelUpState LevelUpState { get; private set; } // ✅ MỚI: State Level Up
 
     protected override void Awake()
     {
@@ -30,11 +31,26 @@ public class HeroGeraldController : BaseUnitStateMachine
         // Khởi tạo các Skill State
         CourageState = new GeraldCourageState(this);
         ShieldBlockState = new GeraldShieldBlockState(this);
+        LevelUpState = new GeraldLevelUpState(this); // ✅ MỚI
+
+        transform.GetComponent<HeroDataInGame>().OnLevelUpEvent += TriggerLevelUp;
+    }
+
+    protected override void Start()
+    {
+        base.Start();
+        if (HeroVisualGUIManager.Instance != null)
+        {
+            HeroVisualGUIManager.Instance.SetPlayerHero(transform);
+        }
     }
 
     protected override void Update()
     {
         base.Update();
+
+        // Nếu đang trong quá trình Level Up -> Khóa không cho dùng Skill Courage tự động
+        if (CurrentState == LevelUpState) return;
 
         // Kiểm tra điều kiện tự động dùng Skill Courage khi đang giao tranh
         CheckAutoCourageSkill();
@@ -42,7 +58,6 @@ public class HeroGeraldController : BaseUnitStateMachine
 
     private void CheckAutoCourageSkill()
     {
-        // Điều kiện dùng Courage: Đã hồi cooldown + Đang ở Idle hoặc Attack + Có kẻ địch xung quanh
         if (Time.time >= lastCourageTime + courageCooldown)
         {
             if (CurrentState == IdleState || CurrentState == AttackState)
@@ -57,17 +72,31 @@ public class HeroGeraldController : BaseUnitStateMachine
     }
 
     /// <summary>
+    /// Kích hoạt khi Hero Lên Cấp (Gọi từ Event / Health / Level System)
+    /// </summary>
+    public void TriggerLevelUp(int currentLevel)
+    {
+        // Nếu đã chết thì không chạy Level Up Animation
+        if (CurrentState == DeathState || isDead) return;
+
+        TransitionToState(LevelUpState);
+    }
+
+    /// <summary>
     /// Kích hoạt khi bị quái đánh (Gọi từ hàm TakeDamage trong HealthHero)
     /// </summary>
     public bool TryTriggerShieldBlock()
     {
+        // Đang Level Up hoặc Đã chết -> Không thể Block
+        if (CurrentState == LevelUpState || CurrentState == DeathState) return false;
+
         if (Time.time >= lastShieldBlockTime + shieldBlockCooldown)
         {
-            if (Random.value <= blockChance && CurrentState != DeathState)
+            if (Random.value <= blockChance)
             {
                 lastShieldBlockTime = Time.time;
                 TransitionToState(ShieldBlockState);
-                return true; // Đỡ đòn thành công (Miễn/Giảm sát thương)
+                return true;
             }
         }
         return false;
@@ -83,7 +112,6 @@ public class HeroGeraldController : BaseUnitStateMachine
         {
             if (hit.CompareTag("Player") || hit.CompareTag("Soldier"))
             {
-                // Gọi Logic Buff giáp/sát thương cho đồng đội xung quanh tại đây
                 Debug.Log($"<color=cyan>[BUFF COURAGE]</color> Đã buff cho: {hit.name}");
             }
         }

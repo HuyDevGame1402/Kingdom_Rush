@@ -475,4 +475,120 @@ public class CharacterSpriteAnimator : MonoBehaviour
 
         return true;
     }
+    public void PlayAnimationByRange(
+    GameObject target,
+    string enemyId,
+    string animPrefix,
+    AnimationFrameRange rangeConfig,
+    float frameRate = -1,
+    Action onEventTrigger = null, // <-- THÊM THAM SỐ
+    Action onComplete = null)
+    {
+        if (target == null || rangeConfig == null) return;
+        SpriteRenderer renderer = target.GetComponent<SpriteRenderer>();
+        if (renderer == null) return;
+
+        string cleanEnemyId = enemyId.Trim().ToLower();
+        string cleanPrefix = animPrefix.Trim().ToLower();
+
+        if (!enemyDatabases.TryGetValue(cleanEnemyId, out var database)) return;
+
+        List<string> validFrames = new List<string>();
+        List<int> frameNumbers = new List<int>();
+
+        for (int i = rangeConfig.startFrame; i <= rangeConfig.endFrame; i++)
+        {
+            string frameKey = $"{cleanPrefix}{i:D4}";
+            if (database.ContainsKey(frameKey))
+            {
+                validFrames.Add(frameKey);
+                frameNumbers.Add(i);
+            }
+        }
+
+        if (validFrames.Count == 0) return;
+
+        StopAnimationFor(target);
+        int id = target.GetInstanceID();
+        float finalFrameRate = frameRate > 0 ? frameRate : defaultFrameRate;
+
+        // Truyền rangeConfig (để lấy hasEvent & eventFrame) cùng onEventTrigger vào Routine
+        Coroutine c = StartCoroutine(AnimateRoutineWithOffset(
+            renderer, cleanEnemyId, database, validFrames, frameNumbers,
+            rangeConfig, finalFrameRate, onEventTrigger, onComplete));
+
+        activeCoroutines[id] = c;
+    }
+    IEnumerator AnimateRoutineWithOffset(
+    SpriteRenderer renderer,
+    string enemyId,
+    Dictionary<string, SpriteData> database,
+    List<string> frames,
+    List<int> frameNumbers,
+    AnimationFrameRange rangeConfig, // <-- Nhận trực tiếp rangeConfig
+    float frameRate,
+    Action onEventTrigger, // <-- Nhận Action trigger
+    Action onComplete)
+    {
+        int currentIndex = 0;
+        bool shouldLoop = (onComplete == null);
+        bool eventTriggered = false; // Đánh dấu để tránh trigger 2 lần trong 1 vòng lặp
+
+        EnemyController enemyCtrl = renderer.GetComponent<EnemyController>();
+
+        while (true)
+        {
+            if (enemyCtrl != null && enemyCtrl.isFrozen)
+            {
+                yield return null;
+                continue;
+            }
+
+            string currentFrameKey = frames[currentIndex];
+            int currentActualFrameNum = frameNumbers[currentIndex];
+            SpriteData d = database[currentFrameKey];
+
+            if (enemyCtrl != null)
+            {
+                enemyCtrl.lastAnimPrefixBeforeFreeze = currentFrameKey;
+                enemyCtrl.lastFrameNumberBeforeFreeze = currentActualFrameNum;
+            }
+
+            // Tính toán offset
+            float calculatedOffsetY = 0f;
+            if (rangeConfig.animationConfigOffset != null && rangeConfig.animationConfigOffset.Count > 0)
+            {
+                EnemyAnimConfig configForFrame = rangeConfig.animationConfigOffset.Find(c => c.frameOffset == currentActualFrameNum);
+                if (configForFrame != null)
+                {
+                    calculatedOffsetY = configForFrame.offsetY;
+                }
+            }
+
+            ApplySpriteFrame(renderer, enemyId, d, calculatedOffsetY);
+
+            // 🔥 XỬ LÝ EVENT FRAME GÂY SÁT THƯƠNG TẠI ĐÂY
+            if (rangeConfig.hasEvent && !eventTriggered && currentActualFrameNum == rangeConfig.eventFrame)
+            {
+                eventTriggered = true;
+                onEventTrigger?.Invoke(); // Gọi hàm trừ máu trong Enter()
+            }
+
+            // Đã chạy xong frame cuối
+            if (currentIndex == frames.Count - 1)
+            {
+                if (!shouldLoop)
+                {
+                    yield return new WaitForSeconds(frameRate);
+                    onComplete?.Invoke();
+                    yield break;
+                }
+                // Reset lại cờ trigger event khi vòng lặp quay về đầu (dùng cho animation lặp)
+                eventTriggered = false;
+            }
+
+            currentIndex = (currentIndex + 1) % frames.Count;
+            yield return new WaitForSeconds(frameRate);
+        }
+    }
 }

@@ -8,6 +8,7 @@ using UnityEditor; // Thêm thư viện này để báo cho Unity lưu File Asse
 [CreateAssetMenu(fileName = "NewHeroGeraldLightseekerData", menuName = "KingdomRush/Hero Data")]
 public class HeroGeraldLightseekerDataSO : UnitDataSO
 {
+
     [Header("Hero Specific Animations")]
     public GeraldLightseekerAnimationConfig heroAnimations;
 

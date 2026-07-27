@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class HeroDataInGame : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class HeroDataInGame : MonoBehaviour
 
     public int currentExp;
     public int nextExp;
+    public event Action<int, int> OnChangeExpEvent;
+    public event Action<int> OnLevelUpEvent;
 
     [SerializeField] private BaseUnitStateMachine baseStateMachine;
 
@@ -34,7 +37,6 @@ public class HeroDataInGame : MonoBehaviour
         minDamage = heroLevelStat.minDamage;
         maxDamage = heroLevelStat.maxDamage;
         armor = heroLevelStat.armorPercentage;
-        currentExp = 0;
         nextExp = heroLevelStat.expToNextLevel;
     }
 
@@ -49,5 +51,15 @@ public class HeroDataInGame : MonoBehaviour
     public void AddEXP(int expGained)
     {
         currentExp += expGained;
+
+        if(currentExp >= nextExp)
+        {
+            currentExp -= nextExp;
+            currentLevel += 1;
+            InitDataLevel();
+            OnLevelUpEvent?.Invoke(currentLevel);
+        }
+
+        OnChangeExpEvent?.Invoke(currentExp, nextExp);
     }
 }
