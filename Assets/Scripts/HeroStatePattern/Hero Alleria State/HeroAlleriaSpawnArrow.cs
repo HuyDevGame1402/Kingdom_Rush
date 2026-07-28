@@ -8,7 +8,7 @@ public class HeroAlleriaSpawnArrow : MonoBehaviour, IHasSpawnBullet
     [SerializeField] private Transform firePoint;
     [SerializeField] private HeroDataInGame heroDataInGame;
 
-    public void SpawnBullet(Transform enemyTarget)
+    public void SpawnBullet(Transform enemyTarget, int finnalDamage)
     {
         GameObject projectileGO = Instantiate(arrow, firePoint.position, Quaternion.identity);
 
@@ -18,8 +18,7 @@ public class HeroAlleriaSpawnArrow : MonoBehaviour, IHasSpawnBullet
             if (projectileScript is ArrowKingdomRush arrow)
             {
                 arrow.LaunchWithArc(enemyTarget, shootSpeed, height
-                    , DamageStatic.GetDamageBase(heroDataInGame.minRangedDamage,
-                    heroDataInGame.maxRangedDamage));
+                        , finnalDamage);
             }
         }
     }

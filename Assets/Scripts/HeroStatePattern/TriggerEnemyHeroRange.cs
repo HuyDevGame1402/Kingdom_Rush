@@ -22,8 +22,6 @@ public class TriggerEnemyHeroRange : MonoBehaviour
         }
         if (collision.CompareTag(ENEMYTAG) && heroStateMachine.healthHero.IsDead() == false)
         {
-            Debug.LogWarning(
-        $"RANGE ENTER | Script={gameObject.name} | Collider={GetComponent<Collider2D>()?.name} | Enemy={collision.name}");
             if (collision.transform.TryGetComponent(out EnemyController enemyCtr)
                 && heroStateMachine.IsTargetEnemy() == false)
             {

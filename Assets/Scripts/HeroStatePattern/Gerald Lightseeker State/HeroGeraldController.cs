@@ -169,7 +169,7 @@ public class HeroGeraldController : BaseUnitStateMachine
             HeroGeraldController_OnHitDamageSheldEvent(damage, attacker);
             return Random.value < percentCounterDamage;
         }
-        else if(heroDataInGame.currentLevel > GeraldData.shieldSkillStats[1].requiredHeroLevel
+        else if(heroDataInGame.currentLevel >= GeraldData.shieldSkillStats[1].requiredHeroLevel
             && heroDataInGame.currentLevel < GeraldData.shieldSkillStats[2].requiredHeroLevel)
         {
             percentDamageAttack = GeraldData.shieldSkillStats[1].damageReflectedPercent;
@@ -177,7 +177,7 @@ public class HeroGeraldController : BaseUnitStateMachine
             HeroGeraldController_OnHitDamageSheldEvent(damage, attacker);
             return Random.value < percentCounterDamage;
         }
-        else if (heroDataInGame.currentLevel > GeraldData.shieldSkillStats[2].requiredHeroLevel)
+        else if (heroDataInGame.currentLevel >= GeraldData.shieldSkillStats[2].requiredHeroLevel)
         {
             percentDamageAttack = GeraldData.shieldSkillStats[2].damageReflectedPercent;
             percentCounterDamage = GeraldData.shieldSkillStats[2].triggerChance;

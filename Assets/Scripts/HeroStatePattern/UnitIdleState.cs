@@ -18,6 +18,11 @@ public class UnitIdleState : UnitBaseState
         {
             unit.ResetTarget();
         }
+        else if (unit.currentTarget == null &&
+             (unit.targetList.Count > 0 || unit.targetLongRangeList.Count > 0))
+        {
+            unit.ResetTarget();
+        }
     }
 
     public override void Update()

@@ -21,6 +21,8 @@ public class HeroAlleriaController : BaseUnitStateMachine
     public AlleriaCallOfTheWildState CallOfTheWildState { get; private set; }
     public AlleriaLevelUpState LevelUpState { get; private set; }
 
+    private HeroDataInGame heroDataInGame;
+
     protected override void Awake()
     {
         base.Awake();
@@ -32,6 +34,7 @@ public class HeroAlleriaController : BaseUnitStateMachine
 
         transform.GetComponent<HeroDataInGame>().OnLevelUpEvent += TriggerLevelUp;
         transform.GetComponent<HeroDataInGame>().OnMoveToFlagEvent += HeroAlleriaController_OnMoveToFlagEvent;
+        heroDataInGame = GetComponent<HeroDataInGame>();
     }
 
     private void HeroAlleriaController_OnMoveToFlagEvent(Vector3 pos)
@@ -58,8 +61,8 @@ public class HeroAlleriaController : BaseUnitStateMachine
         //// Ưu tiên kiểm tra gọi Wildcat nếu chưa có Wildcat trên sân
         //CheckAutoCallOfTheWildSkill();
 
-        //// Kiểm tra thi triển Multishot khi đang giao tranh
-        //CheckAutoMultishotSkill();
+        // Kiểm tra thi triển Multishot khi đang giao tranh
+        CheckAutoMultishotSkill();
     }
 
     private void CheckAutoCallOfTheWildSkill()
@@ -77,6 +80,7 @@ public class HeroAlleriaController : BaseUnitStateMachine
 
     private void CheckAutoMultishotSkill()
     {
+        if (targetList.Count > 0) return;
         if (Time.time >= lastMultishotTime + multishotCooldown)
         {
             if (CurrentState == IdleState || CurrentState == AttackState)
@@ -95,6 +99,45 @@ public class HeroAlleriaController : BaseUnitStateMachine
         if (CurrentState == DeathState || isDead) return;
 
         TransitionToState(LevelUpState);
+    }
+
+    public override void ResetTarget()
+    {
+        currentTarget = null;
+        // Ưu tiên tìm trong targetList trước (cận chiến)
+        if (targetList.Count > 0)
+        {
+            for (int i = 0; i < targetList.Count; i++)
+            {
+                if (targetList[i].TryGetComponent(out EnemyController enemyController))
+                {
+                    if (enemyController.CheckAttackerCount() && enemyController.isDead == false)
+                    {
+                        currentTarget = targetList[i];
+                        return;
+                    }
+                }
+            }
+            currentTarget = targetList[Random.Range(0, targetList.Count)];
+            return;
+        }
+
+        // Fallback: nếu không có mục tiêu cận chiến thì tìm trong targetLongRangeList
+        if (targetLongRangeList.Count > 0)
+        {
+            for (int i = 0; i < targetLongRangeList.Count; i++)
+            {
+                if (targetLongRangeList[i].TryGetComponent(out EnemyController enemyController))
+                {
+                    if (enemyController.CheckAttackerCount() && enemyController.isDead == false)
+                    {
+                        currentTarget = targetLongRangeList[i];
+                        return;
+                    }
+                }
+            }
+            currentTarget = targetLongRangeList[Random.Range(0, targetLongRangeList.Count)];
+        }
     }
 
     /// <summary>
@@ -120,5 +163,10 @@ public class HeroAlleriaController : BaseUnitStateMachine
     {
         Debug.Log("<color=yellow>[MULTISHOT]</color> Alleria bắn chiêu Multishot!");
         // Viết logic sinh ra các Projectile Arrow bắn vào mục tiêu ở đây
+    }
+
+    public HeroDataInGame GetHeroDataInGame()
+    {
+        return heroDataInGame;
     }
 }

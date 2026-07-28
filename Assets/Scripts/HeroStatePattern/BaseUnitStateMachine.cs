@@ -177,7 +177,7 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         return Mathf.Abs(transform.position.y - currentTarget.position.y) <= tolerance;
     }
 
-    public void ResetTarget()
+    public virtual void ResetTarget()
     {
         currentTarget = null;
         if(targetList.Count > 0)

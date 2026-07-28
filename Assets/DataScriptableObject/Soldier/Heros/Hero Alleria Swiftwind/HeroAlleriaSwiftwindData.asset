@@ -25,6 +25,7 @@ MonoBehaviour:
   attackRange: 0.5
   attackCooldown: 1
   attackCooldownAdd: 1
+  damageType: 0
   animations:
     animPrefix: hero_archer_
     frameRate: 0.08
@@ -95,8 +96,8 @@ MonoBehaviour:
     multishotSkill:
       startFrame: 53
       endFrame: 72
-      hasEvent: 0
-      eventFrame: -1
+      hasEvent: 1
+      eventFrame: 69
       animationConfigOffset: []
     callOfTheWildSkill:
       startFrame: 78
@@ -107,7 +108,7 @@ MonoBehaviour:
   multishotCooldown: 4
   multishotLevels:
   - abilityLevel: 1
-    requiredHeroLevel: 2
+    requiredHeroLevel: 1
     arrowCount: 3
   - abilityLevel: 2
     requiredHeroLevel: 5

@@ -8,9 +8,15 @@ public class UnitAttackState : UnitBaseState
     public UnitAttackState(BaseUnitStateMachine unit) : base(unit) { }
     private int damageFinal;
     private bool isLongAttackRangeCurrent;
+    private HeroDataInGame heroDataInGame;
+
 
     public override void Enter()
     {
+        if(heroDataInGame == null)
+        {
+            heroDataInGame = unit.GetComponent<HeroDataInGame>();
+        }
         FaceTarget();
         isAttacking = true;
         //unit.lastAttackTime = Time.time;
@@ -44,8 +50,8 @@ public class UnitAttackState : UnitBaseState
                     // Sát thương khi chạm eventFrame (nếu cần xử lý tại frame này)
                     if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
                     {
-                        damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().GetMinDamage(),
-                            unit.GetComponent<HeroDataInGame>().GetMaxDamage());
+                        damageFinal = DamageStatic.GetDamageBase(heroDataInGame.GetMinDamage(),
+                            heroDataInGame.GetMaxDamage());
                         enemy.TakeDamage(damageFinal
                             /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
                             unit.textSO,
@@ -67,12 +73,15 @@ public class UnitAttackState : UnitBaseState
                 // đánh xa
                 else
                 {
-                    if(
+                    damageFinal = DamageStatic.GetDamageBase(heroDataInGame.GetMinRangedDamage(),
+                            heroDataInGame.GetMaxRangedDamage());
+                    if (
                     //unit.currentTarget.TryGetComponent(out EnemyController enemyController) &&
                     //enemyController.isDead == false &&
                     unit.TryGetComponent(out IHasSpawnBullet spawnBullet))
                     {
-                        spawnBullet.SpawnBullet(unit.currentTarget);
+                        spawnBullet.SpawnBullet(unit.currentTarget, damageFinal
+                            );
                     }
                 }
             },

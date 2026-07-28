@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 
-
 [Serializable]
 public class StatModifier
 {
@@ -33,6 +32,8 @@ public class HeroDataInGame : MonoBehaviour
 
     [SerializeField] private int finalMinDamage;
     [SerializeField] private int finalMaxDamage;
+    [SerializeField] private int finalMinRangedDamage;
+    [SerializeField] private int finalMaxRangedDamage;
     [SerializeField] private float finalArmor;
     private bool hasChanges;
 
@@ -79,6 +80,8 @@ public class HeroDataInGame : MonoBehaviour
         finalArmor = armor;
         finalMinDamage = minDamage;
         finalMaxDamage = maxDamage;
+        finalMinRangedDamage = minRangedDamage;
+        finalMaxRangedDamage = maxRangedDamage;
         RecalculateStats();
     }
 
@@ -143,6 +146,8 @@ public class HeroDataInGame : MonoBehaviour
     {
         finalMinDamage = minDamage;
         finalMaxDamage = maxDamage;
+        finalMinRangedDamage = minRangedDamage;
+        finalMaxRangedDamage = maxRangedDamage;
         finalArmor = armor;
         foreach (var mod in activeModifiers)
         {
@@ -150,6 +155,8 @@ public class HeroDataInGame : MonoBehaviour
             {
                 finalMinDamage += mod.valueDamage;
                 finalMaxDamage += mod.valueDamage;
+                finalMinRangedDamage += mod.valueDamage;
+                finalMaxRangedDamage += mod.valueDamage;
                 finalArmor += mod.valueArmor;
             }
         }
@@ -198,4 +205,8 @@ public class HeroDataInGame : MonoBehaviour
     {
         return finalArmor;
     }
+
+    public int GetMinRangedDamage() { return finalMinRangedDamage; }
+
+    public int GetMaxRangedDamage() { return finalMaxRangedDamage; }
 }
