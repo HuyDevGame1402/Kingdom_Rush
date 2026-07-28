@@ -16,6 +16,7 @@ TagManager:
   - Wave3
   - Wave7
   - Map
+  - PlayerHero
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Path
   - Flag
   - 
-  - 
+  - PlayerHero
   - 
   - 
   - 

@@ -50,7 +50,10 @@ public class GeraldLevelUpState : UnitBaseState
             }
         }
     }
+    public override void FixedUpdate()
+    {
 
+    }
     public override void Exit()
     {
         isLevelUpFinished = false;

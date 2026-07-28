@@ -57,6 +57,16 @@ public class EnemyController : MonoBehaviour
 
     public event Action OnEnemyDead;
 
+    public Rigidbody2D rb;
+
+    private EnemyDataScript enemyDataScript;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        enemyDataScript = GetComponent<EnemyDataScript>();
+    }
+
     void Start()
     {
         if (unitData == null)
@@ -128,7 +138,7 @@ public class EnemyController : MonoBehaviour
         {
             // Đã đi đến đích cuối cùng của bản đồ (Người chơi mất máu cổng thành)
 
-            if(LiveManager.Instance != null)
+            if (LiveManager.Instance != null)
             {
                 LiveManager.Instance.RemoveLive(unitData.livesTaken);
             }
@@ -157,6 +167,43 @@ public class EnemyController : MonoBehaviour
             UpdateMoveAnimation(direction.normalized);
         }
     }
+
+    //public void HandleMovement()
+    //{
+    //    if (isDead || isFrozen) return;
+
+    //    if (waypoints == null || waypoints.Count == 0 || currentWaypointIndex >= waypoints.Count)
+    //    {
+    //        if (LiveManager.Instance != null)
+    //        {
+    //            LiveManager.Instance.RemoveLive(unitData.livesTaken);
+    //        }
+
+    //        ReachedEndOfTheLine();
+    //        return;
+    //    }
+
+    //    Transform targetPoint = waypoints[currentWaypointIndex];
+
+    //    Vector2 currentPos = rb.position;
+    //    Vector2 targetPos = targetPoint.position;
+
+    //    Vector2 direction = targetPos - currentPos;
+    //    float distanceThisFrame = unitData.moveSpeed * Time.deltaTime;
+
+    //    if (direction.magnitude <= distanceThisFrame)
+    //    {
+    //        rb.MovePosition(targetPos);
+    //        currentWaypointIndex++;
+    //    }
+    //    else
+    //    {
+    //        Vector2 moveVector = direction.normalized * distanceThisFrame;
+    //        rb.MovePosition(currentPos + moveVector);
+
+    //        UpdateMoveAnimation(direction.normalized);
+    //    }
+    //}
 
     private void UpdateMoveAnimation(Vector2 moveDir)
     {
@@ -214,12 +261,12 @@ public class EnemyController : MonoBehaviour
     }
 
     // --- HÀM NHẬN SÁT THƯƠNG ĐỂ KIỂM TRA TRẠNG THÁI CHẾT ---
-    public void TakeDamage(int amount, TextSO textSO, Transform attacker = null)
+    public void TakeDamage(int amount, TextSO textSO, DamageType damageType, Transform attacker = null)
     {
         if (isDead) return;
         if(enemyHealth != null)
         {
-            enemyHealth.ApplyDamage(amount);
+            enemyHealth.ApplyDamage(CalculatorDamage(amount, damageType), attacker);
             if (enemyHealth.IsDead())
             {
                 if(GoldManager.Instance != null)
@@ -254,6 +301,22 @@ public class EnemyController : MonoBehaviour
                 TransitionToState(DeathState);
                 targetList.Clear(); // Xóa danh sách mục tiêu khi chết
             }
+        }
+    }
+
+    private int CalculatorDamage(int damage, DamageType damageType)
+    {
+        if(damageType == DamageType.Physical)
+        {
+            return damage - (int)(damage * enemyDataScript.finalArmor);
+        }
+        else if(damageType == DamageType.Magic)
+        {
+            return damage - -(int)(damage * enemyDataScript.finalArmor);
+        }
+        else
+        {
+            return damage;
         }
     }
 
@@ -555,25 +618,6 @@ public class EnemyController : MonoBehaviour
 
         return bestProgress;
     }
-    //public bool ShouldMoveBackToTarget()
-    //{
-    //    if (target == null) return false;
-
-    //    if (target.TryGetComponent(out BaseUnitStateMachine soldier))
-    //    {
-    //        if (!soldier.IsTargetingEnemy(this))
-    //            return false;
-    //    }
-
-    //    if (currentWaypointIndex >= waypoints.Count)
-    //        return true;
-
-    //    float enemyProgress = GetArcLengthProgress(transform.position, currentWaypointIndex);
-    //    float heroProgress = GetArcLengthProgress(target.position, currentWaypointIndex);
-
-    //    const float tolerance = 0.05f; // hero phải NGANG HÀNG hoặc TRƯỚC mới đuổi theo
-    //    return heroProgress >= enemyProgress - tolerance;
-    //}
     public bool ShouldMoveBackToTarget()
     {
         if (target == null) return false;

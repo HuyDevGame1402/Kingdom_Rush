@@ -32,6 +32,7 @@ public class UnitDataSO : ScriptableObject
     public float attackRange = 0.5f;
     public float attackCooldown = 1.5f;
     public float attackCooldownAdd;
+    public DamageType damageType;
 
     [Header("Animation Settings")]
     public UnitAnimationConfig animations;

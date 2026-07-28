@@ -96,6 +96,19 @@ public class EnemyMoveState : IEnemyState
 
         UpdateFacing(enemy, enemy.target.position - enemy.transform.position);
     }
+    //private void MoveTowardsTargetY(EnemyController enemy)
+    //{
+    //    Vector2 currentPos = enemy.rb.position;
+    //    Vector2 alignPos = new Vector2(currentPos.x, enemy.target.position.y);
+
+    //    Vector2 dirY = (alignPos - currentPos).normalized;
+
+    //    enemy.rb.MovePosition(
+    //        currentPos +
+    //        dirY * enemy.unitData.moveSpeed * Time.deltaTime);
+
+    //    UpdateFacing(enemy, enemy.target.position - enemy.transform.position);
+    //}
 
     // Di chuyển thẳng về phía target khi chưa vào tầm đánh
     private void MoveTowardsTarget(EnemyController enemy, float distance)
@@ -120,6 +133,28 @@ public class EnemyMoveState : IEnemyState
         // Ví dụ (cần chuyển UpdateMoveAnimation thành public trong EnemyController rồi gọi ở đây):
         // enemy.UpdateMoveAnimation(direction);
     }
+    //private void MoveTowardsTarget(EnemyController enemy, float distance)
+    //{
+    //    Vector2 currentPos = enemy.rb.position;
+    //    Vector2 targetPos = enemy.target.position;
+
+    //    Vector2 direction = (targetPos - currentPos).normalized;
+
+    //    float distanceThisFrame = enemy.unitData.moveSpeed * Time.deltaTime;
+
+    //    if (distanceThisFrame >= distance)
+    //    {
+    //        enemy.rb.MovePosition(targetPos);
+    //    }
+    //    else
+    //    {
+    //        enemy.rb.MovePosition(
+    //            currentPos +
+    //            direction * distanceThisFrame);
+    //    }
+
+    //    UpdateFacing(enemy, direction);
+    //}
 
     // Lật mặt sprite trái/phải dựa theo hướng di chuyển
     private void UpdateFacing(EnemyController enemy, Vector3 direction)

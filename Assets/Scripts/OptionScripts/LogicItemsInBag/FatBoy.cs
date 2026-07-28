@@ -149,7 +149,7 @@ public class FatBoy : MonoBehaviour
                 if (LevelEnemySpawner.Instance.enemyInGame[i].TryGetComponent(out EnemyController
                     enemyController))
                 {
-                    enemyController.TakeDamage(damage, null);
+                    enemyController.TakeDamage(damage, null, DamageType.True);
                 }
             }
         }

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7925356096877894750}
   - component: {fileID: 211769702136301067}
   - component: {fileID: 275310155376788007}
+  - component: {fileID: 4640569148606332933}
   m_Layer: 0
   m_Name: EnemyOrcLv1
   m_TagString: EnemyKingdomRush
@@ -72,6 +73,7 @@ MonoBehaviour:
   isFrozen: 0
   lastAnimPrefixBeforeFreeze: 
   lastFrameNumberBeforeFreeze: 0
+  rb: {fileID: 0}
 --- !u!212 &1378991697074639915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -204,7 +206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseOrder: 10000
-  multiplier: 100
 --- !u!114 &7925356096877894750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +273,33 @@ MonoBehaviour:
   freezeDuration: 3
   blendTime: 0.3
   maxIceBlend: 0.2
+--- !u!50 &4640569148606332933
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122370129681020088}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2778689919189572829
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +429,7 @@ GameObject:
   - component: {fileID: 6989088364530955198}
   - component: {fileID: 4216140048312997779}
   - component: {fileID: 3119198839970205758}
+  - component: {fileID: 7287157211281484460}
   m_Layer: 0
   m_Name: TriggerAttack
   m_TagString: Untagged
@@ -472,6 +501,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyController: {fileID: 2920997470549353124}
+--- !u!50 &7287157211281484460
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314003038122741462}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &7971533145354226725
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,4 +629,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseOrder: 10003
-  multiplier: 100

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3647846956039876977}
   - component: {fileID: 7050501803334855633}
   - component: {fileID: 1280946451391382597}
+  - component: {fileID: 7744669004385718046}
   m_Layer: 0
   m_Name: EnemyGoblinLv1
   m_TagString: EnemyKingdomRush
@@ -57,7 +58,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitData: {fileID: 11400000, guid: bb8f60f985af15a4695539cb4aea984c, type: 2}
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   target: {fileID: 0}
   targetList: []
   currentHealth: 0
@@ -72,6 +90,7 @@ MonoBehaviour:
   isFrozen: 0
   lastAnimPrefixBeforeFreeze: 
   lastFrameNumberBeforeFreeze: 0
+  rb: {fileID: 0}
 --- !u!212 &1378991697074639915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -271,6 +290,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ecdc7232eebf44aaf3d0973d35b2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &7744669004385718046
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122370129681020088}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2778689919189572829
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +446,7 @@ GameObject:
   - component: {fileID: 6989088364530955198}
   - component: {fileID: 4216140048312997779}
   - component: {fileID: 3119198839970205758}
+  - component: {fileID: 240698404526043960}
   m_Layer: 0
   m_Name: TriggerAttack
   m_TagString: Untagged
@@ -471,6 +518,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyController: {fileID: 2920997470549353124}
+--- !u!50 &240698404526043960
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314003038122741462}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &8553091441699086864
 GameObject:
   m_ObjectHideFlags: 0

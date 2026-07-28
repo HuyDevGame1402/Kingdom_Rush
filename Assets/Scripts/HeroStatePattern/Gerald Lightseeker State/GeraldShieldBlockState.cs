@@ -37,7 +37,10 @@ public class GeraldShieldBlockState : UnitBaseState
             hero.TransitionToState(hero.IdleState);
         }
     }
+    public override void FixedUpdate()
+    {
 
+    }
     public override void Exit()
     {
         hero.IsBlocking = false;

@@ -4,18 +4,21 @@ public class TriggerEnemy : MonoBehaviour
 {
     private const string SOLIDERTAG = "Soldier";
     [SerializeField] private EnemyController enemyController;
-
+    private CircleCollider2D bigTrigger;
     private void Awake()
     {
         if (enemyController == null)
         {
             enemyController = GetComponentInParent<EnemyController>();
         }
+        bigTrigger = GetComponent<CircleCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(SOLIDERTAG) && enemyController.target == null)
+        if (!bigTrigger.IsTouching(collision))
+            return;
+        if (collision.CompareTag(SOLIDERTAG))
         {
             if(collision.transform.parent.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
             {

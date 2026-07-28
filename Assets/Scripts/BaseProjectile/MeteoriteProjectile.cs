@@ -184,7 +184,7 @@ public class MeteoriteProjectile : MonoBehaviour
 
             if(collision.transform.TryGetComponent(out EnemyController enemyController))
             {
-                enemyController.TakeDamage((int)damage, null);
+                enemyController.TakeDamage((int)damage, null, DamageType.Physical);
             }
 
         }

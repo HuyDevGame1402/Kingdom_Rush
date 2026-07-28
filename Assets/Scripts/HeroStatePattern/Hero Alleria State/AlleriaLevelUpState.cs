@@ -46,7 +46,10 @@ public class AlleriaLevelUpState : UnitBaseState
             }
         }
     }
+    public override void FixedUpdate()
+    {
 
+    }
     public override void Exit()
     {
         isLevelUpFinished = false;

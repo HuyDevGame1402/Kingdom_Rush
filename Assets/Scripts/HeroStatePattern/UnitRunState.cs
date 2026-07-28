@@ -20,9 +20,16 @@ public class UnitRunState : UnitBaseState
         // ƯU TIÊN 1: Nếu đang di chuyển theo cờ -> Tính vị trí cờ (+ offset ngẫu nhiên)
         if (unit.isRunToFlag)
         {
-            float randomRadius = Random.Range(0.3f, 0.6f);
-            Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
-            actualTargetPosition = (Vector2)unit.positionFlag + randomOffset;
+            if (unit.isHero)
+            {
+                actualTargetPosition = (Vector2)unit.positionFlag;
+            }
+            else
+            {
+                float randomRadius = Random.Range(0.3f, 0.6f);
+                Vector2 randomOffset = Random.insideUnitCircle.normalized * randomRadius;
+                actualTargetPosition = (Vector2)unit.positionFlag + randomOffset;
+            }
         }
         // ƯU TIÊN 2: Nếu không có cờ -> Đi theo target hiện tại (Enemy hoặc Point)
         else if (unit.currentTarget != null)
@@ -107,8 +114,10 @@ public class UnitRunState : UnitBaseState
                     Vector2 alignPos = new Vector2(unit.transform.position.x, unit.currentTarget.position.y);
                     Vector2 dirAlign = (alignPos - currentPos).normalized;
 
-                    unit.transform.position += (Vector3)(dirAlign * unit.unitData.moveSpeed * Time.deltaTime);
-
+                    //unit.transform.position += (Vector3)(dirAlign * unit.unitData.moveSpeed * Time.deltaTime);
+                    unit.rb.MovePosition(
+                        unit.rb.position +
+                        dirAlign * unit.unitData.moveSpeed * Time.fixedDeltaTime);
                     if (dirAlign.x != 0)
                     {
                         float scaleX = (dirAlign.x > 0 ? 1 : -1) * unit.unitData.heroScale;
@@ -144,8 +153,23 @@ public class UnitRunState : UnitBaseState
         // --------------------------------------------------
         // DI CHUYỂN (Chỉ chạy khi chưa vào tầm đánh)
         // --------------------------------------------------
-        Vector3 direction = ((Vector3)actualTargetPosition - unit.transform.position).normalized;
-        unit.transform.position += direction * unit.unitData.moveSpeed * Time.deltaTime;
+        //Vector3 direction = ((Vector3)actualTargetPosition - unit.transform.position).normalized;
+        //unit.transform.position += direction * unit.unitData.moveSpeed * Time.deltaTime;
+
+        //if (direction.x != 0)
+        //{
+        //    float scaleX = (direction.x > 0 ? 1 : -1) * unit.unitData.heroScale;
+        //    unit.spriteObject.transform.localScale = new Vector3(scaleX, unit.unitData.heroScale, 1);
+        //}
+    }
+    public override void FixedUpdate()
+    {
+        Vector2 direction =
+        (actualTargetPosition - unit.rb.position).normalized;
+
+        unit.rb.MovePosition(
+            unit.rb.position +
+            direction * unit.unitData.moveSpeed * Time.fixedDeltaTime);
 
         if (direction.x != 0)
         {
@@ -153,6 +177,5 @@ public class UnitRunState : UnitBaseState
             unit.spriteObject.transform.localScale = new Vector3(scaleX, unit.unitData.heroScale, 1);
         }
     }
-
     public override void Exit() { }
 }

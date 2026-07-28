@@ -16,7 +16,10 @@ public class UnitDeathState : UnitBaseState
             }
         );
     }
+    public override void FixedUpdate()
+    {
 
+    }
     public override void Update() { } // Đã chết thì đóng băng mọi logic
     public override void Exit() { }
 }

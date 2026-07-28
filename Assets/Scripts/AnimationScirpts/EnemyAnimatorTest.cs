@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using static UnityEngine.GraphicsBuffer;
+using static UnityEngine.Rendering.STP;
 
 public class EnemyAnimatorTest : MonoBehaviour
 {
@@ -61,6 +63,10 @@ public class EnemyAnimatorTest : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             ShowSingleFrame(currentFrameIndex);
+            //CharacterSpriteAnimator.Instance.PlayAnimation(
+            //target: gameObject,
+            //enemyId: enemyId,
+            //animPrefix: animPrefix);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))

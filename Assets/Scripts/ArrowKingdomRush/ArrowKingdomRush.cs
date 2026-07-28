@@ -50,7 +50,7 @@ public class ArrowKingdomRush : BaseProjectile
         if (valid)
         {
             Debug.LogWarning("Attack Enemy: " + damage);
-            cachedEnemyCtr.TakeDamage(damage, textSO);
+            cachedEnemyCtr.TakeDamage(damage, textSO, DamageType.Physical);
             base.OnHitTarget();
 
             if (SoundGameAttackManager.Instance != null)

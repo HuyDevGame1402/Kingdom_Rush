@@ -1,14 +1,13 @@
-﻿using UnityEngine;
+﻿using UnityEditor.Experimental.GraphView;
+using UnityEngine;
 
 public class HeroGeraldController : BaseUnitStateMachine
 {
     public HeroGeraldLightseekerDataSO GeraldData => unitData as HeroGeraldLightseekerDataSO;
 
     [Header("Skill Settings")]
-    [SerializeField] private float courageCooldown = 15f;
+    [SerializeField] private float courageCooldown = 8f;
     [SerializeField] private float courageBuffRadius = 5f;
-    [SerializeField] private float courageBuffDuration = 5f;
-    [SerializeField] private float courageArmorBonus = 10f;
 
     [Header("Shield Block Settings")]
     [SerializeField] private float shieldBlockCooldown = 10f;
@@ -22,7 +21,13 @@ public class HeroGeraldController : BaseUnitStateMachine
     // States của Hero
     public GeraldCourageState CourageState { get; private set; }
     public GeraldShieldBlockState ShieldBlockState { get; private set; }
-    public GeraldLevelUpState LevelUpState { get; private set; } // ✅ MỚI: State Level Up
+    public GeraldLevelUpState LevelUpState { get; private set; }
+
+    [SerializeField] private TriggerHeroInSide triggerHeroInSide;
+    [SerializeField] private HeroDataInGame heroDataInGame;
+
+    public float percentCounterDamage;
+    public float percentDamageAttack;
 
     protected override void Awake()
     {
@@ -31,10 +36,24 @@ public class HeroGeraldController : BaseUnitStateMachine
         // Khởi tạo các Skill State
         CourageState = new GeraldCourageState(this);
         ShieldBlockState = new GeraldShieldBlockState(this);
-        LevelUpState = new GeraldLevelUpState(this); // ✅ MỚI
+        LevelUpState = new GeraldLevelUpState(this);
 
         transform.GetComponent<HeroDataInGame>().OnLevelUpEvent += TriggerLevelUp;
         transform.GetComponent<HeroDataInGame>().OnMoveToFlagEvent += HeroGeraldController_OnMoveToFlagEvent;
+        if(triggerHeroInSide == null) triggerHeroInSide = GetComponent<TriggerHeroInSide>();
+        if(heroDataInGame == null) heroDataInGame = GetComponent<HeroDataInGame>();
+
+        //transform.GetComponent<HealthHero>().OnHitDamageSheldEvent += HeroGeraldController_OnHitDamageSheldEvent;
+    }
+
+    private void HeroGeraldController_OnHitDamageSheldEvent(int damage, Transform attacker)
+    {
+        if (TryTriggerShieldBlock())
+        {
+            // Phản damage
+            attacker.GetComponent<EnemyController>().TakeDamage((int)(damage * percentDamageAttack)
+                , textSO, DamageType.True, transform);
+        }
     }
 
     private void HeroGeraldController_OnMoveToFlagEvent(Vector3 pos)
@@ -64,17 +83,26 @@ public class HeroGeraldController : BaseUnitStateMachine
 
     private void CheckAutoCourageSkill()
     {
-        if (Time.time >= lastCourageTime + courageCooldown)
+        if(triggerHeroInSide != null && triggerHeroInSide.CheckCountSolider(2) && heroDataInGame.currentLevel
+             >= GeraldData.courageSkillStats[0].requiredHeroLevel)
         {
-            if (CurrentState == IdleState || CurrentState == AttackState)
+            if (Time.time >= lastCourageTime + courageCooldown)
             {
-                if (currentTarget != null)
+                if (CurrentState == IdleState || CurrentState == AttackState)
                 {
-                    lastCourageTime = Time.time;
-                    TransitionToState(CourageState);
+                    if (currentTarget != null)
+                    {
+                        lastCourageTime = Time.time;
+                        TransitionToState(CourageState);
+                    }
                 }
             }
         }
+    }
+
+    public void BuffCourageSkillForHero(StatModifier newMod, float healthBuffMax)
+    {
+        triggerHeroInSide.AddBuffForSoliderInSide(newMod, healthBuffMax);
     }
 
     /// <summary>
@@ -94,18 +122,10 @@ public class HeroGeraldController : BaseUnitStateMachine
     public bool TryTriggerShieldBlock()
     {
         // Đang Level Up hoặc Đã chết -> Không thể Block
-        if (CurrentState == LevelUpState || CurrentState == DeathState) return false;
-
-        if (Time.time >= lastShieldBlockTime + shieldBlockCooldown)
-        {
-            if (Random.value <= blockChance)
-            {
-                lastShieldBlockTime = Time.time;
-                TransitionToState(ShieldBlockState);
-                return true;
-            }
-        }
-        return false;
+        if (CurrentState == LevelUpState || CurrentState == DeathState
+            || CurrentState == ShieldBlockState) return false;
+        TransitionToState(ShieldBlockState);
+        return true;
     }
 
     /// <summary>
@@ -123,9 +143,47 @@ public class HeroGeraldController : BaseUnitStateMachine
         }
     }
 
+    public HeroDataInGame GetHeroDataInGame()
+    {
+        return heroDataInGame;
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, courageBuffRadius);
+    }
+
+    public bool CheckCounterDamage(int damage, Transform attacker)
+    {
+        if(heroDataInGame.currentLevel < GeraldData.shieldSkillStats[0].requiredHeroLevel)
+        {
+            return false;
+        }
+
+        if(heroDataInGame.currentLevel >= GeraldData.shieldSkillStats[0].requiredHeroLevel
+            && heroDataInGame.currentLevel < GeraldData.shieldSkillStats[1].requiredHeroLevel)
+        {
+            percentDamageAttack = GeraldData.shieldSkillStats[0].damageReflectedPercent;
+            percentCounterDamage = GeraldData.shieldSkillStats[0].triggerChance;
+            HeroGeraldController_OnHitDamageSheldEvent(damage, attacker);
+            return Random.value < percentCounterDamage;
+        }
+        else if(heroDataInGame.currentLevel > GeraldData.shieldSkillStats[1].requiredHeroLevel
+            && heroDataInGame.currentLevel < GeraldData.shieldSkillStats[2].requiredHeroLevel)
+        {
+            percentDamageAttack = GeraldData.shieldSkillStats[1].damageReflectedPercent;
+            percentCounterDamage = GeraldData.shieldSkillStats[1].triggerChance;
+            HeroGeraldController_OnHitDamageSheldEvent(damage, attacker);
+            return Random.value < percentCounterDamage;
+        }
+        else if (heroDataInGame.currentLevel > GeraldData.shieldSkillStats[2].requiredHeroLevel)
+        {
+            percentDamageAttack = GeraldData.shieldSkillStats[2].damageReflectedPercent;
+            percentCounterDamage = GeraldData.shieldSkillStats[2].triggerChance;
+            HeroGeraldController_OnHitDamageSheldEvent(damage, attacker);
+            return Random.value < percentCounterDamage;
+        }
+        return false;
     }
 }

@@ -120,7 +120,10 @@ public class UnitIdleState : UnitBaseState
             unit.TransitionToState(unit.RunState);
         }
     }
+    public override void FixedUpdate()
+    {
 
+    }
     public override void Exit()
     {
     }

@@ -40,9 +40,14 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
     public Vector3 positionFlag;
     public bool isRunToFlag;
 
+    public bool isHero;
+
     public BaseUnitAnimationHandler baseUnitAnimationHandler;
 
     [SerializeField] private Transform triggerAttackRange;
+    public Rigidbody2D rb;
+
+    public VfxHero vfxHero;
 
     protected virtual void Awake()
     {
@@ -56,6 +61,9 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         healthHero.InitHealth((int)unitData.maxHealth);
         healthHero.OnDead += HealthHero_OnDead;
         SetActiveTriggerAttackRange();
+        rb = GetComponent<Rigidbody2D>();
+
+        if(vfxHero == null) vfxHero = transform.GetComponentInChildren<VfxHero>();
     }
 
     private void SetActiveTriggerAttackRange()
@@ -105,6 +113,11 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         CleanDeadTargets();
         // Cập nhật logic của trạng thái hiện tại liên tục
         CurrentState?.Update();
+    }
+
+    private void FixedUpdate()
+    {
+        CurrentState?.FixedUpdate();
     }
 
     public void TransitionToState(UnitBaseState newState)

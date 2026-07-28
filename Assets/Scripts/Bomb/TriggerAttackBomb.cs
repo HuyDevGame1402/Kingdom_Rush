@@ -33,7 +33,7 @@ public class TriggerAttackBomb : MonoBehaviour
             {
                 Debug.LogWarning("Take Damage Enemy");
                 enemyCtrl.TakeDamage(transform.parent.GetComponent<BaseProjectile>()
-                    .damage, transform.parent.GetComponent<BaseProjectile>().textSO);
+                    .damage, transform.parent.GetComponent<BaseProjectile>().textSO, DamageType.Physical);
                 enemyList.Add(collision.transform);
             }
         }

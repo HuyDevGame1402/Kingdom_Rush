@@ -109,7 +109,7 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             enemyId: animationID,
             animPrefix: baseAnim.animPrefix,
             rangeConfig: heroAnim.shieldBlock,
-            frameRate: baseAnim.frameRate,
+            frameRate: /*baseAnim.frameRate*/0.03f,
             onComplete: onComplete
         );
     }

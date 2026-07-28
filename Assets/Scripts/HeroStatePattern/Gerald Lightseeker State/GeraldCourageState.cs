@@ -5,6 +5,10 @@ public class GeraldCourageState : UnitBaseState
     private HeroGeraldController hero;
     private bool isSkillFinished;
 
+    private StatModifier statModifier;
+    private float percentHealthBuffMax;
+
+
     public GeraldCourageState(HeroGeraldController stateMachine) : base(stateMachine)
     {
         this.hero = stateMachine;
@@ -13,7 +17,7 @@ public class GeraldCourageState : UnitBaseState
     public override void Enter()
     {
         isSkillFinished = false;
-
+        SetStatModifier();
         // Gọi animation gõ khiên
         if (hero.baseUnitAnimationHandler is CharacterAnimationHandler customHandler)
         {
@@ -48,4 +52,41 @@ public class GeraldCourageState : UnitBaseState
     }
 
     public override void Exit() { }
+
+    private void SetStatModifier()
+    {
+        if(hero.GetHeroDataInGame().currentLevel >=
+            hero.GeraldData.courageSkillStats[0].requiredHeroLevel && 
+            hero.GetHeroDataInGame().currentLevel <
+            hero.GeraldData.courageSkillStats[1].requiredHeroLevel)
+        {
+            BuffCouregeForHero(hero.GeraldData.courageSkillStats[0]);
+        }
+        else if (hero.GetHeroDataInGame().currentLevel >=
+            hero.GeraldData.courageSkillStats[1].requiredHeroLevel &&
+            hero.GetHeroDataInGame().currentLevel <
+            hero.GeraldData.courageSkillStats[2].requiredHeroLevel)
+        {
+            BuffCouregeForHero(hero.GeraldData.courageSkillStats[1]);
+        }
+        else if(hero.GetHeroDataInGame().currentLevel >=
+            hero.GeraldData.courageSkillStats[2].requiredHeroLevel)
+        {
+            BuffCouregeForHero(hero.GeraldData.courageSkillStats[2]);
+        }
+    }
+
+    private void BuffCouregeForHero(CourageSkillLevelStat courageSkillLevelStat)
+    {
+        hero.BuffCourageSkillForHero(
+                new StatModifier("Gerald_Courage",
+                courageSkillLevelStat.damageBoost,
+                courageSkillLevelStat.armorBoostPercent,
+                courageSkillLevelStat.duration),
+                courageSkillLevelStat.healBoostPercent);
+    }
+    public override void FixedUpdate()
+    {
+
+    }
 }

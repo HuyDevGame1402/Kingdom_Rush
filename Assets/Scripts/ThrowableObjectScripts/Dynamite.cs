@@ -53,7 +53,7 @@ public class Dynamite : ThrowableObject
         {
             if (collision.TryGetComponent(out EnemyController enemyController))
             {
-                enemyController.TakeDamage(damage, null);
+                enemyController.TakeDamage(damage, null, DamageType.Physical);
             }
             enemyList.Add(collision.transform);
         }

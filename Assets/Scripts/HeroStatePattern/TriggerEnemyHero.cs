@@ -6,16 +6,19 @@ public class TriggerEnemyHero : MonoBehaviour
     private const string ENEMYTAG = "EnemyKingdomRush";
     [SerializeField] private BaseUnitStateMachine heroStateMachine;
 
-    //private void Awake()
-    //{
-    //    if (heroStateMachine == null)
-    //    {
-    //        heroStateMachine = GetComponent<BaseUnitStateMachine>();
-    //    }
-    //}
+    [SerializeField] private TriggerHeroInSide triggerHeroInSide;
+
+    private CircleCollider2D bigTrigger;
+
+    private void Awake()
+    {
+        bigTrigger = GetComponent<CircleCollider2D>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!bigTrigger.IsTouching(collision))
+            return;
         if (heroStateMachine == null)
         {
             Debug.LogWarning("Biến đang null");
@@ -45,6 +48,12 @@ public class TriggerEnemyHero : MonoBehaviour
                 heroStateMachine.targetList.Add(collision.transform);
             }
         }
+
+        if(triggerHeroInSide != null && collision.CompareTag("Soldier"))
+        {
+            Debug.LogWarning($"ENTER : {collision.name} Tag={collision.tag}");
+            triggerHeroInSide.AddSolider(collision.transform.parent.GetComponent<BaseUnitStateMachine>());
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -56,21 +65,11 @@ public class TriggerEnemyHero : MonoBehaviour
             }
             heroStateMachine.targetList.Remove(collision.transform);
         }
+
+        if (triggerHeroInSide != null && collision.CompareTag("Soldier"))
+        {
+            Debug.LogWarning($"EXIT : {collision.transform.parent.name} Tag={collision.tag}");
+            triggerHeroInSide.RemoveSolider(collision.transform.parent.GetComponent<BaseUnitStateMachine>());
+        }
     }
 }
-
-//private void OnCollisionExit2D(Collision2D collision)
-//{
-//    if (collision.collider.CompareTag(ENEMYTAG) && heroStateMachine.targetList.Contains(collision.transform))
-//    {
-//        if (collision.transform == heroStateMachine.currentTarget)
-//        {
-//            heroStateMachine.ResetTarget();
-//        }
-//        heroStateMachine.targetList.Remove(collision.transform);
-//    }
-//    else
-//    {
-//        Debug.LogError("Lỗi");
-//    }
-//}

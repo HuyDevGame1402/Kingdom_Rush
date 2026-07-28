@@ -44,11 +44,12 @@ public class UnitAttackState : UnitBaseState
                     // Sát thương khi chạm eventFrame (nếu cần xử lý tại frame này)
                     if (unit.currentTarget != null && unit.currentTarget.TryGetComponent(out EnemyController enemy))
                     {
-                        damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().minDamage,
-                            unit.GetComponent<HeroDataInGame>().maxDamage);
+                        damageFinal = DamageStatic.GetDamageBase(unit.GetComponent<HeroDataInGame>().GetMinDamage(),
+                            unit.GetComponent<HeroDataInGame>().GetMaxDamage());
                         enemy.TakeDamage(damageFinal
                             /*DamageStatic.GetDamageBase((int)unit.unitData.minDamage, (int)unit.unitData.maxDamage)*/,
                             unit.textSO,
+                            unit.unitData.damageType,
                             unit.transform
                         );
                     }
@@ -139,5 +140,9 @@ public class UnitAttackState : UnitBaseState
                 scaleX,
                 unit.unitData.heroScale,
                 1f);
+    }
+    public override void FixedUpdate()
+    {
+
     }
 }

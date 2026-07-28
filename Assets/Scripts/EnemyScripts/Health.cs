@@ -5,12 +5,14 @@ public class Health : MonoBehaviour
     protected int health;
     protected int maxHealth;
 
+    private int healthBuff;
+
     public void InitHealth(int maxHealth)
     {
         this.maxHealth = maxHealth;
         this.health = maxHealth;
     }
-    public virtual void ApplyDamage(int damage)
+    public virtual void ApplyDamage(int damage, Transform attacker)
     {
         health -= damage;
     }
@@ -26,5 +28,12 @@ public class Health : MonoBehaviour
     public int GetMaxHealth()
     {
         return maxHealth;
+    }
+
+    public void BuffHealthWithPercentMaxHealth(float percent)
+    {
+        healthBuff = (int)(percent * maxHealth);
+        health += healthBuff;
+        if(health > maxHealth) health = maxHealth;
     }
 }

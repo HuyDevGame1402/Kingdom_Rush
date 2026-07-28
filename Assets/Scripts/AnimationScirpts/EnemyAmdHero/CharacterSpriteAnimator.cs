@@ -140,7 +140,7 @@ public class CharacterSpriteAnimator : MonoBehaviour
         }
     }
 
-    private void StopAnimationFor(GameObject target)
+    public void StopAnimationFor(GameObject target)
     {
         int id = target.GetInstanceID();
         if (activeCoroutines.TryGetValue(id, out Coroutine old))

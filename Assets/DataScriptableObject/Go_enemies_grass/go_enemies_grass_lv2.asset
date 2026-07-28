@@ -24,6 +24,8 @@ MonoBehaviour:
   maxDamage: 8
   attackRange: 0.25
   attackCooldown: 2.5
+  attackCooldownAdd: 0
+  damageType: 0
   animations:
     animPrefix: orc_
     frameRate: 0.04
@@ -54,8 +56,8 @@ MonoBehaviour:
     attack:
       startFrame: 67
       endFrame: 77
-      hasEvent: 0
-      eventFrame: -1
+      hasEvent: 1
+      eventFrame: 70
       animationConfigOffset: []
     death:
       startFrame: 101
@@ -72,4 +74,5 @@ MonoBehaviour:
   bounty: 9
   livesTaken: 1
   isHasLevelHero: 0
+  isLongRangeAttack: 0
   characterGUI: {fileID: 0}

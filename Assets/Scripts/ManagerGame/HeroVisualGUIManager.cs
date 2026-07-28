@@ -79,7 +79,7 @@ public class HeroVisualGUIManager : MonoBehaviour
         expRectTransform.localScale = localScaleEXP;
     }
 
-    private void HealthPlayerHero_OnHitDamage(int currentHealth, int maxHealth)
+    private void HealthPlayerHero_OnHitDamage(int currentHealth, int maxHealth, Transform attacker)
     {
         percentHealth = (float)currentHealth / maxHealth;
         localScaleHealth.x = percentHealth;

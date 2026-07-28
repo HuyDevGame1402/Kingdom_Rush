@@ -24,6 +24,8 @@ MonoBehaviour:
   maxDamage: 18
   attackRange: 0.5
   attackCooldown: 2.5
+  attackCooldownAdd: 0
+  damageType: 0
   animations:
     animPrefix: hero_barracks_
     frameRate: 0.08
@@ -82,6 +84,7 @@ MonoBehaviour:
   bounty: 0
   livesTaken: 0
   isHasLevelHero: 1
+  isLongRangeAttack: 0
   characterGUI: {fileID: 572645969639619351, guid: 31228bfd6a07fef428833fdc5bf57c34, type: 3}
   heroAnimations:
     levelUp:
@@ -220,3 +223,44 @@ MonoBehaviour:
     armorType: 80
     armorPercentage: 0.8
     respawnTime: 15
+  courageSkillStats:
+  - abilityLevel: 1
+    requiredHeroLevel: 2
+    damageBoost: 2
+    healBoostPercent: 0.15
+    armorBoostPercent: 0.05
+    duration: 6
+    cooldown: 8
+    aoeRadius: 3
+    minRequiredAllies: 2
+  - abilityLevel: 2
+    requiredHeroLevel: 5
+    damageBoost: 4
+    healBoostPercent: 0.15
+    armorBoostPercent: 0.1
+    duration: 6
+    cooldown: 8
+    aoeRadius: 3
+    minRequiredAllies: 2
+  - abilityLevel: 3
+    requiredHeroLevel: 8
+    damageBoost: 6
+    healBoostPercent: 0.15
+    armorBoostPercent: 0.15
+    duration: 6
+    cooldown: 8
+    aoeRadius: 3
+    minRequiredAllies: 2
+  shieldSkillStats:
+  - abilityLevel: 1
+    requiredHeroLevel: 4
+    damageReflectedPercent: 1
+    triggerChance: 0.2
+  - abilityLevel: 2
+    requiredHeroLevel: 7
+    damageReflectedPercent: 1.5
+    triggerChance: 0.4
+  - abilityLevel: 3
+    requiredHeroLevel: 10
+    damageReflectedPercent: 2
+    triggerChance: 0.6

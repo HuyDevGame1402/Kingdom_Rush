@@ -1,9 +1,13 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAttackState : IEnemyState
 {
     private float attackTimer = 0f;
+
+    private int finnalDamage;
+    private bool isCauseDamage;
 
     public void EnterState(EnemyController enemy)
     {
@@ -44,7 +48,7 @@ public class EnemyAttackState : IEnemyState
     private void ExecuteAttack(EnemyController enemy)
     {
         if (CharacterSpriteAnimator.Instance == null) return;
-
+        isCauseDamage = false;
         // 1. Lấy dữ liệu định danh và cấu hình đòn đánh từ ScriptableObject
         string id = enemy.unitData.unitName;
         string prefix = enemy.unitData.animations.animPrefix; // Dùng prefix động thay vì fix cứng "goblin_"
@@ -53,33 +57,79 @@ public class EnemyAttackState : IEnemyState
         // Cụm cấu hình tấn công và thủ thế (Idle)
         AnimationFrameRange attackConfig = enemy.unitData.animations.attack;
         AnimationFrameRange idleConfig = enemy.unitData.animations.idle;
-
+        finnalDamage = DamageStatic.GetDamageBase((int)enemy.unitData.minDamage,
+                            (int)enemy.unitData.maxDamage);
         // 2. Kích hoạt hoạt ảnh tấn công (Truyền nguyên cụm Object chứa list Offset chỉnh tay)
         CharacterSpriteAnimator.Instance.PlayAnimationByRange(
             enemy.gameObject, id, prefix, attackConfig, frameRate,
-            onComplete: () => {
-                // Khi bổ củi xong, nếu mục tiêu vẫn trong tầm thì quay về hoạt ảnh Idle đứng thủ thế
-                if (!enemy.isDead && enemy.target != null && enemy.IsTargetInAttackRange())
+            onEventTrigger: () =>
+            {
+                if (enemy.target.GetComponent<BaseUnitStateMachine>().isRunToFlag == false)
                 {
-                    CharacterSpriteAnimator.Instance.PlayAnimationByRange(
-                        enemy.gameObject, id, prefix, idleConfig, frameRate, null, null
-                    );
-
-                    if(enemy.target.TryGetComponent(out HealthHero healthHero) &&
-                    enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine) &&
-                    baseUnitStateMachine.isRunToFlag == false)
+                    if (enemy.target.TryGetComponent(out HeroGeraldController geraldController))
                     {
-                        healthHero.ApplyDamage(DamageStatic.GetDamageBase((int)enemy.unitData.minDamage,
-                            (int)enemy.unitData.maxDamage));
-
-                        if (healthHero.IsDead())
+                        if (geraldController.CheckCounterDamage(finnalDamage, enemy.transform))
                         {
-                            enemy.ResetTarget();
+                            isCauseDamage = true;
+
+                            if (enemy.target.GetComponent<HealthHero>().IsDead())
+                            {
+                                enemy.ResetTarget();
+                            }
                         }
                     }
                 }
             }
+            ,
+            onComplete: () => {
+                // Khi bổ củi xong, nếu mục tiêu vẫn trong tầm thì quay về hoạt ảnh Idle đứng thủ thế
+                //if (!enemy.isDead && enemy.target != null && enemy.IsTargetInAttackRange())
+                //{
+                //    CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+                //        enemy.gameObject, id, prefix, idleConfig, frameRate, null, null
+                //    );
+
+                //    if(enemy.target.TryGetComponent(out HealthHero healthHero) &&
+                //    enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine) &&
+                //    baseUnitStateMachine.isRunToFlag == false)
+                //    {
+                //        healthHero.ApplyDamage(finnalDamage, enemy.transform);
+
+                //        if (healthHero.IsDead())
+                //        {
+                //            enemy.ResetTarget();
+                //        }
+                //    }
+                //}
+                if (isCauseDamage == false)
+                {
+                    AttackSoliderDamage(enemy, id, prefix, idleConfig, finnalDamage);
+                }
+                CharacterSpriteAnimator.Instance.PlayAnimationByRange(
+                    enemy.gameObject, id, prefix, idleConfig, frameRate, null, null
+                );
+            }
         );
+    }
+
+    private void AttackSoliderDamage(EnemyController enemy, string id, string prefix, AnimationFrameRange
+        idleConfig, float frameRate)
+    {
+        if (!enemy.isDead && enemy.target != null && enemy.IsTargetInAttackRange())
+        {
+
+            if (enemy.target.TryGetComponent(out HealthHero healthHero) &&
+            enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine) &&
+            baseUnitStateMachine.isRunToFlag == false)
+            {
+                healthHero.ApplyDamage(finnalDamage, enemy.transform);
+
+                if (healthHero.IsDead())
+                {
+                    enemy.ResetTarget();
+                }
+            }
+        }
     }
 
     // Hàm Coroutine phụ trợ giúp trì hoãn việc trừ máu sao cho khớp với visual ảnh đang vung vũ khí

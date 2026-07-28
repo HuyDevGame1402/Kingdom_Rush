@@ -25,6 +25,7 @@ MonoBehaviour:
   attackRange: 0.25
   attackCooldown: 2.5
   attackCooldownAdd: 0
+  damageType: 0
   animations:
     animPrefix: goblin_
     frameRate: 0.04
@@ -55,8 +56,8 @@ MonoBehaviour:
     attack:
       startFrame: 67
       endFrame: 82
-      hasEvent: 0
-      eventFrame: -1
+      hasEvent: 1
+      eventFrame: 74
       animationConfigOffset: []
     death:
       startFrame: 106
