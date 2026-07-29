@@ -54,6 +54,8 @@ public class CharacterFreezing : MonoBehaviour
       
         SpriteSheetAnimator.Instance.DisplaySingleFrame(gameObject, enemyPrefix, currentEnemyFrame);
         freezecreepOb.SetActive(true);
+        freezecreepOb.GetComponent<SpriteRenderer>().sortingOrder = transform.GetComponent<SpriteRenderer>()
+            .sortingOrder + 1;
         PlayAnimationFreeze();
  
         yield return new WaitForSeconds(duration);

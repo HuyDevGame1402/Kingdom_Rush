@@ -20,16 +20,20 @@ public class AlleriaCallOfTheWildState : UnitBaseState
                 hero.unitData.animations,
                 hero.AlleriaData.heroAnimations,
                 hero.spriteObject,
+
+                onEventTriiger: () =>
+                {
+                    hero.CallWildCat();
+                },
+
                 onComplete: () =>
                 {
-                    hero.SummonWildcat();
                     isSkillFinished = true;
                 }
             );
         }
         else
         {
-            hero.SummonWildcat();
             isSkillFinished = true;
         }
     }

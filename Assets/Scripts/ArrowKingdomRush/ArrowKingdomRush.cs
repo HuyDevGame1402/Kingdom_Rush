@@ -27,12 +27,19 @@ public class ArrowKingdomRush : BaseProjectile
 
     // ── API ──────────────────────────────────────────────────────────────────
 
+    public Transform owner;
+
     public void LaunchWithArc(Transform enemy, float shootSpeed, float height,
-        int damage = 1)
+        int damage = 1, Transform owner = null)
     {
         arrowSpeed = shootSpeed;
         arcHeight = height;
         base.Launch(enemy, shootSpeed, damage);
+
+        if(owner != null)
+        {
+            this.owner = owner;
+        }
     }
 
     protected override void OnHitTarget()
@@ -49,8 +56,14 @@ public class ArrowKingdomRush : BaseProjectile
 
         if (valid)
         {
-            Debug.LogWarning("Attack Enemy: " + damage);
-            cachedEnemyCtr.TakeDamage(damage, textSO, DamageType.Physical);
+            //Debug.LogWarning("Attack Enemy: " + damage);
+            cachedEnemyCtr.TakeDamage(damage, textSO, DamageType.Physical, owner);
+
+            if(owner != null)
+            {
+                owner.GetComponent<HeroEXPManager>().OnDealDamage(damage);
+            }
+
             base.OnHitTarget();
 
             if (SoundGameAttackManager.Instance != null)

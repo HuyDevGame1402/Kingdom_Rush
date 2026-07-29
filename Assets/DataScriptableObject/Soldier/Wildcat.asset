@@ -10,69 +10,69 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6232ca68a59a2549a0247198624f127, type: 3}
-  m_Name: go_enemies_grass_lv1
+  m_Name: Wildcat
   m_EditorClassIdentifier: 
-  unitName: go_enemies_grass
-  reinforceType: 0
-  unitType: 3
-  description: "Qu\xE1i c\u01A1 b\u1EA3n lv1"
-  maxHealth: 250
-  moveSpeed: 1
+  unitName: Wildcat
+  reinforceType: 2
+  unitType: 1
+  description: "Wildcat linh mi\xEAu"
+  maxHealth: 200
+  moveSpeed: 2.2
   armor: 0
   magicResistance: 0
-  minDamage: 1
-  maxDamage: 4
-  attackRange: 0.5
-  attackCooldown: 2.5
+  minDamage: 6
+  maxDamage: 8
+  attackRange: 0.25
+  attackCooldown: 1.5
   attackCooldownAdd: 0
   damageType: 0
   animations:
-    animPrefix: goblin_
-    frameRate: 0.04
+    animPrefix: hero_archer_wildcat_
+    frameRate: 0.05
     idle:
-      startFrame: 67
-      endFrame: 67
+      startFrame: 1
+      endFrame: 1
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     run:
-      startFrame: 1
-      endFrame: 22
+      startFrame: 2
+      endFrame: 11
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     runDown:
-      startFrame: 45
-      endFrame: 66
+      startFrame: 1
+      endFrame: 1
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     runUp:
-      startFrame: 23
-      endFrame: 44
+      startFrame: 1
+      endFrame: 1
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     attack:
-      startFrame: 67
-      endFrame: 82
+      startFrame: 12
+      endFrame: 26
       hasEvent: 1
-      eventFrame: 74
+      eventFrame: 22
       animationConfigOffset: []
     death:
-      startFrame: 106
-      endFrame: 120
+      startFrame: 47
+      endFrame: 63
       hasEvent: 0
       eventFrame: -1
       animationConfigOffset: []
     attacks: []
-  localScaleLeft: {x: -1.5, y: 1.5, z: 1}
-  localScaleRight: {x: 1.5, y: 1.5, z: 1}
-  heroScale: 0
-  timeToResurrect: 0
-  maxAttacker: 1
-  bounty: 3
-  livesTaken: 1
+  localScaleLeft: {x: 0, y: 0, z: 0}
+  localScaleRight: {x: 0, y: 0, z: 0}
+  heroScale: 1.5
+  timeToResurrect: 20
+  maxAttacker: 2
+  bounty: 0
+  livesTaken: 0
   isHasLevelHero: 0
   isLongRangeAttack: 0
   characterGUI: {fileID: 0}

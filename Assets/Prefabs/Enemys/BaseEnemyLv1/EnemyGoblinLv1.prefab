@@ -198,6 +198,8 @@ MonoBehaviour:
   pivotEnemy: 0.35
   health: 0
   damage: 0
+  armor: 0
+  finalArmor: 0
 --- !u!114 &623637933509492466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,7 +557,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8674773412530431632}
   - component: {fileID: 2920349493239658397}
-  - component: {fileID: 5318632207810976275}
   m_Layer: 0
   m_Name: FreezeSprite
   m_TagString: Untagged
@@ -572,7 +573,7 @@ Transform:
   m_GameObject: {fileID: 8553091441699086864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -633,16 +634,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5318632207810976275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8553091441699086864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a901c226a1066dd4cbd5f34de4839f7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseOrder: 10003

@@ -168,43 +168,6 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    //public void HandleMovement()
-    //{
-    //    if (isDead || isFrozen) return;
-
-    //    if (waypoints == null || waypoints.Count == 0 || currentWaypointIndex >= waypoints.Count)
-    //    {
-    //        if (LiveManager.Instance != null)
-    //        {
-    //            LiveManager.Instance.RemoveLive(unitData.livesTaken);
-    //        }
-
-    //        ReachedEndOfTheLine();
-    //        return;
-    //    }
-
-    //    Transform targetPoint = waypoints[currentWaypointIndex];
-
-    //    Vector2 currentPos = rb.position;
-    //    Vector2 targetPos = targetPoint.position;
-
-    //    Vector2 direction = targetPos - currentPos;
-    //    float distanceThisFrame = unitData.moveSpeed * Time.deltaTime;
-
-    //    if (direction.magnitude <= distanceThisFrame)
-    //    {
-    //        rb.MovePosition(targetPos);
-    //        currentWaypointIndex++;
-    //    }
-    //    else
-    //    {
-    //        Vector2 moveVector = direction.normalized * distanceThisFrame;
-    //        rb.MovePosition(currentPos + moveVector);
-
-    //        UpdateMoveAnimation(direction.normalized);
-    //    }
-    //}
-
     private void UpdateMoveAnimation(Vector2 moveDir)
     {
         if (CharacterSpriteAnimator.Instance == null) return;
@@ -283,6 +246,11 @@ public class EnemyController : MonoBehaviour
                 if(attacker != null && attacker.TryGetComponent(out HeroEXPManager heroEXPManager))
                 {
                     heroEXPManager.OnEnemyKilled(enemyHealth.GetMaxHealth(), transform.position);
+                }
+
+                if(attacker != null && attacker.TryGetComponent(out WildCatInit wildCatInit))
+                {
+                    wildCatInit.GetHeroOwerEXPManager().OnEnemyKilled(enemyHealth.GetMaxHealth(), transform.position);
                 }
 
                 colliderTriggerHitDamage.enabled = false;
@@ -390,12 +358,17 @@ public class EnemyController : MonoBehaviour
     }
     public void ResetTarget()
     {
+        if(target == null)
+        {
+            Debug.LogWarning("Target đang null!");
+        }
         if (targetList.Contains(target))
         {
             targetList.Remove(target);
         }
         if (target != null && target.TryGetComponent(out BaseUnitStateMachine heroStateMachine))
         {
+            Debug.LogWarning("Remove Attacker");
             heroStateMachine.RemoveAttacker();
         }
         target = null;
@@ -407,6 +380,7 @@ public class EnemyController : MonoBehaviour
                     && heroStateMachineList.CheckAttackerCount() && heroStateMachineList.isRunToFlag
                     == false)
                 {
+                    heroStateMachineList.attackerCount++;
                     target = targetList[i];
                     return;
                 }
@@ -452,6 +426,7 @@ public class EnemyController : MonoBehaviour
             {
                 if (checkTarget == target)
                 {
+                    Debug.LogError("Lỗi ở đây");
                     target = null;
                 }
                 targetList.RemoveAt(i);

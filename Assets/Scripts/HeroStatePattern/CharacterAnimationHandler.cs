@@ -173,6 +173,7 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
         UnitAnimationConfig baseAnim,
         AlleriaSwiftwindAnimationConfig heroAnim,
         GameObject target,
+        Action onEventTriiger,
         Action onComplete)
     {
         CharacterSpriteAnimator.Instance.PlayAnimationByRange(
@@ -180,7 +181,8 @@ public class CharacterAnimationHandler : BaseUnitAnimationHandler
             enemyId: animationID,
             animPrefix: baseAnim.animPrefix,
             rangeConfig: heroAnim.callOfTheWildSkill,
-            frameRate: baseAnim.frameRate,
+            frameRate: 0.04f,
+            onEventTrigger: onEventTriiger,
             onComplete: onComplete
         );
     }

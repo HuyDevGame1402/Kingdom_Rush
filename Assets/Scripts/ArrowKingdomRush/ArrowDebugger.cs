@@ -34,11 +34,11 @@ public class ArrowDebugger : MonoBehaviour
         float flightTime = (float)fFT.GetValue(arrow);
         float dist = Vector3.Distance(pA, arrow.transform.position);
 
-        Debug.Log($"<color=orange>[ArrowDebug]</color>\n" +
-                  $"  arrowSpeed  = {spd}\n" +
-                  $"  distance    = {dist:F2} units  ← khoảng cách thực tế\n" +
-                  $"  flightTime  = {flightTime:F3}s  ← thời gian bay thực\n" +
-                  $"  → Để bay 0.2s cần arrowSpeed = {dist / 0.2f:F0}\n" +
-                  $"  → Để bay 0.3s cần arrowSpeed = {dist / 0.3f:F0}");
+        //Debug.Log($"<color=orange>[ArrowDebug]</color>\n" +
+        //          $"  arrowSpeed  = {spd}\n" +
+        //          $"  distance    = {dist:F2} units  ← khoảng cách thực tế\n" +
+        //          $"  flightTime  = {flightTime:F3}s  ← thời gian bay thực\n" +
+        //          $"  → Để bay 0.2s cần arrowSpeed = {dist / 0.2f:F0}\n" +
+        //          $"  → Để bay 0.3s cần arrowSpeed = {dist / 0.3f:F0}");
     }
 }

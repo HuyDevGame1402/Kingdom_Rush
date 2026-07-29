@@ -22,8 +22,8 @@ public class AlleriaMultishotState : UnitBaseState
     public override void Enter()
     {
         isSkillFinished = false;
-
-        if(heroAlleriaSpawnArrow == null)
+        FaceTarget();
+        if (heroAlleriaSpawnArrow == null)
         {
             heroAlleriaSpawnArrow = unit.GetComponent<HeroAlleriaSpawnArrow>();
         }
@@ -91,8 +91,8 @@ public class AlleriaMultishotState : UnitBaseState
             finnalDamage = (int)((finnalDamage * arrowCount) / hero.targetLongRangeList.Count);
             for(int i = 0; i < enemyCount; i++)
             {
-                Debug.LogWarning("Attack Skill Multi Arrow " + "Damage cuối là: " + finnalDamage);
-                heroAlleriaSpawnArrow.SpawnBullet(hero.targetLongRangeList[i], finnalDamage);
+                //Debug.LogWarning("Attack Skill Multi Arrow " + "Damage cuối là: " + finnalDamage);
+                heroAlleriaSpawnArrow.SpawnBullet(hero.targetLongRangeList[i], finnalDamage, true);
             }
         }
         else
@@ -103,7 +103,7 @@ public class AlleriaMultishotState : UnitBaseState
             {
                 if (enemyListAttack.Count == 0) break;
                 index = Random.Range(0, enemyListAttack.Count);
-                heroAlleriaSpawnArrow.SpawnBullet(enemyListAttack[index], finnalDamage);
+                heroAlleriaSpawnArrow.SpawnBullet(enemyListAttack[index], finnalDamage, true);
                 enemyListAttack.RemoveAt(index);
             }
         }
@@ -114,4 +114,22 @@ public class AlleriaMultishotState : UnitBaseState
 
     }
     public override void Exit() { }
+    private void FaceTarget()
+    {
+        if (unit.currentTarget == null)
+            return;
+
+        float dirX = unit.currentTarget.position.x - unit.transform.position.x;
+
+        if (Mathf.Abs(dirX) < 0.01f)
+            return;
+
+        float scaleX = (dirX > 0 ? 1f : -1f) * unit.unitData.heroScale;
+
+        unit.spriteObject.transform.localScale =
+            new Vector3(
+                scaleX,
+                unit.unitData.heroScale,
+                1f);
+    }
 }

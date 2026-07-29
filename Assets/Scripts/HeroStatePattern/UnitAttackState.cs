@@ -65,9 +65,15 @@ public class UnitAttackState : UnitBaseState
                     {
                         expManager.OnDealDamage(damageFinal);
                     }
-                    if (SoundGameAttackManager.Instance != null)
+
+                    if(unit.TryGetComponent(out WildCatInit wildCatInit))
                     {
-                        SoundGameAttackManager.Instance.PlayAudioSoliderAttack();
+                        wildCatInit.GetHeroOwerEXPManager().OnDealDamage(damageFinal);
+                    }
+
+                    if(unit.TryGetComponent(out IHasSoundAttack attackSound))
+                    {
+                        attackSound.PlaySoundAttack();
                     }
                 }
                 // đánh xa
@@ -80,7 +86,7 @@ public class UnitAttackState : UnitBaseState
                     //enemyController.isDead == false &&
                     unit.TryGetComponent(out IHasSpawnBullet spawnBullet))
                     {
-                        spawnBullet.SpawnBullet(unit.currentTarget, damageFinal
+                        spawnBullet.SpawnBullet(unit.currentTarget, damageFinal, false
                             );
                     }
                 }

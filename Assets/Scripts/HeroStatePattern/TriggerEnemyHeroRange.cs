@@ -38,11 +38,11 @@ public class TriggerEnemyHeroRange : MonoBehaviour
     {
         if (collision != null && collision.CompareTag(ENEMYTAG) && heroStateMachine.targetLongRangeList.Contains(collision.transform))
         {
+            heroStateMachine.targetLongRangeList.Remove(collision.transform);
             if (collision.transform == heroStateMachine.currentTarget)
             {
                 heroStateMachine.ResetTarget();
             }
-            heroStateMachine.targetLongRangeList.Remove(collision.transform);
         }
     }
 }

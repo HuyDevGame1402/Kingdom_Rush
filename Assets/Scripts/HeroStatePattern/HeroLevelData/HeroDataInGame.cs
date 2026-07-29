@@ -85,11 +85,23 @@ public class HeroDataInGame : MonoBehaviour
         RecalculateStats();
     }
 
+    public void SetParameters(int minDamage, int maxDamage, float armor)
+    {
+        finalArmor = armor;
+        finalMinDamage = minDamage;
+        finalMaxDamage = maxDamage;
+    }
+
     private void InitDataSOBase()
     {
         minDamage = (int)baseStateMachine.unitData.minDamage;
         maxDamage = (int)baseStateMachine.unitData.maxDamage;
         armor = baseStateMachine.unitData.armor;
+        finalArmor = armor;
+        finalMinDamage = minDamage;
+        finalMaxDamage = maxDamage;
+        finalMinRangedDamage = minRangedDamage;
+        finalMaxRangedDamage = maxRangedDamage;
         currentExp = 0;
     }
 

@@ -7,18 +7,25 @@ public class HeroAlleriaSpawnArrow : MonoBehaviour, IHasSpawnBullet
     [SerializeField] private float height = 2f;
     [SerializeField] private Transform firePoint;
     [SerializeField] private HeroDataInGame heroDataInGame;
+    GameObject projectileGO;
+    BaseProjectile projectileScript;
 
-    public void SpawnBullet(Transform enemyTarget, int finnalDamage)
+    public void SpawnBullet(Transform enemyTarget, int finnalDamage, bool isSkill)
     {
-        GameObject projectileGO = Instantiate(arrow, firePoint.position, Quaternion.identity);
+        projectileGO = Instantiate(arrow, firePoint.position, Quaternion.identity);
 
-        BaseProjectile projectileScript = projectileGO.GetComponent<BaseProjectile>();
+        projectileScript = projectileGO.GetComponent<BaseProjectile>();
         if (projectileScript != null)
         {
             if (projectileScript is ArrowKingdomRush arrow)
             {
                 arrow.LaunchWithArc(enemyTarget, shootSpeed, height
-                        , finnalDamage);
+                        , finnalDamage, transform);
+            }
+
+            if (isSkill)
+            {
+                projectileGO.GetComponent<ArrowColorEffect>().SetBlue();
             }
         }
     }

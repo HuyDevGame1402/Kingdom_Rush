@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IHasSpawnBullet
 {
-    public void SpawnBullet(Transform enemy, int finnalDamage);
+    public void SpawnBullet(Transform enemy, int finnalDamage, bool isSkill);
 }

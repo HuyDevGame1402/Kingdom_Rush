@@ -17,7 +17,7 @@ MonoBehaviour:
   unitType: 1
   description: "L\xEDnh Cung th\u1EE7"
   maxHealth: 250
-  moveSpeed: 2
+  moveSpeed: 1.7
   armor: 0
   magicResistance: 0
   minDamage: 2
@@ -102,8 +102,8 @@ MonoBehaviour:
     callOfTheWildSkill:
       startFrame: 78
       endFrame: 117
-      hasEvent: 0
-      eventFrame: -1
+      hasEvent: 1
+      eventFrame: 100
       animationConfigOffset: []
   multishotCooldown: 4
   multishotLevels:
@@ -119,7 +119,7 @@ MonoBehaviour:
   wildcatRespawnTime: 20
   wildcatStats:
   - abilityLevel: 1
-    requiredHeroLevel: 4
+    requiredHeroLevel: 1
     maxHP: 200
     casualHP: 240
     flashHP: 250

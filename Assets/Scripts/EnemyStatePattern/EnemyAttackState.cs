@@ -24,7 +24,6 @@ public class EnemyAttackState : IEnemyState
         if (enemy.target != null && enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine)
             && baseUnitStateMachine.isRunToFlag == true)
         {
-            enemy.target = null;
             enemy.ResetTarget();
         }
 

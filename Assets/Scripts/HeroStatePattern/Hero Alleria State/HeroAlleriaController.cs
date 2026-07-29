@@ -7,12 +7,7 @@ public class HeroAlleriaController : BaseUnitStateMachine
     [Header("Skill Settings - Multishot")]
     [SerializeField] private float multishotCooldown = 4f;
 
-    [Header("Skill Settings - Call of the Wild (Wildcat)")]
-    [SerializeField] private float callOfTheWildCooldown = 20f;
-    [SerializeField] private GameObject wildcatPrefab; // Prefab con linh miêu được gọi ra
-
     private float lastMultishotTime = -999f;
-    private float lastCallOfTheWildTime = -999f;
 
     private GameObject currentSummonedWildcat; // Quản lý tối đa 1 Wildcat trên sân
 
@@ -22,6 +17,7 @@ public class HeroAlleriaController : BaseUnitStateMachine
     public AlleriaLevelUpState LevelUpState { get; private set; }
 
     private HeroDataInGame heroDataInGame;
+    private HeroAlleriaSpawnWildCat heroAlleriaSpawnWildCat;
 
     protected override void Awake()
     {
@@ -35,6 +31,7 @@ public class HeroAlleriaController : BaseUnitStateMachine
         transform.GetComponent<HeroDataInGame>().OnLevelUpEvent += TriggerLevelUp;
         transform.GetComponent<HeroDataInGame>().OnMoveToFlagEvent += HeroAlleriaController_OnMoveToFlagEvent;
         heroDataInGame = GetComponent<HeroDataInGame>();
+        heroAlleriaSpawnWildCat = GetComponent<HeroAlleriaSpawnWildCat>();
     }
 
     private void HeroAlleriaController_OnMoveToFlagEvent(Vector3 pos)
@@ -58,8 +55,8 @@ public class HeroAlleriaController : BaseUnitStateMachine
         // Nếu đang Level Up -> Không dùng skill tự động
         if (CurrentState == LevelUpState) return;
 
-        //// Ưu tiên kiểm tra gọi Wildcat nếu chưa có Wildcat trên sân
-        //CheckAutoCallOfTheWildSkill();
+        // Ưu tiên kiểm tra gọi Wildcat nếu chưa có Wildcat trên sân
+        CheckAutoCallOfTheWildSkill();
 
         // Kiểm tra thi triển Multishot khi đang giao tranh
         CheckAutoMultishotSkill();
@@ -67,14 +64,29 @@ public class HeroAlleriaController : BaseUnitStateMachine
 
     private void CheckAutoCallOfTheWildSkill()
     {
-        // Điều kiện: Đã hết Cooldown VÀ Linh miêu hiện tại chưa được triệu hồi (hoặc đã chết)
-        if (currentSummonedWildcat == null && Time.time >= lastCallOfTheWildTime + callOfTheWildCooldown)
+        if(heroDataInGame.currentLevel < AlleriaData.wildcatStats[0].requiredHeroLevel
+            || heroAlleriaSpawnWildCat.GetIsReadySpawn() == false)
         {
-            if (CurrentState == IdleState || CurrentState == AttackState)
-            {
-                lastCallOfTheWildTime = Time.time;
-                TransitionToState(CallOfTheWildState);
-            }
+            return;
+        }
+
+        if (CurrentState == IdleState || CurrentState == AttackState)
+        {
+            TransitionToState(CallOfTheWildState);
+        }
+    }
+
+    public void CallWildCat()
+    {
+        // Instaine ra
+        if (currentSummonedWildcat == null)
+        {
+            heroAlleriaSpawnWildCat.CreateWildCat();
+        }
+        // active lại
+        else
+        {
+            heroAlleriaSpawnWildCat.RespawnWildCat();
         }
     }
 
@@ -140,33 +152,42 @@ public class HeroAlleriaController : BaseUnitStateMachine
         }
     }
 
-    /// <summary>
-    /// Logic triệu hồi Linh Miêu (Wildcat)
-    /// </summary>
-    public void SummonWildcat()
+    public override void MoveToFlag(Vector3 flagPos)
     {
-        if (wildcatPrefab == null)
+        base.MoveToFlag(flagPos);
+
+        if (currentSummonedWildcat != null &&
+            !currentSummonedWildcat.GetComponent<HealthHero>().IsDead())
         {
-            Debug.LogWarning("[ALLERIA] Chưa gán Wildcat Prefab!");
-            return;
+            // Hướng của hero tới điểm cờ (hoặc dùng transform.right/up tùy game của bạn)
+            Vector2 forward = ((Vector2)flagPos - (Vector2)transform.position).normalized;
+
+            // Random góc ±45 độ quanh hướng forward
+            float angle = Random.Range(-45f, 45f);
+            Vector2 randomDir = Quaternion.Euler(0, 0, angle) * forward;
+
+            // Random khoảng cách
+            float distance = Random.Range(0.5f, 1.5f);
+
+            Vector2 targetPos = (Vector2)transform.position + randomDir * distance;
+
+            currentSummonedWildcat.GetComponent<BaseUnitStateMachine>()
+                .MoveToFlag(targetPos);
         }
-
-        // Triệu hồi Wildcat tại vị trí của Alleria
-        currentSummonedWildcat = Instantiate(wildcatPrefab, transform.position, Quaternion.identity);
-        Debug.Log("<color=green>[SUMMON WILDCAT]</color> Alleria đã triệu hồi Wildcat!");
-    }
-
-    /// <summary>
-    /// Logic bắn nhiều mũi tên (Multishot)
-    /// </summary>
-    public void PerformMultishot()
-    {
-        Debug.Log("<color=yellow>[MULTISHOT]</color> Alleria bắn chiêu Multishot!");
-        // Viết logic sinh ra các Projectile Arrow bắn vào mục tiêu ở đây
     }
 
     public HeroDataInGame GetHeroDataInGame()
     {
         return heroDataInGame;
+    }
+
+    public void SetWildCat(GameObject wildCat)
+    {
+        currentSummonedWildcat = wildCat;
+    }
+
+    public GameObject GetWildCat()
+    {
+        return currentSummonedWildcat;
     }
 }

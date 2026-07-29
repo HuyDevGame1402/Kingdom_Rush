@@ -22,7 +22,7 @@ MonoBehaviour:
   magicResistance: 0
   minDamage: 11
   maxDamage: 18
-  attackRange: 0.5
+  attackRange: 0.75
   attackCooldown: 2.5
   attackCooldownAdd: 0
   damageType: 0

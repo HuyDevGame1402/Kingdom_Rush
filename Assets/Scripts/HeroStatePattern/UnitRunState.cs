@@ -149,18 +149,6 @@ public class UnitRunState : UnitBaseState
                 return;
             }
         }
-
-        // --------------------------------------------------
-        // DI CHUYỂN (Chỉ chạy khi chưa vào tầm đánh)
-        // --------------------------------------------------
-        //Vector3 direction = ((Vector3)actualTargetPosition - unit.transform.position).normalized;
-        //unit.transform.position += direction * unit.unitData.moveSpeed * Time.deltaTime;
-
-        //if (direction.x != 0)
-        //{
-        //    float scaleX = (direction.x > 0 ? 1 : -1) * unit.unitData.heroScale;
-        //    unit.spriteObject.transform.localScale = new Vector3(scaleX, unit.unitData.heroScale, 1);
-        //}
     }
     public override void FixedUpdate()
     {

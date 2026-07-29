@@ -127,7 +127,7 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         // Log ra để xem hệ thống có thực sự chuyển từ State cũ sang State mới không
         string oldStateName = CurrentState != null ? CurrentState.GetType().Name : "NULL";
         string newStateName = newState != null ? newState.GetType().Name : "NULL";
-        Debug.Log($"<color=yellow>[STATE CHANGE]</color> {gameObject.name} chuyển từ [ {oldStateName} ] -> [ {newStateName} ]");
+        //Debug.Log($"<color=yellow>[STATE CHANGE]</color> {gameObject.name} chuyển từ [ {oldStateName} ] -> [ {newStateName} ]");
 
         CurrentState?.Exit();
         CurrentState = newState;
@@ -334,7 +334,7 @@ public class BaseUnitStateMachine : MonoBehaviour, IResurrection
         }
     }
     // Thêm hàm này vào BaseUnitStateMachine.cs
-    public void MoveToFlag(Vector3 flagPos)
+    public virtual void MoveToFlag(Vector3 flagPos)
     {
         positionFlag = flagPos;
         isRunToFlag = true;

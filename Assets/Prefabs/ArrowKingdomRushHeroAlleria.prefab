@@ -100,8 +100,9 @@ GameObject:
   - component: {fileID: 6641595933644801816}
   - component: {fileID: 3719236688791144850}
   - component: {fileID: 4954038816126649515}
+  - component: {fileID: 1568204822522975851}
   m_Layer: 2
-  m_Name: ArrowKingdomRush
+  m_Name: ArrowKingdomRushHeroAlleria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,3 +259,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.2454355}
   m_EdgeRadius: 0
+--- !u!114 &1568204822522975851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877589741357496520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab26d4a1aeecb654b9c6506f0991dc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  blueMaterial: {fileID: 2100000, guid: 8e8b4421f51a2c6488d55d622539a356, type: 2}

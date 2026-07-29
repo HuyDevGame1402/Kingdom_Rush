@@ -3,8 +3,6 @@ public class EnemyMoveState : IEnemyState
 {
     public void EnterState(EnemyController enemy)
     {
-        // Khi bắt đầu vào trạng thái di chuyển(hoặc từ trạng thái Đánh quay về lại)
-        // Tính toán lại waypoint tối ưu nhất dựa trên vị trí hiện tại của quái
         enemy.RecalculateNextWaypoint();
         // THÊM DÒNG NÀY: Ép cập nhật lại hoạt ảnh di chuyển ở frame kế tiếp
         enemy.ResetAnimDirection();
@@ -14,10 +12,9 @@ public class EnemyMoveState : IEnemyState
     {
         if (enemy.isDead || enemy.isFrozen) return;
 
-        if(enemy.target != null && enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine)
+        if (enemy.target != null && enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine)
             && baseUnitStateMachine.isRunToFlag == true)
         {
-            enemy.target = null;
             enemy.ResetTarget();
         }
 
@@ -42,19 +39,6 @@ public class EnemyMoveState : IEnemyState
                     return;
                 }
             }
-            //else
-            //{
-            //    if (enemy.ShouldMoveBackToTarget())
-            //    {
-            //        MoveTowardsTarget(enemy, distance);
-            //    }
-            //    else
-            //    {
-            //        enemy.TransitionToState(enemy.IdleState);
-            //    }
-
-            //    return;
-            //}
             else
             {
                 bool soldierTargetsMe = enemy.target.TryGetComponent(out BaseUnitStateMachine soldierRef)
@@ -84,6 +68,77 @@ public class EnemyMoveState : IEnemyState
         enemy.HandleMovement();
     }
 
+    //public void UpdateState(EnemyController enemy)
+    //{
+    //    if (enemy.isDead || enemy.isFrozen) return;
+
+    //    // 0. Nếu target hiện tại đang chạy về cờ -> Hủy target
+    //    if (enemy.target != null && enemy.target.TryGetComponent(out BaseUnitStateMachine baseUnitStateMachine)
+    //        && baseUnitStateMachine.isRunToFlag == true)
+    //    {
+    //        enemy.target = null;
+    //        enemy.ResetTarget();
+    //    }
+
+    //    // --- BỔ SUNG ĐOẠN NÀY ---
+    //    // Nếu target đang null nhưng trong list vẫn còn mục tiêu khác -> Lấy target mới ngay
+    //    if (enemy.target == null && enemy.targetList.Count > 0)
+    //    {
+    //        enemy.ResetTarget();
+    //    }
+    //    // ------------------------
+
+    //    // 1. Nếu đang có mục tiêu -> ưu tiên xử lý mục tiêu
+    //    if (enemy.target != null)
+    //    {
+    //        float distance = Vector2.Distance(enemy.transform.position, enemy.target.position);
+    //        bool inAttackRange = distance <= enemy.unitData.attackRange;
+
+    //        if (inAttackRange)
+    //        {
+    //            if (!enemy.IsAlignedWithTarget(0.1f))
+    //            {
+    //                MoveTowardsTargetY(enemy);
+    //                return;
+    //            }
+    //            else
+    //            {
+    //                enemy.TransitionToState(enemy.AttackState);
+    //                return;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            bool soldierTargetsMe = enemy.target.TryGetComponent(out BaseUnitStateMachine soldierRef)
+    //                                     && soldierRef.IsTargetingEnemy(enemy);
+
+    //            if (enemy.ShouldMoveBackToTarget())
+    //            {
+    //                MoveTowardsTarget(enemy, distance);
+    //            }
+    //            else if (soldierTargetsMe)
+    //            {
+    //                enemy.TransitionToState(enemy.IdleState);
+    //            }
+    //            else
+    //            {
+    //                // Bỏ target cũ ở phía sau, thử ResetTarget để tìm xem trong list có ai khác ở phía trước không
+    //                enemy.ResetTarget();
+
+    //                // Nếu sau khi ResetTarget vẫn null (không còn ai hợp lệ) -> Mới chạy tiếp
+    //                if (enemy.target == null)
+    //                {
+    //                    enemy.HandleMovement();
+    //                }
+    //            }
+    //            return;
+    //        }
+    //    }
+
+    //    // 2. Không có ai chặn đường -> hành quân theo Waypoints
+    //    enemy.HandleMovement();
+    //}
+
     // Di chuyển tịnh tiến trục Y để áp sát mục tiêu khi đã trong tầm đánh
     private void MoveTowardsTargetY(EnemyController enemy)
     {
@@ -96,19 +151,6 @@ public class EnemyMoveState : IEnemyState
 
         UpdateFacing(enemy, enemy.target.position - enemy.transform.position);
     }
-    //private void MoveTowardsTargetY(EnemyController enemy)
-    //{
-    //    Vector2 currentPos = enemy.rb.position;
-    //    Vector2 alignPos = new Vector2(currentPos.x, enemy.target.position.y);
-
-    //    Vector2 dirY = (alignPos - currentPos).normalized;
-
-    //    enemy.rb.MovePosition(
-    //        currentPos +
-    //        dirY * enemy.unitData.moveSpeed * Time.deltaTime);
-
-    //    UpdateFacing(enemy, enemy.target.position - enemy.transform.position);
-    //}
 
     // Di chuyển thẳng về phía target khi chưa vào tầm đánh
     private void MoveTowardsTarget(EnemyController enemy, float distance)
@@ -128,34 +170,7 @@ public class EnemyMoveState : IEnemyState
 
         UpdateFacing(enemy, direction);
 
-        // Nếu bạn muốn quái chạy animation di chuyển bình thường khi đuổi target,
-        // có thể gọi lại logic animation hướng đi tương tự UpdateMoveAnimation trong EnemyController.
-        // Ví dụ (cần chuyển UpdateMoveAnimation thành public trong EnemyController rồi gọi ở đây):
-        // enemy.UpdateMoveAnimation(direction);
     }
-    //private void MoveTowardsTarget(EnemyController enemy, float distance)
-    //{
-    //    Vector2 currentPos = enemy.rb.position;
-    //    Vector2 targetPos = enemy.target.position;
-
-    //    Vector2 direction = (targetPos - currentPos).normalized;
-
-    //    float distanceThisFrame = enemy.unitData.moveSpeed * Time.deltaTime;
-
-    //    if (distanceThisFrame >= distance)
-    //    {
-    //        enemy.rb.MovePosition(targetPos);
-    //    }
-    //    else
-    //    {
-    //        enemy.rb.MovePosition(
-    //            currentPos +
-    //            direction * distanceThisFrame);
-    //    }
-
-    //    UpdateFacing(enemy, direction);
-    //}
-
     // Lật mặt sprite trái/phải dựa theo hướng di chuyển
     private void UpdateFacing(EnemyController enemy, Vector3 direction)
     {

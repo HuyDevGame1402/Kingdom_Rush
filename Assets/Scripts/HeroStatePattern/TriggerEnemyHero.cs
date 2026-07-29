@@ -27,9 +27,6 @@ public class TriggerEnemyHero : MonoBehaviour
         {
             if(collision.transform.TryGetComponent(out EnemyController enemyCtr))
             {
-                Debug.LogWarning(
-                    $"MELEE ENTER | Script={gameObject.name} | Collider={GetComponent<Collider2D>()?.name} | Enemy={collision.name}");
-
                 if (heroStateMachine.unitData.isLongRangeAttack == false
                     && heroStateMachine.IsTargetEnemy() == false)
                 {
@@ -51,7 +48,6 @@ public class TriggerEnemyHero : MonoBehaviour
 
         if(triggerHeroInSide != null && collision.CompareTag("Soldier"))
         {
-            Debug.LogWarning($"ENTER : {collision.name} Tag={collision.tag}");
             triggerHeroInSide.AddSolider(collision.transform.parent.GetComponent<BaseUnitStateMachine>());
         }
     }
@@ -59,16 +55,14 @@ public class TriggerEnemyHero : MonoBehaviour
     {
         if (collision != null && collision.CompareTag(ENEMYTAG) && heroStateMachine.targetList.Contains(collision.transform))
         {
+            heroStateMachine.targetList.Remove(collision.transform);
             if (collision.transform == heroStateMachine.currentTarget)
             {
                 heroStateMachine.ResetTarget();
             }
-            heroStateMachine.targetList.Remove(collision.transform);
         }
-
         if (triggerHeroInSide != null && collision.CompareTag("Soldier"))
         {
-            Debug.LogWarning($"EXIT : {collision.transform.parent.name} Tag={collision.tag}");
             triggerHeroInSide.RemoveSolider(collision.transform.parent.GetComponent<BaseUnitStateMachine>());
         }
     }

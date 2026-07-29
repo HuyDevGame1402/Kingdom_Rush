@@ -48,6 +48,7 @@ MonoBehaviour:
   spriteTargetHeroBarracksBuff: {fileID: 7899455997757314328}
   idAnimation: go_hero_gerald
   nameAnimation: hero_barracks_buff_
+  frameRateBarrackBuff: 0.05
 --- !u!1 &2760801270764016070
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +163,7 @@ GameObject:
   - component: {fileID: 83056286018738495}
   - component: {fileID: 9183562537530296938}
   - component: {fileID: 1012271975054989550}
+  - component: {fileID: 2106416474030754073}
   m_Layer: 2
   m_Name: Reinforce_B0
   m_TagString: Untagged
@@ -270,6 +272,7 @@ MonoBehaviour:
   baseUnitAnimationHandler: {fileID: 9183562537530296938}
   triggerAttackRange: {fileID: 0}
   rb: {fileID: 0}
+  vfxHero: {fileID: 0}
 --- !u!58 &9121840668447667614
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -418,12 +421,26 @@ MonoBehaviour:
   armor: 0
   finalMinDamage: 0
   finalMaxDamage: 0
+  finalMinRangedDamage: 0
+  finalMaxRangedDamage: 0
   finalArmor: 0
   currentExp: 0
   nextExp: 0
   baseStateMachine: {fileID: 6928152499720415701}
   positionFlag: {x: 0, y: 0, z: 0}
   activeModifiers: []
+--- !u!114 &2106416474030754073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451107008912888444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322cb205bc564294cb9b73ae1106797e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7899455997757314328
 GameObject:
   m_ObjectHideFlags: 0
